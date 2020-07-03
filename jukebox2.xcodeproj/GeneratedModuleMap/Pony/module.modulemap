@@ -1,0 +1,4 @@
+module Pony {
+    umbrella "./.build/checkouts/Flynn/Sources/Pony/include"
+    export *
+}
