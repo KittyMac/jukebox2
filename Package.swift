@@ -6,12 +6,16 @@ import PackageDescription
 let package = Package(
     name: "jukebox2",
     dependencies: [
-        .package(url: "https://github.com/KittyMac/Flynn.git", .branch("master"))
+        .package(url: "https://github.com/KittyMac/Flynn.git", .branch("master")),
+		.package(url: "https://github.com/apple/swift-argument-parser", .upToNextMinor(from: "0.2.0"))
     ],
     targets: [
         .target(
             name: "jukebox2",
-            dependencies: ["Flynn"]),
+            dependencies: [
+				"Flynn",
+				.product(name: "ArgumentParser", package: "swift-argument-parser"),
+			]),
         .testTarget(
             name: "jukebox2Tests",
             dependencies: ["jukebox2"]),

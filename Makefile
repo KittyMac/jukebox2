@@ -18,3 +18,4 @@ update:
 
 xcode:
 	swift package generate-xcodeproj
+	sed -i .backup 's/PLATFORM_SUPPORTS_PONYRT/PLATFORM_SUPPORTS_PONYRT_DISABLED/g' jukebox2.xcodeproj/project.pbxproj

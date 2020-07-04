@@ -1,1256 +1,1399 @@
 // !$*UTF8*$!
 {
-   archiveVersion = "1";
-   objectVersion = "46";
-   objects = {
-      "Flynn::Flynn" = {
-         isa = "PBXNativeTarget";
-         buildConfigurationList = "OBJ_51";
-         buildPhases = (
-            "OBJ_54",
-            "OBJ_62"
-         );
-         dependencies = (
-            "OBJ_64"
-         );
-         name = "Flynn";
-         productName = "Flynn";
-         productReference = "Flynn::Flynn::Product";
-         productType = "com.apple.product-type.framework";
-      };
-      "Flynn::Flynn::Product" = {
-         isa = "PBXFileReference";
-         path = "Flynn.framework";
-         sourceTree = "BUILT_PRODUCTS_DIR";
-      };
-      "Flynn::Pony" = {
-         isa = "PBXNativeTarget";
-         buildConfigurationList = "OBJ_72";
-         buildPhases = (
-            "OBJ_75",
-            "OBJ_87"
-         );
-         dependencies = (
-         );
-         name = "Pony";
-         productName = "Pony";
-         productReference = "Flynn::Pony::Product";
-         productType = "com.apple.product-type.framework";
-      };
-      "Flynn::Pony::Product" = {
-         isa = "PBXFileReference";
-         path = "Pony.framework";
-         sourceTree = "BUILT_PRODUCTS_DIR";
-      };
-      "Flynn::SwiftPMPackageDescription" = {
-         isa = "PBXNativeTarget";
-         buildConfigurationList = "OBJ_67";
-         buildPhases = (
-            "OBJ_70"
-         );
-         dependencies = (
-         );
-         name = "FlynnPackageDescription";
-         productName = "FlynnPackageDescription";
-         productType = "com.apple.product-type.framework";
-      };
-      "OBJ_1" = {
-         isa = "PBXProject";
-         attributes = {
-            LastSwiftMigration = "9999";
-            LastUpgradeCheck = "9999";
-         };
-         buildConfigurationList = "OBJ_2";
-         compatibilityVersion = "Xcode 3.2";
-         developmentRegion = "en";
-         hasScannedForEncodings = "0";
-         knownRegions = (
-            "en"
-         );
-         mainGroup = "OBJ_5";
-         productRefGroup = "OBJ_43";
-         projectDirPath = ".";
-         targets = (
-            "Flynn::Flynn",
-            "Flynn::SwiftPMPackageDescription",
-            "Flynn::Pony",
-            "jukebox2::jukebox2",
-            "jukebox2::SwiftPMPackageDescription",
-            "jukebox2::jukebox2PackageTests::ProductTarget",
-            "jukebox2::jukebox2Tests"
-         );
-      };
-      "OBJ_10" = {
-         isa = "PBXFileReference";
-         path = "lights.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_100" = {
-         isa = "PBXTargetDependency";
-         target = "Flynn::Pony";
-      };
-      "OBJ_102" = {
-         isa = "XCConfigurationList";
-         buildConfigurations = (
-            "OBJ_103",
-            "OBJ_104"
-         );
-         defaultConfigurationIsVisible = "0";
-         defaultConfigurationName = "Release";
-      };
-      "OBJ_103" = {
-         isa = "XCBuildConfiguration";
-         buildSettings = {
-            LD = "/usr/bin/true";
-            OTHER_SWIFT_FLAGS = (
-               "-swift-version",
-               "5",
-               "-I",
-               "$(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2",
-               "-package-description-version",
-               "5.2.0"
-            );
-            SWIFT_VERSION = "5.0";
-         };
-         name = "Debug";
-      };
-      "OBJ_104" = {
-         isa = "XCBuildConfiguration";
-         buildSettings = {
-            LD = "/usr/bin/true";
-            OTHER_SWIFT_FLAGS = (
-               "-swift-version",
-               "5",
-               "-I",
-               "$(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2",
-               "-package-description-version",
-               "5.2.0"
-            );
-            SWIFT_VERSION = "5.0";
-         };
-         name = "Release";
-      };
-      "OBJ_105" = {
-         isa = "PBXSourcesBuildPhase";
-         files = (
-            "OBJ_106"
-         );
-      };
-      "OBJ_106" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_6";
-      };
-      "OBJ_108" = {
-         isa = "XCConfigurationList";
-         buildConfigurations = (
-            "OBJ_109",
-            "OBJ_110"
-         );
-         defaultConfigurationIsVisible = "0";
-         defaultConfigurationName = "Release";
-      };
-      "OBJ_109" = {
-         isa = "XCBuildConfiguration";
-         buildSettings = {
-         };
-         name = "Debug";
-      };
-      "OBJ_11" = {
-         isa = "PBXFileReference";
-         path = "main.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_110" = {
-         isa = "XCBuildConfiguration";
-         buildSettings = {
-         };
-         name = "Release";
-      };
-      "OBJ_111" = {
-         isa = "PBXTargetDependency";
-         target = "jukebox2::jukebox2Tests";
-      };
-      "OBJ_113" = {
-         isa = "XCConfigurationList";
-         buildConfigurations = (
-            "OBJ_114",
-            "OBJ_115"
-         );
-         defaultConfigurationIsVisible = "0";
-         defaultConfigurationName = "Release";
-      };
-      "OBJ_114" = {
-         isa = "XCBuildConfiguration";
-         buildSettings = {
-            CLANG_ENABLE_MODULES = "YES";
-            EMBEDDED_CONTENT_CONTAINS_SWIFT = "YES";
-            FRAMEWORK_SEARCH_PATHS = (
-               "$(inherited)",
-               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
-            );
-            HEADER_SEARCH_PATHS = (
-               "$(inherited)",
-               "$(SRCROOT)/.build/checkouts/Flynn/Sources/Pony/include",
-               "$(SRCROOT)/jukebox2.xcodeproj/GeneratedModuleMap/Pony"
-            );
-            INFOPLIST_FILE = "jukebox2.xcodeproj/jukebox2Tests_Info.plist";
-            IPHONEOS_DEPLOYMENT_TARGET = "8.0";
-            LD_RUNPATH_SEARCH_PATHS = (
-               "$(inherited)",
-               "@loader_path/../Frameworks",
-               "@loader_path/Frameworks"
-            );
-            MACOSX_DEPLOYMENT_TARGET = "10.10";
-            OTHER_CFLAGS = (
-               "$(inherited)"
-            );
-            OTHER_LDFLAGS = (
-               "$(inherited)"
-            );
-            OTHER_SWIFT_FLAGS = (
-               "$(inherited)",
-               "-Xcc",
-               "-fmodule-map-file=$(SRCROOT)/jukebox2.xcodeproj/GeneratedModuleMap/Pony/module.modulemap"
-            );
-            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
-               "$(inherited)"
-            );
-            SWIFT_VERSION = "5.0";
-            TARGET_NAME = "jukebox2Tests";
-            TVOS_DEPLOYMENT_TARGET = "9.0";
-            WATCHOS_DEPLOYMENT_TARGET = "2.0";
-         };
-         name = "Debug";
-      };
-      "OBJ_115" = {
-         isa = "XCBuildConfiguration";
-         buildSettings = {
-            CLANG_ENABLE_MODULES = "YES";
-            EMBEDDED_CONTENT_CONTAINS_SWIFT = "YES";
-            FRAMEWORK_SEARCH_PATHS = (
-               "$(inherited)",
-               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
-            );
-            HEADER_SEARCH_PATHS = (
-               "$(inherited)",
-               "$(SRCROOT)/.build/checkouts/Flynn/Sources/Pony/include",
-               "$(SRCROOT)/jukebox2.xcodeproj/GeneratedModuleMap/Pony"
-            );
-            INFOPLIST_FILE = "jukebox2.xcodeproj/jukebox2Tests_Info.plist";
-            IPHONEOS_DEPLOYMENT_TARGET = "8.0";
-            LD_RUNPATH_SEARCH_PATHS = (
-               "$(inherited)",
-               "@loader_path/../Frameworks",
-               "@loader_path/Frameworks"
-            );
-            MACOSX_DEPLOYMENT_TARGET = "10.10";
-            OTHER_CFLAGS = (
-               "$(inherited)"
-            );
-            OTHER_LDFLAGS = (
-               "$(inherited)"
-            );
-            OTHER_SWIFT_FLAGS = (
-               "$(inherited)",
-               "-Xcc",
-               "-fmodule-map-file=$(SRCROOT)/jukebox2.xcodeproj/GeneratedModuleMap/Pony/module.modulemap"
-            );
-            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
-               "$(inherited)"
-            );
-            SWIFT_VERSION = "5.0";
-            TARGET_NAME = "jukebox2Tests";
-            TVOS_DEPLOYMENT_TARGET = "9.0";
-            WATCHOS_DEPLOYMENT_TARGET = "2.0";
-         };
-         name = "Release";
-      };
-      "OBJ_116" = {
-         isa = "PBXSourcesBuildPhase";
-         files = (
-            "OBJ_117",
-            "OBJ_118"
-         );
-      };
-      "OBJ_117" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_14";
-      };
-      "OBJ_118" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_15";
-      };
-      "OBJ_119" = {
-         isa = "PBXFrameworksBuildPhase";
-         files = (
-            "OBJ_120",
-            "OBJ_121"
-         );
-      };
-      "OBJ_12" = {
-         isa = "PBXGroup";
-         children = (
-            "OBJ_13"
-         );
-         name = "Tests";
-         path = "";
-         sourceTree = "SOURCE_ROOT";
-      };
-      "OBJ_120" = {
-         isa = "PBXBuildFile";
-         fileRef = "Flynn::Flynn::Product";
-      };
-      "OBJ_121" = {
-         isa = "PBXBuildFile";
-         fileRef = "Flynn::Pony::Product";
-      };
-      "OBJ_122" = {
-         isa = "PBXTargetDependency";
-         target = "jukebox2::jukebox2";
-      };
-      "OBJ_123" = {
-         isa = "PBXTargetDependency";
-         target = "Flynn::Flynn";
-      };
-      "OBJ_124" = {
-         isa = "PBXTargetDependency";
-         target = "Flynn::Pony";
-      };
-      "OBJ_13" = {
-         isa = "PBXGroup";
-         children = (
-            "OBJ_14",
-            "OBJ_15"
-         );
-         name = "jukebox2Tests";
-         path = "Tests/jukebox2Tests";
-         sourceTree = "SOURCE_ROOT";
-      };
-      "OBJ_14" = {
-         isa = "PBXFileReference";
-         path = "XCTestManifests.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_15" = {
-         isa = "PBXFileReference";
-         path = "jukebox2Tests.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_16" = {
-         isa = "PBXGroup";
-         children = (
-            "OBJ_17"
-         );
-         name = "Dependencies";
-         path = "";
-         sourceTree = "<group>";
-      };
-      "OBJ_17" = {
-         isa = "PBXGroup";
-         children = (
-            "OBJ_18",
-            "OBJ_26",
-            "OBJ_42"
-         );
-         name = "Flynn";
-         path = "";
-         sourceTree = "SOURCE_ROOT";
-      };
-      "OBJ_18" = {
-         isa = "PBXGroup";
-         children = (
-            "OBJ_19",
-            "OBJ_20",
-            "OBJ_21",
-            "OBJ_22",
-            "OBJ_23",
-            "OBJ_24",
-            "OBJ_25"
-         );
-         name = "Flynn";
-         path = ".build/checkouts/Flynn/Sources/Flynn";
-         sourceTree = "SOURCE_ROOT";
-      };
-      "OBJ_19" = {
-         isa = "PBXFileReference";
-         path = "Actor+DispatchQueue.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_2" = {
-         isa = "XCConfigurationList";
-         buildConfigurations = (
-            "OBJ_3",
-            "OBJ_4"
-         );
-         defaultConfigurationIsVisible = "0";
-         defaultConfigurationName = "Release";
-      };
-      "OBJ_20" = {
-         isa = "PBXFileReference";
-         path = "Actor+Pony.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_21" = {
-         isa = "PBXFileReference";
-         path = "Behavior+FastBlockCalls.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_22" = {
-         isa = "PBXFileReference";
-         path = "Behavior.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_23" = {
-         isa = "PBXFileReference";
-         path = "Extensions.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_24" = {
-         isa = "PBXFileReference";
-         path = "Flowable.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_25" = {
-         isa = "PBXFileReference";
-         path = "Flynn.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_26" = {
-         isa = "PBXGroup";
-         children = (
-            "OBJ_27",
-            "OBJ_28",
-            "OBJ_29",
-            "OBJ_30",
-            "OBJ_31",
-            "OBJ_32",
-            "OBJ_33",
-            "OBJ_34",
-            "OBJ_35",
-            "OBJ_36",
-            "OBJ_37",
-            "OBJ_38"
-         );
-         name = "Pony";
-         path = ".build/checkouts/Flynn/Sources/Pony";
-         sourceTree = "SOURCE_ROOT";
-      };
-      "OBJ_27" = {
-         isa = "PBXFileReference";
-         path = "actor.c";
-         sourceTree = "<group>";
-      };
-      "OBJ_28" = {
-         isa = "PBXFileReference";
-         path = "alloc.c";
-         sourceTree = "<group>";
-      };
-      "OBJ_29" = {
-         isa = "PBXFileReference";
-         path = "cpu_apple.c";
-         sourceTree = "<group>";
-      };
-      "OBJ_3" = {
-         isa = "XCBuildConfiguration";
-         buildSettings = {
-            CLANG_ENABLE_OBJC_ARC = "YES";
-            COMBINE_HIDPI_IMAGES = "YES";
-            COPY_PHASE_STRIP = "NO";
-            DEBUG_INFORMATION_FORMAT = "dwarf";
-            DYLIB_INSTALL_NAME_BASE = "@rpath";
-            ENABLE_NS_ASSERTIONS = "YES";
-            GCC_OPTIMIZATION_LEVEL = "0";
-            GCC_PREPROCESSOR_DEFINITIONS = (
-               "$(inherited)",
-               "SWIFT_PACKAGE=1",
-               "DEBUG=1"
-            );
-            MACOSX_DEPLOYMENT_TARGET = "10.10";
-            ONLY_ACTIVE_ARCH = "YES";
-            OTHER_SWIFT_FLAGS = (
-               "$(inherited)",
-               "-DXcode"
-            );
-            PRODUCT_NAME = "$(TARGET_NAME)";
-            SDKROOT = "macosx";
-            SUPPORTED_PLATFORMS = (
-               "macosx",
-               "iphoneos",
-               "iphonesimulator",
-               "appletvos",
-               "appletvsimulator",
-               "watchos",
-               "watchsimulator"
-            );
-            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
-               "$(inherited)",
-               "SWIFT_PACKAGE",
-               "DEBUG"
-            );
-            SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-            USE_HEADERMAP = "NO";
-         };
-         name = "Debug";
-      };
-      "OBJ_30" = {
-         isa = "PBXFileReference";
-         path = "cpu_linux.c";
-         sourceTree = "<group>";
-      };
-      "OBJ_31" = {
-         isa = "PBXFileReference";
-         path = "messageq.c";
-         sourceTree = "<group>";
-      };
-      "OBJ_32" = {
-         isa = "PBXFileReference";
-         path = "mpmcq.c";
-         sourceTree = "<group>";
-      };
-      "OBJ_33" = {
-         isa = "PBXFileReference";
-         path = "ponyrt.m";
-         sourceTree = "<group>";
-      };
-      "OBJ_34" = {
-         isa = "PBXFileReference";
-         path = "ponyrt_stubs.m";
-         sourceTree = "<group>";
-      };
-      "OBJ_35" = {
-         isa = "PBXFileReference";
-         path = "pool.c";
-         sourceTree = "<group>";
-      };
-      "OBJ_36" = {
-         isa = "PBXFileReference";
-         path = "scheduler.c";
-         sourceTree = "<group>";
-      };
-      "OBJ_37" = {
-         isa = "PBXFileReference";
-         path = "threads.m";
-         sourceTree = "<group>";
-      };
-      "OBJ_38" = {
-         isa = "PBXGroup";
-         children = (
-            "OBJ_39",
-            "OBJ_40",
-            "OBJ_41"
-         );
-         name = "include";
-         path = "include";
-         sourceTree = "<group>";
-      };
-      "OBJ_39" = {
-         isa = "PBXFileReference";
-         path = "pony.h";
-         sourceTree = "<group>";
-      };
-      "OBJ_4" = {
-         isa = "XCBuildConfiguration";
-         buildSettings = {
-            CLANG_ENABLE_OBJC_ARC = "YES";
-            COMBINE_HIDPI_IMAGES = "YES";
-            COPY_PHASE_STRIP = "YES";
-            DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-            DYLIB_INSTALL_NAME_BASE = "@rpath";
-            GCC_OPTIMIZATION_LEVEL = "s";
-            GCC_PREPROCESSOR_DEFINITIONS = (
-               "$(inherited)",
-               "SWIFT_PACKAGE=1"
-            );
-            MACOSX_DEPLOYMENT_TARGET = "10.10";
-            OTHER_SWIFT_FLAGS = (
-               "$(inherited)",
-               "-DXcode"
-            );
-            PRODUCT_NAME = "$(TARGET_NAME)";
-            SDKROOT = "macosx";
-            SUPPORTED_PLATFORMS = (
-               "macosx",
-               "iphoneos",
-               "iphonesimulator",
-               "appletvos",
-               "appletvsimulator",
-               "watchos",
-               "watchsimulator"
-            );
-            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
-               "$(inherited)",
-               "SWIFT_PACKAGE"
-            );
-            SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-            USE_HEADERMAP = "NO";
-         };
-         name = "Release";
-      };
-      "OBJ_40" = {
-         isa = "PBXFileReference";
-         path = "platform.h";
-         sourceTree = "<group>";
-      };
-      "OBJ_41" = {
-         isa = "PBXFileReference";
-         name = "module.modulemap";
-         path = "/home/rjbowli/Development/jukebox2/jukebox2.xcodeproj/GeneratedModuleMap/Pony/module.modulemap";
-         sourceTree = "<group>";
-      };
-      "OBJ_42" = {
-         isa = "PBXFileReference";
-         explicitFileType = "sourcecode.swift";
-         name = "Package.swift";
-         path = "/home/rjbowli/Development/jukebox2/.build/checkouts/Flynn/Package.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_43" = {
-         isa = "PBXGroup";
-         children = (
-            "jukebox2::jukebox2Tests::Product",
-            "jukebox2::jukebox2::Product",
-            "Flynn::Flynn::Product",
-            "Flynn::Pony::Product"
-         );
-         name = "Products";
-         path = "";
-         sourceTree = "BUILT_PRODUCTS_DIR";
-      };
-      "OBJ_48" = {
-         isa = "PBXFileReference";
-         path = "README.md";
-         sourceTree = "<group>";
-      };
-      "OBJ_49" = {
-         isa = "PBXFileReference";
-         path = "Makefile";
-         sourceTree = "<group>";
-      };
-      "OBJ_5" = {
-         isa = "PBXGroup";
-         children = (
-            "OBJ_6",
-            "OBJ_7",
-            "OBJ_12",
-            "OBJ_16",
-            "OBJ_43",
-            "OBJ_48",
-            "OBJ_49"
-         );
-         path = "";
-         sourceTree = "<group>";
-      };
-      "OBJ_51" = {
-         isa = "XCConfigurationList";
-         buildConfigurations = (
-            "OBJ_52",
-            "OBJ_53"
-         );
-         defaultConfigurationIsVisible = "0";
-         defaultConfigurationName = "Release";
-      };
-      "OBJ_52" = {
-         isa = "XCBuildConfiguration";
-         buildSettings = {
-            ENABLE_TESTABILITY = "YES";
-            FRAMEWORK_SEARCH_PATHS = (
-               "$(inherited)",
-               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
-            );
-            GCC_PREPROCESSOR_DEFINITIONS = (
-               "PLATFORM_SUPPORTS_PONYRT",
-               "PLATFORM_SUPPORTS_PONYRT"
-            );
-            HEADER_SEARCH_PATHS = (
-               "$(inherited)",
-               "$(SRCROOT)/.build/checkouts/Flynn/Sources/Pony/include",
-               "$(SRCROOT)/jukebox2.xcodeproj/GeneratedModuleMap/Pony"
-            );
-            INFOPLIST_FILE = "jukebox2.xcodeproj/Flynn_Info.plist";
-            IPHONEOS_DEPLOYMENT_TARGET = "9.0";
-            LD_RUNPATH_SEARCH_PATHS = (
-               "$(inherited)",
-               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx"
-            );
-            MACOSX_DEPLOYMENT_TARGET = "10.10";
-            OTHER_CFLAGS = (
-               "$(inherited)"
-            );
-            OTHER_LDFLAGS = (
-               "$(inherited)"
-            );
-            OTHER_SWIFT_FLAGS = (
-               "$(inherited)",
-               "-Xcc",
-               "-fmodule-map-file=$(SRCROOT)/jukebox2.xcodeproj/GeneratedModuleMap/Pony/module.modulemap"
-            );
-            PRODUCT_BUNDLE_IDENTIFIER = "Flynn";
-            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-            SKIP_INSTALL = "YES";
-            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
-               "$(inherited)",
-               "PLATFORM_SUPPORTS_PONYRT"
-            );
-            SWIFT_VERSION = "5.0";
-            TARGET_NAME = "Flynn";
-            TVOS_DEPLOYMENT_TARGET = "9.0";
-            WATCHOS_DEPLOYMENT_TARGET = "2.0";
-         };
-         name = "Debug";
-      };
-      "OBJ_53" = {
-         isa = "XCBuildConfiguration";
-         buildSettings = {
-            ENABLE_TESTABILITY = "YES";
-            FRAMEWORK_SEARCH_PATHS = (
-               "$(inherited)",
-               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
-            );
-            GCC_PREPROCESSOR_DEFINITIONS = (
-               "PLATFORM_SUPPORTS_PONYRT",
-               "PLATFORM_SUPPORTS_PONYRT"
-            );
-            HEADER_SEARCH_PATHS = (
-               "$(inherited)",
-               "$(SRCROOT)/.build/checkouts/Flynn/Sources/Pony/include",
-               "$(SRCROOT)/jukebox2.xcodeproj/GeneratedModuleMap/Pony"
-            );
-            INFOPLIST_FILE = "jukebox2.xcodeproj/Flynn_Info.plist";
-            IPHONEOS_DEPLOYMENT_TARGET = "9.0";
-            LD_RUNPATH_SEARCH_PATHS = (
-               "$(inherited)",
-               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx"
-            );
-            MACOSX_DEPLOYMENT_TARGET = "10.10";
-            OTHER_CFLAGS = (
-               "$(inherited)"
-            );
-            OTHER_LDFLAGS = (
-               "$(inherited)"
-            );
-            OTHER_SWIFT_FLAGS = (
-               "$(inherited)",
-               "-Xcc",
-               "-fmodule-map-file=$(SRCROOT)/jukebox2.xcodeproj/GeneratedModuleMap/Pony/module.modulemap"
-            );
-            PRODUCT_BUNDLE_IDENTIFIER = "Flynn";
-            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-            SKIP_INSTALL = "YES";
-            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
-               "$(inherited)",
-               "PLATFORM_SUPPORTS_PONYRT"
-            );
-            SWIFT_VERSION = "5.0";
-            TARGET_NAME = "Flynn";
-            TVOS_DEPLOYMENT_TARGET = "9.0";
-            WATCHOS_DEPLOYMENT_TARGET = "2.0";
-         };
-         name = "Release";
-      };
-      "OBJ_54" = {
-         isa = "PBXSourcesBuildPhase";
-         files = (
-            "OBJ_55",
-            "OBJ_56",
-            "OBJ_57",
-            "OBJ_58",
-            "OBJ_59",
-            "OBJ_60",
-            "OBJ_61"
-         );
-      };
-      "OBJ_55" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_19";
-      };
-      "OBJ_56" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_20";
-      };
-      "OBJ_57" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_21";
-      };
-      "OBJ_58" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_22";
-      };
-      "OBJ_59" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_23";
-      };
-      "OBJ_6" = {
-         isa = "PBXFileReference";
-         explicitFileType = "sourcecode.swift";
-         path = "Package.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_60" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_24";
-      };
-      "OBJ_61" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_25";
-      };
-      "OBJ_62" = {
-         isa = "PBXFrameworksBuildPhase";
-         files = (
-            "OBJ_63"
-         );
-      };
-      "OBJ_63" = {
-         isa = "PBXBuildFile";
-         fileRef = "Flynn::Pony::Product";
-      };
-      "OBJ_64" = {
-         isa = "PBXTargetDependency";
-         target = "Flynn::Pony";
-      };
-      "OBJ_67" = {
-         isa = "XCConfigurationList";
-         buildConfigurations = (
-            "OBJ_68",
-            "OBJ_69"
-         );
-         defaultConfigurationIsVisible = "0";
-         defaultConfigurationName = "Release";
-      };
-      "OBJ_68" = {
-         isa = "XCBuildConfiguration";
-         buildSettings = {
-            LD = "/usr/bin/true";
-            OTHER_SWIFT_FLAGS = (
-               "-swift-version",
-               "5",
-               "-I",
-               "$(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2",
-               "-package-description-version",
-               "5.0.0"
-            );
-            SWIFT_VERSION = "5.0";
-         };
-         name = "Debug";
-      };
-      "OBJ_69" = {
-         isa = "XCBuildConfiguration";
-         buildSettings = {
-            LD = "/usr/bin/true";
-            OTHER_SWIFT_FLAGS = (
-               "-swift-version",
-               "5",
-               "-I",
-               "$(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2",
-               "-package-description-version",
-               "5.0.0"
-            );
-            SWIFT_VERSION = "5.0";
-         };
-         name = "Release";
-      };
-      "OBJ_7" = {
-         isa = "PBXGroup";
-         children = (
-            "OBJ_8"
-         );
-         name = "Sources";
-         path = "";
-         sourceTree = "SOURCE_ROOT";
-      };
-      "OBJ_70" = {
-         isa = "PBXSourcesBuildPhase";
-         files = (
-            "OBJ_71"
-         );
-      };
-      "OBJ_71" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_42";
-      };
-      "OBJ_72" = {
-         isa = "XCConfigurationList";
-         buildConfigurations = (
-            "OBJ_73",
-            "OBJ_74"
-         );
-         defaultConfigurationIsVisible = "0";
-         defaultConfigurationName = "Release";
-      };
-      "OBJ_73" = {
-         isa = "XCBuildConfiguration";
-         buildSettings = {
-            DEFINES_MODULE = "NO";
-            ENABLE_TESTABILITY = "YES";
-            FRAMEWORK_SEARCH_PATHS = (
-               "$(inherited)",
-               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
-            );
-            GCC_PREPROCESSOR_DEFINITIONS = (
-               "PLATFORM_SUPPORTS_PONYRT",
-               "PLATFORM_SUPPORTS_PONYRT"
-            );
-            HEADER_SEARCH_PATHS = (
-               "$(inherited)",
-               "$(SRCROOT)/.build/checkouts/Flynn/Sources/Pony/include"
-            );
-            INFOPLIST_FILE = "jukebox2.xcodeproj/Pony_Info.plist";
-            IPHONEOS_DEPLOYMENT_TARGET = "9.0";
-            LD_RUNPATH_SEARCH_PATHS = (
-               "$(inherited)",
-               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx"
-            );
-            MACOSX_DEPLOYMENT_TARGET = "10.10";
-            OTHER_CFLAGS = (
-               "$(inherited)"
-            );
-            OTHER_LDFLAGS = (
-               "$(inherited)"
-            );
-            OTHER_SWIFT_FLAGS = (
-               "$(inherited)"
-            );
-            PRODUCT_BUNDLE_IDENTIFIER = "Pony";
-            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-            SKIP_INSTALL = "YES";
-            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
-               "$(inherited)"
-            );
-            TARGET_NAME = "Pony";
-            TVOS_DEPLOYMENT_TARGET = "9.0";
-            WATCHOS_DEPLOYMENT_TARGET = "2.0";
-         };
-         name = "Debug";
-      };
-      "OBJ_74" = {
-         isa = "XCBuildConfiguration";
-         buildSettings = {
-            DEFINES_MODULE = "NO";
-            ENABLE_TESTABILITY = "YES";
-            FRAMEWORK_SEARCH_PATHS = (
-               "$(inherited)",
-               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
-            );
-            GCC_PREPROCESSOR_DEFINITIONS = (
-               "PLATFORM_SUPPORTS_PONYRT",
-               "PLATFORM_SUPPORTS_PONYRT"
-            );
-            HEADER_SEARCH_PATHS = (
-               "$(inherited)",
-               "$(SRCROOT)/.build/checkouts/Flynn/Sources/Pony/include"
-            );
-            INFOPLIST_FILE = "jukebox2.xcodeproj/Pony_Info.plist";
-            IPHONEOS_DEPLOYMENT_TARGET = "9.0";
-            LD_RUNPATH_SEARCH_PATHS = (
-               "$(inherited)",
-               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx"
-            );
-            MACOSX_DEPLOYMENT_TARGET = "10.10";
-            OTHER_CFLAGS = (
-               "$(inherited)"
-            );
-            OTHER_LDFLAGS = (
-               "$(inherited)"
-            );
-            OTHER_SWIFT_FLAGS = (
-               "$(inherited)"
-            );
-            PRODUCT_BUNDLE_IDENTIFIER = "Pony";
-            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-            SKIP_INSTALL = "YES";
-            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
-               "$(inherited)"
-            );
-            TARGET_NAME = "Pony";
-            TVOS_DEPLOYMENT_TARGET = "9.0";
-            WATCHOS_DEPLOYMENT_TARGET = "2.0";
-         };
-         name = "Release";
-      };
-      "OBJ_75" = {
-         isa = "PBXSourcesBuildPhase";
-         files = (
-            "OBJ_76",
-            "OBJ_77",
-            "OBJ_78",
-            "OBJ_79",
-            "OBJ_80",
-            "OBJ_81",
-            "OBJ_82",
-            "OBJ_83",
-            "OBJ_84",
-            "OBJ_85",
-            "OBJ_86"
-         );
-      };
-      "OBJ_76" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_27";
-      };
-      "OBJ_77" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_28";
-      };
-      "OBJ_78" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_29";
-      };
-      "OBJ_79" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_30";
-      };
-      "OBJ_8" = {
-         isa = "PBXGroup";
-         children = (
-            "OBJ_9",
-            "OBJ_10",
-            "OBJ_11"
-         );
-         name = "jukebox2";
-         path = "Sources/jukebox2";
-         sourceTree = "SOURCE_ROOT";
-      };
-      "OBJ_80" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_31";
-      };
-      "OBJ_81" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_32";
-      };
-      "OBJ_82" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_33";
-      };
-      "OBJ_83" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_34";
-      };
-      "OBJ_84" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_35";
-      };
-      "OBJ_85" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_36";
-      };
-      "OBJ_86" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_37";
-      };
-      "OBJ_87" = {
-         isa = "PBXFrameworksBuildPhase";
-         files = (
-         );
-      };
-      "OBJ_89" = {
-         isa = "XCConfigurationList";
-         buildConfigurations = (
-            "OBJ_90",
-            "OBJ_91"
-         );
-         defaultConfigurationIsVisible = "0";
-         defaultConfigurationName = "Release";
-      };
-      "OBJ_9" = {
-         isa = "PBXFileReference";
-         path = "audio.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_90" = {
-         isa = "XCBuildConfiguration";
-         buildSettings = {
-            FRAMEWORK_SEARCH_PATHS = (
-               "$(inherited)",
-               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
-            );
-            HEADER_SEARCH_PATHS = (
-               "$(inherited)",
-               "$(SRCROOT)/.build/checkouts/Flynn/Sources/Pony/include",
-               "$(SRCROOT)/jukebox2.xcodeproj/GeneratedModuleMap/Pony"
-            );
-            INFOPLIST_FILE = "jukebox2.xcodeproj/jukebox2_Info.plist";
-            IPHONEOS_DEPLOYMENT_TARGET = "8.0";
-            LD_RUNPATH_SEARCH_PATHS = (
-               "$(inherited)",
-               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
-               "@executable_path"
-            );
-            MACOSX_DEPLOYMENT_TARGET = "10.10";
-            OTHER_CFLAGS = (
-               "$(inherited)"
-            );
-            OTHER_LDFLAGS = (
-               "$(inherited)"
-            );
-            OTHER_SWIFT_FLAGS = (
-               "$(inherited)",
-               "-Xcc",
-               "-fmodule-map-file=$(SRCROOT)/jukebox2.xcodeproj/GeneratedModuleMap/Pony/module.modulemap"
-            );
-            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
-               "$(inherited)"
-            );
-            SWIFT_FORCE_DYNAMIC_LINK_STDLIB = "YES";
-            SWIFT_FORCE_STATIC_LINK_STDLIB = "NO";
-            SWIFT_VERSION = "5.0";
-            TARGET_NAME = "jukebox2";
-            TVOS_DEPLOYMENT_TARGET = "9.0";
-            WATCHOS_DEPLOYMENT_TARGET = "2.0";
-         };
-         name = "Debug";
-      };
-      "OBJ_91" = {
-         isa = "XCBuildConfiguration";
-         buildSettings = {
-            FRAMEWORK_SEARCH_PATHS = (
-               "$(inherited)",
-               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
-            );
-            HEADER_SEARCH_PATHS = (
-               "$(inherited)",
-               "$(SRCROOT)/.build/checkouts/Flynn/Sources/Pony/include",
-               "$(SRCROOT)/jukebox2.xcodeproj/GeneratedModuleMap/Pony"
-            );
-            INFOPLIST_FILE = "jukebox2.xcodeproj/jukebox2_Info.plist";
-            IPHONEOS_DEPLOYMENT_TARGET = "8.0";
-            LD_RUNPATH_SEARCH_PATHS = (
-               "$(inherited)",
-               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
-               "@executable_path"
-            );
-            MACOSX_DEPLOYMENT_TARGET = "10.10";
-            OTHER_CFLAGS = (
-               "$(inherited)"
-            );
-            OTHER_LDFLAGS = (
-               "$(inherited)"
-            );
-            OTHER_SWIFT_FLAGS = (
-               "$(inherited)",
-               "-Xcc",
-               "-fmodule-map-file=$(SRCROOT)/jukebox2.xcodeproj/GeneratedModuleMap/Pony/module.modulemap"
-            );
-            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
-               "$(inherited)"
-            );
-            SWIFT_FORCE_DYNAMIC_LINK_STDLIB = "YES";
-            SWIFT_FORCE_STATIC_LINK_STDLIB = "NO";
-            SWIFT_VERSION = "5.0";
-            TARGET_NAME = "jukebox2";
-            TVOS_DEPLOYMENT_TARGET = "9.0";
-            WATCHOS_DEPLOYMENT_TARGET = "2.0";
-         };
-         name = "Release";
-      };
-      "OBJ_92" = {
-         isa = "PBXSourcesBuildPhase";
-         files = (
-            "OBJ_93",
-            "OBJ_94",
-            "OBJ_95"
-         );
-      };
-      "OBJ_93" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_9";
-      };
-      "OBJ_94" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_10";
-      };
-      "OBJ_95" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_11";
-      };
-      "OBJ_96" = {
-         isa = "PBXFrameworksBuildPhase";
-         files = (
-            "OBJ_97",
-            "OBJ_98"
-         );
-      };
-      "OBJ_97" = {
-         isa = "PBXBuildFile";
-         fileRef = "Flynn::Flynn::Product";
-      };
-      "OBJ_98" = {
-         isa = "PBXBuildFile";
-         fileRef = "Flynn::Pony::Product";
-      };
-      "OBJ_99" = {
-         isa = "PBXTargetDependency";
-         target = "Flynn::Flynn";
-      };
-      "jukebox2::SwiftPMPackageDescription" = {
-         isa = "PBXNativeTarget";
-         buildConfigurationList = "OBJ_102";
-         buildPhases = (
-            "OBJ_105"
-         );
-         dependencies = (
-         );
-         name = "jukebox2PackageDescription";
-         productName = "jukebox2PackageDescription";
-         productType = "com.apple.product-type.framework";
-      };
-      "jukebox2::jukebox2" = {
-         isa = "PBXNativeTarget";
-         buildConfigurationList = "OBJ_89";
-         buildPhases = (
-            "OBJ_92",
-            "OBJ_96"
-         );
-         dependencies = (
-            "OBJ_99",
-            "OBJ_100"
-         );
-         name = "jukebox2";
-         productName = "jukebox2";
-         productReference = "jukebox2::jukebox2::Product";
-         productType = "com.apple.product-type.tool";
-      };
-      "jukebox2::jukebox2::Product" = {
-         isa = "PBXFileReference";
-         path = "jukebox2";
-         sourceTree = "BUILT_PRODUCTS_DIR";
-      };
-      "jukebox2::jukebox2PackageTests::ProductTarget" = {
-         isa = "PBXAggregateTarget";
-         buildConfigurationList = "OBJ_108";
-         buildPhases = (
-         );
-         dependencies = (
-            "OBJ_111"
-         );
-         name = "jukebox2PackageTests";
-         productName = "jukebox2PackageTests";
-      };
-      "jukebox2::jukebox2Tests" = {
-         isa = "PBXNativeTarget";
-         buildConfigurationList = "OBJ_113";
-         buildPhases = (
-            "OBJ_116",
-            "OBJ_119"
-         );
-         dependencies = (
-            "OBJ_122",
-            "OBJ_123",
-            "OBJ_124"
-         );
-         name = "jukebox2Tests";
-         productName = "jukebox2Tests";
-         productReference = "jukebox2::jukebox2Tests::Product";
-         productType = "com.apple.product-type.bundle.unit-test";
-      };
-      "jukebox2::jukebox2Tests::Product" = {
-         isa = "PBXFileReference";
-         path = "jukebox2Tests.xctest";
-         sourceTree = "BUILT_PRODUCTS_DIR";
-      };
-   };
-   rootObject = "OBJ_1";
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		"jukebox2::jukebox2PackageTests::ProductTarget" /* jukebox2PackageTests */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = OBJ_193 /* Build configuration list for PBXAggregateTarget "jukebox2PackageTests" */;
+			buildPhases = (
+			);
+			dependencies = (
+				OBJ_196 /* PBXTargetDependency */,
+			);
+			name = jukebox2PackageTests;
+			productName = jukebox2PackageTests;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		OBJ_100 /* ArgumentHelp.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_22 /* ArgumentHelp.swift */; };
+		OBJ_101 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_23 /* Errors.swift */; };
+		OBJ_102 /* Flag.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_24 /* Flag.swift */; };
+		OBJ_103 /* NameSpecification.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_25 /* NameSpecification.swift */; };
+		OBJ_104 /* Option.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_26 /* Option.swift */; };
+		OBJ_105 /* OptionGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_27 /* OptionGroup.swift */; };
+		OBJ_106 /* CommandConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_29 /* CommandConfiguration.swift */; };
+		OBJ_107 /* EnumerableFlag.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_30 /* EnumerableFlag.swift */; };
+		OBJ_108 /* ExpressibleByArgument.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_31 /* ExpressibleByArgument.swift */; };
+		OBJ_109 /* ParsableArguments.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_32 /* ParsableArguments.swift */; };
+		OBJ_110 /* ParsableArgumentsValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_33 /* ParsableArgumentsValidation.swift */; };
+		OBJ_111 /* ParsableCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_34 /* ParsableCommand.swift */; };
+		OBJ_112 /* ArgumentDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_36 /* ArgumentDecoder.swift */; };
+		OBJ_113 /* ArgumentDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_37 /* ArgumentDefinition.swift */; };
+		OBJ_114 /* ArgumentSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_38 /* ArgumentSet.swift */; };
+		OBJ_115 /* ArgumentSetSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_39 /* ArgumentSetSequence.swift */; };
+		OBJ_116 /* CommandParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_40 /* CommandParser.swift */; };
+		OBJ_117 /* InputOrigin.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_41 /* InputOrigin.swift */; };
+		OBJ_118 /* Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_42 /* Name.swift */; };
+		OBJ_119 /* Parsed.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_43 /* Parsed.swift */; };
+		OBJ_120 /* ParsedValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_44 /* ParsedValues.swift */; };
+		OBJ_121 /* ParserError.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_45 /* ParserError.swift */; };
+		OBJ_122 /* SplitArguments.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_46 /* SplitArguments.swift */; };
+		OBJ_123 /* HelpCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_48 /* HelpCommand.swift */; };
+		OBJ_124 /* HelpGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_49 /* HelpGenerator.swift */; };
+		OBJ_125 /* MessageInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_50 /* MessageInfo.swift */; };
+		OBJ_126 /* UsageGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_51 /* UsageGenerator.swift */; };
+		OBJ_127 /* SequenceExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_53 /* SequenceExtensions.swift */; };
+		OBJ_128 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_54 /* StringExtensions.swift */; };
+		OBJ_129 /* Tree.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_55 /* Tree.swift */; };
+		OBJ_136 /* Behavior+FastBlockCalls.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_59 /* Behavior+FastBlockCalls.swift */; };
+		OBJ_137 /* Behavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_60 /* Behavior.swift */; };
+		OBJ_138 /* Actor+DispatchQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_62 /* Actor+DispatchQueue.swift */; };
+		OBJ_139 /* Flynn+DispatchQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_63 /* Flynn+DispatchQueue.swift */; };
+		OBJ_140 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_64 /* Extensions.swift */; };
+		OBJ_141 /* Flowable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_65 /* Flowable.swift */; };
+		OBJ_142 /* Actor+Pony.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_67 /* Actor+Pony.swift */; };
+		OBJ_143 /* Flynn+Pony.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_68 /* Flynn+Pony.swift */; };
+		OBJ_145 /* Pony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Flynn::Pony::Product" /* Pony.framework */; };
+		OBJ_153 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_85 /* Package.swift */; };
+		OBJ_158 /* actor.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_70 /* actor.c */; };
+		OBJ_159 /* alloc.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_71 /* alloc.c */; };
+		OBJ_160 /* cpu_apple.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_72 /* cpu_apple.c */; };
+		OBJ_161 /* cpu_linux.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_73 /* cpu_linux.c */; };
+		OBJ_162 /* messageq.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_74 /* messageq.c */; };
+		OBJ_163 /* mpmcq.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_75 /* mpmcq.c */; };
+		OBJ_164 /* ponyrt.m in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_76 /* ponyrt.m */; };
+		OBJ_165 /* ponyrt_stubs.m in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_77 /* ponyrt_stubs.m */; };
+		OBJ_166 /* pool.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_78 /* pool.c */; };
+		OBJ_167 /* scheduler.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_79 /* scheduler.c */; };
+		OBJ_168 /* threads.m in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_80 /* threads.m */; };
+		OBJ_175 /* AudioIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* AudioIn.swift */; };
+		OBJ_176 /* AudioOut.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* AudioOut.swift */; };
+		OBJ_177 /* Lights.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* Lights.swift */; };
+		OBJ_178 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* main.swift */; };
+		OBJ_180 /* ArgumentParser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "swift-argument-parser::ArgumentParser::Product" /* ArgumentParser.framework */; };
+		OBJ_181 /* Flynn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Flynn::Flynn::Product" /* Flynn.framework */; };
+		OBJ_182 /* Pony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Flynn::Pony::Product" /* Pony.framework */; };
+		OBJ_191 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
+		OBJ_202 /* XCTestManifests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_15 /* XCTestManifests.swift */; };
+		OBJ_203 /* jukebox2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_16 /* jukebox2Tests.swift */; };
+		OBJ_205 /* ArgumentParser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "swift-argument-parser::ArgumentParser::Product" /* ArgumentParser.framework */; };
+		OBJ_206 /* Flynn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Flynn::Flynn::Product" /* Flynn.framework */; };
+		OBJ_207 /* Pony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Flynn::Pony::Product" /* Pony.framework */; };
+		OBJ_217 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_56 /* Package.swift */; };
+		OBJ_99 /* Argument.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_21 /* Argument.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		460E5B2224B00110005C6BFE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "swift-argument-parser::ArgumentParser";
+			remoteInfo = ArgumentParser;
+		};
+		460E5B2324B00110005C6BFE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Flynn::Flynn";
+			remoteInfo = Flynn;
+		};
+		460E5B2424B00110005C6BFE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Flynn::Pony";
+			remoteInfo = Pony;
+		};
+		460E5B2524B00110005C6BFE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Flynn::Pony";
+			remoteInfo = Pony;
+		};
+		460E5B2624B00111005C6BFE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "jukebox2::jukebox2";
+			remoteInfo = jukebox2;
+		};
+		460E5B2724B00111005C6BFE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "swift-argument-parser::ArgumentParser";
+			remoteInfo = ArgumentParser;
+		};
+		460E5B2824B00111005C6BFE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Flynn::Flynn";
+			remoteInfo = Flynn;
+		};
+		460E5B2924B00111005C6BFE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Flynn::Pony";
+			remoteInfo = Pony;
+		};
+		460E5B2A24B00113005C6BFE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "jukebox2::jukebox2Tests";
+			remoteInfo = jukebox2Tests;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		"Flynn::Flynn::Product" /* Flynn.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Flynn.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"Flynn::Pony::Product" /* Pony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Pony.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		OBJ_10 /* AudioOut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioOut.swift; sourceTree = "<group>"; };
+		OBJ_11 /* Lights.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lights.swift; sourceTree = "<group>"; };
+		OBJ_12 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		OBJ_15 /* XCTestManifests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestManifests.swift; sourceTree = "<group>"; };
+		OBJ_16 /* jukebox2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = jukebox2Tests.swift; sourceTree = "<group>"; };
+		OBJ_21 /* Argument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Argument.swift; sourceTree = "<group>"; };
+		OBJ_22 /* ArgumentHelp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArgumentHelp.swift; sourceTree = "<group>"; };
+		OBJ_23 /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		OBJ_24 /* Flag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flag.swift; sourceTree = "<group>"; };
+		OBJ_25 /* NameSpecification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameSpecification.swift; sourceTree = "<group>"; };
+		OBJ_26 /* Option.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Option.swift; sourceTree = "<group>"; };
+		OBJ_27 /* OptionGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionGroup.swift; sourceTree = "<group>"; };
+		OBJ_29 /* CommandConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandConfiguration.swift; sourceTree = "<group>"; };
+		OBJ_30 /* EnumerableFlag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumerableFlag.swift; sourceTree = "<group>"; };
+		OBJ_31 /* ExpressibleByArgument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpressibleByArgument.swift; sourceTree = "<group>"; };
+		OBJ_32 /* ParsableArguments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParsableArguments.swift; sourceTree = "<group>"; };
+		OBJ_33 /* ParsableArgumentsValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParsableArgumentsValidation.swift; sourceTree = "<group>"; };
+		OBJ_34 /* ParsableCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParsableCommand.swift; sourceTree = "<group>"; };
+		OBJ_36 /* ArgumentDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArgumentDecoder.swift; sourceTree = "<group>"; };
+		OBJ_37 /* ArgumentDefinition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArgumentDefinition.swift; sourceTree = "<group>"; };
+		OBJ_38 /* ArgumentSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArgumentSet.swift; sourceTree = "<group>"; };
+		OBJ_39 /* ArgumentSetSequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArgumentSetSequence.swift; sourceTree = "<group>"; };
+		OBJ_40 /* CommandParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandParser.swift; sourceTree = "<group>"; };
+		OBJ_41 /* InputOrigin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputOrigin.swift; sourceTree = "<group>"; };
+		OBJ_42 /* Name.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Name.swift; sourceTree = "<group>"; };
+		OBJ_43 /* Parsed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parsed.swift; sourceTree = "<group>"; };
+		OBJ_44 /* ParsedValues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParsedValues.swift; sourceTree = "<group>"; };
+		OBJ_45 /* ParserError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParserError.swift; sourceTree = "<group>"; };
+		OBJ_46 /* SplitArguments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitArguments.swift; sourceTree = "<group>"; };
+		OBJ_48 /* HelpCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpCommand.swift; sourceTree = "<group>"; };
+		OBJ_49 /* HelpGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpGenerator.swift; sourceTree = "<group>"; };
+		OBJ_50 /* MessageInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageInfo.swift; sourceTree = "<group>"; };
+		OBJ_51 /* UsageGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsageGenerator.swift; sourceTree = "<group>"; };
+		OBJ_53 /* SequenceExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SequenceExtensions.swift; sourceTree = "<group>"; };
+		OBJ_54 /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		OBJ_55 /* Tree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tree.swift; sourceTree = "<group>"; };
+		OBJ_56 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Volumes/Development/Development/chimerasw2/jukebox2/.build/checkouts/swift-argument-parser/Package.swift"; sourceTree = "<group>"; };
+		OBJ_59 /* Behavior+FastBlockCalls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Behavior+FastBlockCalls.swift"; sourceTree = "<group>"; };
+		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		OBJ_60 /* Behavior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Behavior.swift; sourceTree = "<group>"; };
+		OBJ_62 /* Actor+DispatchQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Actor+DispatchQueue.swift"; sourceTree = "<group>"; };
+		OBJ_63 /* Flynn+DispatchQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Flynn+DispatchQueue.swift"; sourceTree = "<group>"; };
+		OBJ_64 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		OBJ_65 /* Flowable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flowable.swift; sourceTree = "<group>"; };
+		OBJ_67 /* Actor+Pony.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Actor+Pony.swift"; sourceTree = "<group>"; };
+		OBJ_68 /* Flynn+Pony.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Flynn+Pony.swift"; sourceTree = "<group>"; };
+		OBJ_70 /* actor.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = actor.c; sourceTree = "<group>"; };
+		OBJ_71 /* alloc.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = alloc.c; sourceTree = "<group>"; };
+		OBJ_72 /* cpu_apple.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = cpu_apple.c; sourceTree = "<group>"; };
+		OBJ_73 /* cpu_linux.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = cpu_linux.c; sourceTree = "<group>"; };
+		OBJ_74 /* messageq.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = messageq.c; sourceTree = "<group>"; };
+		OBJ_75 /* mpmcq.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = mpmcq.c; sourceTree = "<group>"; };
+		OBJ_76 /* ponyrt.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ponyrt.m; sourceTree = "<group>"; };
+		OBJ_77 /* ponyrt_stubs.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ponyrt_stubs.m; sourceTree = "<group>"; };
+		OBJ_78 /* pool.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = pool.c; sourceTree = "<group>"; };
+		OBJ_79 /* scheduler.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = scheduler.c; sourceTree = "<group>"; };
+		OBJ_80 /* threads.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = threads.m; sourceTree = "<group>"; };
+		OBJ_82 /* platform.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = platform.h; sourceTree = "<group>"; };
+		OBJ_83 /* pony.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pony.h; sourceTree = "<group>"; };
+		OBJ_84 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; name = module.modulemap; path = /Volumes/Development/Development/chimerasw2/jukebox2/jukebox2.xcodeproj/GeneratedModuleMap/Pony/module.modulemap; sourceTree = "<group>"; };
+		OBJ_85 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = /Volumes/Development/Development/chimerasw2/jukebox2/.build/checkouts/Flynn/Package.swift; sourceTree = "<group>"; };
+		OBJ_9 /* AudioIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioIn.swift; sourceTree = "<group>"; };
+		OBJ_92 /* Makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		OBJ_93 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		"jukebox2::jukebox2::Product" /* jukebox2 */ = {isa = PBXFileReference; lastKnownFileType = text; path = jukebox2; sourceTree = BUILT_PRODUCTS_DIR; };
+		"jukebox2::jukebox2Tests::Product" /* jukebox2Tests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = jukebox2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		"swift-argument-parser::ArgumentParser::Product" /* ArgumentParser.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ArgumentParser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		OBJ_130 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_144 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_145 /* Pony.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_169 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_179 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_180 /* ArgumentParser.framework in Frameworks */,
+				OBJ_181 /* Flynn.framework in Frameworks */,
+				OBJ_182 /* Pony.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_204 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_205 /* ArgumentParser.framework in Frameworks */,
+				OBJ_206 /* Flynn.framework in Frameworks */,
+				OBJ_207 /* Pony.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		OBJ_13 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_14 /* jukebox2Tests */,
+			);
+			name = Tests;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_14 /* jukebox2Tests */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_15 /* XCTestManifests.swift */,
+				OBJ_16 /* jukebox2Tests.swift */,
+			);
+			name = jukebox2Tests;
+			path = Tests/jukebox2Tests;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_17 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_18 /* swift-argument-parser 0.2.0 */,
+				OBJ_57 /* Flynn */,
+			);
+			name = Dependencies;
+			sourceTree = "<group>";
+		};
+		OBJ_18 /* swift-argument-parser 0.2.0 */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_19 /* ArgumentParser */,
+				OBJ_56 /* Package.swift */,
+			);
+			name = "swift-argument-parser 0.2.0";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_19 /* ArgumentParser */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_20 /* Parsable Properties */,
+				OBJ_28 /* Parsable Types */,
+				OBJ_35 /* Parsing */,
+				OBJ_47 /* Usage */,
+				OBJ_52 /* Utilities */,
+			);
+			name = ArgumentParser;
+			path = ".build/checkouts/swift-argument-parser/Sources/ArgumentParser";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_20 /* Parsable Properties */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_21 /* Argument.swift */,
+				OBJ_22 /* ArgumentHelp.swift */,
+				OBJ_23 /* Errors.swift */,
+				OBJ_24 /* Flag.swift */,
+				OBJ_25 /* NameSpecification.swift */,
+				OBJ_26 /* Option.swift */,
+				OBJ_27 /* OptionGroup.swift */,
+			);
+			path = "Parsable Properties";
+			sourceTree = "<group>";
+		};
+		OBJ_28 /* Parsable Types */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_29 /* CommandConfiguration.swift */,
+				OBJ_30 /* EnumerableFlag.swift */,
+				OBJ_31 /* ExpressibleByArgument.swift */,
+				OBJ_32 /* ParsableArguments.swift */,
+				OBJ_33 /* ParsableArgumentsValidation.swift */,
+				OBJ_34 /* ParsableCommand.swift */,
+			);
+			path = "Parsable Types";
+			sourceTree = "<group>";
+		};
+		OBJ_35 /* Parsing */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_36 /* ArgumentDecoder.swift */,
+				OBJ_37 /* ArgumentDefinition.swift */,
+				OBJ_38 /* ArgumentSet.swift */,
+				OBJ_39 /* ArgumentSetSequence.swift */,
+				OBJ_40 /* CommandParser.swift */,
+				OBJ_41 /* InputOrigin.swift */,
+				OBJ_42 /* Name.swift */,
+				OBJ_43 /* Parsed.swift */,
+				OBJ_44 /* ParsedValues.swift */,
+				OBJ_45 /* ParserError.swift */,
+				OBJ_46 /* SplitArguments.swift */,
+			);
+			path = Parsing;
+			sourceTree = "<group>";
+		};
+		OBJ_47 /* Usage */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_48 /* HelpCommand.swift */,
+				OBJ_49 /* HelpGenerator.swift */,
+				OBJ_50 /* MessageInfo.swift */,
+				OBJ_51 /* UsageGenerator.swift */,
+			);
+			path = Usage;
+			sourceTree = "<group>";
+		};
+		OBJ_5 /*  */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_6 /* Package.swift */,
+				OBJ_7 /* Sources */,
+				OBJ_13 /* Tests */,
+				OBJ_17 /* Dependencies */,
+				OBJ_86 /* Products */,
+				OBJ_92 /* Makefile */,
+				OBJ_93 /* README.md */,
+			);
+			name = "";
+			sourceTree = "<group>";
+		};
+		OBJ_52 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_53 /* SequenceExtensions.swift */,
+				OBJ_54 /* StringExtensions.swift */,
+				OBJ_55 /* Tree.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		OBJ_57 /* Flynn */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_58 /* Flynn */,
+				OBJ_69 /* Pony */,
+				OBJ_85 /* Package.swift */,
+			);
+			name = Flynn;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_58 /* Flynn */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_59 /* Behavior+FastBlockCalls.swift */,
+				OBJ_60 /* Behavior.swift */,
+				OBJ_61 /* DispatchQueues */,
+				OBJ_64 /* Extensions.swift */,
+				OBJ_65 /* Flowable.swift */,
+				OBJ_66 /* Pony */,
+			);
+			name = Flynn;
+			path = .build/checkouts/Flynn/Sources/Flynn;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_61 /* DispatchQueues */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_62 /* Actor+DispatchQueue.swift */,
+				OBJ_63 /* Flynn+DispatchQueue.swift */,
+			);
+			path = DispatchQueues;
+			sourceTree = "<group>";
+		};
+		OBJ_66 /* Pony */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_67 /* Actor+Pony.swift */,
+				OBJ_68 /* Flynn+Pony.swift */,
+			);
+			path = Pony;
+			sourceTree = "<group>";
+		};
+		OBJ_69 /* Pony */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_70 /* actor.c */,
+				OBJ_71 /* alloc.c */,
+				OBJ_72 /* cpu_apple.c */,
+				OBJ_73 /* cpu_linux.c */,
+				OBJ_74 /* messageq.c */,
+				OBJ_75 /* mpmcq.c */,
+				OBJ_76 /* ponyrt.m */,
+				OBJ_77 /* ponyrt_stubs.m */,
+				OBJ_78 /* pool.c */,
+				OBJ_79 /* scheduler.c */,
+				OBJ_80 /* threads.m */,
+				OBJ_81 /* include */,
+			);
+			name = Pony;
+			path = .build/checkouts/Flynn/Sources/Pony;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_7 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_8 /* jukebox2 */,
+			);
+			name = Sources;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_8 /* jukebox2 */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_9 /* AudioIn.swift */,
+				OBJ_10 /* AudioOut.swift */,
+				OBJ_11 /* Lights.swift */,
+				OBJ_12 /* main.swift */,
+			);
+			name = jukebox2;
+			path = Sources/jukebox2;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_81 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_82 /* platform.h */,
+				OBJ_83 /* pony.h */,
+				OBJ_84 /* module.modulemap */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		OBJ_86 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				"Flynn::Pony::Product" /* Pony.framework */,
+				"jukebox2::jukebox2::Product" /* jukebox2 */,
+				"Flynn::Flynn::Product" /* Flynn.framework */,
+				"swift-argument-parser::ArgumentParser::Product" /* ArgumentParser.framework */,
+				"jukebox2::jukebox2Tests::Product" /* jukebox2Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		"Flynn::Flynn" /* Flynn */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_132 /* Build configuration list for PBXNativeTarget "Flynn" */;
+			buildPhases = (
+				OBJ_135 /* Sources */,
+				OBJ_144 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_146 /* PBXTargetDependency */,
+			);
+			name = Flynn;
+			productName = Flynn;
+			productReference = "Flynn::Flynn::Product" /* Flynn.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"Flynn::Pony" /* Pony */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_154 /* Build configuration list for PBXNativeTarget "Pony" */;
+			buildPhases = (
+				OBJ_157 /* Sources */,
+				OBJ_169 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Pony;
+			productName = Pony;
+			productReference = "Flynn::Pony::Product" /* Pony.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"Flynn::SwiftPMPackageDescription" /* FlynnPackageDescription */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_149 /* Build configuration list for PBXNativeTarget "FlynnPackageDescription" */;
+			buildPhases = (
+				OBJ_152 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FlynnPackageDescription;
+			productName = FlynnPackageDescription;
+			productType = "com.apple.product-type.framework";
+		};
+		"jukebox2::SwiftPMPackageDescription" /* jukebox2PackageDescription */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_187 /* Build configuration list for PBXNativeTarget "jukebox2PackageDescription" */;
+			buildPhases = (
+				OBJ_190 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = jukebox2PackageDescription;
+			productName = jukebox2PackageDescription;
+			productType = "com.apple.product-type.framework";
+		};
+		"jukebox2::jukebox2" /* jukebox2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_171 /* Build configuration list for PBXNativeTarget "jukebox2" */;
+			buildPhases = (
+				OBJ_174 /* Sources */,
+				OBJ_179 /* Frameworks */,
+				460E5B2B24B0011D005C6BFE /* FlynnLint */,
+				460E5B2C24B0011E005C6BFE /* SwiftLint */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_183 /* PBXTargetDependency */,
+				OBJ_184 /* PBXTargetDependency */,
+				OBJ_185 /* PBXTargetDependency */,
+			);
+			name = jukebox2;
+			productName = jukebox2;
+			productReference = "jukebox2::jukebox2::Product" /* jukebox2 */;
+			productType = "com.apple.product-type.tool";
+		};
+		"jukebox2::jukebox2Tests" /* jukebox2Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_198 /* Build configuration list for PBXNativeTarget "jukebox2Tests" */;
+			buildPhases = (
+				OBJ_201 /* Sources */,
+				OBJ_204 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_208 /* PBXTargetDependency */,
+				OBJ_209 /* PBXTargetDependency */,
+				OBJ_210 /* PBXTargetDependency */,
+				OBJ_211 /* PBXTargetDependency */,
+			);
+			name = jukebox2Tests;
+			productName = jukebox2Tests;
+			productReference = "jukebox2::jukebox2Tests::Product" /* jukebox2Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		"swift-argument-parser::ArgumentParser" /* ArgumentParser */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_95 /* Build configuration list for PBXNativeTarget "ArgumentParser" */;
+			buildPhases = (
+				OBJ_98 /* Sources */,
+				OBJ_130 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ArgumentParser;
+			productName = ArgumentParser;
+			productReference = "swift-argument-parser::ArgumentParser::Product" /* ArgumentParser.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"swift-argument-parser::SwiftPMPackageDescription" /* swift-argument-parserPackageDescription */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_213 /* Build configuration list for PBXNativeTarget "swift-argument-parserPackageDescription" */;
+			buildPhases = (
+				OBJ_216 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "swift-argument-parserPackageDescription";
+			productName = "swift-argument-parserPackageDescription";
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		OBJ_1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftMigration = 9999;
+				LastUpgradeCheck = 9999;
+			};
+			buildConfigurationList = OBJ_2 /* Build configuration list for PBXProject "jukebox2" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = OBJ_5 /*  */;
+			productRefGroup = OBJ_86 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				"swift-argument-parser::ArgumentParser" /* ArgumentParser */,
+				"Flynn::Flynn" /* Flynn */,
+				"Flynn::SwiftPMPackageDescription" /* FlynnPackageDescription */,
+				"Flynn::Pony" /* Pony */,
+				"jukebox2::jukebox2" /* jukebox2 */,
+				"jukebox2::SwiftPMPackageDescription" /* jukebox2PackageDescription */,
+				"jukebox2::jukebox2PackageTests::ProductTarget" /* jukebox2PackageTests */,
+				"jukebox2::jukebox2Tests" /* jukebox2Tests */,
+				"swift-argument-parser::SwiftPMPackageDescription" /* swift-argument-parserPackageDescription */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		460E5B2B24B0011D005C6BFE /* FlynnLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = FlynnLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "FLYNNLINTSWIFTPM=${SRCROOT}/.build/checkouts/flynn/meta/FlynnLint\nFLYNNLINTXCODE=${BUILD_ROOT}/../../SourcePackages/checkouts/flynn/meta/FlynnLint\n\nif [ -f \"${FLYNNLINTSWIFTPM}\" ]; then\n    ${FLYNNLINTSWIFTPM} ${SRCROOT}\nelif [ -f \"${FLYNNLINTXCODE}\" ]; then\n    ${FLYNNLINTXCODE} ${SRCROOT}\nelse\n    echo \"warning: Unable to find FlynnLint, aborting...\"\nfi\n";
+		};
+		460E5B2C24B0011E005C6BFE /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint autocorrect --path ${SRCROOT}/Sources/\n  swiftlint --path ${SRCROOT}/Sources/\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		OBJ_135 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_136 /* Behavior+FastBlockCalls.swift in Sources */,
+				OBJ_137 /* Behavior.swift in Sources */,
+				OBJ_138 /* Actor+DispatchQueue.swift in Sources */,
+				OBJ_139 /* Flynn+DispatchQueue.swift in Sources */,
+				OBJ_140 /* Extensions.swift in Sources */,
+				OBJ_141 /* Flowable.swift in Sources */,
+				OBJ_142 /* Actor+Pony.swift in Sources */,
+				OBJ_143 /* Flynn+Pony.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_152 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_153 /* Package.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_157 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_158 /* actor.c in Sources */,
+				OBJ_159 /* alloc.c in Sources */,
+				OBJ_160 /* cpu_apple.c in Sources */,
+				OBJ_161 /* cpu_linux.c in Sources */,
+				OBJ_162 /* messageq.c in Sources */,
+				OBJ_163 /* mpmcq.c in Sources */,
+				OBJ_164 /* ponyrt.m in Sources */,
+				OBJ_165 /* ponyrt_stubs.m in Sources */,
+				OBJ_166 /* pool.c in Sources */,
+				OBJ_167 /* scheduler.c in Sources */,
+				OBJ_168 /* threads.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_174 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_175 /* AudioIn.swift in Sources */,
+				OBJ_176 /* AudioOut.swift in Sources */,
+				OBJ_177 /* Lights.swift in Sources */,
+				OBJ_178 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_190 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_191 /* Package.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_201 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_202 /* XCTestManifests.swift in Sources */,
+				OBJ_203 /* jukebox2Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_216 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_217 /* Package.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_98 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_99 /* Argument.swift in Sources */,
+				OBJ_100 /* ArgumentHelp.swift in Sources */,
+				OBJ_101 /* Errors.swift in Sources */,
+				OBJ_102 /* Flag.swift in Sources */,
+				OBJ_103 /* NameSpecification.swift in Sources */,
+				OBJ_104 /* Option.swift in Sources */,
+				OBJ_105 /* OptionGroup.swift in Sources */,
+				OBJ_106 /* CommandConfiguration.swift in Sources */,
+				OBJ_107 /* EnumerableFlag.swift in Sources */,
+				OBJ_108 /* ExpressibleByArgument.swift in Sources */,
+				OBJ_109 /* ParsableArguments.swift in Sources */,
+				OBJ_110 /* ParsableArgumentsValidation.swift in Sources */,
+				OBJ_111 /* ParsableCommand.swift in Sources */,
+				OBJ_112 /* ArgumentDecoder.swift in Sources */,
+				OBJ_113 /* ArgumentDefinition.swift in Sources */,
+				OBJ_114 /* ArgumentSet.swift in Sources */,
+				OBJ_115 /* ArgumentSetSequence.swift in Sources */,
+				OBJ_116 /* CommandParser.swift in Sources */,
+				OBJ_117 /* InputOrigin.swift in Sources */,
+				OBJ_118 /* Name.swift in Sources */,
+				OBJ_119 /* Parsed.swift in Sources */,
+				OBJ_120 /* ParsedValues.swift in Sources */,
+				OBJ_121 /* ParserError.swift in Sources */,
+				OBJ_122 /* SplitArguments.swift in Sources */,
+				OBJ_123 /* HelpCommand.swift in Sources */,
+				OBJ_124 /* HelpGenerator.swift in Sources */,
+				OBJ_125 /* MessageInfo.swift in Sources */,
+				OBJ_126 /* UsageGenerator.swift in Sources */,
+				OBJ_127 /* SequenceExtensions.swift in Sources */,
+				OBJ_128 /* StringExtensions.swift in Sources */,
+				OBJ_129 /* Tree.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		OBJ_146 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Flynn::Pony" /* Pony */;
+			targetProxy = 460E5B2424B00110005C6BFE /* PBXContainerItemProxy */;
+		};
+		OBJ_183 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "swift-argument-parser::ArgumentParser" /* ArgumentParser */;
+			targetProxy = 460E5B2224B00110005C6BFE /* PBXContainerItemProxy */;
+		};
+		OBJ_184 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Flynn::Flynn" /* Flynn */;
+			targetProxy = 460E5B2324B00110005C6BFE /* PBXContainerItemProxy */;
+		};
+		OBJ_185 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Flynn::Pony" /* Pony */;
+			targetProxy = 460E5B2524B00110005C6BFE /* PBXContainerItemProxy */;
+		};
+		OBJ_196 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "jukebox2::jukebox2Tests" /* jukebox2Tests */;
+			targetProxy = 460E5B2A24B00113005C6BFE /* PBXContainerItemProxy */;
+		};
+		OBJ_208 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "jukebox2::jukebox2" /* jukebox2 */;
+			targetProxy = 460E5B2624B00111005C6BFE /* PBXContainerItemProxy */;
+		};
+		OBJ_209 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "swift-argument-parser::ArgumentParser" /* ArgumentParser */;
+			targetProxy = 460E5B2724B00111005C6BFE /* PBXContainerItemProxy */;
+		};
+		OBJ_210 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Flynn::Flynn" /* Flynn */;
+			targetProxy = 460E5B2824B00111005C6BFE /* PBXContainerItemProxy */;
+		};
+		OBJ_211 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Flynn::Pony" /* Pony */;
+			targetProxy = 460E5B2924B00111005C6BFE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		OBJ_133 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = PLATFORM_SUPPORTS_PONYRT_DISABLED;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/Flynn/Sources/Pony/include",
+					"$(SRCROOT)/jukebox2.xcodeproj/GeneratedModuleMap/Pony",
+				);
+				INFOPLIST_FILE = jukebox2.xcodeproj/Flynn_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/jukebox2.xcodeproj/GeneratedModuleMap/Pony/module.modulemap";
+				PRODUCT_BUNDLE_IDENTIFIER = Flynn;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) PLATFORM_SUPPORTS_PONYRT_DISABLED";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = Flynn;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		OBJ_134 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = PLATFORM_SUPPORTS_PONYRT_DISABLED;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/Flynn/Sources/Pony/include",
+					"$(SRCROOT)/jukebox2.xcodeproj/GeneratedModuleMap/Pony",
+				);
+				INFOPLIST_FILE = jukebox2.xcodeproj/Flynn_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/jukebox2.xcodeproj/GeneratedModuleMap/Pony/module.modulemap";
+				PRODUCT_BUNDLE_IDENTIFIER = Flynn;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) PLATFORM_SUPPORTS_PONYRT_DISABLED";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = Flynn;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		OBJ_150 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -package-description-version 5.0.0";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		OBJ_151 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -package-description-version 5.0.0";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		OBJ_155 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = NO;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = PLATFORM_SUPPORTS_PONYRT_DISABLED;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/Flynn/Sources/Pony/include",
+				);
+				INFOPLIST_FILE = jukebox2.xcodeproj/Pony_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Pony;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				TARGET_NAME = Pony;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		OBJ_156 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = NO;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = PLATFORM_SUPPORTS_PONYRT_DISABLED;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/Flynn/Sources/Pony/include",
+				);
+				INFOPLIST_FILE = jukebox2.xcodeproj/Pony_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Pony;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				TARGET_NAME = Pony;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		OBJ_172 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/Flynn/Sources/Pony/include",
+					"$(SRCROOT)/jukebox2.xcodeproj/GeneratedModuleMap/Pony",
+				);
+				INFOPLIST_FILE = jukebox2.xcodeproj/jukebox2_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx @executable_path";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/jukebox2.xcodeproj/GeneratedModuleMap/Pony/module.modulemap";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_FORCE_DYNAMIC_LINK_STDLIB = YES;
+				SWIFT_FORCE_STATIC_LINK_STDLIB = NO;
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = jukebox2;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		OBJ_173 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/Flynn/Sources/Pony/include",
+					"$(SRCROOT)/jukebox2.xcodeproj/GeneratedModuleMap/Pony",
+				);
+				INFOPLIST_FILE = jukebox2.xcodeproj/jukebox2_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx @executable_path";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/jukebox2.xcodeproj/GeneratedModuleMap/Pony/module.modulemap";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_FORCE_DYNAMIC_LINK_STDLIB = YES;
+				SWIFT_FORCE_STATIC_LINK_STDLIB = NO;
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = jukebox2;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		OBJ_188 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -package-description-version 5.2.0";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		OBJ_189 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -package-description-version 5.2.0";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		OBJ_194 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		OBJ_195 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		OBJ_199 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/Flynn/Sources/Pony/include",
+					"$(SRCROOT)/jukebox2.xcodeproj/GeneratedModuleMap/Pony",
+				);
+				INFOPLIST_FILE = jukebox2.xcodeproj/jukebox2Tests_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/jukebox2.xcodeproj/GeneratedModuleMap/Pony/module.modulemap";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = jukebox2Tests;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		OBJ_200 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/Flynn/Sources/Pony/include",
+					"$(SRCROOT)/jukebox2.xcodeproj/GeneratedModuleMap/Pony",
+				);
+				INFOPLIST_FILE = jukebox2.xcodeproj/jukebox2Tests_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/jukebox2.xcodeproj/GeneratedModuleMap/Pony/module.modulemap";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = jukebox2Tests;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		OBJ_214 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -package-description-version 5.2.0";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		OBJ_215 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -package-description-version 5.2.0";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		OBJ_3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"SWIFT_PACKAGE=1",
+					"DEBUG=1",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_SWIFT_FLAGS = "$(inherited) -DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) SWIFT_PACKAGE DEBUG";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				USE_HEADERMAP = NO;
+			};
+			name = Debug;
+		};
+		OBJ_4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"SWIFT_PACKAGE=1",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_SWIFT_FLAGS = "$(inherited) -DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) SWIFT_PACKAGE";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				USE_HEADERMAP = NO;
+			};
+			name = Release;
+		};
+		OBJ_96 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = jukebox2.xcodeproj/ArgumentParser_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = ArgumentParser;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = ArgumentParser;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		OBJ_97 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = jukebox2.xcodeproj/ArgumentParser_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = ArgumentParser;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = ArgumentParser;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		OBJ_132 /* Build configuration list for PBXNativeTarget "Flynn" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_133 /* Debug */,
+				OBJ_134 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_149 /* Build configuration list for PBXNativeTarget "FlynnPackageDescription" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_150 /* Debug */,
+				OBJ_151 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_154 /* Build configuration list for PBXNativeTarget "Pony" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_155 /* Debug */,
+				OBJ_156 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_171 /* Build configuration list for PBXNativeTarget "jukebox2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_172 /* Debug */,
+				OBJ_173 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_187 /* Build configuration list for PBXNativeTarget "jukebox2PackageDescription" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_188 /* Debug */,
+				OBJ_189 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_193 /* Build configuration list for PBXAggregateTarget "jukebox2PackageTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_194 /* Debug */,
+				OBJ_195 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_198 /* Build configuration list for PBXNativeTarget "jukebox2Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_199 /* Debug */,
+				OBJ_200 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_2 /* Build configuration list for PBXProject "jukebox2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_3 /* Debug */,
+				OBJ_4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_213 /* Build configuration list for PBXNativeTarget "swift-argument-parserPackageDescription" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_214 /* Debug */,
+				OBJ_215 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_95 /* Build configuration list for PBXNativeTarget "ArgumentParser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_96 /* Debug */,
+				OBJ_97 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = OBJ_1 /* Project object */;
 }

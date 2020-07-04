@@ -1,4 +1,4 @@
 module Pony {
-    umbrella "./.build/checkouts/Flynn/Sources/Pony/include"
+    umbrella header "/Volumes/Development/Development/chimerasw2/jukebox2/.build/checkouts/Flynn/Sources/Pony/include/Pony.h"
     export *
 }

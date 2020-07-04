@@ -1,22 +1,35 @@
 import Flynn
+import ArgumentParser
 
-// Our jukebox has two main functions:
-// 1. read audio input from the microphone and stream it to the audio output
-// 2. run the jukebox lights (using the wafeform processed by #1)
+// The actors work like this:
 //
-// To accomplish this, we will have a three actor system:
-// 1. Main: provides setup and initialization
-// 2. Lights: provides all things to do with lighting
-// 3. Audio: provides all things to do with audio
+//  AudioIn ------> AudioOut
+//    \
+//     \
+//      \
+//       V
+//     Lights
+//
+// AudioIn: reads chunks of audio data from the mic, sends the data to
+//          AudioOut and Lights
+// AudioOut: writes the chunks of audio data to the speakers
+// Lights: does pretty things with the lights given the audio data
 
 class Main: Actor {
-    private let audio = Audio()
-    private let lights = Lights()
-    
-    
+    private let audioIn: AudioIn
+    private let audioOut: AudioOut
+    private let lights: Lights
+
+    override init() {
+        audioOut = AudioOut()
+        lights = Lights()
+        //audioIn = AudioIn(audioOut, lights)
+        audioIn = AudioIn()
+    }
+
     lazy var beRun = Behavior(self, _beRun)
     private func _beRun(_: BehaviorArgs) {
-        
+
     }
 }
 
