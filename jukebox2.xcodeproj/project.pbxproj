@@ -9,11 +9,11 @@
 /* Begin PBXAggregateTarget section */
 		"jukebox2::jukebox2PackageTests::ProductTarget" /* jukebox2PackageTests */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = OBJ_193 /* Build configuration list for PBXAggregateTarget "jukebox2PackageTests" */;
+			buildConfigurationList = OBJ_157 /* Build configuration list for PBXAggregateTarget "jukebox2PackageTests" */;
 			buildPhases = (
 			);
 			dependencies = (
-				OBJ_196 /* PBXTargetDependency */,
+				OBJ_160 /* PBXTargetDependency */,
 			);
 			name = jukebox2PackageTests;
 			productName = jukebox2PackageTests;
@@ -21,132 +21,99 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		OBJ_100 /* ArgumentHelp.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_22 /* ArgumentHelp.swift */; };
-		OBJ_101 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_23 /* Errors.swift */; };
-		OBJ_102 /* Flag.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_24 /* Flag.swift */; };
-		OBJ_103 /* NameSpecification.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_25 /* NameSpecification.swift */; };
-		OBJ_104 /* Option.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_26 /* Option.swift */; };
-		OBJ_105 /* OptionGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_27 /* OptionGroup.swift */; };
-		OBJ_106 /* CommandConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_29 /* CommandConfiguration.swift */; };
-		OBJ_107 /* EnumerableFlag.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_30 /* EnumerableFlag.swift */; };
-		OBJ_108 /* ExpressibleByArgument.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_31 /* ExpressibleByArgument.swift */; };
-		OBJ_109 /* ParsableArguments.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_32 /* ParsableArguments.swift */; };
-		OBJ_110 /* ParsableArgumentsValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_33 /* ParsableArgumentsValidation.swift */; };
-		OBJ_111 /* ParsableCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_34 /* ParsableCommand.swift */; };
-		OBJ_112 /* ArgumentDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_36 /* ArgumentDecoder.swift */; };
-		OBJ_113 /* ArgumentDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_37 /* ArgumentDefinition.swift */; };
-		OBJ_114 /* ArgumentSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_38 /* ArgumentSet.swift */; };
-		OBJ_115 /* ArgumentSetSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_39 /* ArgumentSetSequence.swift */; };
-		OBJ_116 /* CommandParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_40 /* CommandParser.swift */; };
-		OBJ_117 /* InputOrigin.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_41 /* InputOrigin.swift */; };
-		OBJ_118 /* Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_42 /* Name.swift */; };
-		OBJ_119 /* Parsed.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_43 /* Parsed.swift */; };
-		OBJ_120 /* ParsedValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_44 /* ParsedValues.swift */; };
-		OBJ_121 /* ParserError.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_45 /* ParserError.swift */; };
-		OBJ_122 /* SplitArguments.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_46 /* SplitArguments.swift */; };
-		OBJ_123 /* HelpCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_48 /* HelpCommand.swift */; };
-		OBJ_124 /* HelpGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_49 /* HelpGenerator.swift */; };
-		OBJ_125 /* MessageInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_50 /* MessageInfo.swift */; };
-		OBJ_126 /* UsageGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_51 /* UsageGenerator.swift */; };
-		OBJ_127 /* SequenceExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_53 /* SequenceExtensions.swift */; };
-		OBJ_128 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_54 /* StringExtensions.swift */; };
-		OBJ_129 /* Tree.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_55 /* Tree.swift */; };
-		OBJ_136 /* Behavior+FastBlockCalls.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_59 /* Behavior+FastBlockCalls.swift */; };
-		OBJ_137 /* Behavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_60 /* Behavior.swift */; };
-		OBJ_138 /* Actor+DispatchQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_62 /* Actor+DispatchQueue.swift */; };
-		OBJ_139 /* Flynn+DispatchQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_63 /* Flynn+DispatchQueue.swift */; };
-		OBJ_140 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_64 /* Extensions.swift */; };
-		OBJ_141 /* Flowable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_65 /* Flowable.swift */; };
-		OBJ_142 /* Actor+Pony.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_67 /* Actor+Pony.swift */; };
-		OBJ_143 /* Flynn+Pony.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_68 /* Flynn+Pony.swift */; };
-		OBJ_145 /* Pony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Flynn::Pony::Product" /* Pony.framework */; };
-		OBJ_153 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_85 /* Package.swift */; };
-		OBJ_158 /* actor.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_70 /* actor.c */; };
-		OBJ_159 /* alloc.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_71 /* alloc.c */; };
-		OBJ_160 /* cpu_apple.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_72 /* cpu_apple.c */; };
-		OBJ_161 /* cpu_linux.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_73 /* cpu_linux.c */; };
-		OBJ_162 /* messageq.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_74 /* messageq.c */; };
-		OBJ_163 /* mpmcq.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_75 /* mpmcq.c */; };
-		OBJ_164 /* ponyrt.m in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_76 /* ponyrt.m */; };
-		OBJ_165 /* ponyrt_stubs.m in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_77 /* ponyrt_stubs.m */; };
-		OBJ_166 /* pool.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_78 /* pool.c */; };
-		OBJ_167 /* scheduler.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_79 /* scheduler.c */; };
-		OBJ_168 /* threads.m in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_80 /* threads.m */; };
-		OBJ_175 /* AudioIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* AudioIn.swift */; };
-		OBJ_176 /* AudioOut.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* AudioOut.swift */; };
-		OBJ_177 /* Lights.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* Lights.swift */; };
-		OBJ_178 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* main.swift */; };
-		OBJ_180 /* ArgumentParser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "swift-argument-parser::ArgumentParser::Product" /* ArgumentParser.framework */; };
-		OBJ_181 /* Flynn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Flynn::Flynn::Product" /* Flynn.framework */; };
-		OBJ_182 /* Pony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Flynn::Pony::Product" /* Pony.framework */; };
-		OBJ_191 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
-		OBJ_202 /* XCTestManifests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_15 /* XCTestManifests.swift */; };
-		OBJ_203 /* jukebox2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_16 /* jukebox2Tests.swift */; };
-		OBJ_205 /* ArgumentParser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "swift-argument-parser::ArgumentParser::Product" /* ArgumentParser.framework */; };
-		OBJ_206 /* Flynn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Flynn::Flynn::Product" /* Flynn.framework */; };
-		OBJ_207 /* Pony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Flynn::Pony::Product" /* Pony.framework */; };
-		OBJ_217 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_56 /* Package.swift */; };
-		OBJ_99 /* Argument.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_21 /* Argument.swift */; };
+		OBJ_100 /* InputOrigin.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_41 /* InputOrigin.swift */; };
+		OBJ_101 /* Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_42 /* Name.swift */; };
+		OBJ_102 /* Parsed.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_43 /* Parsed.swift */; };
+		OBJ_103 /* ParsedValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_44 /* ParsedValues.swift */; };
+		OBJ_104 /* ParserError.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_45 /* ParserError.swift */; };
+		OBJ_105 /* SplitArguments.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_46 /* SplitArguments.swift */; };
+		OBJ_106 /* HelpCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_48 /* HelpCommand.swift */; };
+		OBJ_107 /* HelpGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_49 /* HelpGenerator.swift */; };
+		OBJ_108 /* MessageInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_50 /* MessageInfo.swift */; };
+		OBJ_109 /* UsageGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_51 /* UsageGenerator.swift */; };
+		OBJ_110 /* SequenceExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_53 /* SequenceExtensions.swift */; };
+		OBJ_111 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_54 /* StringExtensions.swift */; };
+		OBJ_112 /* Tree.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_55 /* Tree.swift */; };
+		OBJ_119 /* Actor.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_59 /* Actor.swift */; };
+		OBJ_120 /* Atomics.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_60 /* Atomics.swift */; };
+		OBJ_121 /* Behavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_61 /* Behavior.swift */; };
+		OBJ_122 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_62 /* Device.swift */; };
+		OBJ_123 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_63 /* Extensions.swift */; };
+		OBJ_124 /* Flowable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_64 /* Flowable.swift */; };
+		OBJ_125 /* Flynn.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_65 /* Flynn.swift */; };
+		OBJ_126 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_66 /* Profile.swift */; };
+		OBJ_127 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_67 /* Queue.swift */; };
+		OBJ_128 /* Scheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_68 /* Scheduler.swift */; };
+		OBJ_135 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_69 /* Package.swift */; };
+		OBJ_141 /* AudioIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* AudioIn.swift */; };
+		OBJ_142 /* AudioOut.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* AudioOut.swift */; };
+		OBJ_143 /* Lights.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* Lights.swift */; };
+		OBJ_144 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* main.swift */; };
+		OBJ_146 /* ArgumentParser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "swift-argument-parser::ArgumentParser::Product" /* ArgumentParser.framework */; };
+		OBJ_147 /* Flynn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Flynn::Flynn::Product" /* Flynn.framework */; };
+		OBJ_155 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
+		OBJ_166 /* XCTestManifests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_15 /* XCTestManifests.swift */; };
+		OBJ_167 /* jukebox2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_16 /* jukebox2Tests.swift */; };
+		OBJ_169 /* ArgumentParser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "swift-argument-parser::ArgumentParser::Product" /* ArgumentParser.framework */; };
+		OBJ_170 /* Flynn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Flynn::Flynn::Product" /* Flynn.framework */; };
+		OBJ_179 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_56 /* Package.swift */; };
+		OBJ_82 /* Argument.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_21 /* Argument.swift */; };
+		OBJ_83 /* ArgumentHelp.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_22 /* ArgumentHelp.swift */; };
+		OBJ_84 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_23 /* Errors.swift */; };
+		OBJ_85 /* Flag.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_24 /* Flag.swift */; };
+		OBJ_86 /* NameSpecification.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_25 /* NameSpecification.swift */; };
+		OBJ_87 /* Option.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_26 /* Option.swift */; };
+		OBJ_88 /* OptionGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_27 /* OptionGroup.swift */; };
+		OBJ_89 /* CommandConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_29 /* CommandConfiguration.swift */; };
+		OBJ_90 /* EnumerableFlag.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_30 /* EnumerableFlag.swift */; };
+		OBJ_91 /* ExpressibleByArgument.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_31 /* ExpressibleByArgument.swift */; };
+		OBJ_92 /* ParsableArguments.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_32 /* ParsableArguments.swift */; };
+		OBJ_93 /* ParsableArgumentsValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_33 /* ParsableArgumentsValidation.swift */; };
+		OBJ_94 /* ParsableCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_34 /* ParsableCommand.swift */; };
+		OBJ_95 /* ArgumentDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_36 /* ArgumentDecoder.swift */; };
+		OBJ_96 /* ArgumentDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_37 /* ArgumentDefinition.swift */; };
+		OBJ_97 /* ArgumentSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_38 /* ArgumentSet.swift */; };
+		OBJ_98 /* ArgumentSetSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_39 /* ArgumentSetSequence.swift */; };
+		OBJ_99 /* CommandParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_40 /* CommandParser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		460E5B2224B00110005C6BFE /* PBXContainerItemProxy */ = {
+		463D6AB424B6422700EA4F85 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "swift-argument-parser::ArgumentParser";
 			remoteInfo = ArgumentParser;
 		};
-		460E5B2324B00110005C6BFE /* PBXContainerItemProxy */ = {
+		463D6AB524B6422700EA4F85 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Flynn::Flynn";
 			remoteInfo = Flynn;
 		};
-		460E5B2424B00110005C6BFE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = "Flynn::Pony";
-			remoteInfo = Pony;
-		};
-		460E5B2524B00110005C6BFE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = "Flynn::Pony";
-			remoteInfo = Pony;
-		};
-		460E5B2624B00111005C6BFE /* PBXContainerItemProxy */ = {
+		463D6AB624B6422700EA4F85 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "jukebox2::jukebox2";
 			remoteInfo = jukebox2;
 		};
-		460E5B2724B00111005C6BFE /* PBXContainerItemProxy */ = {
+		463D6AB724B6422700EA4F85 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "swift-argument-parser::ArgumentParser";
 			remoteInfo = ArgumentParser;
 		};
-		460E5B2824B00111005C6BFE /* PBXContainerItemProxy */ = {
+		463D6AB824B6422700EA4F85 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Flynn::Flynn";
 			remoteInfo = Flynn;
 		};
-		460E5B2924B00111005C6BFE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = "Flynn::Pony";
-			remoteInfo = Pony;
-		};
-		460E5B2A24B00113005C6BFE /* PBXContainerItemProxy */ = {
+		463D6AB924B6422800EA4F85 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
@@ -157,7 +124,6 @@
 
 /* Begin PBXFileReference section */
 		"Flynn::Flynn::Product" /* Flynn.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Flynn.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		"Flynn::Pony::Product" /* Pony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Pony.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_10 /* AudioOut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioOut.swift; sourceTree = "<group>"; };
 		OBJ_11 /* Lights.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lights.swift; sourceTree = "<group>"; };
 		OBJ_12 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
@@ -195,78 +161,56 @@
 		OBJ_54 /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 		OBJ_55 /* Tree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tree.swift; sourceTree = "<group>"; };
 		OBJ_56 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Volumes/Development/Development/chimerasw2/jukebox2/.build/checkouts/swift-argument-parser/Package.swift"; sourceTree = "<group>"; };
-		OBJ_59 /* Behavior+FastBlockCalls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Behavior+FastBlockCalls.swift"; sourceTree = "<group>"; };
+		OBJ_59 /* Actor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Actor.swift; sourceTree = "<group>"; };
 		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
-		OBJ_60 /* Behavior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Behavior.swift; sourceTree = "<group>"; };
-		OBJ_62 /* Actor+DispatchQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Actor+DispatchQueue.swift"; sourceTree = "<group>"; };
-		OBJ_63 /* Flynn+DispatchQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Flynn+DispatchQueue.swift"; sourceTree = "<group>"; };
-		OBJ_64 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
-		OBJ_65 /* Flowable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flowable.swift; sourceTree = "<group>"; };
-		OBJ_67 /* Actor+Pony.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Actor+Pony.swift"; sourceTree = "<group>"; };
-		OBJ_68 /* Flynn+Pony.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Flynn+Pony.swift"; sourceTree = "<group>"; };
-		OBJ_70 /* actor.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = actor.c; sourceTree = "<group>"; };
-		OBJ_71 /* alloc.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = alloc.c; sourceTree = "<group>"; };
-		OBJ_72 /* cpu_apple.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = cpu_apple.c; sourceTree = "<group>"; };
-		OBJ_73 /* cpu_linux.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = cpu_linux.c; sourceTree = "<group>"; };
-		OBJ_74 /* messageq.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = messageq.c; sourceTree = "<group>"; };
-		OBJ_75 /* mpmcq.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = mpmcq.c; sourceTree = "<group>"; };
-		OBJ_76 /* ponyrt.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ponyrt.m; sourceTree = "<group>"; };
-		OBJ_77 /* ponyrt_stubs.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ponyrt_stubs.m; sourceTree = "<group>"; };
-		OBJ_78 /* pool.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = pool.c; sourceTree = "<group>"; };
-		OBJ_79 /* scheduler.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = scheduler.c; sourceTree = "<group>"; };
-		OBJ_80 /* threads.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = threads.m; sourceTree = "<group>"; };
-		OBJ_82 /* platform.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = platform.h; sourceTree = "<group>"; };
-		OBJ_83 /* pony.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pony.h; sourceTree = "<group>"; };
-		OBJ_84 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; name = module.modulemap; path = /Volumes/Development/Development/chimerasw2/jukebox2/jukebox2.xcodeproj/GeneratedModuleMap/Pony/module.modulemap; sourceTree = "<group>"; };
-		OBJ_85 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = /Volumes/Development/Development/chimerasw2/jukebox2/.build/checkouts/Flynn/Package.swift; sourceTree = "<group>"; };
+		OBJ_60 /* Atomics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Atomics.swift; sourceTree = "<group>"; };
+		OBJ_61 /* Behavior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Behavior.swift; sourceTree = "<group>"; };
+		OBJ_62 /* Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
+		OBJ_63 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		OBJ_64 /* Flowable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flowable.swift; sourceTree = "<group>"; };
+		OBJ_65 /* Flynn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flynn.swift; sourceTree = "<group>"; };
+		OBJ_66 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		OBJ_67 /* Queue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
+		OBJ_68 /* Scheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scheduler.swift; sourceTree = "<group>"; };
+		OBJ_69 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = /Volumes/Development/Development/chimerasw2/jukebox2/.build/checkouts/Flynn/Package.swift; sourceTree = "<group>"; };
+		OBJ_75 /* Makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		OBJ_76 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		OBJ_9 /* AudioIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioIn.swift; sourceTree = "<group>"; };
-		OBJ_92 /* Makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
-		OBJ_93 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		"jukebox2::jukebox2::Product" /* jukebox2 */ = {isa = PBXFileReference; lastKnownFileType = text; path = jukebox2; sourceTree = BUILT_PRODUCTS_DIR; };
 		"jukebox2::jukebox2Tests::Product" /* jukebox2Tests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = jukebox2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		"swift-argument-parser::ArgumentParser::Product" /* ArgumentParser.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ArgumentParser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		OBJ_130 /* Frameworks */ = {
+		OBJ_113 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_144 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 0;
-			files = (
-				OBJ_145 /* Pony.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		OBJ_169 /* Frameworks */ = {
+		OBJ_129 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_179 /* Frameworks */ = {
+		OBJ_145 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_180 /* ArgumentParser.framework in Frameworks */,
-				OBJ_181 /* Flynn.framework in Frameworks */,
-				OBJ_182 /* Pony.framework in Frameworks */,
+				OBJ_146 /* ArgumentParser.framework in Frameworks */,
+				OBJ_147 /* Flynn.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_204 /* Frameworks */ = {
+		OBJ_168 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_205 /* ArgumentParser.framework in Frameworks */,
-				OBJ_206 /* Flynn.framework in Frameworks */,
-				OBJ_207 /* Pony.framework in Frameworks */,
+				OBJ_169 /* ArgumentParser.framework in Frameworks */,
+				OBJ_170 /* Flynn.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -385,9 +329,9 @@
 				OBJ_7 /* Sources */,
 				OBJ_13 /* Tests */,
 				OBJ_17 /* Dependencies */,
-				OBJ_86 /* Products */,
-				OBJ_92 /* Makefile */,
-				OBJ_93 /* README.md */,
+				OBJ_70 /* Products */,
+				OBJ_75 /* Makefile */,
+				OBJ_76 /* README.md */,
 			);
 			name = "";
 			sourceTree = "<group>";
@@ -406,8 +350,7 @@
 			isa = PBXGroup;
 			children = (
 				OBJ_58 /* Flynn */,
-				OBJ_69 /* Pony */,
-				OBJ_85 /* Package.swift */,
+				OBJ_69 /* Package.swift */,
 			);
 			name = Flynn;
 			sourceTree = SOURCE_ROOT;
@@ -415,53 +358,19 @@
 		OBJ_58 /* Flynn */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_59 /* Behavior+FastBlockCalls.swift */,
-				OBJ_60 /* Behavior.swift */,
-				OBJ_61 /* DispatchQueues */,
-				OBJ_64 /* Extensions.swift */,
-				OBJ_65 /* Flowable.swift */,
-				OBJ_66 /* Pony */,
+				OBJ_59 /* Actor.swift */,
+				OBJ_60 /* Atomics.swift */,
+				OBJ_61 /* Behavior.swift */,
+				OBJ_62 /* Device.swift */,
+				OBJ_63 /* Extensions.swift */,
+				OBJ_64 /* Flowable.swift */,
+				OBJ_65 /* Flynn.swift */,
+				OBJ_66 /* Profile.swift */,
+				OBJ_67 /* Queue.swift */,
+				OBJ_68 /* Scheduler.swift */,
 			);
 			name = Flynn;
 			path = .build/checkouts/Flynn/Sources/Flynn;
-			sourceTree = SOURCE_ROOT;
-		};
-		OBJ_61 /* DispatchQueues */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_62 /* Actor+DispatchQueue.swift */,
-				OBJ_63 /* Flynn+DispatchQueue.swift */,
-			);
-			path = DispatchQueues;
-			sourceTree = "<group>";
-		};
-		OBJ_66 /* Pony */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_67 /* Actor+Pony.swift */,
-				OBJ_68 /* Flynn+Pony.swift */,
-			);
-			path = Pony;
-			sourceTree = "<group>";
-		};
-		OBJ_69 /* Pony */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_70 /* actor.c */,
-				OBJ_71 /* alloc.c */,
-				OBJ_72 /* cpu_apple.c */,
-				OBJ_73 /* cpu_linux.c */,
-				OBJ_74 /* messageq.c */,
-				OBJ_75 /* mpmcq.c */,
-				OBJ_76 /* ponyrt.m */,
-				OBJ_77 /* ponyrt_stubs.m */,
-				OBJ_78 /* pool.c */,
-				OBJ_79 /* scheduler.c */,
-				OBJ_80 /* threads.m */,
-				OBJ_81 /* include */,
-			);
-			name = Pony;
-			path = .build/checkouts/Flynn/Sources/Pony;
 			sourceTree = SOURCE_ROOT;
 		};
 		OBJ_7 /* Sources */ = {
@@ -471,6 +380,17 @@
 			);
 			name = Sources;
 			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_70 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				"jukebox2::jukebox2Tests::Product" /* jukebox2Tests.xctest */,
+				"jukebox2::jukebox2::Product" /* jukebox2 */,
+				"Flynn::Flynn::Product" /* Flynn.framework */,
+				"swift-argument-parser::ArgumentParser::Product" /* ArgumentParser.framework */,
+			);
+			name = Products;
+			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		OBJ_8 /* jukebox2 */ = {
 			isa = PBXGroup;
@@ -484,69 +404,30 @@
 			path = Sources/jukebox2;
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_81 /* include */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_82 /* platform.h */,
-				OBJ_83 /* pony.h */,
-				OBJ_84 /* module.modulemap */,
-			);
-			path = include;
-			sourceTree = "<group>";
-		};
-		OBJ_86 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				"Flynn::Pony::Product" /* Pony.framework */,
-				"jukebox2::jukebox2::Product" /* jukebox2 */,
-				"Flynn::Flynn::Product" /* Flynn.framework */,
-				"swift-argument-parser::ArgumentParser::Product" /* ArgumentParser.framework */,
-				"jukebox2::jukebox2Tests::Product" /* jukebox2Tests.xctest */,
-			);
-			name = Products;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
 		"Flynn::Flynn" /* Flynn */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_132 /* Build configuration list for PBXNativeTarget "Flynn" */;
+			buildConfigurationList = OBJ_115 /* Build configuration list for PBXNativeTarget "Flynn" */;
 			buildPhases = (
-				OBJ_135 /* Sources */,
-				OBJ_144 /* Frameworks */,
+				OBJ_118 /* Sources */,
+				OBJ_129 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				OBJ_146 /* PBXTargetDependency */,
 			);
 			name = Flynn;
 			productName = Flynn;
 			productReference = "Flynn::Flynn::Product" /* Flynn.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		"Flynn::Pony" /* Pony */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_154 /* Build configuration list for PBXNativeTarget "Pony" */;
-			buildPhases = (
-				OBJ_157 /* Sources */,
-				OBJ_169 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = Pony;
-			productName = Pony;
-			productReference = "Flynn::Pony::Product" /* Pony.framework */;
-			productType = "com.apple.product-type.framework";
-		};
 		"Flynn::SwiftPMPackageDescription" /* FlynnPackageDescription */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_149 /* Build configuration list for PBXNativeTarget "FlynnPackageDescription" */;
+			buildConfigurationList = OBJ_131 /* Build configuration list for PBXNativeTarget "FlynnPackageDescription" */;
 			buildPhases = (
-				OBJ_152 /* Sources */,
+				OBJ_134 /* Sources */,
 			);
 			buildRules = (
 			);
@@ -558,9 +439,9 @@
 		};
 		"jukebox2::SwiftPMPackageDescription" /* jukebox2PackageDescription */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_187 /* Build configuration list for PBXNativeTarget "jukebox2PackageDescription" */;
+			buildConfigurationList = OBJ_151 /* Build configuration list for PBXNativeTarget "jukebox2PackageDescription" */;
 			buildPhases = (
-				OBJ_190 /* Sources */,
+				OBJ_154 /* Sources */,
 			);
 			buildRules = (
 			);
@@ -572,19 +453,18 @@
 		};
 		"jukebox2::jukebox2" /* jukebox2 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_171 /* Build configuration list for PBXNativeTarget "jukebox2" */;
+			buildConfigurationList = OBJ_137 /* Build configuration list for PBXNativeTarget "jukebox2" */;
 			buildPhases = (
-				OBJ_174 /* Sources */,
-				OBJ_179 /* Frameworks */,
-				460E5B2B24B0011D005C6BFE /* FlynnLint */,
-				460E5B2C24B0011E005C6BFE /* SwiftLint */,
+				463D6ABA24B6422A00EA4F85 /* FlynnLint */,
+				463D6ABB24B6422B00EA4F85 /* SwiftLint */,
+				OBJ_140 /* Sources */,
+				OBJ_145 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				OBJ_183 /* PBXTargetDependency */,
-				OBJ_184 /* PBXTargetDependency */,
-				OBJ_185 /* PBXTargetDependency */,
+				OBJ_148 /* PBXTargetDependency */,
+				OBJ_149 /* PBXTargetDependency */,
 			);
 			name = jukebox2;
 			productName = jukebox2;
@@ -593,18 +473,17 @@
 		};
 		"jukebox2::jukebox2Tests" /* jukebox2Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_198 /* Build configuration list for PBXNativeTarget "jukebox2Tests" */;
+			buildConfigurationList = OBJ_162 /* Build configuration list for PBXNativeTarget "jukebox2Tests" */;
 			buildPhases = (
-				OBJ_201 /* Sources */,
-				OBJ_204 /* Frameworks */,
+				OBJ_165 /* Sources */,
+				OBJ_168 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				OBJ_208 /* PBXTargetDependency */,
-				OBJ_209 /* PBXTargetDependency */,
-				OBJ_210 /* PBXTargetDependency */,
-				OBJ_211 /* PBXTargetDependency */,
+				OBJ_171 /* PBXTargetDependency */,
+				OBJ_172 /* PBXTargetDependency */,
+				OBJ_173 /* PBXTargetDependency */,
 			);
 			name = jukebox2Tests;
 			productName = jukebox2Tests;
@@ -613,10 +492,10 @@
 		};
 		"swift-argument-parser::ArgumentParser" /* ArgumentParser */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_95 /* Build configuration list for PBXNativeTarget "ArgumentParser" */;
+			buildConfigurationList = OBJ_78 /* Build configuration list for PBXNativeTarget "ArgumentParser" */;
 			buildPhases = (
-				OBJ_98 /* Sources */,
-				OBJ_130 /* Frameworks */,
+				OBJ_81 /* Sources */,
+				OBJ_113 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -629,9 +508,9 @@
 		};
 		"swift-argument-parser::SwiftPMPackageDescription" /* swift-argument-parserPackageDescription */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_213 /* Build configuration list for PBXNativeTarget "swift-argument-parserPackageDescription" */;
+			buildConfigurationList = OBJ_175 /* Build configuration list for PBXNativeTarget "swift-argument-parserPackageDescription" */;
 			buildPhases = (
-				OBJ_216 /* Sources */,
+				OBJ_178 /* Sources */,
 			);
 			buildRules = (
 			);
@@ -658,14 +537,13 @@
 				en,
 			);
 			mainGroup = OBJ_5 /*  */;
-			productRefGroup = OBJ_86 /* Products */;
+			productRefGroup = OBJ_70 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				"swift-argument-parser::ArgumentParser" /* ArgumentParser */,
 				"Flynn::Flynn" /* Flynn */,
 				"Flynn::SwiftPMPackageDescription" /* FlynnPackageDescription */,
-				"Flynn::Pony" /* Pony */,
 				"jukebox2::jukebox2" /* jukebox2 */,
 				"jukebox2::SwiftPMPackageDescription" /* jukebox2PackageDescription */,
 				"jukebox2::jukebox2PackageTests::ProductTarget" /* jukebox2PackageTests */,
@@ -676,7 +554,7 @@
 /* End PBXProject section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		460E5B2B24B0011D005C6BFE /* FlynnLint */ = {
+		463D6ABA24B6422A00EA4F85 /* FlynnLint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -694,7 +572,7 @@
 			shellPath = /bin/sh;
 			shellScript = "FLYNNLINTSWIFTPM=${SRCROOT}/.build/checkouts/flynn/meta/FlynnLint\nFLYNNLINTXCODE=${BUILD_ROOT}/../../SourcePackages/checkouts/flynn/meta/FlynnLint\n\nif [ -f \"${FLYNNLINTSWIFTPM}\" ]; then\n    ${FLYNNLINTSWIFTPM} ${SRCROOT}\nelif [ -f \"${FLYNNLINTXCODE}\" ]; then\n    ${FLYNNLINTXCODE} ${SRCROOT}\nelse\n    echo \"warning: Unable to find FlynnLint, aborting...\"\nfi\n";
 		};
-		460E5B2C24B0011E005C6BFE /* SwiftLint */ = {
+		463D6ABB24B6422B00EA4F85 /* SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -715,173 +593,142 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		OBJ_135 /* Sources */ = {
+		OBJ_118 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_136 /* Behavior+FastBlockCalls.swift in Sources */,
-				OBJ_137 /* Behavior.swift in Sources */,
-				OBJ_138 /* Actor+DispatchQueue.swift in Sources */,
-				OBJ_139 /* Flynn+DispatchQueue.swift in Sources */,
-				OBJ_140 /* Extensions.swift in Sources */,
-				OBJ_141 /* Flowable.swift in Sources */,
-				OBJ_142 /* Actor+Pony.swift in Sources */,
-				OBJ_143 /* Flynn+Pony.swift in Sources */,
+				OBJ_119 /* Actor.swift in Sources */,
+				OBJ_120 /* Atomics.swift in Sources */,
+				OBJ_121 /* Behavior.swift in Sources */,
+				OBJ_122 /* Device.swift in Sources */,
+				OBJ_123 /* Extensions.swift in Sources */,
+				OBJ_124 /* Flowable.swift in Sources */,
+				OBJ_125 /* Flynn.swift in Sources */,
+				OBJ_126 /* Profile.swift in Sources */,
+				OBJ_127 /* Queue.swift in Sources */,
+				OBJ_128 /* Scheduler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_152 /* Sources */ = {
+		OBJ_134 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_153 /* Package.swift in Sources */,
+				OBJ_135 /* Package.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_157 /* Sources */ = {
+		OBJ_140 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_158 /* actor.c in Sources */,
-				OBJ_159 /* alloc.c in Sources */,
-				OBJ_160 /* cpu_apple.c in Sources */,
-				OBJ_161 /* cpu_linux.c in Sources */,
-				OBJ_162 /* messageq.c in Sources */,
-				OBJ_163 /* mpmcq.c in Sources */,
-				OBJ_164 /* ponyrt.m in Sources */,
-				OBJ_165 /* ponyrt_stubs.m in Sources */,
-				OBJ_166 /* pool.c in Sources */,
-				OBJ_167 /* scheduler.c in Sources */,
-				OBJ_168 /* threads.m in Sources */,
+				OBJ_141 /* AudioIn.swift in Sources */,
+				OBJ_142 /* AudioOut.swift in Sources */,
+				OBJ_143 /* Lights.swift in Sources */,
+				OBJ_144 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_174 /* Sources */ = {
+		OBJ_154 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_175 /* AudioIn.swift in Sources */,
-				OBJ_176 /* AudioOut.swift in Sources */,
-				OBJ_177 /* Lights.swift in Sources */,
-				OBJ_178 /* main.swift in Sources */,
+				OBJ_155 /* Package.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_190 /* Sources */ = {
+		OBJ_165 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_191 /* Package.swift in Sources */,
+				OBJ_166 /* XCTestManifests.swift in Sources */,
+				OBJ_167 /* jukebox2Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_201 /* Sources */ = {
+		OBJ_178 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_202 /* XCTestManifests.swift in Sources */,
-				OBJ_203 /* jukebox2Tests.swift in Sources */,
+				OBJ_179 /* Package.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_216 /* Sources */ = {
+		OBJ_81 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_217 /* Package.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		OBJ_98 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 0;
-			files = (
-				OBJ_99 /* Argument.swift in Sources */,
-				OBJ_100 /* ArgumentHelp.swift in Sources */,
-				OBJ_101 /* Errors.swift in Sources */,
-				OBJ_102 /* Flag.swift in Sources */,
-				OBJ_103 /* NameSpecification.swift in Sources */,
-				OBJ_104 /* Option.swift in Sources */,
-				OBJ_105 /* OptionGroup.swift in Sources */,
-				OBJ_106 /* CommandConfiguration.swift in Sources */,
-				OBJ_107 /* EnumerableFlag.swift in Sources */,
-				OBJ_108 /* ExpressibleByArgument.swift in Sources */,
-				OBJ_109 /* ParsableArguments.swift in Sources */,
-				OBJ_110 /* ParsableArgumentsValidation.swift in Sources */,
-				OBJ_111 /* ParsableCommand.swift in Sources */,
-				OBJ_112 /* ArgumentDecoder.swift in Sources */,
-				OBJ_113 /* ArgumentDefinition.swift in Sources */,
-				OBJ_114 /* ArgumentSet.swift in Sources */,
-				OBJ_115 /* ArgumentSetSequence.swift in Sources */,
-				OBJ_116 /* CommandParser.swift in Sources */,
-				OBJ_117 /* InputOrigin.swift in Sources */,
-				OBJ_118 /* Name.swift in Sources */,
-				OBJ_119 /* Parsed.swift in Sources */,
-				OBJ_120 /* ParsedValues.swift in Sources */,
-				OBJ_121 /* ParserError.swift in Sources */,
-				OBJ_122 /* SplitArguments.swift in Sources */,
-				OBJ_123 /* HelpCommand.swift in Sources */,
-				OBJ_124 /* HelpGenerator.swift in Sources */,
-				OBJ_125 /* MessageInfo.swift in Sources */,
-				OBJ_126 /* UsageGenerator.swift in Sources */,
-				OBJ_127 /* SequenceExtensions.swift in Sources */,
-				OBJ_128 /* StringExtensions.swift in Sources */,
-				OBJ_129 /* Tree.swift in Sources */,
+				OBJ_82 /* Argument.swift in Sources */,
+				OBJ_83 /* ArgumentHelp.swift in Sources */,
+				OBJ_84 /* Errors.swift in Sources */,
+				OBJ_85 /* Flag.swift in Sources */,
+				OBJ_86 /* NameSpecification.swift in Sources */,
+				OBJ_87 /* Option.swift in Sources */,
+				OBJ_88 /* OptionGroup.swift in Sources */,
+				OBJ_89 /* CommandConfiguration.swift in Sources */,
+				OBJ_90 /* EnumerableFlag.swift in Sources */,
+				OBJ_91 /* ExpressibleByArgument.swift in Sources */,
+				OBJ_92 /* ParsableArguments.swift in Sources */,
+				OBJ_93 /* ParsableArgumentsValidation.swift in Sources */,
+				OBJ_94 /* ParsableCommand.swift in Sources */,
+				OBJ_95 /* ArgumentDecoder.swift in Sources */,
+				OBJ_96 /* ArgumentDefinition.swift in Sources */,
+				OBJ_97 /* ArgumentSet.swift in Sources */,
+				OBJ_98 /* ArgumentSetSequence.swift in Sources */,
+				OBJ_99 /* CommandParser.swift in Sources */,
+				OBJ_100 /* InputOrigin.swift in Sources */,
+				OBJ_101 /* Name.swift in Sources */,
+				OBJ_102 /* Parsed.swift in Sources */,
+				OBJ_103 /* ParsedValues.swift in Sources */,
+				OBJ_104 /* ParserError.swift in Sources */,
+				OBJ_105 /* SplitArguments.swift in Sources */,
+				OBJ_106 /* HelpCommand.swift in Sources */,
+				OBJ_107 /* HelpGenerator.swift in Sources */,
+				OBJ_108 /* MessageInfo.swift in Sources */,
+				OBJ_109 /* UsageGenerator.swift in Sources */,
+				OBJ_110 /* SequenceExtensions.swift in Sources */,
+				OBJ_111 /* StringExtensions.swift in Sources */,
+				OBJ_112 /* Tree.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		OBJ_146 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = "Flynn::Pony" /* Pony */;
-			targetProxy = 460E5B2424B00110005C6BFE /* PBXContainerItemProxy */;
-		};
-		OBJ_183 /* PBXTargetDependency */ = {
+		OBJ_148 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "swift-argument-parser::ArgumentParser" /* ArgumentParser */;
-			targetProxy = 460E5B2224B00110005C6BFE /* PBXContainerItemProxy */;
+			targetProxy = 463D6AB424B6422700EA4F85 /* PBXContainerItemProxy */;
 		};
-		OBJ_184 /* PBXTargetDependency */ = {
+		OBJ_149 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Flynn::Flynn" /* Flynn */;
-			targetProxy = 460E5B2324B00110005C6BFE /* PBXContainerItemProxy */;
+			targetProxy = 463D6AB524B6422700EA4F85 /* PBXContainerItemProxy */;
 		};
-		OBJ_185 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = "Flynn::Pony" /* Pony */;
-			targetProxy = 460E5B2524B00110005C6BFE /* PBXContainerItemProxy */;
-		};
-		OBJ_196 /* PBXTargetDependency */ = {
+		OBJ_160 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "jukebox2::jukebox2Tests" /* jukebox2Tests */;
-			targetProxy = 460E5B2A24B00113005C6BFE /* PBXContainerItemProxy */;
+			targetProxy = 463D6AB924B6422800EA4F85 /* PBXContainerItemProxy */;
 		};
-		OBJ_208 /* PBXTargetDependency */ = {
+		OBJ_171 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "jukebox2::jukebox2" /* jukebox2 */;
-			targetProxy = 460E5B2624B00111005C6BFE /* PBXContainerItemProxy */;
+			targetProxy = 463D6AB624B6422700EA4F85 /* PBXContainerItemProxy */;
 		};
-		OBJ_209 /* PBXTargetDependency */ = {
+		OBJ_172 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "swift-argument-parser::ArgumentParser" /* ArgumentParser */;
-			targetProxy = 460E5B2724B00111005C6BFE /* PBXContainerItemProxy */;
+			targetProxy = 463D6AB724B6422700EA4F85 /* PBXContainerItemProxy */;
 		};
-		OBJ_210 /* PBXTargetDependency */ = {
+		OBJ_173 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Flynn::Flynn" /* Flynn */;
-			targetProxy = 460E5B2824B00111005C6BFE /* PBXContainerItemProxy */;
-		};
-		OBJ_211 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = "Flynn::Pony" /* Pony */;
-			targetProxy = 460E5B2924B00111005C6BFE /* PBXContainerItemProxy */;
+			targetProxy = 463D6AB824B6422700EA4F85 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		OBJ_133 /* Debug */ = {
+		OBJ_116 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ENABLE_TESTABILITY = YES;
@@ -889,24 +736,19 @@
 					"$(inherited)",
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 				);
-				GCC_PREPROCESSOR_DEFINITIONS = PLATFORM_SUPPORTS_PONYRT_DISABLED;
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/.build/checkouts/Flynn/Sources/Pony/include",
-					"$(SRCROOT)/jukebox2.xcodeproj/GeneratedModuleMap/Pony",
-				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = jukebox2.xcodeproj/Flynn_Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/jukebox2.xcodeproj/GeneratedModuleMap/Pony/module.modulemap";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = Flynn;
 				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) PLATFORM_SUPPORTS_PONYRT_DISABLED";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
 				SWIFT_VERSION = 5.0;
 				TARGET_NAME = Flynn;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
@@ -914,7 +756,7 @@
 			};
 			name = Debug;
 		};
-		OBJ_134 /* Release */ = {
+		OBJ_117 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ENABLE_TESTABILITY = YES;
@@ -922,24 +764,19 @@
 					"$(inherited)",
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 				);
-				GCC_PREPROCESSOR_DEFINITIONS = PLATFORM_SUPPORTS_PONYRT_DISABLED;
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/.build/checkouts/Flynn/Sources/Pony/include",
-					"$(SRCROOT)/jukebox2.xcodeproj/GeneratedModuleMap/Pony",
-				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = jukebox2.xcodeproj/Flynn_Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/jukebox2.xcodeproj/GeneratedModuleMap/Pony/module.modulemap";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = Flynn;
 				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) PLATFORM_SUPPORTS_PONYRT_DISABLED";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
 				SWIFT_VERSION = 5.0;
 				TARGET_NAME = Flynn;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
@@ -947,7 +784,7 @@
 			};
 			name = Release;
 		};
-		OBJ_150 /* Debug */ = {
+		OBJ_132 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				LD = /usr/bin/true;
@@ -956,7 +793,7 @@
 			};
 			name = Debug;
 		};
-		OBJ_151 /* Release */ = {
+		OBJ_133 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				LD = /usr/bin/true;
@@ -965,89 +802,21 @@
 			};
 			name = Release;
 		};
-		OBJ_155 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				DEFINES_MODULE = NO;
-				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = PLATFORM_SUPPORTS_PONYRT_DISABLED;
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/.build/checkouts/Flynn/Sources/Pony/include",
-				);
-				INFOPLIST_FILE = jukebox2.xcodeproj/Pony_Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				OTHER_CFLAGS = "$(inherited)";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = Pony;
-				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
-				TARGET_NAME = Pony;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
-			};
-			name = Debug;
-		};
-		OBJ_156 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				DEFINES_MODULE = NO;
-				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = PLATFORM_SUPPORTS_PONYRT_DISABLED;
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/.build/checkouts/Flynn/Sources/Pony/include",
-				);
-				INFOPLIST_FILE = jukebox2.xcodeproj/Pony_Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				OTHER_CFLAGS = "$(inherited)";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = Pony;
-				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
-				TARGET_NAME = Pony;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
-			};
-			name = Release;
-		};
-		OBJ_172 /* Debug */ = {
+		OBJ_138 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 				);
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/.build/checkouts/Flynn/Sources/Pony/include",
-					"$(SRCROOT)/jukebox2.xcodeproj/GeneratedModuleMap/Pony",
-				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = jukebox2.xcodeproj/jukebox2_Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx @executable_path";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/jukebox2.xcodeproj/GeneratedModuleMap/Pony/module.modulemap";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
 				SWIFT_FORCE_DYNAMIC_LINK_STDLIB = YES;
 				SWIFT_FORCE_STATIC_LINK_STDLIB = NO;
@@ -1058,25 +827,21 @@
 			};
 			name = Debug;
 		};
-		OBJ_173 /* Release */ = {
+		OBJ_139 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 				);
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/.build/checkouts/Flynn/Sources/Pony/include",
-					"$(SRCROOT)/jukebox2.xcodeproj/GeneratedModuleMap/Pony",
-				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = jukebox2.xcodeproj/jukebox2_Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx @executable_path";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/jukebox2.xcodeproj/GeneratedModuleMap/Pony/module.modulemap";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
 				SWIFT_FORCE_DYNAMIC_LINK_STDLIB = YES;
 				SWIFT_FORCE_STATIC_LINK_STDLIB = NO;
@@ -1087,7 +852,7 @@
 			};
 			name = Release;
 		};
-		OBJ_188 /* Debug */ = {
+		OBJ_152 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				LD = /usr/bin/true;
@@ -1096,7 +861,7 @@
 			};
 			name = Debug;
 		};
-		OBJ_189 /* Release */ = {
+		OBJ_153 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				LD = /usr/bin/true;
@@ -1105,19 +870,19 @@
 			};
 			name = Release;
 		};
-		OBJ_194 /* Debug */ = {
+		OBJ_158 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 			};
 			name = Debug;
 		};
-		OBJ_195 /* Release */ = {
+		OBJ_159 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 			};
 			name = Release;
 		};
-		OBJ_199 /* Debug */ = {
+		OBJ_163 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
@@ -1126,18 +891,14 @@
 					"$(inherited)",
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 				);
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/.build/checkouts/Flynn/Sources/Pony/include",
-					"$(SRCROOT)/jukebox2.xcodeproj/GeneratedModuleMap/Pony",
-				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = jukebox2.xcodeproj/jukebox2Tests_Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/jukebox2.xcodeproj/GeneratedModuleMap/Pony/module.modulemap";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
 				SWIFT_VERSION = 5.0;
 				TARGET_NAME = jukebox2Tests;
@@ -1146,7 +907,7 @@
 			};
 			name = Debug;
 		};
-		OBJ_200 /* Release */ = {
+		OBJ_164 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
@@ -1155,18 +916,14 @@
 					"$(inherited)",
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 				);
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/.build/checkouts/Flynn/Sources/Pony/include",
-					"$(SRCROOT)/jukebox2.xcodeproj/GeneratedModuleMap/Pony",
-				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = jukebox2.xcodeproj/jukebox2Tests_Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/jukebox2.xcodeproj/GeneratedModuleMap/Pony/module.modulemap";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
 				SWIFT_VERSION = 5.0;
 				TARGET_NAME = jukebox2Tests;
@@ -1175,7 +932,7 @@
 			};
 			name = Release;
 		};
-		OBJ_214 /* Debug */ = {
+		OBJ_176 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				LD = /usr/bin/true;
@@ -1184,7 +941,7 @@
 			};
 			name = Debug;
 		};
-		OBJ_215 /* Release */ = {
+		OBJ_177 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				LD = /usr/bin/true;
@@ -1244,7 +1001,7 @@
 			};
 			name = Release;
 		};
-		OBJ_96 /* Debug */ = {
+		OBJ_79 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ENABLE_TESTABILITY = YES;
@@ -1272,7 +1029,7 @@
 			};
 			name = Debug;
 		};
-		OBJ_97 /* Release */ = {
+		OBJ_80 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ENABLE_TESTABILITY = YES;
@@ -1303,65 +1060,65 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		OBJ_132 /* Build configuration list for PBXNativeTarget "Flynn" */ = {
+		OBJ_115 /* Build configuration list for PBXNativeTarget "Flynn" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_133 /* Debug */,
-				OBJ_134 /* Release */,
+				OBJ_116 /* Debug */,
+				OBJ_117 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		OBJ_149 /* Build configuration list for PBXNativeTarget "FlynnPackageDescription" */ = {
+		OBJ_131 /* Build configuration list for PBXNativeTarget "FlynnPackageDescription" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_150 /* Debug */,
-				OBJ_151 /* Release */,
+				OBJ_132 /* Debug */,
+				OBJ_133 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		OBJ_154 /* Build configuration list for PBXNativeTarget "Pony" */ = {
+		OBJ_137 /* Build configuration list for PBXNativeTarget "jukebox2" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_155 /* Debug */,
-				OBJ_156 /* Release */,
+				OBJ_138 /* Debug */,
+				OBJ_139 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		OBJ_171 /* Build configuration list for PBXNativeTarget "jukebox2" */ = {
+		OBJ_151 /* Build configuration list for PBXNativeTarget "jukebox2PackageDescription" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_172 /* Debug */,
-				OBJ_173 /* Release */,
+				OBJ_152 /* Debug */,
+				OBJ_153 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		OBJ_187 /* Build configuration list for PBXNativeTarget "jukebox2PackageDescription" */ = {
+		OBJ_157 /* Build configuration list for PBXAggregateTarget "jukebox2PackageTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_188 /* Debug */,
-				OBJ_189 /* Release */,
+				OBJ_158 /* Debug */,
+				OBJ_159 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		OBJ_193 /* Build configuration list for PBXAggregateTarget "jukebox2PackageTests" */ = {
+		OBJ_162 /* Build configuration list for PBXNativeTarget "jukebox2Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_194 /* Debug */,
-				OBJ_195 /* Release */,
+				OBJ_163 /* Debug */,
+				OBJ_164 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		OBJ_198 /* Build configuration list for PBXNativeTarget "jukebox2Tests" */ = {
+		OBJ_175 /* Build configuration list for PBXNativeTarget "swift-argument-parserPackageDescription" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_199 /* Debug */,
-				OBJ_200 /* Release */,
+				OBJ_176 /* Debug */,
+				OBJ_177 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1375,20 +1132,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		OBJ_213 /* Build configuration list for PBXNativeTarget "swift-argument-parserPackageDescription" */ = {
+		OBJ_78 /* Build configuration list for PBXNativeTarget "ArgumentParser" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_214 /* Debug */,
-				OBJ_215 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		OBJ_95 /* Build configuration list for PBXNativeTarget "ArgumentParser" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				OBJ_96 /* Debug */,
-				OBJ_97 /* Release */,
+				OBJ_79 /* Debug */,
+				OBJ_80 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

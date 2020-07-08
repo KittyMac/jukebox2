@@ -27,9 +27,8 @@ class Main: Actor {
         audioIn = AudioIn()
     }
 
-    lazy var beRun = Behavior(self, _beRun)
-    private func _beRun(_: BehaviorArgs) {
-
+    lazy var beRun = Behavior(self) { (_: BehaviorArgs) in
+        print("main - run")
     }
 }
 
