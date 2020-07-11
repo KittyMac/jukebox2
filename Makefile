@@ -16,8 +16,11 @@ clean:
 update:
 	swift package update
 
+run:
+	swift run $(SWIFT_BUILD_FLAGS)
+	
 test:
-	swift test
+	swift test --configuration debug
 
 xcode:
 	swift package generate-xcodeproj
