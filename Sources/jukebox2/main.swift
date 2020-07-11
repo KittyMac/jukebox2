@@ -1,37 +1,28 @@
 import Flynn
 import ArgumentParser
+import Foundation
 
 // The actors work like this:
 //
-//  AudioIn ------> AudioOut
-//    \
-//     \
-//      \
-//       V
-//     Lights
+//  Audio ------> State
+//    \           /
+//     \         /
+//      \       /
+//       V     V
+//        Lights
 //
-// AudioIn: reads chunks of audio data from the mic, sends the data to
-//          AudioOut and Lights
-// AudioOut: writes the chunks of audio data to the speakers
-// Lights: does pretty things with the lights given the audio data
+// Audio: Uses portaudio to pass audio through from mic to speakers. Gathers
+//        statistical information used by Lights and State
+// State: Changes light performances based on events detected in the audio
+//        stream (such as when songs change or Alexa speaks)
+// Lights: does pretty things with the RGB lighting on the jukebox
 
-class Main: Actor {
-    private let audioIn: AudioIn
-    private let audioOut: AudioOut
-    private let lights: Lights
+let lights = Lights()
+let state = State(lights)
+let audio = Audio(lights, state)
 
-    override init() {
-        audioOut = AudioOut()
-        lights = Lights()
-        //audioIn = AudioIn(audioOut, lights)
-        audioIn = AudioIn()
-    }
-
-    lazy var beRun = Behavior(self) { (_: BehaviorArgs) in
-        print("main - run")
-    }
+while true {
+    sleep(1)
 }
-
-Main().beRun()
 
 Flynn.shutdown()

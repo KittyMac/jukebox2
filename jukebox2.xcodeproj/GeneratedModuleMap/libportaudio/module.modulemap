@@ -1,0 +1,4 @@
+module libportaudio {
+    umbrella "/Volumes/Development/Development/chimerasw2/jukebox2/.build/checkouts/portaudio-swift/Sources/libportaudio/include"
+    export *
+}
