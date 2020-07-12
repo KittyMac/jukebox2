@@ -59,9 +59,13 @@ private func passthroughAudio(_ inputBuffer: UnsafeRawPointer?,
 }
 
 struct AudioStats {
-    let average: Float
-    let peakAmplitude: Float
-    let peakToPeakAmplitude: Float
+    var average: Float
+    var peakAmplitude: Float
+    var peakToPeakAmplitude: Float
+
+    var normalize: Float = 0
+    var normalizedPeakAmplitude: Float = 0
+    var normalizedPeakToPeakAmplitude: Float = 0
 }
 
 extension AudioStats {
@@ -80,6 +84,7 @@ class Audio: Actor {
     private var stream: PortAudioStream?
 
     private var audioStats = AudioStats()
+    private var runningPeakAmplitude: Float = 0.0
 
     init(_ lights: Lights, _ state: State) {
         self.state = state
@@ -131,12 +136,34 @@ class Audio: Actor {
         }
     }
 
+    private func _beSetAudioStats(_ args: BehaviorArgs) {
+        var stats: AudioStats = args[x:0]
+
+        if runningPeakAmplitude == 0 {
+            runningPeakAmplitude = stats.peakAmplitude
+        }
+
+        runningPeakAmplitude += (stats.peakAmplitude - runningPeakAmplitude) * 0.000123
+
+        var normalize = 1.0 / runningPeakAmplitude
+        if normalize < 1.0 {
+            normalize = 1.0
+        }
+        if normalize > 100.0 {
+            normalize = 100.0
+        }
+
+        stats.normalize = normalize
+        stats.normalizedPeakAmplitude = stats.peakAmplitude * normalize
+        stats.normalizedPeakToPeakAmplitude = stats.peakToPeakAmplitude * normalize
+
+        audioStats = stats
+        lights.beSetAudioStats(stats)
+    }
+
     lazy var beSetAudioStats = Behavior(self) { [unowned self] (args: BehaviorArgs) in
         // flynnlint:parameter AudioStats - stats related to the audio buffer
-
-        self.audioStats = args[x:0]
-
-        self.lights.beSetAudioStats(self.audioStats)
+        self._beSetAudioStats(args)
     }
 
     lazy var beStop = Behavior(self) { [unowned self] (_: BehaviorArgs) in
