@@ -9,11 +9,11 @@
 /* Begin PBXAggregateTarget section */
 		"jukebox2::jukebox2PackageTests::ProductTarget" /* jukebox2PackageTests */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = OBJ_214 /* Build configuration list for PBXAggregateTarget "jukebox2PackageTests" */;
+			buildConfigurationList = OBJ_239 /* Build configuration list for PBXAggregateTarget "jukebox2PackageTests" */;
 			buildPhases = (
 			);
 			dependencies = (
-				OBJ_217 /* PBXTargetDependency */,
+				OBJ_242 /* PBXTargetDependency */,
 			);
 			name = jukebox2PackageTests;
 			productName = jukebox2PackageTests;
@@ -21,159 +21,179 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		OBJ_133 /* Argument.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_21 /* Argument.swift */; };
-		OBJ_134 /* ArgumentHelp.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_22 /* ArgumentHelp.swift */; };
-		OBJ_135 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_23 /* Errors.swift */; };
-		OBJ_136 /* Flag.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_24 /* Flag.swift */; };
-		OBJ_137 /* NameSpecification.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_25 /* NameSpecification.swift */; };
-		OBJ_138 /* Option.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_26 /* Option.swift */; };
-		OBJ_139 /* OptionGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_27 /* OptionGroup.swift */; };
-		OBJ_140 /* CommandConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_29 /* CommandConfiguration.swift */; };
-		OBJ_141 /* EnumerableFlag.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_30 /* EnumerableFlag.swift */; };
-		OBJ_142 /* ExpressibleByArgument.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_31 /* ExpressibleByArgument.swift */; };
-		OBJ_143 /* ParsableArguments.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_32 /* ParsableArguments.swift */; };
-		OBJ_144 /* ParsableArgumentsValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_33 /* ParsableArgumentsValidation.swift */; };
-		OBJ_145 /* ParsableCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_34 /* ParsableCommand.swift */; };
-		OBJ_146 /* ArgumentDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_36 /* ArgumentDecoder.swift */; };
-		OBJ_147 /* ArgumentDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_37 /* ArgumentDefinition.swift */; };
-		OBJ_148 /* ArgumentSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_38 /* ArgumentSet.swift */; };
-		OBJ_149 /* ArgumentSetSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_39 /* ArgumentSetSequence.swift */; };
-		OBJ_150 /* CommandParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_40 /* CommandParser.swift */; };
-		OBJ_151 /* InputOrigin.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_41 /* InputOrigin.swift */; };
-		OBJ_152 /* Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_42 /* Name.swift */; };
-		OBJ_153 /* Parsed.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_43 /* Parsed.swift */; };
-		OBJ_154 /* ParsedValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_44 /* ParsedValues.swift */; };
-		OBJ_155 /* ParserError.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_45 /* ParserError.swift */; };
-		OBJ_156 /* SplitArguments.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_46 /* SplitArguments.swift */; };
-		OBJ_157 /* HelpCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_48 /* HelpCommand.swift */; };
-		OBJ_158 /* HelpGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_49 /* HelpGenerator.swift */; };
-		OBJ_159 /* MessageInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_50 /* MessageInfo.swift */; };
-		OBJ_160 /* UsageGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_51 /* UsageGenerator.swift */; };
-		OBJ_161 /* SequenceExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_53 /* SequenceExtensions.swift */; };
-		OBJ_162 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_54 /* StringExtensions.swift */; };
-		OBJ_163 /* Tree.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_55 /* Tree.swift */; };
-		OBJ_170 /* Actor.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_108 /* Actor.swift */; };
-		OBJ_171 /* Atomics.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_109 /* Atomics.swift */; };
-		OBJ_172 /* Behavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_110 /* Behavior.swift */; };
-		OBJ_173 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_111 /* Device.swift */; };
-		OBJ_174 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_112 /* Extensions.swift */; };
-		OBJ_175 /* Flowable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_113 /* Flowable.swift */; };
-		OBJ_176 /* Flynn.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_114 /* Flynn.swift */; };
-		OBJ_177 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_115 /* Profile.swift */; };
-		OBJ_178 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_116 /* Queue.swift */; };
-		OBJ_179 /* Scheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_117 /* Scheduler.swift */; };
-		OBJ_186 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_118 /* Package.swift */; };
-		OBJ_192 /* Audio.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* Audio.swift */; };
-		OBJ_193 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* State.swift */; };
-		OBJ_194 /* Lights.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* Lights.swift */; };
-		OBJ_195 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* main.swift */; };
-		OBJ_197 /* ArgumentParser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "swift-argument-parser::ArgumentParser::Product" /* ArgumentParser.framework */; };
-		OBJ_198 /* portaudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "portaudio::portaudio::Product" /* portaudio.framework */; };
-		OBJ_199 /* libportaudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "portaudio::libportaudio::Product" /* libportaudio.framework */; };
-		OBJ_200 /* Flynn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Flynn::Flynn::Product" /* Flynn.framework */; };
-		OBJ_212 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
-		OBJ_223 /* XCTestManifests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_15 /* XCTestManifests.swift */; };
-		OBJ_224 /* jukebox2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_16 /* jukebox2Tests.swift */; };
-		OBJ_226 /* ArgumentParser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "swift-argument-parser::ArgumentParser::Product" /* ArgumentParser.framework */; };
-		OBJ_227 /* portaudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "portaudio::portaudio::Product" /* portaudio.framework */; };
-		OBJ_228 /* libportaudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "portaudio::libportaudio::Product" /* libportaudio.framework */; };
-		OBJ_229 /* Flynn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Flynn::Flynn::Product" /* Flynn.framework */; };
-		OBJ_239 /* pa_linux_alsa.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_61 /* pa_linux_alsa.c */; };
-		OBJ_240 /* pa_mac_core.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_63 /* pa_mac_core.c */; };
-		OBJ_241 /* pa_mac_core_blocking.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_64 /* pa_mac_core_blocking.c */; };
-		OBJ_242 /* pa_mac_core_utilities.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_65 /* pa_mac_core_utilities.c */; };
-		OBJ_243 /* pa_allocation.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_67 /* pa_allocation.c */; };
-		OBJ_244 /* pa_converters.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_68 /* pa_converters.c */; };
-		OBJ_245 /* pa_cpuload.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_69 /* pa_cpuload.c */; };
-		OBJ_246 /* pa_debugprint.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_70 /* pa_debugprint.c */; };
-		OBJ_247 /* pa_dither.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_71 /* pa_dither.c */; };
-		OBJ_248 /* pa_front.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_72 /* pa_front.c */; };
-		OBJ_249 /* pa_process.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_73 /* pa_process.c */; };
-		OBJ_250 /* pa_ringbuffer.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_74 /* pa_ringbuffer.c */; };
-		OBJ_251 /* pa_stream.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_75 /* pa_stream.c */; };
-		OBJ_252 /* pa_trace.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_76 /* pa_trace.c */; };
-		OBJ_253 /* pa_unix_hostapis.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_99 /* pa_unix_hostapis.c */; };
-		OBJ_254 /* pa_unix_util.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_100 /* pa_unix_util.c */; };
-		OBJ_260 /* portaudio+print.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_102 /* portaudio+print.swift */; };
-		OBJ_261 /* portaudio+stream.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_103 /* portaudio+stream.swift */; };
-		OBJ_262 /* portaudio.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_104 /* portaudio.swift */; };
-		OBJ_264 /* libportaudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "portaudio::libportaudio::Product" /* libportaudio.framework */; };
-		OBJ_271 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_105 /* Package.swift */; };
-		OBJ_277 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_56 /* Package.swift */; };
+		OBJ_141 /* Argument.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_27 /* Argument.swift */; };
+		OBJ_142 /* ArgumentHelp.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_28 /* ArgumentHelp.swift */; };
+		OBJ_143 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_29 /* Errors.swift */; };
+		OBJ_144 /* Flag.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_30 /* Flag.swift */; };
+		OBJ_145 /* NameSpecification.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_31 /* NameSpecification.swift */; };
+		OBJ_146 /* Option.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_32 /* Option.swift */; };
+		OBJ_147 /* OptionGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_33 /* OptionGroup.swift */; };
+		OBJ_148 /* CommandConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_35 /* CommandConfiguration.swift */; };
+		OBJ_149 /* EnumerableFlag.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_36 /* EnumerableFlag.swift */; };
+		OBJ_150 /* ExpressibleByArgument.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_37 /* ExpressibleByArgument.swift */; };
+		OBJ_151 /* ParsableArguments.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_38 /* ParsableArguments.swift */; };
+		OBJ_152 /* ParsableArgumentsValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_39 /* ParsableArgumentsValidation.swift */; };
+		OBJ_153 /* ParsableCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_40 /* ParsableCommand.swift */; };
+		OBJ_154 /* ArgumentDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_42 /* ArgumentDecoder.swift */; };
+		OBJ_155 /* ArgumentDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_43 /* ArgumentDefinition.swift */; };
+		OBJ_156 /* ArgumentSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_44 /* ArgumentSet.swift */; };
+		OBJ_157 /* ArgumentSetSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_45 /* ArgumentSetSequence.swift */; };
+		OBJ_158 /* CommandParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_46 /* CommandParser.swift */; };
+		OBJ_159 /* InputOrigin.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_47 /* InputOrigin.swift */; };
+		OBJ_160 /* Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_48 /* Name.swift */; };
+		OBJ_161 /* Parsed.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_49 /* Parsed.swift */; };
+		OBJ_162 /* ParsedValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_50 /* ParsedValues.swift */; };
+		OBJ_163 /* ParserError.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_51 /* ParserError.swift */; };
+		OBJ_164 /* SplitArguments.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_52 /* SplitArguments.swift */; };
+		OBJ_165 /* HelpCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_54 /* HelpCommand.swift */; };
+		OBJ_166 /* HelpGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_55 /* HelpGenerator.swift */; };
+		OBJ_167 /* MessageInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_56 /* MessageInfo.swift */; };
+		OBJ_168 /* UsageGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_57 /* UsageGenerator.swift */; };
+		OBJ_169 /* SequenceExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_59 /* SequenceExtensions.swift */; };
+		OBJ_170 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_60 /* StringExtensions.swift */; };
+		OBJ_171 /* Tree.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_61 /* Tree.swift */; };
+		OBJ_178 /* Actor.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_114 /* Actor.swift */; };
+		OBJ_179 /* Atomics.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_115 /* Atomics.swift */; };
+		OBJ_180 /* Behavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_116 /* Behavior.swift */; };
+		OBJ_181 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_117 /* Device.swift */; };
+		OBJ_182 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_118 /* Extensions.swift */; };
+		OBJ_183 /* Flowable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_119 /* Flowable.swift */; };
+		OBJ_184 /* Flynn.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_120 /* Flynn.swift */; };
+		OBJ_185 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_121 /* Profile.swift */; };
+		OBJ_186 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_122 /* Queue.swift */; };
+		OBJ_187 /* Scheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_123 /* Scheduler.swift */; };
+		OBJ_194 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_124 /* Package.swift */; };
+		OBJ_200 /* Socket.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_20 /* Socket.swift */; };
+		OBJ_201 /* SocketProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_21 /* SocketProtocols.swift */; };
+		OBJ_202 /* SocketUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_22 /* SocketUtils.swift */; };
+		OBJ_209 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_23 /* Package.swift */; };
+		OBJ_215 /* Audio.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* Audio.swift */; };
+		OBJ_216 /* Lights.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* Lights.swift */; };
+		OBJ_217 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* State.swift */; };
+		OBJ_218 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* main.swift */; };
+		OBJ_220 /* ArgumentParser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "swift-argument-parser::ArgumentParser::Product" /* ArgumentParser.framework */; };
+		OBJ_221 /* Socket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Socket::Socket::Product" /* Socket.framework */; };
+		OBJ_222 /* portaudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "portaudio::portaudio::Product" /* portaudio.framework */; };
+		OBJ_223 /* libportaudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "portaudio::libportaudio::Product" /* libportaudio.framework */; };
+		OBJ_224 /* Flynn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Flynn::Flynn::Product" /* Flynn.framework */; };
+		OBJ_237 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
+		OBJ_248 /* XCTestManifests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_15 /* XCTestManifests.swift */; };
+		OBJ_249 /* jukebox2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_16 /* jukebox2Tests.swift */; };
+		OBJ_251 /* ArgumentParser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "swift-argument-parser::ArgumentParser::Product" /* ArgumentParser.framework */; };
+		OBJ_252 /* Socket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Socket::Socket::Product" /* Socket.framework */; };
+		OBJ_253 /* portaudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "portaudio::portaudio::Product" /* portaudio.framework */; };
+		OBJ_254 /* libportaudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "portaudio::libportaudio::Product" /* libportaudio.framework */; };
+		OBJ_255 /* Flynn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Flynn::Flynn::Product" /* Flynn.framework */; };
+		OBJ_266 /* pa_linux_alsa.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_67 /* pa_linux_alsa.c */; };
+		OBJ_267 /* pa_mac_core.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_69 /* pa_mac_core.c */; };
+		OBJ_268 /* pa_mac_core_blocking.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_70 /* pa_mac_core_blocking.c */; };
+		OBJ_269 /* pa_mac_core_utilities.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_71 /* pa_mac_core_utilities.c */; };
+		OBJ_270 /* pa_allocation.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_73 /* pa_allocation.c */; };
+		OBJ_271 /* pa_converters.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_74 /* pa_converters.c */; };
+		OBJ_272 /* pa_cpuload.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_75 /* pa_cpuload.c */; };
+		OBJ_273 /* pa_debugprint.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_76 /* pa_debugprint.c */; };
+		OBJ_274 /* pa_dither.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_77 /* pa_dither.c */; };
+		OBJ_275 /* pa_front.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_78 /* pa_front.c */; };
+		OBJ_276 /* pa_process.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_79 /* pa_process.c */; };
+		OBJ_277 /* pa_ringbuffer.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_80 /* pa_ringbuffer.c */; };
+		OBJ_278 /* pa_stream.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_81 /* pa_stream.c */; };
+		OBJ_279 /* pa_trace.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_82 /* pa_trace.c */; };
+		OBJ_280 /* pa_unix_hostapis.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_105 /* pa_unix_hostapis.c */; };
+		OBJ_281 /* pa_unix_util.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_106 /* pa_unix_util.c */; };
+		OBJ_287 /* portaudio+print.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_108 /* portaudio+print.swift */; };
+		OBJ_288 /* portaudio+stream.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_109 /* portaudio+stream.swift */; };
+		OBJ_289 /* portaudio.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_110 /* portaudio.swift */; };
+		OBJ_291 /* libportaudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "portaudio::libportaudio::Product" /* libportaudio.framework */; };
+		OBJ_298 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_111 /* Package.swift */; };
+		OBJ_304 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_62 /* Package.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		460DD6FA24BA144000AA8FBF /* PBXContainerItemProxy */ = {
+		46B25F7F24BAC503008E11D0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "swift-argument-parser::ArgumentParser";
 			remoteInfo = ArgumentParser;
 		};
-		460DD6FB24BA144000AA8FBF /* PBXContainerItemProxy */ = {
+		46B25F8024BAC503008E11D0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Socket::Socket";
+			remoteInfo = Socket;
+		};
+		46B25F8124BAC503008E11D0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "portaudio::portaudio";
 			remoteInfo = portaudio;
 		};
-		460DD6FC24BA144000AA8FBF /* PBXContainerItemProxy */ = {
+		46B25F8224BAC503008E11D0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "portaudio::libportaudio";
 			remoteInfo = libportaudio;
 		};
-		460DD6FD24BA144000AA8FBF /* PBXContainerItemProxy */ = {
+		46B25F8324BAC503008E11D0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "portaudio::libportaudio";
 			remoteInfo = libportaudio;
 		};
-		460DD6FE24BA144000AA8FBF /* PBXContainerItemProxy */ = {
+		46B25F8424BAC503008E11D0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Flynn::Flynn";
 			remoteInfo = Flynn;
 		};
-		460DD6FF24BA144000AA8FBF /* PBXContainerItemProxy */ = {
+		46B25F8524BAC504008E11D0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "jukebox2::jukebox2";
 			remoteInfo = jukebox2;
 		};
-		460DD70024BA144000AA8FBF /* PBXContainerItemProxy */ = {
+		46B25F8624BAC504008E11D0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "swift-argument-parser::ArgumentParser";
 			remoteInfo = ArgumentParser;
 		};
-		460DD70124BA144000AA8FBF /* PBXContainerItemProxy */ = {
+		46B25F8724BAC504008E11D0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Socket::Socket";
+			remoteInfo = Socket;
+		};
+		46B25F8824BAC504008E11D0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "portaudio::portaudio";
 			remoteInfo = portaudio;
 		};
-		460DD70224BA144000AA8FBF /* PBXContainerItemProxy */ = {
+		46B25F8924BAC504008E11D0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "portaudio::libportaudio";
 			remoteInfo = libportaudio;
 		};
-		460DD70324BA144000AA8FBF /* PBXContainerItemProxy */ = {
+		46B25F8A24BAC504008E11D0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Flynn::Flynn";
 			remoteInfo = Flynn;
 		};
-		460DD70424BA144200AA8FBF /* PBXContainerItemProxy */ = {
+		46B25F8B24BAC505008E11D0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
@@ -184,98 +204,104 @@
 
 /* Begin PBXFileReference section */
 		"Flynn::Flynn::Product" /* Flynn.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Flynn.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		OBJ_10 /* State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
-		OBJ_100 /* pa_unix_util.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = pa_unix_util.c; sourceTree = "<group>"; };
-		OBJ_102 /* portaudio+print.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "portaudio+print.swift"; sourceTree = "<group>"; };
-		OBJ_103 /* portaudio+stream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "portaudio+stream.swift"; sourceTree = "<group>"; };
-		OBJ_104 /* portaudio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = portaudio.swift; sourceTree = "<group>"; };
-		OBJ_105 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Volumes/Development/Development/chimerasw2/jukebox2/.build/checkouts/portaudio-swift/Package.swift"; sourceTree = "<group>"; };
-		OBJ_108 /* Actor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Actor.swift; sourceTree = "<group>"; };
-		OBJ_109 /* Atomics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Atomics.swift; sourceTree = "<group>"; };
-		OBJ_11 /* Lights.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lights.swift; sourceTree = "<group>"; };
-		OBJ_110 /* Behavior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Behavior.swift; sourceTree = "<group>"; };
-		OBJ_111 /* Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
-		OBJ_112 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
-		OBJ_113 /* Flowable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flowable.swift; sourceTree = "<group>"; };
-		OBJ_114 /* Flynn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flynn.swift; sourceTree = "<group>"; };
-		OBJ_115 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
-		OBJ_116 /* Queue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
-		OBJ_117 /* Scheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scheduler.swift; sourceTree = "<group>"; };
-		OBJ_118 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = /Volumes/Development/Development/chimerasw2/jukebox2/.build/checkouts/Flynn/Package.swift; sourceTree = "<group>"; };
+		OBJ_10 /* Lights.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lights.swift; sourceTree = "<group>"; };
+		OBJ_100 /* pa_util.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pa_util.h; sourceTree = "<group>"; };
+		OBJ_101 /* portaudio.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = portaudio.h; sourceTree = "<group>"; };
+		OBJ_102 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; name = module.modulemap; path = /Volumes/Development/Development/chimerasw2/jukebox2/jukebox2.xcodeproj/GeneratedModuleMap/libportaudio/module.modulemap; sourceTree = "<group>"; };
+		OBJ_105 /* pa_unix_hostapis.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = pa_unix_hostapis.c; sourceTree = "<group>"; };
+		OBJ_106 /* pa_unix_util.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = pa_unix_util.c; sourceTree = "<group>"; };
+		OBJ_108 /* portaudio+print.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "portaudio+print.swift"; sourceTree = "<group>"; };
+		OBJ_109 /* portaudio+stream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "portaudio+stream.swift"; sourceTree = "<group>"; };
+		OBJ_11 /* State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
+		OBJ_110 /* portaudio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = portaudio.swift; sourceTree = "<group>"; };
+		OBJ_111 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Volumes/Development/Development/chimerasw2/jukebox2/.build/checkouts/portaudio-swift/Package.swift"; sourceTree = "<group>"; };
+		OBJ_114 /* Actor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Actor.swift; sourceTree = "<group>"; };
+		OBJ_115 /* Atomics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Atomics.swift; sourceTree = "<group>"; };
+		OBJ_116 /* Behavior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Behavior.swift; sourceTree = "<group>"; };
+		OBJ_117 /* Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
+		OBJ_118 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		OBJ_119 /* Flowable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flowable.swift; sourceTree = "<group>"; };
 		OBJ_12 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		OBJ_126 /* Makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
-		OBJ_127 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		OBJ_120 /* Flynn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flynn.swift; sourceTree = "<group>"; };
+		OBJ_121 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		OBJ_122 /* Queue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
+		OBJ_123 /* Scheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scheduler.swift; sourceTree = "<group>"; };
+		OBJ_124 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = /Volumes/Development/Development/chimerasw2/jukebox2/.build/checkouts/Flynn/Package.swift; sourceTree = "<group>"; };
+		OBJ_133 /* meta */ = {isa = PBXFileReference; lastKnownFileType = folder; path = meta; sourceTree = SOURCE_ROOT; };
+		OBJ_134 /* Makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		OBJ_135 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		OBJ_15 /* XCTestManifests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestManifests.swift; sourceTree = "<group>"; };
 		OBJ_16 /* jukebox2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = jukebox2Tests.swift; sourceTree = "<group>"; };
-		OBJ_21 /* Argument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Argument.swift; sourceTree = "<group>"; };
-		OBJ_22 /* ArgumentHelp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArgumentHelp.swift; sourceTree = "<group>"; };
-		OBJ_23 /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
-		OBJ_24 /* Flag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flag.swift; sourceTree = "<group>"; };
-		OBJ_25 /* NameSpecification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameSpecification.swift; sourceTree = "<group>"; };
-		OBJ_26 /* Option.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Option.swift; sourceTree = "<group>"; };
-		OBJ_27 /* OptionGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionGroup.swift; sourceTree = "<group>"; };
-		OBJ_29 /* CommandConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandConfiguration.swift; sourceTree = "<group>"; };
-		OBJ_30 /* EnumerableFlag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumerableFlag.swift; sourceTree = "<group>"; };
-		OBJ_31 /* ExpressibleByArgument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpressibleByArgument.swift; sourceTree = "<group>"; };
-		OBJ_32 /* ParsableArguments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParsableArguments.swift; sourceTree = "<group>"; };
-		OBJ_33 /* ParsableArgumentsValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParsableArgumentsValidation.swift; sourceTree = "<group>"; };
-		OBJ_34 /* ParsableCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParsableCommand.swift; sourceTree = "<group>"; };
-		OBJ_36 /* ArgumentDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArgumentDecoder.swift; sourceTree = "<group>"; };
-		OBJ_37 /* ArgumentDefinition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArgumentDefinition.swift; sourceTree = "<group>"; };
-		OBJ_38 /* ArgumentSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArgumentSet.swift; sourceTree = "<group>"; };
-		OBJ_39 /* ArgumentSetSequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArgumentSetSequence.swift; sourceTree = "<group>"; };
-		OBJ_40 /* CommandParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandParser.swift; sourceTree = "<group>"; };
-		OBJ_41 /* InputOrigin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputOrigin.swift; sourceTree = "<group>"; };
-		OBJ_42 /* Name.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Name.swift; sourceTree = "<group>"; };
-		OBJ_43 /* Parsed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parsed.swift; sourceTree = "<group>"; };
-		OBJ_44 /* ParsedValues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParsedValues.swift; sourceTree = "<group>"; };
-		OBJ_45 /* ParserError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParserError.swift; sourceTree = "<group>"; };
-		OBJ_46 /* SplitArguments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitArguments.swift; sourceTree = "<group>"; };
-		OBJ_48 /* HelpCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpCommand.swift; sourceTree = "<group>"; };
-		OBJ_49 /* HelpGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpGenerator.swift; sourceTree = "<group>"; };
-		OBJ_50 /* MessageInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageInfo.swift; sourceTree = "<group>"; };
-		OBJ_51 /* UsageGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsageGenerator.swift; sourceTree = "<group>"; };
-		OBJ_53 /* SequenceExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SequenceExtensions.swift; sourceTree = "<group>"; };
-		OBJ_54 /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
-		OBJ_55 /* Tree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tree.swift; sourceTree = "<group>"; };
-		OBJ_56 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Volumes/Development/Development/chimerasw2/jukebox2/.build/checkouts/swift-argument-parser/Package.swift"; sourceTree = "<group>"; };
+		OBJ_20 /* Socket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Socket.swift; sourceTree = "<group>"; };
+		OBJ_21 /* SocketProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketProtocols.swift; sourceTree = "<group>"; };
+		OBJ_22 /* SocketUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketUtils.swift; sourceTree = "<group>"; };
+		OBJ_23 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = /Volumes/Development/Development/chimerasw2/jukebox2/.build/checkouts/BlueSocket/Package.swift; sourceTree = "<group>"; };
+		OBJ_27 /* Argument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Argument.swift; sourceTree = "<group>"; };
+		OBJ_28 /* ArgumentHelp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArgumentHelp.swift; sourceTree = "<group>"; };
+		OBJ_29 /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		OBJ_30 /* Flag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flag.swift; sourceTree = "<group>"; };
+		OBJ_31 /* NameSpecification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameSpecification.swift; sourceTree = "<group>"; };
+		OBJ_32 /* Option.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Option.swift; sourceTree = "<group>"; };
+		OBJ_33 /* OptionGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionGroup.swift; sourceTree = "<group>"; };
+		OBJ_35 /* CommandConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandConfiguration.swift; sourceTree = "<group>"; };
+		OBJ_36 /* EnumerableFlag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumerableFlag.swift; sourceTree = "<group>"; };
+		OBJ_37 /* ExpressibleByArgument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpressibleByArgument.swift; sourceTree = "<group>"; };
+		OBJ_38 /* ParsableArguments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParsableArguments.swift; sourceTree = "<group>"; };
+		OBJ_39 /* ParsableArgumentsValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParsableArgumentsValidation.swift; sourceTree = "<group>"; };
+		OBJ_40 /* ParsableCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParsableCommand.swift; sourceTree = "<group>"; };
+		OBJ_42 /* ArgumentDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArgumentDecoder.swift; sourceTree = "<group>"; };
+		OBJ_43 /* ArgumentDefinition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArgumentDefinition.swift; sourceTree = "<group>"; };
+		OBJ_44 /* ArgumentSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArgumentSet.swift; sourceTree = "<group>"; };
+		OBJ_45 /* ArgumentSetSequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArgumentSetSequence.swift; sourceTree = "<group>"; };
+		OBJ_46 /* CommandParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandParser.swift; sourceTree = "<group>"; };
+		OBJ_47 /* InputOrigin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputOrigin.swift; sourceTree = "<group>"; };
+		OBJ_48 /* Name.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Name.swift; sourceTree = "<group>"; };
+		OBJ_49 /* Parsed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parsed.swift; sourceTree = "<group>"; };
+		OBJ_50 /* ParsedValues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParsedValues.swift; sourceTree = "<group>"; };
+		OBJ_51 /* ParserError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParserError.swift; sourceTree = "<group>"; };
+		OBJ_52 /* SplitArguments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitArguments.swift; sourceTree = "<group>"; };
+		OBJ_54 /* HelpCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpCommand.swift; sourceTree = "<group>"; };
+		OBJ_55 /* HelpGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpGenerator.swift; sourceTree = "<group>"; };
+		OBJ_56 /* MessageInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageInfo.swift; sourceTree = "<group>"; };
+		OBJ_57 /* UsageGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsageGenerator.swift; sourceTree = "<group>"; };
+		OBJ_59 /* SequenceExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SequenceExtensions.swift; sourceTree = "<group>"; };
 		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
-		OBJ_61 /* pa_linux_alsa.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = pa_linux_alsa.c; sourceTree = "<group>"; };
-		OBJ_63 /* pa_mac_core.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = pa_mac_core.c; sourceTree = "<group>"; };
-		OBJ_64 /* pa_mac_core_blocking.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = pa_mac_core_blocking.c; sourceTree = "<group>"; };
-		OBJ_65 /* pa_mac_core_utilities.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = pa_mac_core_utilities.c; sourceTree = "<group>"; };
-		OBJ_67 /* pa_allocation.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = pa_allocation.c; sourceTree = "<group>"; };
-		OBJ_68 /* pa_converters.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = pa_converters.c; sourceTree = "<group>"; };
-		OBJ_69 /* pa_cpuload.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = pa_cpuload.c; sourceTree = "<group>"; };
-		OBJ_70 /* pa_debugprint.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = pa_debugprint.c; sourceTree = "<group>"; };
-		OBJ_71 /* pa_dither.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = pa_dither.c; sourceTree = "<group>"; };
-		OBJ_72 /* pa_front.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = pa_front.c; sourceTree = "<group>"; };
-		OBJ_73 /* pa_process.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = pa_process.c; sourceTree = "<group>"; };
-		OBJ_74 /* pa_ringbuffer.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = pa_ringbuffer.c; sourceTree = "<group>"; };
-		OBJ_75 /* pa_stream.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = pa_stream.c; sourceTree = "<group>"; };
-		OBJ_76 /* pa_trace.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = pa_trace.c; sourceTree = "<group>"; };
-		OBJ_77 /* pa_allocation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pa_allocation.h; sourceTree = "<group>"; };
-		OBJ_78 /* pa_converters.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pa_converters.h; sourceTree = "<group>"; };
-		OBJ_79 /* pa_cpuload.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pa_cpuload.h; sourceTree = "<group>"; };
-		OBJ_80 /* pa_debugprint.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pa_debugprint.h; sourceTree = "<group>"; };
-		OBJ_81 /* pa_dither.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pa_dither.h; sourceTree = "<group>"; };
-		OBJ_82 /* pa_endianness.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pa_endianness.h; sourceTree = "<group>"; };
-		OBJ_83 /* pa_gitrevision.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pa_gitrevision.h; sourceTree = "<group>"; };
-		OBJ_84 /* pa_hostapi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pa_hostapi.h; sourceTree = "<group>"; };
-		OBJ_85 /* pa_linux_alsa.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pa_linux_alsa.h; sourceTree = "<group>"; };
-		OBJ_86 /* pa_mac_core.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pa_mac_core.h; sourceTree = "<group>"; };
-		OBJ_87 /* pa_memorybarrier.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pa_memorybarrier.h; sourceTree = "<group>"; };
-		OBJ_88 /* pa_process.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pa_process.h; sourceTree = "<group>"; };
-		OBJ_89 /* pa_ringbuffer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pa_ringbuffer.h; sourceTree = "<group>"; };
+		OBJ_60 /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		OBJ_61 /* Tree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tree.swift; sourceTree = "<group>"; };
+		OBJ_62 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Volumes/Development/Development/chimerasw2/jukebox2/.build/checkouts/swift-argument-parser/Package.swift"; sourceTree = "<group>"; };
+		OBJ_67 /* pa_linux_alsa.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = pa_linux_alsa.c; sourceTree = "<group>"; };
+		OBJ_69 /* pa_mac_core.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = pa_mac_core.c; sourceTree = "<group>"; };
+		OBJ_70 /* pa_mac_core_blocking.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = pa_mac_core_blocking.c; sourceTree = "<group>"; };
+		OBJ_71 /* pa_mac_core_utilities.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = pa_mac_core_utilities.c; sourceTree = "<group>"; };
+		OBJ_73 /* pa_allocation.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = pa_allocation.c; sourceTree = "<group>"; };
+		OBJ_74 /* pa_converters.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = pa_converters.c; sourceTree = "<group>"; };
+		OBJ_75 /* pa_cpuload.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = pa_cpuload.c; sourceTree = "<group>"; };
+		OBJ_76 /* pa_debugprint.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = pa_debugprint.c; sourceTree = "<group>"; };
+		OBJ_77 /* pa_dither.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = pa_dither.c; sourceTree = "<group>"; };
+		OBJ_78 /* pa_front.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = pa_front.c; sourceTree = "<group>"; };
+		OBJ_79 /* pa_process.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = pa_process.c; sourceTree = "<group>"; };
+		OBJ_80 /* pa_ringbuffer.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = pa_ringbuffer.c; sourceTree = "<group>"; };
+		OBJ_81 /* pa_stream.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = pa_stream.c; sourceTree = "<group>"; };
+		OBJ_82 /* pa_trace.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = pa_trace.c; sourceTree = "<group>"; };
+		OBJ_83 /* pa_allocation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pa_allocation.h; sourceTree = "<group>"; };
+		OBJ_84 /* pa_converters.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pa_converters.h; sourceTree = "<group>"; };
+		OBJ_85 /* pa_cpuload.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pa_cpuload.h; sourceTree = "<group>"; };
+		OBJ_86 /* pa_debugprint.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pa_debugprint.h; sourceTree = "<group>"; };
+		OBJ_87 /* pa_dither.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pa_dither.h; sourceTree = "<group>"; };
+		OBJ_88 /* pa_endianness.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pa_endianness.h; sourceTree = "<group>"; };
+		OBJ_89 /* pa_gitrevision.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pa_gitrevision.h; sourceTree = "<group>"; };
 		OBJ_9 /* Audio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Audio.swift; sourceTree = "<group>"; };
-		OBJ_90 /* pa_stream.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pa_stream.h; sourceTree = "<group>"; };
-		OBJ_91 /* pa_trace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pa_trace.h; sourceTree = "<group>"; };
-		OBJ_92 /* pa_types.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pa_types.h; sourceTree = "<group>"; };
-		OBJ_93 /* pa_unix_util.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pa_unix_util.h; sourceTree = "<group>"; };
-		OBJ_94 /* pa_util.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pa_util.h; sourceTree = "<group>"; };
-		OBJ_95 /* portaudio.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = portaudio.h; sourceTree = "<group>"; };
-		OBJ_96 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; name = module.modulemap; path = /Volumes/Development/Development/chimerasw2/jukebox2/jukebox2.xcodeproj/GeneratedModuleMap/libportaudio/module.modulemap; sourceTree = "<group>"; };
-		OBJ_99 /* pa_unix_hostapis.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = pa_unix_hostapis.c; sourceTree = "<group>"; };
+		OBJ_90 /* pa_hostapi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pa_hostapi.h; sourceTree = "<group>"; };
+		OBJ_91 /* pa_linux_alsa.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pa_linux_alsa.h; sourceTree = "<group>"; };
+		OBJ_92 /* pa_mac_core.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pa_mac_core.h; sourceTree = "<group>"; };
+		OBJ_93 /* pa_memorybarrier.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pa_memorybarrier.h; sourceTree = "<group>"; };
+		OBJ_94 /* pa_process.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pa_process.h; sourceTree = "<group>"; };
+		OBJ_95 /* pa_ringbuffer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pa_ringbuffer.h; sourceTree = "<group>"; };
+		OBJ_96 /* pa_stream.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pa_stream.h; sourceTree = "<group>"; };
+		OBJ_97 /* pa_trace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pa_trace.h; sourceTree = "<group>"; };
+		OBJ_98 /* pa_types.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pa_types.h; sourceTree = "<group>"; };
+		OBJ_99 /* pa_unix_util.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pa_unix_util.h; sourceTree = "<group>"; };
+		"Socket::Socket::Product" /* Socket.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Socket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"jukebox2::jukebox2::Product" /* jukebox2 */ = {isa = PBXFileReference; lastKnownFileType = text; path = jukebox2; sourceTree = BUILT_PRODUCTS_DIR; };
 		"jukebox2::jukebox2Tests::Product" /* jukebox2Tests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = jukebox2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		"portaudio::libportaudio::Product" /* libportaudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libportaudio.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -284,107 +310,134 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		OBJ_164 /* Frameworks */ = {
+		OBJ_172 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_180 /* Frameworks */ = {
+		OBJ_188 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_196 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 0;
-			files = (
-				OBJ_197 /* ArgumentParser.framework in Frameworks */,
-				OBJ_198 /* portaudio.framework in Frameworks */,
-				OBJ_199 /* libportaudio.framework in Frameworks */,
-				OBJ_200 /* Flynn.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		OBJ_225 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 0;
-			files = (
-				OBJ_226 /* ArgumentParser.framework in Frameworks */,
-				OBJ_227 /* portaudio.framework in Frameworks */,
-				OBJ_228 /* libportaudio.framework in Frameworks */,
-				OBJ_229 /* Flynn.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		OBJ_255 /* Frameworks */ = {
+		OBJ_203 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_263 /* Frameworks */ = {
+		OBJ_219 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_264 /* libportaudio.framework in Frameworks */,
+				OBJ_220 /* ArgumentParser.framework in Frameworks */,
+				OBJ_221 /* Socket.framework in Frameworks */,
+				OBJ_222 /* portaudio.framework in Frameworks */,
+				OBJ_223 /* libportaudio.framework in Frameworks */,
+				OBJ_224 /* Flynn.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_250 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_251 /* ArgumentParser.framework in Frameworks */,
+				OBJ_252 /* Socket.framework in Frameworks */,
+				OBJ_253 /* portaudio.framework in Frameworks */,
+				OBJ_254 /* libportaudio.framework in Frameworks */,
+				OBJ_255 /* Flynn.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_282 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_290 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_291 /* libportaudio.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		OBJ_101 /* portaudio */ = {
+		OBJ_103 /* os */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_102 /* portaudio+print.swift */,
-				OBJ_103 /* portaudio+stream.swift */,
-				OBJ_104 /* portaudio.swift */,
+				OBJ_104 /* unix */,
+			);
+			path = os;
+			sourceTree = "<group>";
+		};
+		OBJ_104 /* unix */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_105 /* pa_unix_hostapis.c */,
+				OBJ_106 /* pa_unix_util.c */,
+			);
+			path = unix;
+			sourceTree = "<group>";
+		};
+		OBJ_107 /* portaudio */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_108 /* portaudio+print.swift */,
+				OBJ_109 /* portaudio+stream.swift */,
+				OBJ_110 /* portaudio.swift */,
 			);
 			name = portaudio;
 			path = ".build/checkouts/portaudio-swift/Sources/portaudio";
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_106 /* Flynn */ = {
+		OBJ_112 /* Flynn */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_107 /* Flynn */,
-				OBJ_118 /* Package.swift */,
+				OBJ_113 /* Flynn */,
+				OBJ_124 /* Package.swift */,
 			);
 			name = Flynn;
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_107 /* Flynn */ = {
+		OBJ_113 /* Flynn */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_108 /* Actor.swift */,
-				OBJ_109 /* Atomics.swift */,
-				OBJ_110 /* Behavior.swift */,
-				OBJ_111 /* Device.swift */,
-				OBJ_112 /* Extensions.swift */,
-				OBJ_113 /* Flowable.swift */,
-				OBJ_114 /* Flynn.swift */,
-				OBJ_115 /* Profile.swift */,
-				OBJ_116 /* Queue.swift */,
-				OBJ_117 /* Scheduler.swift */,
+				OBJ_114 /* Actor.swift */,
+				OBJ_115 /* Atomics.swift */,
+				OBJ_116 /* Behavior.swift */,
+				OBJ_117 /* Device.swift */,
+				OBJ_118 /* Extensions.swift */,
+				OBJ_119 /* Flowable.swift */,
+				OBJ_120 /* Flynn.swift */,
+				OBJ_121 /* Profile.swift */,
+				OBJ_122 /* Queue.swift */,
+				OBJ_123 /* Scheduler.swift */,
 			);
 			name = Flynn;
 			path = .build/checkouts/Flynn/Sources/Flynn;
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_119 /* Products */ = {
+		OBJ_125 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				"Flynn::Flynn::Product" /* Flynn.framework */,
-				"portaudio::libportaudio::Product" /* libportaudio.framework */,
+				"portaudio::portaudio::Product" /* portaudio.framework */,
 				"swift-argument-parser::ArgumentParser::Product" /* ArgumentParser.framework */,
 				"jukebox2::jukebox2::Product" /* jukebox2 */,
-				"portaudio::portaudio::Product" /* portaudio.framework */,
+				"portaudio::libportaudio::Product" /* libportaudio.framework */,
+				"Flynn::Flynn::Product" /* Flynn.framework */,
 				"jukebox2::jukebox2Tests::Product" /* jukebox2Tests.xctest */,
+				"Socket::Socket::Product" /* Socket.framework */,
 			);
 			name = Products;
 			sourceTree = BUILT_PRODUCTS_DIR;
@@ -410,89 +463,99 @@
 		OBJ_17 /* Dependencies */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_18 /* swift-argument-parser 0.2.0 */,
-				OBJ_57 /* portaudio */,
-				OBJ_106 /* Flynn */,
+				OBJ_18 /* Socket 1.0.52 */,
+				OBJ_24 /* swift-argument-parser 0.2.0 */,
+				OBJ_63 /* portaudio */,
+				OBJ_112 /* Flynn */,
 			);
 			name = Dependencies;
 			sourceTree = "<group>";
 		};
-		OBJ_18 /* swift-argument-parser 0.2.0 */ = {
+		OBJ_18 /* Socket 1.0.52 */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_19 /* ArgumentParser */,
-				OBJ_56 /* Package.swift */,
+				OBJ_19 /* Socket */,
+				OBJ_23 /* Package.swift */,
+			);
+			name = "Socket 1.0.52";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_19 /* Socket */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_20 /* Socket.swift */,
+				OBJ_21 /* SocketProtocols.swift */,
+				OBJ_22 /* SocketUtils.swift */,
+			);
+			name = Socket;
+			path = .build/checkouts/BlueSocket/Sources/Socket;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_24 /* swift-argument-parser 0.2.0 */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_25 /* ArgumentParser */,
+				OBJ_62 /* Package.swift */,
 			);
 			name = "swift-argument-parser 0.2.0";
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_19 /* ArgumentParser */ = {
+		OBJ_25 /* ArgumentParser */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_20 /* Parsable Properties */,
-				OBJ_28 /* Parsable Types */,
-				OBJ_35 /* Parsing */,
-				OBJ_47 /* Usage */,
-				OBJ_52 /* Utilities */,
+				OBJ_26 /* Parsable Properties */,
+				OBJ_34 /* Parsable Types */,
+				OBJ_41 /* Parsing */,
+				OBJ_53 /* Usage */,
+				OBJ_58 /* Utilities */,
 			);
 			name = ArgumentParser;
 			path = ".build/checkouts/swift-argument-parser/Sources/ArgumentParser";
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_20 /* Parsable Properties */ = {
+		OBJ_26 /* Parsable Properties */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_21 /* Argument.swift */,
-				OBJ_22 /* ArgumentHelp.swift */,
-				OBJ_23 /* Errors.swift */,
-				OBJ_24 /* Flag.swift */,
-				OBJ_25 /* NameSpecification.swift */,
-				OBJ_26 /* Option.swift */,
-				OBJ_27 /* OptionGroup.swift */,
+				OBJ_27 /* Argument.swift */,
+				OBJ_28 /* ArgumentHelp.swift */,
+				OBJ_29 /* Errors.swift */,
+				OBJ_30 /* Flag.swift */,
+				OBJ_31 /* NameSpecification.swift */,
+				OBJ_32 /* Option.swift */,
+				OBJ_33 /* OptionGroup.swift */,
 			);
 			path = "Parsable Properties";
 			sourceTree = "<group>";
 		};
-		OBJ_28 /* Parsable Types */ = {
+		OBJ_34 /* Parsable Types */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_29 /* CommandConfiguration.swift */,
-				OBJ_30 /* EnumerableFlag.swift */,
-				OBJ_31 /* ExpressibleByArgument.swift */,
-				OBJ_32 /* ParsableArguments.swift */,
-				OBJ_33 /* ParsableArgumentsValidation.swift */,
-				OBJ_34 /* ParsableCommand.swift */,
+				OBJ_35 /* CommandConfiguration.swift */,
+				OBJ_36 /* EnumerableFlag.swift */,
+				OBJ_37 /* ExpressibleByArgument.swift */,
+				OBJ_38 /* ParsableArguments.swift */,
+				OBJ_39 /* ParsableArgumentsValidation.swift */,
+				OBJ_40 /* ParsableCommand.swift */,
 			);
 			path = "Parsable Types";
 			sourceTree = "<group>";
 		};
-		OBJ_35 /* Parsing */ = {
+		OBJ_41 /* Parsing */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_36 /* ArgumentDecoder.swift */,
-				OBJ_37 /* ArgumentDefinition.swift */,
-				OBJ_38 /* ArgumentSet.swift */,
-				OBJ_39 /* ArgumentSetSequence.swift */,
-				OBJ_40 /* CommandParser.swift */,
-				OBJ_41 /* InputOrigin.swift */,
-				OBJ_42 /* Name.swift */,
-				OBJ_43 /* Parsed.swift */,
-				OBJ_44 /* ParsedValues.swift */,
-				OBJ_45 /* ParserError.swift */,
-				OBJ_46 /* SplitArguments.swift */,
+				OBJ_42 /* ArgumentDecoder.swift */,
+				OBJ_43 /* ArgumentDefinition.swift */,
+				OBJ_44 /* ArgumentSet.swift */,
+				OBJ_45 /* ArgumentSetSequence.swift */,
+				OBJ_46 /* CommandParser.swift */,
+				OBJ_47 /* InputOrigin.swift */,
+				OBJ_48 /* Name.swift */,
+				OBJ_49 /* Parsed.swift */,
+				OBJ_50 /* ParsedValues.swift */,
+				OBJ_51 /* ParserError.swift */,
+				OBJ_52 /* SplitArguments.swift */,
 			);
 			path = Parsing;
-			sourceTree = "<group>";
-		};
-		OBJ_47 /* Usage */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_48 /* HelpCommand.swift */,
-				OBJ_49 /* HelpGenerator.swift */,
-				OBJ_50 /* MessageInfo.swift */,
-				OBJ_51 /* UsageGenerator.swift */,
-			);
-			path = Usage;
 			sourceTree = "<group>";
 		};
 		OBJ_5 /*  */ = {
@@ -502,106 +565,81 @@
 				OBJ_7 /* Sources */,
 				OBJ_13 /* Tests */,
 				OBJ_17 /* Dependencies */,
-				OBJ_119 /* Products */,
-				OBJ_126 /* Makefile */,
-				OBJ_127 /* README.md */,
+				OBJ_125 /* Products */,
+				OBJ_133 /* meta */,
+				OBJ_134 /* Makefile */,
+				OBJ_135 /* README.md */,
 			);
 			name = "";
 			sourceTree = "<group>";
 		};
-		OBJ_52 /* Utilities */ = {
+		OBJ_53 /* Usage */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_53 /* SequenceExtensions.swift */,
-				OBJ_54 /* StringExtensions.swift */,
-				OBJ_55 /* Tree.swift */,
+				OBJ_54 /* HelpCommand.swift */,
+				OBJ_55 /* HelpGenerator.swift */,
+				OBJ_56 /* MessageInfo.swift */,
+				OBJ_57 /* UsageGenerator.swift */,
+			);
+			path = Usage;
+			sourceTree = "<group>";
+		};
+		OBJ_58 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_59 /* SequenceExtensions.swift */,
+				OBJ_60 /* StringExtensions.swift */,
+				OBJ_61 /* Tree.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
 		};
-		OBJ_57 /* portaudio */ = {
+		OBJ_63 /* portaudio */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_58 /* libportaudio */,
-				OBJ_101 /* portaudio */,
-				OBJ_105 /* Package.swift */,
+				OBJ_64 /* libportaudio */,
+				OBJ_107 /* portaudio */,
+				OBJ_111 /* Package.swift */,
 			);
 			name = portaudio;
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_58 /* libportaudio */ = {
+		OBJ_64 /* libportaudio */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_59 /* hostapi */,
-				OBJ_66 /* include */,
-				OBJ_97 /* os */,
+				OBJ_65 /* hostapi */,
+				OBJ_72 /* include */,
+				OBJ_103 /* os */,
 			);
 			name = libportaudio;
 			path = ".build/checkouts/portaudio-swift/Sources/libportaudio";
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_59 /* hostapi */ = {
+		OBJ_65 /* hostapi */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_60 /* alsa */,
-				OBJ_62 /* coreaudio */,
+				OBJ_66 /* alsa */,
+				OBJ_68 /* coreaudio */,
 			);
 			path = hostapi;
 			sourceTree = "<group>";
 		};
-		OBJ_60 /* alsa */ = {
+		OBJ_66 /* alsa */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_61 /* pa_linux_alsa.c */,
+				OBJ_67 /* pa_linux_alsa.c */,
 			);
 			path = alsa;
 			sourceTree = "<group>";
 		};
-		OBJ_62 /* coreaudio */ = {
+		OBJ_68 /* coreaudio */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_63 /* pa_mac_core.c */,
-				OBJ_64 /* pa_mac_core_blocking.c */,
-				OBJ_65 /* pa_mac_core_utilities.c */,
+				OBJ_69 /* pa_mac_core.c */,
+				OBJ_70 /* pa_mac_core_blocking.c */,
+				OBJ_71 /* pa_mac_core_utilities.c */,
 			);
 			path = coreaudio;
-			sourceTree = "<group>";
-		};
-		OBJ_66 /* include */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_67 /* pa_allocation.c */,
-				OBJ_68 /* pa_converters.c */,
-				OBJ_69 /* pa_cpuload.c */,
-				OBJ_70 /* pa_debugprint.c */,
-				OBJ_71 /* pa_dither.c */,
-				OBJ_72 /* pa_front.c */,
-				OBJ_73 /* pa_process.c */,
-				OBJ_74 /* pa_ringbuffer.c */,
-				OBJ_75 /* pa_stream.c */,
-				OBJ_76 /* pa_trace.c */,
-				OBJ_77 /* pa_allocation.h */,
-				OBJ_78 /* pa_converters.h */,
-				OBJ_79 /* pa_cpuload.h */,
-				OBJ_80 /* pa_debugprint.h */,
-				OBJ_81 /* pa_dither.h */,
-				OBJ_82 /* pa_endianness.h */,
-				OBJ_83 /* pa_gitrevision.h */,
-				OBJ_84 /* pa_hostapi.h */,
-				OBJ_85 /* pa_linux_alsa.h */,
-				OBJ_86 /* pa_mac_core.h */,
-				OBJ_87 /* pa_memorybarrier.h */,
-				OBJ_88 /* pa_process.h */,
-				OBJ_89 /* pa_ringbuffer.h */,
-				OBJ_90 /* pa_stream.h */,
-				OBJ_91 /* pa_trace.h */,
-				OBJ_92 /* pa_types.h */,
-				OBJ_93 /* pa_unix_util.h */,
-				OBJ_94 /* pa_util.h */,
-				OBJ_95 /* portaudio.h */,
-				OBJ_96 /* module.modulemap */,
-			);
-			path = include;
 			sourceTree = "<group>";
 		};
 		OBJ_7 /* Sources */ = {
@@ -612,44 +650,64 @@
 			name = Sources;
 			sourceTree = SOURCE_ROOT;
 		};
+		OBJ_72 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_73 /* pa_allocation.c */,
+				OBJ_74 /* pa_converters.c */,
+				OBJ_75 /* pa_cpuload.c */,
+				OBJ_76 /* pa_debugprint.c */,
+				OBJ_77 /* pa_dither.c */,
+				OBJ_78 /* pa_front.c */,
+				OBJ_79 /* pa_process.c */,
+				OBJ_80 /* pa_ringbuffer.c */,
+				OBJ_81 /* pa_stream.c */,
+				OBJ_82 /* pa_trace.c */,
+				OBJ_83 /* pa_allocation.h */,
+				OBJ_84 /* pa_converters.h */,
+				OBJ_85 /* pa_cpuload.h */,
+				OBJ_86 /* pa_debugprint.h */,
+				OBJ_87 /* pa_dither.h */,
+				OBJ_88 /* pa_endianness.h */,
+				OBJ_89 /* pa_gitrevision.h */,
+				OBJ_90 /* pa_hostapi.h */,
+				OBJ_91 /* pa_linux_alsa.h */,
+				OBJ_92 /* pa_mac_core.h */,
+				OBJ_93 /* pa_memorybarrier.h */,
+				OBJ_94 /* pa_process.h */,
+				OBJ_95 /* pa_ringbuffer.h */,
+				OBJ_96 /* pa_stream.h */,
+				OBJ_97 /* pa_trace.h */,
+				OBJ_98 /* pa_types.h */,
+				OBJ_99 /* pa_unix_util.h */,
+				OBJ_100 /* pa_util.h */,
+				OBJ_101 /* portaudio.h */,
+				OBJ_102 /* module.modulemap */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
 		OBJ_8 /* jukebox2 */ = {
 			isa = PBXGroup;
 			children = (
 				OBJ_9 /* Audio.swift */,
-				OBJ_10 /* State.swift */,
-				OBJ_11 /* Lights.swift */,
+				OBJ_10 /* Lights.swift */,
+				OBJ_11 /* State.swift */,
 				OBJ_12 /* main.swift */,
 			);
 			name = jukebox2;
 			path = Sources/jukebox2;
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_97 /* os */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_98 /* unix */,
-			);
-			path = os;
-			sourceTree = "<group>";
-		};
-		OBJ_98 /* unix */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_99 /* pa_unix_hostapis.c */,
-				OBJ_100 /* pa_unix_util.c */,
-			);
-			path = unix;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
 		"Flynn::Flynn" /* Flynn */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_166 /* Build configuration list for PBXNativeTarget "Flynn" */;
+			buildConfigurationList = OBJ_174 /* Build configuration list for PBXNativeTarget "Flynn" */;
 			buildPhases = (
-				OBJ_169 /* Sources */,
-				OBJ_180 /* Frameworks */,
+				OBJ_177 /* Sources */,
+				OBJ_188 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -662,9 +720,9 @@
 		};
 		"Flynn::SwiftPMPackageDescription" /* FlynnPackageDescription */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_182 /* Build configuration list for PBXNativeTarget "FlynnPackageDescription" */;
+			buildConfigurationList = OBJ_190 /* Build configuration list for PBXNativeTarget "FlynnPackageDescription" */;
 			buildPhases = (
-				OBJ_185 /* Sources */,
+				OBJ_193 /* Sources */,
 			);
 			buildRules = (
 			);
@@ -674,11 +732,41 @@
 			productName = FlynnPackageDescription;
 			productType = "com.apple.product-type.framework";
 		};
+		"Socket::Socket" /* Socket */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_196 /* Build configuration list for PBXNativeTarget "Socket" */;
+			buildPhases = (
+				OBJ_199 /* Sources */,
+				OBJ_203 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Socket;
+			productName = Socket;
+			productReference = "Socket::Socket::Product" /* Socket.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"Socket::SwiftPMPackageDescription" /* SocketPackageDescription */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_205 /* Build configuration list for PBXNativeTarget "SocketPackageDescription" */;
+			buildPhases = (
+				OBJ_208 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SocketPackageDescription;
+			productName = SocketPackageDescription;
+			productType = "com.apple.product-type.framework";
+		};
 		"jukebox2::SwiftPMPackageDescription" /* jukebox2PackageDescription */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_208 /* Build configuration list for PBXNativeTarget "jukebox2PackageDescription" */;
+			buildConfigurationList = OBJ_233 /* Build configuration list for PBXNativeTarget "jukebox2PackageDescription" */;
 			buildPhases = (
-				OBJ_211 /* Sources */,
+				OBJ_236 /* Sources */,
 			);
 			buildRules = (
 			);
@@ -690,20 +778,21 @@
 		};
 		"jukebox2::jukebox2" /* jukebox2 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_188 /* Build configuration list for PBXNativeTarget "jukebox2" */;
+			buildConfigurationList = OBJ_211 /* Build configuration list for PBXNativeTarget "jukebox2" */;
 			buildPhases = (
-				460DD70524BA146800AA8FBF /* FlynnLint */,
-				460DD70624BA146A00AA8FBF /* SwiftLint */,
-				OBJ_191 /* Sources */,
-				OBJ_196 /* Frameworks */,
+				46B25F8C24BAC520008E11D0 /* FlynnLint */,
+				46B25F8D24BAC521008E11D0 /* SwiftLint */,
+				OBJ_214 /* Sources */,
+				OBJ_219 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				OBJ_201 /* PBXTargetDependency */,
-				OBJ_202 /* PBXTargetDependency */,
-				OBJ_204 /* PBXTargetDependency */,
-				OBJ_206 /* PBXTargetDependency */,
+				OBJ_225 /* PBXTargetDependency */,
+				OBJ_226 /* PBXTargetDependency */,
+				OBJ_227 /* PBXTargetDependency */,
+				OBJ_229 /* PBXTargetDependency */,
+				OBJ_231 /* PBXTargetDependency */,
 			);
 			name = jukebox2;
 			productName = jukebox2;
@@ -712,19 +801,20 @@
 		};
 		"jukebox2::jukebox2Tests" /* jukebox2Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_219 /* Build configuration list for PBXNativeTarget "jukebox2Tests" */;
+			buildConfigurationList = OBJ_244 /* Build configuration list for PBXNativeTarget "jukebox2Tests" */;
 			buildPhases = (
-				OBJ_222 /* Sources */,
-				OBJ_225 /* Frameworks */,
+				OBJ_247 /* Sources */,
+				OBJ_250 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				OBJ_230 /* PBXTargetDependency */,
-				OBJ_231 /* PBXTargetDependency */,
-				OBJ_232 /* PBXTargetDependency */,
-				OBJ_233 /* PBXTargetDependency */,
-				OBJ_234 /* PBXTargetDependency */,
+				OBJ_256 /* PBXTargetDependency */,
+				OBJ_257 /* PBXTargetDependency */,
+				OBJ_258 /* PBXTargetDependency */,
+				OBJ_259 /* PBXTargetDependency */,
+				OBJ_260 /* PBXTargetDependency */,
+				OBJ_261 /* PBXTargetDependency */,
 			);
 			name = jukebox2Tests;
 			productName = jukebox2Tests;
@@ -733,9 +823,9 @@
 		};
 		"portaudio::SwiftPMPackageDescription" /* portaudioPackageDescription */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_267 /* Build configuration list for PBXNativeTarget "portaudioPackageDescription" */;
+			buildConfigurationList = OBJ_294 /* Build configuration list for PBXNativeTarget "portaudioPackageDescription" */;
 			buildPhases = (
-				OBJ_270 /* Sources */,
+				OBJ_297 /* Sources */,
 			);
 			buildRules = (
 			);
@@ -747,10 +837,10 @@
 		};
 		"portaudio::libportaudio" /* libportaudio */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_235 /* Build configuration list for PBXNativeTarget "libportaudio" */;
+			buildConfigurationList = OBJ_262 /* Build configuration list for PBXNativeTarget "libportaudio" */;
 			buildPhases = (
-				OBJ_238 /* Sources */,
-				OBJ_255 /* Frameworks */,
+				OBJ_265 /* Sources */,
+				OBJ_282 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -763,15 +853,15 @@
 		};
 		"portaudio::portaudio" /* portaudio */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_256 /* Build configuration list for PBXNativeTarget "portaudio" */;
+			buildConfigurationList = OBJ_283 /* Build configuration list for PBXNativeTarget "portaudio" */;
 			buildPhases = (
-				OBJ_259 /* Sources */,
-				OBJ_263 /* Frameworks */,
+				OBJ_286 /* Sources */,
+				OBJ_290 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				OBJ_265 /* PBXTargetDependency */,
+				OBJ_292 /* PBXTargetDependency */,
 			);
 			name = portaudio;
 			productName = portaudio;
@@ -780,10 +870,10 @@
 		};
 		"swift-argument-parser::ArgumentParser" /* ArgumentParser */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_129 /* Build configuration list for PBXNativeTarget "ArgumentParser" */;
+			buildConfigurationList = OBJ_137 /* Build configuration list for PBXNativeTarget "ArgumentParser" */;
 			buildPhases = (
-				OBJ_132 /* Sources */,
-				OBJ_164 /* Frameworks */,
+				OBJ_140 /* Sources */,
+				OBJ_172 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -796,9 +886,9 @@
 		};
 		"swift-argument-parser::SwiftPMPackageDescription" /* swift-argument-parserPackageDescription */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_273 /* Build configuration list for PBXNativeTarget "swift-argument-parserPackageDescription" */;
+			buildConfigurationList = OBJ_300 /* Build configuration list for PBXNativeTarget "swift-argument-parserPackageDescription" */;
 			buildPhases = (
-				OBJ_276 /* Sources */,
+				OBJ_303 /* Sources */,
 			);
 			buildRules = (
 			);
@@ -825,13 +915,15 @@
 				en,
 			);
 			mainGroup = OBJ_5 /*  */;
-			productRefGroup = OBJ_119 /* Products */;
+			productRefGroup = OBJ_125 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				"swift-argument-parser::ArgumentParser" /* ArgumentParser */,
 				"Flynn::Flynn" /* Flynn */,
 				"Flynn::SwiftPMPackageDescription" /* FlynnPackageDescription */,
+				"Socket::Socket" /* Socket */,
+				"Socket::SwiftPMPackageDescription" /* SocketPackageDescription */,
 				"jukebox2::jukebox2" /* jukebox2 */,
 				"jukebox2::SwiftPMPackageDescription" /* jukebox2PackageDescription */,
 				"jukebox2::jukebox2PackageTests::ProductTarget" /* jukebox2PackageTests */,
@@ -845,7 +937,7 @@
 /* End PBXProject section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		460DD70524BA146800AA8FBF /* FlynnLint */ = {
+		46B25F8C24BAC520008E11D0 /* FlynnLint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -863,7 +955,7 @@
 			shellPath = /bin/sh;
 			shellScript = "FLYNNLINTSWIFTPM=${SRCROOT}/.build/checkouts/flynn/meta/FlynnLint\nFLYNNLINTXCODE=${BUILD_ROOT}/../../SourcePackages/checkouts/flynn/meta/FlynnLint\n\nif [ -f \"${FLYNNLINTSWIFTPM}\" ]; then\n    ${FLYNNLINTSWIFTPM} ${SRCROOT}\nelif [ -f \"${FLYNNLINTXCODE}\" ]; then\n    ${FLYNNLINTXCODE} ${SRCROOT}\nelse\n    echo \"warning: Unable to find FlynnLint, aborting...\"\nfi\n";
 		};
-		460DD70624BA146A00AA8FBF /* SwiftLint */ = {
+		46B25F8D24BAC521008E11D0 /* SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -884,208 +976,236 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		OBJ_132 /* Sources */ = {
+		OBJ_140 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_133 /* Argument.swift in Sources */,
-				OBJ_134 /* ArgumentHelp.swift in Sources */,
-				OBJ_135 /* Errors.swift in Sources */,
-				OBJ_136 /* Flag.swift in Sources */,
-				OBJ_137 /* NameSpecification.swift in Sources */,
-				OBJ_138 /* Option.swift in Sources */,
-				OBJ_139 /* OptionGroup.swift in Sources */,
-				OBJ_140 /* CommandConfiguration.swift in Sources */,
-				OBJ_141 /* EnumerableFlag.swift in Sources */,
-				OBJ_142 /* ExpressibleByArgument.swift in Sources */,
-				OBJ_143 /* ParsableArguments.swift in Sources */,
-				OBJ_144 /* ParsableArgumentsValidation.swift in Sources */,
-				OBJ_145 /* ParsableCommand.swift in Sources */,
-				OBJ_146 /* ArgumentDecoder.swift in Sources */,
-				OBJ_147 /* ArgumentDefinition.swift in Sources */,
-				OBJ_148 /* ArgumentSet.swift in Sources */,
-				OBJ_149 /* ArgumentSetSequence.swift in Sources */,
-				OBJ_150 /* CommandParser.swift in Sources */,
-				OBJ_151 /* InputOrigin.swift in Sources */,
-				OBJ_152 /* Name.swift in Sources */,
-				OBJ_153 /* Parsed.swift in Sources */,
-				OBJ_154 /* ParsedValues.swift in Sources */,
-				OBJ_155 /* ParserError.swift in Sources */,
-				OBJ_156 /* SplitArguments.swift in Sources */,
-				OBJ_157 /* HelpCommand.swift in Sources */,
-				OBJ_158 /* HelpGenerator.swift in Sources */,
-				OBJ_159 /* MessageInfo.swift in Sources */,
-				OBJ_160 /* UsageGenerator.swift in Sources */,
-				OBJ_161 /* SequenceExtensions.swift in Sources */,
-				OBJ_162 /* StringExtensions.swift in Sources */,
-				OBJ_163 /* Tree.swift in Sources */,
+				OBJ_141 /* Argument.swift in Sources */,
+				OBJ_142 /* ArgumentHelp.swift in Sources */,
+				OBJ_143 /* Errors.swift in Sources */,
+				OBJ_144 /* Flag.swift in Sources */,
+				OBJ_145 /* NameSpecification.swift in Sources */,
+				OBJ_146 /* Option.swift in Sources */,
+				OBJ_147 /* OptionGroup.swift in Sources */,
+				OBJ_148 /* CommandConfiguration.swift in Sources */,
+				OBJ_149 /* EnumerableFlag.swift in Sources */,
+				OBJ_150 /* ExpressibleByArgument.swift in Sources */,
+				OBJ_151 /* ParsableArguments.swift in Sources */,
+				OBJ_152 /* ParsableArgumentsValidation.swift in Sources */,
+				OBJ_153 /* ParsableCommand.swift in Sources */,
+				OBJ_154 /* ArgumentDecoder.swift in Sources */,
+				OBJ_155 /* ArgumentDefinition.swift in Sources */,
+				OBJ_156 /* ArgumentSet.swift in Sources */,
+				OBJ_157 /* ArgumentSetSequence.swift in Sources */,
+				OBJ_158 /* CommandParser.swift in Sources */,
+				OBJ_159 /* InputOrigin.swift in Sources */,
+				OBJ_160 /* Name.swift in Sources */,
+				OBJ_161 /* Parsed.swift in Sources */,
+				OBJ_162 /* ParsedValues.swift in Sources */,
+				OBJ_163 /* ParserError.swift in Sources */,
+				OBJ_164 /* SplitArguments.swift in Sources */,
+				OBJ_165 /* HelpCommand.swift in Sources */,
+				OBJ_166 /* HelpGenerator.swift in Sources */,
+				OBJ_167 /* MessageInfo.swift in Sources */,
+				OBJ_168 /* UsageGenerator.swift in Sources */,
+				OBJ_169 /* SequenceExtensions.swift in Sources */,
+				OBJ_170 /* StringExtensions.swift in Sources */,
+				OBJ_171 /* Tree.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_169 /* Sources */ = {
+		OBJ_177 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_170 /* Actor.swift in Sources */,
-				OBJ_171 /* Atomics.swift in Sources */,
-				OBJ_172 /* Behavior.swift in Sources */,
-				OBJ_173 /* Device.swift in Sources */,
-				OBJ_174 /* Extensions.swift in Sources */,
-				OBJ_175 /* Flowable.swift in Sources */,
-				OBJ_176 /* Flynn.swift in Sources */,
-				OBJ_177 /* Profile.swift in Sources */,
-				OBJ_178 /* Queue.swift in Sources */,
-				OBJ_179 /* Scheduler.swift in Sources */,
+				OBJ_178 /* Actor.swift in Sources */,
+				OBJ_179 /* Atomics.swift in Sources */,
+				OBJ_180 /* Behavior.swift in Sources */,
+				OBJ_181 /* Device.swift in Sources */,
+				OBJ_182 /* Extensions.swift in Sources */,
+				OBJ_183 /* Flowable.swift in Sources */,
+				OBJ_184 /* Flynn.swift in Sources */,
+				OBJ_185 /* Profile.swift in Sources */,
+				OBJ_186 /* Queue.swift in Sources */,
+				OBJ_187 /* Scheduler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_185 /* Sources */ = {
+		OBJ_193 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_186 /* Package.swift in Sources */,
+				OBJ_194 /* Package.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_191 /* Sources */ = {
+		OBJ_199 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_192 /* Audio.swift in Sources */,
-				OBJ_193 /* State.swift in Sources */,
-				OBJ_194 /* Lights.swift in Sources */,
-				OBJ_195 /* main.swift in Sources */,
+				OBJ_200 /* Socket.swift in Sources */,
+				OBJ_201 /* SocketProtocols.swift in Sources */,
+				OBJ_202 /* SocketUtils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_211 /* Sources */ = {
+		OBJ_208 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_212 /* Package.swift in Sources */,
+				OBJ_209 /* Package.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_222 /* Sources */ = {
+		OBJ_214 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_223 /* XCTestManifests.swift in Sources */,
-				OBJ_224 /* jukebox2Tests.swift in Sources */,
+				OBJ_215 /* Audio.swift in Sources */,
+				OBJ_216 /* Lights.swift in Sources */,
+				OBJ_217 /* State.swift in Sources */,
+				OBJ_218 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_238 /* Sources */ = {
+		OBJ_236 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_239 /* pa_linux_alsa.c in Sources */,
-				OBJ_240 /* pa_mac_core.c in Sources */,
-				OBJ_241 /* pa_mac_core_blocking.c in Sources */,
-				OBJ_242 /* pa_mac_core_utilities.c in Sources */,
-				OBJ_243 /* pa_allocation.c in Sources */,
-				OBJ_244 /* pa_converters.c in Sources */,
-				OBJ_245 /* pa_cpuload.c in Sources */,
-				OBJ_246 /* pa_debugprint.c in Sources */,
-				OBJ_247 /* pa_dither.c in Sources */,
-				OBJ_248 /* pa_front.c in Sources */,
-				OBJ_249 /* pa_process.c in Sources */,
-				OBJ_250 /* pa_ringbuffer.c in Sources */,
-				OBJ_251 /* pa_stream.c in Sources */,
-				OBJ_252 /* pa_trace.c in Sources */,
-				OBJ_253 /* pa_unix_hostapis.c in Sources */,
-				OBJ_254 /* pa_unix_util.c in Sources */,
+				OBJ_237 /* Package.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_259 /* Sources */ = {
+		OBJ_247 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_260 /* portaudio+print.swift in Sources */,
-				OBJ_261 /* portaudio+stream.swift in Sources */,
-				OBJ_262 /* portaudio.swift in Sources */,
+				OBJ_248 /* XCTestManifests.swift in Sources */,
+				OBJ_249 /* jukebox2Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_270 /* Sources */ = {
+		OBJ_265 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_271 /* Package.swift in Sources */,
+				OBJ_266 /* pa_linux_alsa.c in Sources */,
+				OBJ_267 /* pa_mac_core.c in Sources */,
+				OBJ_268 /* pa_mac_core_blocking.c in Sources */,
+				OBJ_269 /* pa_mac_core_utilities.c in Sources */,
+				OBJ_270 /* pa_allocation.c in Sources */,
+				OBJ_271 /* pa_converters.c in Sources */,
+				OBJ_272 /* pa_cpuload.c in Sources */,
+				OBJ_273 /* pa_debugprint.c in Sources */,
+				OBJ_274 /* pa_dither.c in Sources */,
+				OBJ_275 /* pa_front.c in Sources */,
+				OBJ_276 /* pa_process.c in Sources */,
+				OBJ_277 /* pa_ringbuffer.c in Sources */,
+				OBJ_278 /* pa_stream.c in Sources */,
+				OBJ_279 /* pa_trace.c in Sources */,
+				OBJ_280 /* pa_unix_hostapis.c in Sources */,
+				OBJ_281 /* pa_unix_util.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_276 /* Sources */ = {
+		OBJ_286 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_277 /* Package.swift in Sources */,
+				OBJ_287 /* portaudio+print.swift in Sources */,
+				OBJ_288 /* portaudio+stream.swift in Sources */,
+				OBJ_289 /* portaudio.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_297 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_298 /* Package.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_303 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_304 /* Package.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		OBJ_201 /* PBXTargetDependency */ = {
+		OBJ_225 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "swift-argument-parser::ArgumentParser" /* ArgumentParser */;
-			targetProxy = 460DD6FA24BA144000AA8FBF /* PBXContainerItemProxy */;
+			targetProxy = 46B25F7F24BAC503008E11D0 /* PBXContainerItemProxy */;
 		};
-		OBJ_202 /* PBXTargetDependency */ = {
+		OBJ_226 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Socket::Socket" /* Socket */;
+			targetProxy = 46B25F8024BAC503008E11D0 /* PBXContainerItemProxy */;
+		};
+		OBJ_227 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "portaudio::portaudio" /* portaudio */;
-			targetProxy = 460DD6FB24BA144000AA8FBF /* PBXContainerItemProxy */;
+			targetProxy = 46B25F8124BAC503008E11D0 /* PBXContainerItemProxy */;
 		};
-		OBJ_204 /* PBXTargetDependency */ = {
+		OBJ_229 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "portaudio::libportaudio" /* libportaudio */;
-			targetProxy = 460DD6FD24BA144000AA8FBF /* PBXContainerItemProxy */;
-		};
-		OBJ_206 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = "Flynn::Flynn" /* Flynn */;
-			targetProxy = 460DD6FE24BA144000AA8FBF /* PBXContainerItemProxy */;
-		};
-		OBJ_217 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = "jukebox2::jukebox2Tests" /* jukebox2Tests */;
-			targetProxy = 460DD70424BA144200AA8FBF /* PBXContainerItemProxy */;
-		};
-		OBJ_230 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = "jukebox2::jukebox2" /* jukebox2 */;
-			targetProxy = 460DD6FF24BA144000AA8FBF /* PBXContainerItemProxy */;
+			targetProxy = 46B25F8324BAC503008E11D0 /* PBXContainerItemProxy */;
 		};
 		OBJ_231 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = "swift-argument-parser::ArgumentParser" /* ArgumentParser */;
-			targetProxy = 460DD70024BA144000AA8FBF /* PBXContainerItemProxy */;
+			target = "Flynn::Flynn" /* Flynn */;
+			targetProxy = 46B25F8424BAC503008E11D0 /* PBXContainerItemProxy */;
 		};
-		OBJ_232 /* PBXTargetDependency */ = {
+		OBJ_242 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "jukebox2::jukebox2Tests" /* jukebox2Tests */;
+			targetProxy = 46B25F8B24BAC505008E11D0 /* PBXContainerItemProxy */;
+		};
+		OBJ_256 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "jukebox2::jukebox2" /* jukebox2 */;
+			targetProxy = 46B25F8524BAC504008E11D0 /* PBXContainerItemProxy */;
+		};
+		OBJ_257 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "swift-argument-parser::ArgumentParser" /* ArgumentParser */;
+			targetProxy = 46B25F8624BAC504008E11D0 /* PBXContainerItemProxy */;
+		};
+		OBJ_258 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Socket::Socket" /* Socket */;
+			targetProxy = 46B25F8724BAC504008E11D0 /* PBXContainerItemProxy */;
+		};
+		OBJ_259 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "portaudio::portaudio" /* portaudio */;
-			targetProxy = 460DD70124BA144000AA8FBF /* PBXContainerItemProxy */;
+			targetProxy = 46B25F8824BAC504008E11D0 /* PBXContainerItemProxy */;
 		};
-		OBJ_233 /* PBXTargetDependency */ = {
+		OBJ_260 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "portaudio::libportaudio" /* libportaudio */;
-			targetProxy = 460DD70224BA144000AA8FBF /* PBXContainerItemProxy */;
+			targetProxy = 46B25F8924BAC504008E11D0 /* PBXContainerItemProxy */;
 		};
-		OBJ_234 /* PBXTargetDependency */ = {
+		OBJ_261 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Flynn::Flynn" /* Flynn */;
-			targetProxy = 460DD70324BA144000AA8FBF /* PBXContainerItemProxy */;
+			targetProxy = 46B25F8A24BAC504008E11D0 /* PBXContainerItemProxy */;
 		};
-		OBJ_265 /* PBXTargetDependency */ = {
+		OBJ_292 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "portaudio::libportaudio" /* libportaudio */;
-			targetProxy = 460DD6FC24BA144000AA8FBF /* PBXContainerItemProxy */;
+			targetProxy = 46B25F8224BAC503008E11D0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		OBJ_130 /* Debug */ = {
+		OBJ_138 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ENABLE_TESTABILITY = YES;
@@ -1113,7 +1233,7 @@
 			};
 			name = Debug;
 		};
-		OBJ_131 /* Release */ = {
+		OBJ_139 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ENABLE_TESTABILITY = YES;
@@ -1141,7 +1261,7 @@
 			};
 			name = Release;
 		};
-		OBJ_167 /* Debug */ = {
+		OBJ_175 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ENABLE_TESTABILITY = YES;
@@ -1169,7 +1289,7 @@
 			};
 			name = Debug;
 		};
-		OBJ_168 /* Release */ = {
+		OBJ_176 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ENABLE_TESTABILITY = YES;
@@ -1197,7 +1317,7 @@
 			};
 			name = Release;
 		};
-		OBJ_183 /* Debug */ = {
+		OBJ_191 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				LD = /usr/bin/true;
@@ -1206,7 +1326,7 @@
 			};
 			name = Debug;
 		};
-		OBJ_184 /* Release */ = {
+		OBJ_192 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				LD = /usr/bin/true;
@@ -1215,7 +1335,81 @@
 			};
 			name = Release;
 		};
-		OBJ_189 /* Debug */ = {
+		OBJ_197 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = jukebox2.xcodeproj/Socket_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Socket;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = Socket;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		OBJ_198 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = jukebox2.xcodeproj/Socket_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Socket;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = Socket;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		OBJ_206 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -package-description-version 5.0.0";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		OBJ_207 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -package-description-version 5.0.0";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		OBJ_212 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1244,7 +1438,7 @@
 			};
 			name = Debug;
 		};
-		OBJ_190 /* Release */ = {
+		OBJ_213 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1273,7 +1467,7 @@
 			};
 			name = Release;
 		};
-		OBJ_209 /* Debug */ = {
+		OBJ_234 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				LD = /usr/bin/true;
@@ -1282,7 +1476,7 @@
 			};
 			name = Debug;
 		};
-		OBJ_210 /* Release */ = {
+		OBJ_235 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				LD = /usr/bin/true;
@@ -1291,19 +1485,19 @@
 			};
 			name = Release;
 		};
-		OBJ_215 /* Debug */ = {
+		OBJ_240 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 			};
 			name = Debug;
 		};
-		OBJ_216 /* Release */ = {
+		OBJ_241 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 			};
 			name = Release;
 		};
-		OBJ_220 /* Debug */ = {
+		OBJ_245 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
@@ -1332,7 +1526,7 @@
 			};
 			name = Debug;
 		};
-		OBJ_221 /* Release */ = {
+		OBJ_246 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
@@ -1361,7 +1555,7 @@
 			};
 			name = Release;
 		};
-		OBJ_236 /* Debug */ = {
+		OBJ_263 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEFINES_MODULE = NO;
@@ -1405,7 +1599,7 @@
 			};
 			name = Debug;
 		};
-		OBJ_237 /* Release */ = {
+		OBJ_264 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEFINES_MODULE = NO;
@@ -1449,7 +1643,7 @@
 			};
 			name = Release;
 		};
-		OBJ_257 /* Debug */ = {
+		OBJ_284 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ENABLE_TESTABILITY = YES;
@@ -1481,7 +1675,7 @@
 			};
 			name = Debug;
 		};
-		OBJ_258 /* Release */ = {
+		OBJ_285 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ENABLE_TESTABILITY = YES;
@@ -1513,7 +1707,7 @@
 			};
 			name = Release;
 		};
-		OBJ_268 /* Debug */ = {
+		OBJ_295 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				LD = /usr/bin/true;
@@ -1522,25 +1716,7 @@
 			};
 			name = Debug;
 		};
-		OBJ_269 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -package-description-version 5.2.0";
-				SWIFT_VERSION = 5.0;
-			};
-			name = Release;
-		};
-		OBJ_274 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -package-description-version 5.2.0";
-				SWIFT_VERSION = 5.0;
-			};
-			name = Debug;
-		};
-		OBJ_275 /* Release */ = {
+		OBJ_296 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				LD = /usr/bin/true;
@@ -1576,6 +1752,24 @@
 			};
 			name = Debug;
 		};
+		OBJ_301 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -package-description-version 5.2.0";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		OBJ_302 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -package-description-version 5.2.0";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 		OBJ_4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1603,38 +1797,38 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		OBJ_129 /* Build configuration list for PBXNativeTarget "ArgumentParser" */ = {
+		OBJ_137 /* Build configuration list for PBXNativeTarget "ArgumentParser" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_130 /* Debug */,
-				OBJ_131 /* Release */,
+				OBJ_138 /* Debug */,
+				OBJ_139 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		OBJ_166 /* Build configuration list for PBXNativeTarget "Flynn" */ = {
+		OBJ_174 /* Build configuration list for PBXNativeTarget "Flynn" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_167 /* Debug */,
-				OBJ_168 /* Release */,
+				OBJ_175 /* Debug */,
+				OBJ_176 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		OBJ_182 /* Build configuration list for PBXNativeTarget "FlynnPackageDescription" */ = {
+		OBJ_190 /* Build configuration list for PBXNativeTarget "FlynnPackageDescription" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_183 /* Debug */,
-				OBJ_184 /* Release */,
+				OBJ_191 /* Debug */,
+				OBJ_192 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		OBJ_188 /* Build configuration list for PBXNativeTarget "jukebox2" */ = {
+		OBJ_196 /* Build configuration list for PBXNativeTarget "Socket" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_189 /* Debug */,
-				OBJ_190 /* Release */,
+				OBJ_197 /* Debug */,
+				OBJ_198 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1648,65 +1842,83 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		OBJ_208 /* Build configuration list for PBXNativeTarget "jukebox2PackageDescription" */ = {
+		OBJ_205 /* Build configuration list for PBXNativeTarget "SocketPackageDescription" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_209 /* Debug */,
-				OBJ_210 /* Release */,
+				OBJ_206 /* Debug */,
+				OBJ_207 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		OBJ_214 /* Build configuration list for PBXAggregateTarget "jukebox2PackageTests" */ = {
+		OBJ_211 /* Build configuration list for PBXNativeTarget "jukebox2" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_215 /* Debug */,
-				OBJ_216 /* Release */,
+				OBJ_212 /* Debug */,
+				OBJ_213 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		OBJ_219 /* Build configuration list for PBXNativeTarget "jukebox2Tests" */ = {
+		OBJ_233 /* Build configuration list for PBXNativeTarget "jukebox2PackageDescription" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_220 /* Debug */,
-				OBJ_221 /* Release */,
+				OBJ_234 /* Debug */,
+				OBJ_235 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		OBJ_235 /* Build configuration list for PBXNativeTarget "libportaudio" */ = {
+		OBJ_239 /* Build configuration list for PBXAggregateTarget "jukebox2PackageTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_236 /* Debug */,
-				OBJ_237 /* Release */,
+				OBJ_240 /* Debug */,
+				OBJ_241 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		OBJ_256 /* Build configuration list for PBXNativeTarget "portaudio" */ = {
+		OBJ_244 /* Build configuration list for PBXNativeTarget "jukebox2Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_257 /* Debug */,
-				OBJ_258 /* Release */,
+				OBJ_245 /* Debug */,
+				OBJ_246 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		OBJ_267 /* Build configuration list for PBXNativeTarget "portaudioPackageDescription" */ = {
+		OBJ_262 /* Build configuration list for PBXNativeTarget "libportaudio" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_268 /* Debug */,
-				OBJ_269 /* Release */,
+				OBJ_263 /* Debug */,
+				OBJ_264 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		OBJ_273 /* Build configuration list for PBXNativeTarget "swift-argument-parserPackageDescription" */ = {
+		OBJ_283 /* Build configuration list for PBXNativeTarget "portaudio" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_274 /* Debug */,
-				OBJ_275 /* Release */,
+				OBJ_284 /* Debug */,
+				OBJ_285 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_294 /* Build configuration list for PBXNativeTarget "portaudioPackageDescription" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_295 /* Debug */,
+				OBJ_296 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_300 /* Build configuration list for PBXNativeTarget "swift-argument-parserPackageDescription" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_301 /* Debug */,
+				OBJ_302 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

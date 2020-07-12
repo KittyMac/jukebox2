@@ -8,7 +8,8 @@ let package = Package(
     dependencies: [
         .package(url: "https://github.com/KittyMac/Flynn.git", .branch("master")),
 		.package(name: "portaudio", url: "https://github.com/KittyMac/portaudio-swift.git", .branch("master")),
-		.package(url: "https://github.com/apple/swift-argument-parser", .upToNextMinor(from: "0.2.0"))
+		.package(url: "https://github.com/apple/swift-argument-parser", .upToNextMinor(from: "0.2.0")),
+		.package(name: "Socket", url: "https://github.com/IBM-Swift/BlueSocket.git", .upToNextMinor(from: "1.0.0"))
     ],
     targets: [
         .target(
@@ -16,6 +17,7 @@ let package = Package(
             dependencies: [
 				"Flynn",
 				"portaudio",
+				"Socket",
 				.product(name: "ArgumentParser", package: "swift-argument-parser"),
 			]),
         .testTarget(
