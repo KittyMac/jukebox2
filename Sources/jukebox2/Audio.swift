@@ -159,6 +159,7 @@ class Audio: Actor {
 
         audioStats = stats
         lights.beSetAudioStats(stats)
+        state.beSetAudioStats(stats)
     }
 
     lazy var beSetAudioStats = Behavior(self) { [unowned self] (args: BehaviorArgs) in

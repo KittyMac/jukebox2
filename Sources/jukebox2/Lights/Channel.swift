@@ -11,6 +11,7 @@ func randf() -> Float {
 }
 
 protocol LightVisual {
+    init()
     func update(_ channel: Channel, _ stats: AudioStats)
 }
 
@@ -27,7 +28,7 @@ class Channel {
         self.channelID = channelID
         self.numPixels = numPixels
 
-        visual = LightPalms()
+        visual = LightStars()
         particles = ParticleEngine()
 
         pixels = [UInt8](repeating: 0, count: numPixels * 3 + 4)

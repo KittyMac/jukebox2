@@ -113,4 +113,20 @@ class Lights: Actor {
         self._beSetAudioStats(args)
     }
 
+    lazy var beSetVisual = Behavior(self) { [unowned self] (args: BehaviorArgs) in
+        // flynnlint:parameter Int - channel index to attach the visual to
+        // flynnlint:parameter LightVisual - visual to attach to the channel
+        let channelIdx: Int = args[x:0]
+        let visual: LightVisual = args[x:1]
+
+        switch channelIdx {
+        case 0:
+            self.channel0.visual = visual
+        case 1:
+            self.channel1.visual = visual
+        default:
+            break
+        }
+    }
+
 }

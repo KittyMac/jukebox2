@@ -4,10 +4,10 @@ import Foundation
 
 class LightTheater: LightVisual {
     private var updateFrameRate: Float = 1.0 / 60.0
-
     private var frame = 0
-
     private var numLights = 0
+
+    required init() { }
 
     func update(_ channel: Channel, _ stats: AudioStats) {
         frame += 1

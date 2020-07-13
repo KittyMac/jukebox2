@@ -123,7 +123,7 @@ class Particle {
     }
 
     func t() -> Float {
-        lifeNow / lifeSpan
+        min(1.0, lifeNow / lifeSpan)
     }
 
     func update(_ decay: Float) {

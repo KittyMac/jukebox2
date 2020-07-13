@@ -8,6 +8,8 @@ class LightPalms: LightVisual {
     private var updateFrameRate: Float = 1.0 / 60.0
     private var anim: Float = 0.0
 
+    required init() { }
+
     func update(_ channel: Channel, _ stats: AudioStats) {
         anim += Float(updateFrameRate)
 
@@ -34,7 +36,7 @@ class LightPalms: LightVisual {
     }
 
     func updateChannel1(_ stats: AudioStats, _ channel: Channel, _ particles: ParticleEngine) {
-        
+
         let startColor = Vec3(randf() * 0.2, randf() * 0.2, randf() * 0.2)
         let size = 48.0 + stats.normalizedPeakAmplitude * 48.0
         let speed = stats.normalizedPeakAmplitude * 8.0 + 2.0

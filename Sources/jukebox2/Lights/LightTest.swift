@@ -6,6 +6,8 @@ class LightTest: LightVisual {
     private var updateFrameRate: Float = 1.0 / 60.0
     private var anim: Float = 0.0
 
+    required init() { }
+
     func update(_ channel: Channel, _ stats: AudioStats) {
         anim += Float(updateFrameRate)
 
