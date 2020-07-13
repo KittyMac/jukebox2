@@ -2,6 +2,18 @@ import Flynn
 import Socket
 import Foundation
 
+func rand() -> UInt32 {
+    return arc4random()
+}
+
+func randf() -> Float {
+    return Float(arc4random() % 100000) / 100000.0
+}
+
+protocol LightVisual {
+    func update(_ channel: Channel, _ particles: ParticleEngine)
+}
+
 class Channel {
     let channelID: Int
     let numPixels: Int
@@ -15,7 +27,7 @@ class Channel {
         self.channelID = channelID
         self.numPixels = numPixels
 
-        visual = LightTest()
+        visual = LightStars()
         particles = ParticleEngine()
 
         pixels = [UInt8](repeating: 0, count: numPixels * 3 + 4)
@@ -40,7 +52,7 @@ class Channel {
     }
 
     func update() {
-        visual.update(channelID, particles)
+        visual.update(self, particles)
         particles.update()
     }
 
