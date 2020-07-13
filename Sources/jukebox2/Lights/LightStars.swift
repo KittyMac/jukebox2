@@ -14,7 +14,6 @@ class LightStars: LightVisual {
         }
     }
 
-    
     private var frame = 0
     func updateChannel0(_ stats: AudioStats, _ channel: Channel, _ particles: ParticleEngine) {
 
@@ -24,16 +23,15 @@ class LightStars: LightVisual {
         if stats.normalizedPeakToPeakAmplitude > 2.0 {
             frame = 3
         }
-        
+
         if frame > 0 {
             frame -= 1
         }
-        
+
         let color = (frame > 0) ? colorB : colorA
-        
-        
+
         let lightsDeltaX = abs(channel.locations[1].x - channel.locations[0].x)
-        
+
         let fullVelocity = lightsDeltaX
         let halfVelocity = lightsDeltaX
 

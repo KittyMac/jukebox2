@@ -22,25 +22,24 @@ class LightTheater: LightVisual {
 
     func updateChannel0(_ stats: AudioStats, _ channel: Channel, _ particles: ParticleEngine) {
 
-        let value = stats.normalizedPeakAmplitude * 0.3
+        //let value = stats.normalizedPeakAmplitude * 0.3
 
         let lightsDeltaX = abs(channel.locations[1].x - channel.locations[0].x)
-        var lightsStartX = channel.locations[0].x - lightsDeltaX * 1
-        var color = Vec3(1.0, value, 1.0)
+        let lightsStartX = channel.locations[0].x
+        var color = Vec3(1.0, 0.0, 1.0)
 
         if frame % 10 < 5 {
-            lightsStartX = channel.locations[0].x - lightsDeltaX * 2
-            color = Vec3(value, value, 1.0)
+            color = Vec3(0.0, 0.0, 1.0)
         }
 
         particles.spawn(position: Vec2(lightsStartX, channel.locations[0].y),
-                        startVelocity: Vec2(lightsDeltaX * 2, 0.0),
-                        endValocity: Vec2(lightsDeltaX * 2, 0.0),
+                        startVelocity: Vec2(lightsDeltaX, 0.0),
+                        endValocity: Vec2(lightsDeltaX, 0.0),
                         startColor: color,
                         endColor: color,
                         startSize: 2,
                         endSize: 2,
-                        lifeSpan: 3.4)
+                        lifeSpan: 6.8)
     }
 
     func updateChannel1(_ stats: AudioStats, _ channel: Channel, _ particles: ParticleEngine) {

@@ -24,11 +24,13 @@ class Channel {
     var visual: LightVisual
     let particles: ParticleEngine
 
+    var brightness: Float = 1.0
+
     init(_ channelID: Int, _ numPixels: Int, _ locationsClosure: (inout [Vec2]) -> Void) {
         self.channelID = channelID
         self.numPixels = numPixels
 
-        visual = LightStars()
+        visual = LightTheater()
         particles = ParticleEngine()
 
         pixels = [UInt8](repeating: 0, count: numPixels * 3 + 4)
@@ -44,9 +46,9 @@ class Channel {
     func send(_ socket: Socket) {
         for idx in 0..<numPixels {
             let color = particles.lookup(locations[idx])
-            pixels[4 + idx * 3 + 0] = UInt8(color.r * 255)
-            pixels[4 + idx * 3 + 1] = UInt8(color.g * 255)
-            pixels[4 + idx * 3 + 2] = UInt8(color.b * 255)
+            pixels[4 + idx * 3 + 0] = UInt8(color.r * brightness * 255)
+            pixels[4 + idx * 3 + 1] = UInt8(color.g * brightness * 255)
+            pixels[4 + idx * 3 + 2] = UInt8(color.b * brightness * 255)
         }
 
         _ = try? socket.write(from: pixels, bufSize: pixels.count)

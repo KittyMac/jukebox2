@@ -23,11 +23,28 @@ class State: Actor {
     }
 
     private func switchVisuals() {
-        let visual0 = (allVisuals.randomElement()!).init()
-        let visual1 = (allVisuals.randomElement()!).init()
+        let visual0 = (allVisuals.randomElement()!)
+        let visual1 = (allVisuals.randomElement()!)
 
         self.lights.beSetVisual(0, visual0)
         self.lights.beSetVisual(1, visual1)
+        self.lights.beSetBrightness(checkBrightness())
+    }
+
+    private func checkBrightness() -> Float {
+        let calendar = Calendar.current
+        let now = NSDate()
+        let nowDateValue = now as Date
+
+        let morning = calendar.date(bySettingHour: 7, minute: 0, second: 0, of: nowDateValue)
+        let night = calendar.date(bySettingHour: 23, minute: 0, second: 0, of: nowDateValue)
+
+        if let morning = morning, let night = night {
+            if nowDateValue >= morning && nowDateValue <= night {
+                return 1.0
+            }
+        }
+        return 0.75
     }
 
     private var startQuietTime: TimeInterval = ProcessInfo.processInfo.systemUptime
