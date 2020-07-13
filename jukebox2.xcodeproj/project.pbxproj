@@ -21,7 +21,7 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		46C233D924BB5ECC00DC9D05 /* Light0.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C233D824BB5EC700DC9D05 /* Light0.swift */; };
+		46C233D924BB5ECC00DC9D05 /* LightTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C233D824BB5EC700DC9D05 /* LightTest.swift */; };
 		46C233DC24BB5EF400DC9D05 /* LightVisual.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C233DA24BB5EF400DC9D05 /* LightVisual.swift */; };
 		46C233DE24BB60BA00DC9D05 /* ParticleEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C233DD24BB60BA00DC9D05 /* ParticleEngine.swift */; };
 		46C233E024BB6C3800DC9D05 /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C233DF24BB6C3800DC9D05 /* Channel.swift */; };
@@ -207,7 +207,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		46C233D824BB5EC700DC9D05 /* Light0.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Light0.swift; sourceTree = "<group>"; };
+		46C233D824BB5EC700DC9D05 /* LightTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightTest.swift; sourceTree = "<group>"; };
 		46C233DA24BB5EF400DC9D05 /* LightVisual.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LightVisual.swift; sourceTree = "<group>"; };
 		46C233DD24BB60BA00DC9D05 /* ParticleEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParticleEngine.swift; sourceTree = "<group>"; };
 		46C233DF24BB6C3800DC9D05 /* Channel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
@@ -387,7 +387,7 @@
 				46C233DF24BB6C3800DC9D05 /* Channel.swift */,
 				46C233DD24BB60BA00DC9D05 /* ParticleEngine.swift */,
 				46C233DA24BB5EF400DC9D05 /* LightVisual.swift */,
-				46C233D824BB5EC700DC9D05 /* Light0.swift */,
+				46C233D824BB5EC700DC9D05 /* LightTest.swift */,
 			);
 			path = Lights;
 			sourceTree = "<group>";
@@ -1085,7 +1085,7 @@
 				46C233DE24BB60BA00DC9D05 /* ParticleEngine.swift in Sources */,
 				OBJ_215 /* Audio.swift in Sources */,
 				OBJ_216 /* Lights.swift in Sources */,
-				46C233D924BB5ECC00DC9D05 /* Light0.swift in Sources */,
+				46C233D924BB5ECC00DC9D05 /* LightTest.swift in Sources */,
 				OBJ_217 /* State.swift in Sources */,
 				OBJ_218 /* main.swift in Sources */,
 			);

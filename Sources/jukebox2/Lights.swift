@@ -2,6 +2,8 @@ import Flynn
 import Socket
 import Foundation
 
+// swiftlint:disable line_length
+
 extension Socket {
     @discardableResult
     func setTCPNoDelay() -> Bool {
@@ -16,33 +18,34 @@ class Lights: Actor {
     private let port: Int32
 
     private var socket: Socket?
-    private let particles: ParticleEngine
 
     // array contain the pixel brights for pixels for each channel. the first four bytes are
     // reserved for the OpenPixelControl message header
     private var channel0 = Channel(0, 59) { (locations) in
-        for idx in 0..<59 {
-            locations[idx] = Vec2(11.0 + 4.0 * Float(idx), 128.0)
-        }
+        locations = [
+            Vec2(11+4*0, 128), Vec2(11+4*1, 128), Vec2(11+4*2, 128), Vec2(11+4*3, 128), Vec2(11+4*4, 128), Vec2(11+4*5, 128), Vec2(11+4*6, 128), Vec2(11+4*7, 128), Vec2(11+4*8, 128), Vec2(11+4*9, 128),
+            Vec2(11+4*10, 128), Vec2(11+4*11, 128), Vec2(11+4*12, 128), Vec2(11+4*13, 128), Vec2(11+4*14, 128), Vec2(11+4*15, 128), Vec2(11+4*16, 128), Vec2(11+4*17, 128), Vec2(11+4*18, 128), Vec2(11+4*19, 128),
+            Vec2(11+4*20, 128), Vec2(11+4*21, 128), Vec2(11+4*22, 128), Vec2(11+4*23, 128), Vec2(11+4*24, 128), Vec2(11+4*25, 128), Vec2(11+4*26, 128), Vec2(11+4*27, 128), Vec2(11+4*28, 128), Vec2(11+4*29, 128),
+            Vec2(11+4*30, 128), Vec2(11+4*31, 128), Vec2(11+4*32, 128), Vec2(11+4*33, 128), Vec2(11+4*34, 128), Vec2(11+4*35, 128), Vec2(11+4*36, 128), Vec2(11+4*37, 128), Vec2(11+4*38, 128), Vec2(11+4*39, 128),
+            Vec2(11+4*40, 128), Vec2(11+4*41, 128), Vec2(11+4*42, 128), Vec2(11+4*43, 128), Vec2(11+4*44, 128), Vec2(11+4*45, 128), Vec2(11+4*46, 128), Vec2(11+4*47, 128), Vec2(11+4*48, 128), Vec2(11+4*49, 128),
+            Vec2(11+4*50, 128), Vec2(11+4*51, 128), Vec2(11+4*52, 128), Vec2(11+4*53, 128), Vec2(11+4*54, 128), Vec2(11+4*55, 128), Vec2(11+4*56, 128), Vec2(11+4*57, 128), Vec2(11+4*58, 128)
+        ]
     }
     private var channel1 = Channel(1, 57) { (locations) in
-        var idx = 0
-        for xPos in 0..<7 {
-            for yPos in 0..<8 {
-                if xPos % 1 == 0 {
-                    locations[idx] = Vec2(0.0 + 32.0 * Float(xPos), 0.0 + 32.0 * Float(yPos))
-                } else {
-                    locations[idx] = Vec2(0.0 + 32.0 * Float(xPos), 0.0 + 32.0 * Float(7 / yPos))
-                }
-                idx += 1
-            }
-        }
+        locations = [
+            Vec2(0+32*0, 0+32*0), Vec2(0+32*0, 0+32*1), Vec2(0+32*0, 0+32*2), Vec2(0+32*0, 0+32*3), Vec2(0+32*0, 0+32*4), Vec2(0+32*0, 0+32*5), Vec2(0+32*0, 0+32*6), Vec2(0+32*0, 0+32*7),
+            Vec2(0+32*1, 0+32*7), Vec2(0+32*1, 0+32*6), Vec2(0+32*1, 0+32*5), Vec2(0+32*1, 0+32*4), Vec2(0+32*1, 0+32*3), Vec2(0+32*1, 0+32*2), Vec2(0+32*1, 0+32*1), Vec2(0+32*1, 0+32*0),
+            Vec2(0+32*2, 0+32*0), Vec2(0+32*2, 0+32*1), Vec2(0+32*2, 0+32*2), Vec2(0+32*2, 0+32*3), Vec2(0+32*2, 0+32*4), Vec2(0+32*2, 0+32*5), Vec2(0+32*2, 0+32*6), Vec2(0+32*2, 0+32*7),
+            Vec2(0+32*3, 0+32*7), Vec2(0+32*3, 0+32*6), Vec2(0+32*3, 0+32*5), Vec2(0+32*3, 0+32*4), Vec2(0+32*3, 0+32*3), Vec2(0+32*3, 0+32*2), Vec2(0+32*3, 0+32*1), Vec2(0+32*3, 0+32*0),
+            Vec2(0+32*4, 0+32*0), Vec2(0+32*4, 0+32*1), Vec2(0+32*4, 0+32*2), Vec2(0+32*4, 0+32*3), Vec2(0+32*4, 0+32*4), Vec2(0+32*4, 0+32*5), Vec2(0+32*4, 0+32*6), Vec2(0+32*4, 0+32*7),
+            Vec2(0+32*5, 0+32*7), Vec2(0+32*5, 0+32*6), Vec2(0+32*5, 0+32*5), Vec2(0+32*5, 0+32*4), Vec2(0+32*5, 0+32*3), Vec2(0+32*5, 0+32*2), Vec2(0+32*5, 0+32*1), Vec2(0+32*5, 0+32*0),
+            Vec2(0+32*6, 0+32*0), Vec2(0+32*6, 0+32*1), Vec2(0+32*6, 0+32*2), Vec2(0+32*6, 0+32*3), Vec2(0+32*6, 0+32*4), Vec2(0+32*6, 0+32*5), Vec2(0+32*6, 0+32*6), Vec2(0+32*6, 0+32*7),
+            Vec2(999, 999)
+        ]
+
     }
 
     init(_ host: String, _ port: Int32) {
-
-        particles = ParticleEngine()
-
         self.host = host
         self.port = port
 
@@ -74,36 +77,34 @@ class Lights: Actor {
         self.socket?.close()
     }
 
-    private func floatToUInt8(_ value: Float) -> UInt8 {
-        return UInt8(max(min(value * 255, 255), 0))
-    }
+    // MARK: - Visuals
+
+    private var previousTime: TimeInterval = ProcessInfo.processInfo.systemUptime
+    private var updateTime: TimeInterval = 0
+    private var updateFrameRate: TimeInterval = 1.0 / 60.0
 
     private var anim: Float = 0.0
     private func _beSetAudioStats(_ args: BehaviorArgs) {
         let stats: AudioStats = args[x:0]
 
-        anim += 0.01
+        let currentTime = ProcessInfo.processInfo.systemUptime
+        let deltaTime = (currentTime - previousTime)
+        updateTime += deltaTime
+        previousTime = currentTime
 
-        let xVal = 128.0 + sin(anim * 4.0) * (128.0 + 64.0)
+        let didUpdate = updateTime > updateFrameRate
+        while updateTime > updateFrameRate {
+            updateTime -= updateFrameRate
 
-        particles.spawn(position: Vec2(xVal, 128),
-                        startVelocity: Vec2(),
-                        endValocity: Vec2(),
-                        startColor: Vec3(1.0, 0.0, 0.0),
-                        endColor: Vec3(0.15, 0.15, 0.0),
-                        startSize: 48,
-                        endSize: 48,
-                        lifeSpan: 1.1)
+            channel0.update()
+            channel1.update()
+        }
 
-        particles.update()
-        particles.update()
-
-        channel0.apply(particles)
-        channel1.apply(particles)
-
-        if let socket = socket {
-            channel0.send(socket)
-            channel1.send(socket)
+        if didUpdate {
+            if let socket = socket {
+                channel0.send(socket)
+                channel1.send(socket)
+            }
         }
     }
 

@@ -8,9 +8,15 @@ class Channel {
     var pixels: [UInt8]
     var locations: [Vec2]
 
+    var visual: LightVisual
+    let particles: ParticleEngine
+
     init(_ channelID: Int, _ numPixels: Int, _ locationsClosure: (inout [Vec2]) -> Void) {
         self.channelID = channelID
         self.numPixels = numPixels
+
+        visual = LightTest()
+        particles = ParticleEngine()
 
         pixels = [UInt8](repeating: 0, count: numPixels * 3 + 4)
         pixels[0] = UInt8(channelID)
@@ -23,7 +29,19 @@ class Channel {
     }
 
     func send(_ socket: Socket) {
+        for idx in 0..<numPixels {
+            let color = particles.lookup(locations[idx])
+            pixels[4 + idx * 3 + 0] = UInt8(color.r * 255)
+            pixels[4 + idx * 3 + 1] = UInt8(color.g * 255)
+            pixels[4 + idx * 3 + 2] = UInt8(color.b * 255)
+        }
+
         _ = try? socket.write(from: pixels, bufSize: pixels.count)
+    }
+
+    func update() {
+        visual.update(channelID, particles)
+        particles.update()
     }
 
     func fill(_ white: UInt8) {
@@ -35,15 +53,6 @@ class Channel {
             pixels[4 + idx * 3 + 0] = red
             pixels[4 + idx * 3 + 1] = green
             pixels[4 + idx * 3 + 2] = blue
-        }
-    }
-
-    func apply(_ particles: ParticleEngine) {
-        for idx in 0..<numPixels {
-            let color = particles.lookup(locations[idx])
-            pixels[4 + idx * 3 + 0] = UInt8(color.r * 255)
-            pixels[4 + idx * 3 + 1] = UInt8(color.g * 255)
-            pixels[4 + idx * 3 + 2] = UInt8(color.b * 255)
         }
     }
 }
