@@ -6,13 +6,13 @@ class LightTest: LightVisual {
     private var updateFrameRate: Float = 1.0 / 60.0
     private var anim: Float = 0.0
 
-    func update(_ channel: Channel, _ particles: ParticleEngine) {
+    func update(_ channel: Channel, _ stats: AudioStats) {
         anim += Float(updateFrameRate)
 
         if channel.channelID == 0 {
-            updateChannel0(particles)
+            updateChannel0(channel.particles)
         } else {
-            updateChannel1(particles)
+            updateChannel1(channel.particles)
         }
     }
 

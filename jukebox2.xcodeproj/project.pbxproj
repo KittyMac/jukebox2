@@ -26,6 +26,7 @@
 		46C233DE24BB60BA00DC9D05 /* ParticleEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C233DD24BB60BA00DC9D05 /* ParticleEngine.swift */; };
 		46C233E024BB6C3800DC9D05 /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C233DF24BB6C3800DC9D05 /* Channel.swift */; };
 		46C233E224BCABAA00DC9D05 /* LightStars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C233E124BCABAA00DC9D05 /* LightStars.swift */; };
+		46C233E424BCBA3000DC9D05 /* LightPalms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C233E324BCBA3000DC9D05 /* LightPalms.swift */; };
 		OBJ_141 /* Argument.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_27 /* Argument.swift */; };
 		OBJ_142 /* ArgumentHelp.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_28 /* ArgumentHelp.swift */; };
 		OBJ_143 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_29 /* Errors.swift */; };
@@ -213,6 +214,7 @@
 		46C233DD24BB60BA00DC9D05 /* ParticleEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParticleEngine.swift; sourceTree = "<group>"; };
 		46C233DF24BB6C3800DC9D05 /* Channel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
 		46C233E124BCABAA00DC9D05 /* LightStars.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LightStars.swift; sourceTree = "<group>"; };
+		46C233E324BCBA3000DC9D05 /* LightPalms.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LightPalms.swift; sourceTree = "<group>"; };
 		"Flynn::Flynn::Product" /* Flynn.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Flynn.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_10 /* Lights.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lights.swift; sourceTree = "<group>"; };
 		OBJ_100 /* pa_util.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pa_util.h; sourceTree = "<group>"; };
@@ -388,6 +390,7 @@
 			children = (
 				46C233DF24BB6C3800DC9D05 /* Channel.swift */,
 				46C233DD24BB60BA00DC9D05 /* ParticleEngine.swift */,
+				46C233E324BCBA3000DC9D05 /* LightPalms.swift */,
 				46C233E124BCABAA00DC9D05 /* LightStars.swift */,
 				46C233DA24BB5EF400DC9D05 /* LightTheater.swift */,
 				46C233D824BB5EC700DC9D05 /* LightTest.swift */,
@@ -1085,6 +1088,7 @@
 			files = (
 				46C233DC24BB5EF400DC9D05 /* LightTheater.swift in Sources */,
 				46C233E024BB6C3800DC9D05 /* Channel.swift in Sources */,
+				46C233E424BCBA3000DC9D05 /* LightPalms.swift in Sources */,
 				46C233DE24BB60BA00DC9D05 /* ParticleEngine.swift in Sources */,
 				OBJ_215 /* Audio.swift in Sources */,
 				OBJ_216 /* Lights.swift in Sources */,

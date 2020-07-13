@@ -11,7 +11,7 @@ func randf() -> Float {
 }
 
 protocol LightVisual {
-    func update(_ channel: Channel, _ particles: ParticleEngine)
+    func update(_ channel: Channel, _ stats: AudioStats)
 }
 
 class Channel {
@@ -27,7 +27,7 @@ class Channel {
         self.channelID = channelID
         self.numPixels = numPixels
 
-        visual = LightStars()
+        visual = LightPalms()
         particles = ParticleEngine()
 
         pixels = [UInt8](repeating: 0, count: numPixels * 3 + 4)
@@ -51,8 +51,8 @@ class Channel {
         _ = try? socket.write(from: pixels, bufSize: pixels.count)
     }
 
-    func update() {
-        visual.update(self, particles)
+    func update(_ stats: AudioStats) {
+        visual.update(self, stats)
         particles.update()
     }
 

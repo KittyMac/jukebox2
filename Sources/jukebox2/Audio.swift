@@ -38,7 +38,7 @@ private func passthroughAudio(_ inputBuffer: UnsafeRawPointer?,
             for idx in 0..<Int(framesPerBuffer) {
                 let value = inPtr[idx]
                 maxAmplitude = max(maxAmplitude, value)
-                minAmplitude = max(minAmplitude, value)
+                minAmplitude = min(minAmplitude, value)
                 average += value
                 outPtr[idx] = value
             }
@@ -143,7 +143,7 @@ class Audio: Actor {
             runningPeakAmplitude = stats.peakAmplitude
         }
 
-        runningPeakAmplitude += (stats.peakAmplitude - runningPeakAmplitude) * 0.000123
+        runningPeakAmplitude += (stats.peakAmplitude - runningPeakAmplitude) * 0.00123
 
         var normalize = 1.0 / runningPeakAmplitude
         if normalize < 1.0 {

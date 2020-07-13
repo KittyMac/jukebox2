@@ -46,6 +46,13 @@ struct Vec2 {
         let dY = (b.y - a.y)
         return (dX * dX) + (dY * dY)
     }
+
+    static func rotate(_ a: Vec2, _ q: Float) -> Vec2 {
+        return Vec2(
+            a.x * cos(q) - a.y * sin(q),
+            a.x * sin(q) + a.y * cos(q)
+        )
+    }
 }
 
 struct Vec3 {
@@ -88,7 +95,7 @@ class Particle {
     var position = Vec2()
 
     var startVelocity = Vec2()
-    var endValocity = Vec2()
+    var endVelocity = Vec2()
 
     var startColor = Vec3()
     var endColor = Vec3()
@@ -102,7 +109,7 @@ class Particle {
     func reset() {
         position = Vec2()
         startVelocity = Vec2()
-        endValocity = Vec2()
+        endVelocity = Vec2()
         startColor = Vec3()
         endColor = Vec3()
         startSize = 48.0
@@ -120,7 +127,7 @@ class Particle {
     }
 
     func update(_ decay: Float) {
-        let velocity = Vec2.lerp(startVelocity, endValocity, t())
+        let velocity = Vec2.lerp(startVelocity, endVelocity, t())
         position = Vec2.add(position, velocity)
         lifeNow += decay
     }
@@ -150,7 +157,7 @@ class ParticleEngine {
             if p.alive() == false {
                 p.position = position
                 p.startVelocity = startVelocity
-                p.endValocity = endValocity
+                p.endVelocity = endValocity
                 p.startColor = startColor
                 p.endColor = endColor
                 p.startSize = startSize

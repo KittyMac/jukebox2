@@ -96,8 +96,8 @@ class Lights: Actor {
         while updateTime > updateFrameRate {
             updateTime -= updateFrameRate
 
-            channel0.update()
-            channel1.update()
+            channel0.update(stats)
+            channel1.update(stats)
         }
 
         if didUpdate {
