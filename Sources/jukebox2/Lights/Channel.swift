@@ -2,12 +2,16 @@ import Flynn
 import Socket
 import Foundation
 
-func rand() -> UInt32 {
-    return arc4random()
+func crand() -> UInt32 {
+	#if os(Linux)
+		return UInt32(random())
+	#else
+		return arc4random()
+	#endif
 }
 
 func randf() -> Float {
-    return Float(arc4random() % 100000) / 100000.0
+    return Float(crand() % 100000) / 100000.0
 }
 
 protocol LightVisual {

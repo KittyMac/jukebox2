@@ -8,7 +8,7 @@ extension Socket {
     @discardableResult
     func setTCPNoDelay() -> Bool {
         var value: Int32 = 1
-        return (setsockopt(self.socketfd, IPPROTO_TCP, TCP_NODELAY, &value, UInt32(MemoryLayout<Int32>.size)) == 0)
+        return (setsockopt(self.socketfd, Int32(IPPROTO_TCP), Int32(TCP_NODELAY), &value, UInt32(MemoryLayout<Int32>.size)) == 0)
     }
 }
 
