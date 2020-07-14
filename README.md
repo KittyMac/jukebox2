@@ -1,6 +1,6 @@
 <img align="right" src="meta/jukebox_short.gif" height="500" >
 
-A linux daemon for running my home brew jukebox project, writting in Swift using [Flynn](https://github.com/KittyMac/flynn), [PortAudio](http://www.portaudio.com), [BlueSocket](https://github.com/IBM-Swift/BlueSocket) and [FadeCandy](https://github.com/scanlime/fadecandy).  
+A daemon (macOS or Linux) for running my home brew jukebox project, written in Swift using [Flynn](https://github.com/KittyMac/flynn), [PortAudio](http://www.portaudio.com), [BlueSocket](https://github.com/IBM-Swift/BlueSocket) and [FadeCandy](https://github.com/scanlime/fadecandy).  
 
 
 
@@ -16,11 +16,11 @@ This jukebox works by passing through audio from any player (in this case, an Ec
 
 ### Software
 
-This graph represents the major parts, **each part execute concurrently** to all other parts:
+This graph represents the major parts, **each part executes concurrently** to all other parts:
 
 <img align="center" src="meta/graph.png" height="400" >
 
-Jukebox uses Flynn, which is an Actor-Model framework for easy and safe concurrency in Swift.  An Actor is Swift class which executes 100% concurrently.  There are three main actors:
+Jukebox uses Flynn, which is an Actor-Model framework for fast, easy and safe concurrency in Swift.  An Actor is Swift class which executes concurrently to everything else.  There are three actors:
 
 1. **Audio** - uses port audio to passthrough audio input to audio output. Calculates audio statistics which are used by the other actors
 2. **State** - tells the Lights actor when to change visuals (such as when one song ends and another begins), dimming the lights at night, and turning the lights off completely when inactive
