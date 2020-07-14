@@ -67,11 +67,14 @@ class State: Actor {
         // We will assume there is a 2 seconds downtime between songs. This is obviously
         // not perfect, as songs with quiet moments will be detected as song change.
         if stats.peakToPeakAmplitude >= 0.025 {
-            if currentTime - startQuietTime > sleepTime {
+            let timeSpentAsleep = currentTime - startQuietTime
+
+            startQuietTime = currentTime
+
+            if timeSpentAsleep > sleepTime {
                 // we were sleeping, we should wake up immediately
                 switchVisuals()
             }
-            startQuietTime = currentTime
         }
 
         if currentTime - startQuietTime > 2.0 {
