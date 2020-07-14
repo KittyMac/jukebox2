@@ -1,11 +1,8 @@
-# jukebox
-
 <img align="right" src="meta/jukebox_short.gif" height="500" >
 
 A linux daemon for running my home brew jukebox project, writting in Swift using [Flynn](https://github.com/KittyMac/flynn), [PortAudio](http://www.portaudio.com), [BlueSocket](https://github.com/IBM-Swift/BlueSocket) and [FadeCandy](https://github.com/scanlime/fadecandy).  
 
 
-# How it works
 
 This jukebox works by passing through audio from any player (in this case, an Echo Dot) to the speakers attached to the audio output of the SoC.  The code then monitors this audio streams and animates the connected RGB lighting in response to the music.
 
