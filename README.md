@@ -8,7 +8,7 @@ This jukebox works by passing through audio from any player (in this case, an Ec
 
 ### Hardware
 
-[Nvidia Jeton Nano](https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-nano/)  
+[Nvidia Jetson Nano](https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-nano/)  
 [Amazon Echo Dot](https://www.amazon.com/gp/product/B07FZ8S74R/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1)  
 [FadeCandy USB Driver](https://www.amazon.com/gp/product/B00JHJJF9W/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1)  
 [RGB LED Light Strips](https://www.amazon.com/gp/product/B00ZHB9M6A/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1)  
