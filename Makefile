@@ -7,9 +7,6 @@ all: build
 build:
 	swift build $(SWIFT_BUILD_FLAGS)
 
-install: build
-	echo "TBD"
-
 clean:
 	rm -rf .build
 
@@ -24,3 +21,10 @@ test:
 
 xcode:
 	swift package generate-xcodeproj
+
+install: build
+	sudo cp .build/release/jukebox2 /usr/local/bin
+	sudo cp meta/jukebox.service /etc/systemd/system/jukebox.service
+		
+	sudo systemctl start jukebox
+	sudo systemctl enable jukebox

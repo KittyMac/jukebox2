@@ -47,7 +47,7 @@ private func passthroughAudio(_ inputBuffer: UnsafeRawPointer?,
             let peakToPeakAmplitude = maxAmplitude - minAmplitude
 
             average /= Float(framesPerBuffer)
-
+			
             let stats = AudioStats(average: average,
                                    peakAmplitude: peakAmplitude,
                                    peakToPeakAmplitude: peakToPeakAmplitude)
@@ -107,14 +107,14 @@ class Audio: Actor {
             inputParameters.device = inputDeviceIdx
             inputParameters.channelCount = numChannels
             inputParameters.sampleFormat = paFloat32
-            inputParameters.suggestedLatency = inputDevice.defaultLowOutputLatency
+            inputParameters.suggestedLatency = inputDevice.defaultHighOutputLatency
             inputParameters.hostApiSpecificStreamInfo = nil
 
             var outputParameters = PaStreamParameters()
             outputParameters.device = outputDeviceIdx
             outputParameters.channelCount = numChannels
             outputParameters.sampleFormat = paFloat32
-            outputParameters.suggestedLatency = outputDevice.defaultLowOutputLatency
+            outputParameters.suggestedLatency = outputDevice.defaultHighOutputLatency
             outputParameters.hostApiSpecificStreamInfo = nil
 
             let sampleRate: Double = inputDevice.defaultSampleRate

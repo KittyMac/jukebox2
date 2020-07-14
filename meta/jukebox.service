@@ -1,0 +1,14 @@
+[Unit]
+Description=Jukebox service
+Wants=sound.target
+After=sound.target
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+ExecStart=/usr/local/bin/jukebox2
+Restart=always
+RestartSec=12
+
+[Install]
+WantedBy=default.target
