@@ -2,8 +2,8 @@
 
 A linux daemon for running my home brew jukebox project, writting in Swift using [Flynn](https://github.com/KittyMac/flynn), [PortAudio](http://www.portaudio.com), [BlueSocket](https://github.com/IBM-Swift/BlueSocket) and [FadeCandy](https://github.com/scanlime/fadecandy).  
 
-<img align="center" src="meta/jukebox_short.gif" height="500" >
-<img align="center" src="meta/guts.jpg" height="500" >
+<img align="center" src="meta/jukebox_short.gif" height="400" >
+<img align="center" src="meta/guts.jpg" height="400" >
 
 
 ## How it works
