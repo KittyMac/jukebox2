@@ -23,6 +23,9 @@ xcode:
 	swift package generate-xcodeproj
 
 install: build
+	
+	sudo systemctl stop jukebox
+	
 	sudo cp .build/release/jukebox2 /usr/local/bin
 	sudo cp meta/jukebox.service /etc/systemd/system/jukebox.service
 		
