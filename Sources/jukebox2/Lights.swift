@@ -132,8 +132,8 @@ class Lights: Actor {
     lazy var beSetBrightness = Behavior(self) { [unowned self] (args: BehaviorArgs) in
         // flynnlint:parameter Float - brightness level to set all channels
         let brightness: Float = args[x:0]
-        self.channel0.brightness = brightness
-        self.channel1.brightness = brightness
+        self.channel0.targetBrightness = brightness
+        self.channel1.targetBrightness = brightness
     }
 
 }

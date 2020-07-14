@@ -11,6 +11,8 @@ class State: Actor {
     // This actor should also automatically dim the jukebox lights
     // after 11pm.
 
+    private let sleepTime: Double = 5.0 * 60.0
+
     private var allVisuals: [LightVisual.Type] = [ LightPalms.self,
                                                    LightStars.self,
                                                    LightTheater.self]
@@ -25,10 +27,11 @@ class State: Actor {
     private func switchVisuals() {
         let visual0 = (allVisuals.randomElement()!)
         let visual1 = (allVisuals.randomElement()!)
+        let brightness = checkBrightness()
 
         self.lights.beSetVisual(0, visual0)
         self.lights.beSetVisual(1, visual1)
-        self.lights.beSetBrightness(checkBrightness())
+        self.lights.beSetBrightness(brightness)
     }
 
     private func checkBrightness() -> Float {
@@ -44,6 +47,13 @@ class State: Actor {
                 return 1.0
             }
         }
+
+        // if we haven't had music for five minutes, hide all visuals
+        let currentTime = ProcessInfo.processInfo.systemUptime
+        if currentTime - startQuietTime > sleepTime {
+            return 0.0
+        }
+
         return 0.75
     }
 
@@ -54,16 +64,20 @@ class State: Actor {
 
         let currentTime = ProcessInfo.processInfo.systemUptime
 
-        // We will assume there is a 3 seconds downtime between songs. This is obviously
+        // We will assume there is a 2 seconds downtime between songs. This is obviously
         // not perfect, as songs with quiet moments will be detected as song change.
         if stats.peakToPeakAmplitude >= 0.025 {
+            if currentTime - startQuietTime > sleepTime {
+                // we were sleeping, we should wake up immediately
+                switchVisuals()
+            }
             startQuietTime = currentTime
         }
 
         if currentTime - startQuietTime > 2.0 {
             if currentTime - lastSwitchSongTime > 30 {
                 switchVisuals()
-                print("switch songs!")
+
                 lastSwitchSongTime = currentTime
             }
         }

@@ -24,7 +24,8 @@ class Channel {
     var visual: LightVisual
     let particles: ParticleEngine
 
-    var brightness: Float = 1.0
+    var currentBrightness: Float = 1.0
+    var targetBrightness: Float = 1.0
 
     init(_ channelID: Int, _ numPixels: Int, _ locationsClosure: (inout [Vec2]) -> Void) {
         self.channelID = channelID
@@ -46,15 +47,18 @@ class Channel {
     func send(_ socket: Socket) {
         for idx in 0..<numPixels {
             let color = particles.lookup(locations[idx])
-            pixels[4 + idx * 3 + 0] = UInt8(color.r * brightness * 255)
-            pixels[4 + idx * 3 + 1] = UInt8(color.g * brightness * 255)
-            pixels[4 + idx * 3 + 2] = UInt8(color.b * brightness * 255)
+            pixels[4 + idx * 3 + 0] = UInt8(color.r * currentBrightness * 255)
+            pixels[4 + idx * 3 + 1] = UInt8(color.g * currentBrightness * 255)
+            pixels[4 + idx * 3 + 2] = UInt8(color.b * currentBrightness * 255)
         }
 
         _ = try? socket.write(from: pixels, bufSize: pixels.count)
     }
 
     func update(_ stats: AudioStats) {
+
+        currentBrightness += (targetBrightness - currentBrightness) * 0.0123456
+
         visual.update(self, stats)
         particles.update()
     }
