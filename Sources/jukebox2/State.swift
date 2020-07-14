@@ -12,6 +12,7 @@ class State: Actor {
     // after 11pm.
 
     private let sleepTime: Double = 5.0 * 60.0
+    private var sleeping = false
 
     private var allVisuals: [LightVisual.Type] = [ LightPalms.self,
                                                    LightStars.self,
@@ -39,6 +40,11 @@ class State: Actor {
         let now = NSDate()
         let nowDateValue = now as Date
 
+        // if we haven't had music for five minutes, hide all visuals
+        if sleeping {
+            return 0.0
+        }
+        
         let morning = calendar.date(bySettingHour: 7, minute: 0, second: 0, of: nowDateValue)
         let night = calendar.date(bySettingHour: 23, minute: 0, second: 0, of: nowDateValue)
 
@@ -46,12 +52,6 @@ class State: Actor {
             if nowDateValue >= morning && nowDateValue <= night {
                 return 1.0
             }
-        }
-
-        // if we haven't had music for five minutes, hide all visuals
-        let currentTime = ProcessInfo.processInfo.systemUptime
-        if currentTime - startQuietTime > sleepTime {
-            return 0.0
         }
 
         return 0.75
@@ -67,12 +67,18 @@ class State: Actor {
         // We will assume there is a 2 seconds downtime between songs. This is obviously
         // not perfect, as songs with quiet moments will be detected as song change.
         if stats.peakToPeakAmplitude >= 0.025 {
-            let timeSpentAsleep = currentTime - startQuietTime
-
             startQuietTime = currentTime
 
-            if timeSpentAsleep > sleepTime {
+            if sleeping {
                 // we were sleeping, we should wake up immediately
+                print("waking")
+                sleeping = false
+                switchVisuals()
+            }
+        } else {
+            if sleeping == false && currentTime - startQuietTime > sleepTime {
+                print("sleeping")
+                sleeping = true
                 switchVisuals()
             }
         }
@@ -80,7 +86,6 @@ class State: Actor {
         if currentTime - startQuietTime > 2.0 {
             if currentTime - lastSwitchSongTime > 30 {
                 switchVisuals()
-
                 lastSwitchSongTime = currentTime
             }
         }
