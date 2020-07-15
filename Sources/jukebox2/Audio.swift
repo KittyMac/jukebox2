@@ -119,6 +119,11 @@ class Audio: Actor {
 
             let sampleRate: Double = inputDevice.defaultSampleRate
             let framePerBuffer: Int = 128
+            
+            let streamFinished: PaStreamFinishedClosure = { (userData) in
+                print("audio stream unexpectedly ended, exiting...")
+                exit(1)
+            }
 
             stream = portaudio.openStream(&inputParameters,
                                           &outputParameters,
@@ -126,12 +131,13 @@ class Audio: Actor {
                                           framePerBuffer,
                                           bridge(obj: self),
                                           passthroughAudio,
-                                          nil)
+                                          streamFinished)
             if let stream = stream {
                 stream.start()
             }
 
         } else {
+            print("no audio devices detected, exiting...")
             exit(1)
         }
     }

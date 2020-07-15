@@ -25,7 +25,7 @@ class LightTheater: LightVisual {
         //let value = stats.normalizedPeakAmplitude * 0.3
 
         let lightsDeltaX = abs(channel.locations[1].x - channel.locations[0].x)
-        let lightsStartX = channel.locations[0].x
+        let lightsStartX = channel.locations[0].x - lightsDeltaX
         var color = Vec3(1.0, 0.0, 1.0)
 
         if frame % 10 < 5 {
