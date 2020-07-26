@@ -93,9 +93,38 @@ class Audio: Actor {
         portaudio = PortAudio()
 
         super.init()
+        
+        var outputDevice:PaDeviceInfo?
+        var outputDeviceIdx:Int32?
+        var inputDevice:PaDeviceInfo?
+        var inputDeviceIdx:Int32?
+        
+        if let (defaultOutputDevice, defaultOutputDeviceIdx) = portaudio.defaultOutputDevice {
+            outputDevice = defaultOutputDevice
+            outputDeviceIdx = defaultOutputDeviceIdx
+        }
+        
+        if let (defaultInputDevice, defaultInputDeviceIdx) = portaudio.defaultInputDevice {
+            inputDevice = defaultInputDevice
+            inputDeviceIdx = defaultInputDeviceIdx
+        }
+        
+        var deviceIdx:Int32 = 0
+        for device in portaudio.devices {
+            if String(cString: device.name) == "USB Audio Device" {
+                outputDevice = device
+                outputDeviceIdx = deviceIdx
+                
+                inputDevice = device
+                inputDeviceIdx = deviceIdx
+            }
+            deviceIdx += 1
+        }
 
-        if let (outputDevice, outputDeviceIdx) = portaudio.defaultOutputDevice,
-            let (inputDevice, inputDeviceIdx) = portaudio.defaultInputDevice {
+        if  let outputDevice = outputDevice,
+            let outputDeviceIdx = outputDeviceIdx,
+            let inputDevice = inputDevice,
+            let inputDeviceIdx = inputDeviceIdx {
 
             let numChannels = inputDevice.maxInputChannels < outputDevice.maxOutputChannels ?
                 inputDevice.maxInputChannels : outputDevice.maxOutputChannels
