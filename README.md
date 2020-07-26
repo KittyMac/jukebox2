@@ -26,7 +26,7 @@ Jukebox uses Flynn, which is an Actor-Model framework for fast, easy and safe co
 2. **State** - tells the Lights actor when to change visuals (such as when one song ends and another begins), dimming the lights at night, and turning the lights off completely when inactive
 3. **Lights** - utilizes a simple particle system to allow modular light visualizations, communicates with the FadeCandey server to provide light animations
 
-If you are unfamiliar with Flynn, this level of concurrecy may seem unnecessarily complicated.  However Flynn makes conccurency safe and easy.  For example:
+If you are unfamiliar with Flynn, this level of concurrency may seem unnecessarily complicated.  However Flynn makes concurrency safe and easy.  For example:
 
 ![](meta/switchVisuals.png)
 
