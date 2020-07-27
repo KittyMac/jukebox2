@@ -93,7 +93,7 @@ class Audio: Actor {
         portaudio = PortAudio()
 
         super.init()
-        
+                
         var outputDevice:PaDeviceInfo?
         var outputDeviceIdx:Int32?
         var inputDevice:PaDeviceInfo?
@@ -111,7 +111,7 @@ class Audio: Actor {
         
         var deviceIdx:Int32 = 0
         for device in portaudio.devices {
-            if String(cString: device.name) == "USB Audio Device" {
+            if String(cString: device.name).hasPrefix("USB Audio Device") {
                 outputDevice = device
                 outputDeviceIdx = deviceIdx
                 
