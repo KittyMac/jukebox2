@@ -44,7 +44,7 @@ class State: Actor {
         if sleeping {
             return 0.0
         }
-        
+
         let morning = calendar.date(bySettingHour: 7, minute: 0, second: 0, of: nowDateValue)
         let night = calendar.date(bySettingHour: 23, minute: 0, second: 0, of: nowDateValue)
 

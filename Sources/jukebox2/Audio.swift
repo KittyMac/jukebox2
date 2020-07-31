@@ -1,8 +1,10 @@
 import Flynn
 import portaudio
 import libportaudio
+import Foundation
 
 // swiftlint:disable function_parameter_count
+// swiftlint:disable function_body_length
 
 private func bridge<T: AnyObject>(obj: T) -> UnsafeMutableRawPointer {
     return UnsafeMutableRawPointer(Unmanaged.passUnretained(obj).toOpaque())
@@ -47,7 +49,7 @@ private func passthroughAudio(_ inputBuffer: UnsafeRawPointer?,
             let peakToPeakAmplitude = maxAmplitude - minAmplitude
 
             average /= Float(framesPerBuffer)
-			
+
             let stats = AudioStats(average: average,
                                    peakAmplitude: peakAmplitude,
                                    peakToPeakAmplitude: peakToPeakAmplitude)
@@ -86,35 +88,42 @@ class Audio: Actor {
     private var audioStats = AudioStats()
     private var runningPeakAmplitude: Float = 0.0
 
+    private var lastAudioStatsTime: TimeInterval
+
     init(_ lights: Lights, _ state: State) {
         self.state = state
         self.lights = lights
 
         portaudio = PortAudio()
 
+        lastAudioStatsTime = ProcessInfo.processInfo.systemUptime
+
         super.init()
-                
-        var outputDevice:PaDeviceInfo?
-        var outputDeviceIdx:Int32?
-        var inputDevice:PaDeviceInfo?
-        var inputDeviceIdx:Int32?
-        
+
+        unsafeCoreAffinity = .onlyPerformance
+        unsafePriority = 99
+
+        var outputDevice: PaDeviceInfo?
+        var outputDeviceIdx: Int32?
+        var inputDevice: PaDeviceInfo?
+        var inputDeviceIdx: Int32?
+
         if let (defaultOutputDevice, defaultOutputDeviceIdx) = portaudio.defaultOutputDevice {
             outputDevice = defaultOutputDevice
             outputDeviceIdx = defaultOutputDeviceIdx
         }
-        
+
         if let (defaultInputDevice, defaultInputDeviceIdx) = portaudio.defaultInputDevice {
             inputDevice = defaultInputDevice
             inputDeviceIdx = defaultInputDeviceIdx
         }
-        
-        var deviceIdx:Int32 = 0
+
+        var deviceIdx: Int32 = 0
         for device in portaudio.devices {
             if String(cString: device.name).hasPrefix("USB Audio Device") {
                 outputDevice = device
                 outputDeviceIdx = deviceIdx
-                
+
                 inputDevice = device
                 inputDeviceIdx = deviceIdx
             }
@@ -136,7 +145,7 @@ class Audio: Actor {
             inputParameters.device = inputDeviceIdx
             inputParameters.channelCount = numChannels
             inputParameters.sampleFormat = paFloat32
-            inputParameters.suggestedLatency = inputDevice.defaultHighOutputLatency
+            inputParameters.suggestedLatency = inputDevice.defaultHighInputLatency
             inputParameters.hostApiSpecificStreamInfo = nil
 
             var outputParameters = PaStreamParameters()
@@ -148,7 +157,7 @@ class Audio: Actor {
 
             let sampleRate: Double = inputDevice.defaultSampleRate
             let framePerBuffer: Int = 128
-            
+
             let streamFinished: PaStreamFinishedClosure = { (userData) in
                 print("audio stream unexpectedly ended, exiting...")
                 exit(1)
@@ -164,6 +173,8 @@ class Audio: Actor {
             if let stream = stream {
                 stream.start()
             }
+
+            Flynn.Timer(timeInterval: 1.0, repeats: true, beConfirmAudioIsAlive, [])
 
         } else {
             print("no audio devices detected, exiting...")
@@ -195,6 +206,8 @@ class Audio: Actor {
         audioStats = stats
         lights.beSetAudioStats(stats)
         state.beSetAudioStats(stats)
+
+        lastAudioStatsTime = ProcessInfo.processInfo.systemUptime
     }
 
     lazy var beSetAudioStats = Behavior(self) { [unowned self] (args: BehaviorArgs) in
@@ -206,6 +219,15 @@ class Audio: Actor {
         if let stream = self.stream {
             stream.stop()
             stream.close()
+        }
+    }
+
+    lazy var beConfirmAudioIsAlive = Behavior(self) { [unowned self] (_: BehaviorArgs) in
+        let currentTime = ProcessInfo.processInfo.systemUptime
+        //print("delta: \(currentTime - self.lastAudioStatsTime), \(self.unsafeMessagesCount)")
+        if currentTime - self.lastAudioStatsTime > 5.0 {
+            print("Have not received any audio signals for 5 seconds, exiting...")
+            exit(1)
         }
     }
 
