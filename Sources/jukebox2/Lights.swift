@@ -74,8 +74,11 @@ class Lights: Actor {
         }
     }
 
-    lazy var beClose = Behavior(self) { [unowned self] (_: BehaviorArgs) in
+    private func _beClose() {
         self.socket?.close()
+    }
+    public func beClose() {
+        unsafeSend(_beClose)
     }
 
     // MARK: - Visuals
@@ -85,9 +88,7 @@ class Lights: Actor {
     private var updateFrameRate: TimeInterval = 1.0 / 60.0
 
     private var anim: Float = 0.0
-    private func _beSetAudioStats(_ args: BehaviorArgs) {
-        let stats: AudioStats = args[x:0]
-
+    private func _beSetAudioStats(_ stats: AudioStats) {
         let currentTime = ProcessInfo.processInfo.systemUptime
         let deltaTime = (currentTime - previousTime)
         updateTime += deltaTime
@@ -113,18 +114,13 @@ class Lights: Actor {
             }
         }
     }
-
-    lazy var beSetAudioStats = Behavior(self) { [unowned self] (args: BehaviorArgs) in
-        // flynnlint:parameter AudioStats - stats related to the audio buffer
-        self._beSetAudioStats(args)
+    public func beSetAudioStats(_ stats: AudioStats) {
+        unsafeSend { [unowned self] in
+            self._beSetAudioStats(stats)
+        }
     }
 
-    lazy var beSetVisual = Behavior(self) { [unowned self] (args: BehaviorArgs) in
-        // flynnlint:parameter Int - channel index to attach the visual to
-        // flynnlint:parameter LightVisual - visual to attach to the channel
-        let channelIdx: Int = args[x:0]
-        let visual: LightVisual.Type = args[x:1]
-
+    private func _beSetVisual(_ channelIdx: Int, _ visual: LightVisual.Type) {
         switch channelIdx {
         case 0:
             self.channel0.visual = visual.init()
@@ -134,12 +130,20 @@ class Lights: Actor {
             break
         }
     }
+    public func beSetVisual(_ channelIdx: Int, _ visual: LightVisual.Type) {
+        unsafeSend { [unowned self] in
+            self._beSetVisual(channelIdx, visual)
+        }
+    }
 
-    lazy var beSetBrightness = Behavior(self) { [unowned self] (args: BehaviorArgs) in
-        // flynnlint:parameter Float - brightness level to set all channels
-        let brightness: Float = args[x:0]
+    private func _beSetBrightness(_ brightness: Float) {
         self.channel0.targetBrightness = brightness
         self.channel1.targetBrightness = brightness
+    }
+    public func beSetBrightness(_ brightness: Float) {
+        unsafeSend { [unowned self] in
+            self._beSetBrightness(brightness)
+        }
     }
 
 }

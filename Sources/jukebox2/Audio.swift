@@ -174,7 +174,7 @@ class Audio: Actor {
                 stream.start()
             }
 
-            Flynn.Timer(timeInterval: 1.0, repeats: true, beConfirmAudioIsAlive, [])
+            //Flynn.Timer(timeInterval: 1.0, repeats: true, beConfirmAudioIsAlive, [])
 
         } else {
             print("no audio devices detected, exiting...")
@@ -182,14 +182,14 @@ class Audio: Actor {
         }
     }
 
-    private func _beSetAudioStats(_ args: BehaviorArgs) {
-        var stats: AudioStats = args[x:0]
-
+    private func _beSetAudioStats(_ stats: AudioStats) {
+        var modStats = stats
+        
         if runningPeakAmplitude == 0 {
-            runningPeakAmplitude = stats.peakAmplitude
+            runningPeakAmplitude = modStats.peakAmplitude
         }
 
-        runningPeakAmplitude += (stats.peakAmplitude - runningPeakAmplitude) * 0.00123
+        runningPeakAmplitude += (modStats.peakAmplitude - runningPeakAmplitude) * 0.00123
 
         var normalize = 1.0 / runningPeakAmplitude
         if normalize < 1.0 {
@@ -199,29 +199,34 @@ class Audio: Actor {
             normalize = 100.0
         }
 
-        stats.normalize = normalize
-        stats.normalizedPeakAmplitude = stats.peakAmplitude * normalize
-        stats.normalizedPeakToPeakAmplitude = stats.peakToPeakAmplitude * normalize
+        modStats.normalize = normalize
+        modStats.normalizedPeakAmplitude = modStats.peakAmplitude * normalize
+        modStats.normalizedPeakToPeakAmplitude = modStats.peakToPeakAmplitude * normalize
 
-        audioStats = stats
+        audioStats = modStats
         lights.beSetAudioStats(stats)
         state.beSetAudioStats(stats)
 
         lastAudioStatsTime = ProcessInfo.processInfo.systemUptime
     }
-
-    lazy var beSetAudioStats = Behavior(self) { [unowned self] (args: BehaviorArgs) in
-        // flynnlint:parameter AudioStats - stats related to the audio buffer
-        self._beSetAudioStats(args)
+    public func beSetAudioStats(_ stats: AudioStats) {
+        unsafeSend { [unowned self] in
+            self._beSetAudioStats(stats)
+        }
     }
 
-    lazy var beStop = Behavior(self) { [unowned self] (_: BehaviorArgs) in
+
+    private func _beStop() {
         if let stream = self.stream {
             stream.stop()
             stream.close()
         }
     }
+    public func beStop() {
+        unsafeSend(_beStop)
+    }
 
+    /*
     lazy var beConfirmAudioIsAlive = Behavior(self) { [unowned self] (_: BehaviorArgs) in
         let currentTime = ProcessInfo.processInfo.systemUptime
         //print("delta: \(currentTime - self.lastAudioStatsTime), \(self.unsafeMessagesCount)")
@@ -230,5 +235,5 @@ class Audio: Actor {
             exit(1)
         }
     }
-
+ */
 }

@@ -1,1993 +1,3135 @@
 // !$*UTF8*$!
 {
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXAggregateTarget section */
-		"jukebox2::jukebox2PackageTests::ProductTarget" /* jukebox2PackageTests */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = OBJ_265 /* Build configuration list for PBXAggregateTarget "jukebox2PackageTests" */;
-			buildPhases = (
-			);
-			dependencies = (
-				OBJ_268 /* PBXTargetDependency */,
-			);
-			name = jukebox2PackageTests;
-			productName = jukebox2PackageTests;
-		};
-/* End PBXAggregateTarget section */
-
-/* Begin PBXBuildFile section */
-		OBJ_155 /* BashCompletionsGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_34 /* BashCompletionsGenerator.swift */; };
-		OBJ_156 /* CompletionsGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_35 /* CompletionsGenerator.swift */; };
-		OBJ_157 /* ZshCompletionsGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_36 /* ZshCompletionsGenerator.swift */; };
-		OBJ_158 /* Argument.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_38 /* Argument.swift */; };
-		OBJ_159 /* ArgumentHelp.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_39 /* ArgumentHelp.swift */; };
-		OBJ_160 /* CompletionKind.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_40 /* CompletionKind.swift */; };
-		OBJ_161 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_41 /* Errors.swift */; };
-		OBJ_162 /* Flag.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_42 /* Flag.swift */; };
-		OBJ_163 /* NameSpecification.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_43 /* NameSpecification.swift */; };
-		OBJ_164 /* Option.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_44 /* Option.swift */; };
-		OBJ_165 /* OptionGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_45 /* OptionGroup.swift */; };
-		OBJ_166 /* CommandConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_47 /* CommandConfiguration.swift */; };
-		OBJ_167 /* EnumerableFlag.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_48 /* EnumerableFlag.swift */; };
-		OBJ_168 /* ExpressibleByArgument.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_49 /* ExpressibleByArgument.swift */; };
-		OBJ_169 /* ParsableArguments.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_50 /* ParsableArguments.swift */; };
-		OBJ_170 /* ParsableArgumentsValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_51 /* ParsableArgumentsValidation.swift */; };
-		OBJ_171 /* ParsableCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_52 /* ParsableCommand.swift */; };
-		OBJ_172 /* ArgumentDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_54 /* ArgumentDecoder.swift */; };
-		OBJ_173 /* ArgumentDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_55 /* ArgumentDefinition.swift */; };
-		OBJ_174 /* ArgumentSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_56 /* ArgumentSet.swift */; };
-		OBJ_175 /* ArgumentSetSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_57 /* ArgumentSetSequence.swift */; };
-		OBJ_176 /* CommandParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_58 /* CommandParser.swift */; };
-		OBJ_177 /* InputOrigin.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_59 /* InputOrigin.swift */; };
-		OBJ_178 /* Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_60 /* Name.swift */; };
-		OBJ_179 /* Parsed.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_61 /* Parsed.swift */; };
-		OBJ_180 /* ParsedValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_62 /* ParsedValues.swift */; };
-		OBJ_181 /* ParserError.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_63 /* ParserError.swift */; };
-		OBJ_182 /* SplitArguments.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_64 /* SplitArguments.swift */; };
-		OBJ_183 /* HelpCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_66 /* HelpCommand.swift */; };
-		OBJ_184 /* HelpGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_67 /* HelpGenerator.swift */; };
-		OBJ_185 /* MessageInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_68 /* MessageInfo.swift */; };
-		OBJ_186 /* UsageGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_69 /* UsageGenerator.swift */; };
-		OBJ_187 /* SequenceExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_71 /* SequenceExtensions.swift */; };
-		OBJ_188 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_72 /* StringExtensions.swift */; };
-		OBJ_189 /* Tree.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_73 /* Tree.swift */; };
-		OBJ_196 /* Actor.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_126 /* Actor.swift */; };
-		OBJ_197 /* Atomics.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_127 /* Atomics.swift */; };
-		OBJ_198 /* Behavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_128 /* Behavior.swift */; };
-		OBJ_199 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_129 /* Device.swift */; };
-		OBJ_200 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_130 /* Extensions.swift */; };
-		OBJ_201 /* Flowable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_131 /* Flowable.swift */; };
-		OBJ_202 /* Flynn+RegisteredActors.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_132 /* Flynn+RegisteredActors.swift */; };
-		OBJ_203 /* Flynn+Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_133 /* Flynn+Timer.swift */; };
-		OBJ_204 /* Flynn.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_134 /* Flynn.swift */; };
-		OBJ_205 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_135 /* Profile.swift */; };
-		OBJ_206 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_136 /* Queue.swift */; };
-		OBJ_207 /* Scheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_137 /* Scheduler.swift */; };
-		OBJ_214 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_138 /* Package.swift */; };
-		OBJ_220 /* Socket.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_27 /* Socket.swift */; };
-		OBJ_221 /* SocketProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_28 /* SocketProtocols.swift */; };
-		OBJ_222 /* SocketUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_29 /* SocketUtils.swift */; };
-		OBJ_229 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_30 /* Package.swift */; };
-		OBJ_235 /* Audio.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* Audio.swift */; };
-		OBJ_236 /* Lights.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* Lights.swift */; };
-		OBJ_237 /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* Channel.swift */; };
-		OBJ_238 /* LightPalms.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* LightPalms.swift */; };
-		OBJ_239 /* LightStars.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* LightStars.swift */; };
-		OBJ_240 /* LightTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_15 /* LightTest.swift */; };
-		OBJ_241 /* LightTheater.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_16 /* LightTheater.swift */; };
-		OBJ_242 /* ParticleEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_17 /* ParticleEngine.swift */; };
-		OBJ_243 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* State.swift */; };
-		OBJ_244 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_19 /* main.swift */; };
-		OBJ_246 /* ArgumentParser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "swift-argument-parser::ArgumentParser::Product" /* ArgumentParser.framework */; };
-		OBJ_247 /* Socket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Socket::Socket::Product" /* Socket.framework */; };
-		OBJ_248 /* portaudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "portaudio::portaudio::Product" /* portaudio.framework */; };
-		OBJ_249 /* libportaudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "portaudio::libportaudio::Product" /* libportaudio.framework */; };
-		OBJ_250 /* Flynn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Flynn::Flynn::Product" /* Flynn.framework */; };
-		OBJ_263 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
-		OBJ_274 /* XCTestManifests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_22 /* XCTestManifests.swift */; };
-		OBJ_275 /* jukebox2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_23 /* jukebox2Tests.swift */; };
-		OBJ_277 /* ArgumentParser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "swift-argument-parser::ArgumentParser::Product" /* ArgumentParser.framework */; };
-		OBJ_278 /* Socket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Socket::Socket::Product" /* Socket.framework */; };
-		OBJ_279 /* portaudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "portaudio::portaudio::Product" /* portaudio.framework */; };
-		OBJ_280 /* libportaudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "portaudio::libportaudio::Product" /* libportaudio.framework */; };
-		OBJ_281 /* Flynn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Flynn::Flynn::Product" /* Flynn.framework */; };
-		OBJ_292 /* pa_linux_alsa.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_79 /* pa_linux_alsa.c */; };
-		OBJ_293 /* pa_mac_core.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_81 /* pa_mac_core.c */; };
-		OBJ_294 /* pa_mac_core_blocking.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_82 /* pa_mac_core_blocking.c */; };
-		OBJ_295 /* pa_mac_core_utilities.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_83 /* pa_mac_core_utilities.c */; };
-		OBJ_296 /* pa_allocation.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_85 /* pa_allocation.c */; };
-		OBJ_297 /* pa_converters.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_86 /* pa_converters.c */; };
-		OBJ_298 /* pa_cpuload.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_87 /* pa_cpuload.c */; };
-		OBJ_299 /* pa_debugprint.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_88 /* pa_debugprint.c */; };
-		OBJ_300 /* pa_dither.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_89 /* pa_dither.c */; };
-		OBJ_301 /* pa_front.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_90 /* pa_front.c */; };
-		OBJ_302 /* pa_process.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_91 /* pa_process.c */; };
-		OBJ_303 /* pa_ringbuffer.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_92 /* pa_ringbuffer.c */; };
-		OBJ_304 /* pa_stream.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_93 /* pa_stream.c */; };
-		OBJ_305 /* pa_trace.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_94 /* pa_trace.c */; };
-		OBJ_306 /* pa_unix_hostapis.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_117 /* pa_unix_hostapis.c */; };
-		OBJ_307 /* pa_unix_util.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_118 /* pa_unix_util.c */; };
-		OBJ_313 /* portaudio+print.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_120 /* portaudio+print.swift */; };
-		OBJ_314 /* portaudio+stream.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_121 /* portaudio+stream.swift */; };
-		OBJ_315 /* portaudio.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_122 /* portaudio.swift */; };
-		OBJ_317 /* libportaudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "portaudio::libportaudio::Product" /* libportaudio.framework */; };
-		OBJ_324 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_123 /* Package.swift */; };
-		OBJ_330 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_74 /* Package.swift */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		463AFAB324D3D764004B9F6B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = "swift-argument-parser::ArgumentParser";
-			remoteInfo = ArgumentParser;
-		};
-		463AFAB424D3D764004B9F6B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = "Socket::Socket";
-			remoteInfo = Socket;
-		};
-		463AFAB524D3D764004B9F6B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = "portaudio::portaudio";
-			remoteInfo = portaudio;
-		};
-		463AFAB624D3D764004B9F6B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = "portaudio::libportaudio";
-			remoteInfo = libportaudio;
-		};
-		463AFAB724D3D764004B9F6B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = "portaudio::libportaudio";
-			remoteInfo = libportaudio;
-		};
-		463AFAB824D3D764004B9F6B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = "Flynn::Flynn";
-			remoteInfo = Flynn;
-		};
-		463AFAB924D3D764004B9F6B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = "jukebox2::jukebox2";
-			remoteInfo = jukebox2;
-		};
-		463AFABA24D3D764004B9F6B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = "swift-argument-parser::ArgumentParser";
-			remoteInfo = ArgumentParser;
-		};
-		463AFABB24D3D764004B9F6B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = "Socket::Socket";
-			remoteInfo = Socket;
-		};
-		463AFABC24D3D764004B9F6B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = "portaudio::portaudio";
-			remoteInfo = portaudio;
-		};
-		463AFABD24D3D764004B9F6B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = "portaudio::libportaudio";
-			remoteInfo = libportaudio;
-		};
-		463AFABE24D3D764004B9F6B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = "Flynn::Flynn";
-			remoteInfo = Flynn;
-		};
-		463AFAC024D3D769004B9F6B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = "jukebox2::jukebox2Tests";
-			remoteInfo = jukebox2Tests;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXFileReference section */
-		"Flynn::Flynn::Product" /* Flynn.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Flynn.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		OBJ_10 /* Lights.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lights.swift; sourceTree = "<group>"; };
-		OBJ_100 /* pa_endianness.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pa_endianness.h; sourceTree = "<group>"; };
-		OBJ_101 /* pa_gitrevision.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pa_gitrevision.h; sourceTree = "<group>"; };
-		OBJ_102 /* pa_hostapi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pa_hostapi.h; sourceTree = "<group>"; };
-		OBJ_103 /* pa_linux_alsa.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pa_linux_alsa.h; sourceTree = "<group>"; };
-		OBJ_104 /* pa_mac_core.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pa_mac_core.h; sourceTree = "<group>"; };
-		OBJ_105 /* pa_memorybarrier.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pa_memorybarrier.h; sourceTree = "<group>"; };
-		OBJ_106 /* pa_process.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pa_process.h; sourceTree = "<group>"; };
-		OBJ_107 /* pa_ringbuffer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pa_ringbuffer.h; sourceTree = "<group>"; };
-		OBJ_108 /* pa_stream.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pa_stream.h; sourceTree = "<group>"; };
-		OBJ_109 /* pa_trace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pa_trace.h; sourceTree = "<group>"; };
-		OBJ_110 /* pa_types.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pa_types.h; sourceTree = "<group>"; };
-		OBJ_111 /* pa_unix_util.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pa_unix_util.h; sourceTree = "<group>"; };
-		OBJ_112 /* pa_util.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pa_util.h; sourceTree = "<group>"; };
-		OBJ_113 /* portaudio.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = portaudio.h; sourceTree = "<group>"; };
-		OBJ_114 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; name = module.modulemap; path = /Volumes/Development/Development/chimerasw2/jukebox2/jukebox2.xcodeproj/GeneratedModuleMap/libportaudio/module.modulemap; sourceTree = "<group>"; };
-		OBJ_117 /* pa_unix_hostapis.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = pa_unix_hostapis.c; sourceTree = "<group>"; };
-		OBJ_118 /* pa_unix_util.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = pa_unix_util.c; sourceTree = "<group>"; };
-		OBJ_12 /* Channel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
-		OBJ_120 /* portaudio+print.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "portaudio+print.swift"; sourceTree = "<group>"; };
-		OBJ_121 /* portaudio+stream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "portaudio+stream.swift"; sourceTree = "<group>"; };
-		OBJ_122 /* portaudio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = portaudio.swift; sourceTree = "<group>"; };
-		OBJ_123 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Volumes/Development/Development/chimerasw2/jukebox2/.build/checkouts/portaudio-swift/Package.swift"; sourceTree = "<group>"; };
-		OBJ_126 /* Actor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Actor.swift; sourceTree = "<group>"; };
-		OBJ_127 /* Atomics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Atomics.swift; sourceTree = "<group>"; };
-		OBJ_128 /* Behavior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Behavior.swift; sourceTree = "<group>"; };
-		OBJ_129 /* Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
-		OBJ_13 /* LightPalms.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightPalms.swift; sourceTree = "<group>"; };
-		OBJ_130 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
-		OBJ_131 /* Flowable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flowable.swift; sourceTree = "<group>"; };
-		OBJ_132 /* Flynn+RegisteredActors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Flynn+RegisteredActors.swift"; sourceTree = "<group>"; };
-		OBJ_133 /* Flynn+Timer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Flynn+Timer.swift"; sourceTree = "<group>"; };
-		OBJ_134 /* Flynn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flynn.swift; sourceTree = "<group>"; };
-		OBJ_135 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
-		OBJ_136 /* Queue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
-		OBJ_137 /* Scheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scheduler.swift; sourceTree = "<group>"; };
-		OBJ_138 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = /Volumes/Development/Development/chimerasw2/jukebox2/.build/checkouts/Flynn/Package.swift; sourceTree = "<group>"; };
-		OBJ_14 /* LightStars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightStars.swift; sourceTree = "<group>"; };
-		OBJ_147 /* meta */ = {isa = PBXFileReference; lastKnownFileType = folder; path = meta; sourceTree = SOURCE_ROOT; };
-		OBJ_148 /* Makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
-		OBJ_149 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		OBJ_15 /* LightTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightTest.swift; sourceTree = "<group>"; };
-		OBJ_16 /* LightTheater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightTheater.swift; sourceTree = "<group>"; };
-		OBJ_17 /* ParticleEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticleEngine.swift; sourceTree = "<group>"; };
-		OBJ_18 /* State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
-		OBJ_19 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		OBJ_22 /* XCTestManifests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestManifests.swift; sourceTree = "<group>"; };
-		OBJ_23 /* jukebox2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = jukebox2Tests.swift; sourceTree = "<group>"; };
-		OBJ_27 /* Socket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Socket.swift; sourceTree = "<group>"; };
-		OBJ_28 /* SocketProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketProtocols.swift; sourceTree = "<group>"; };
-		OBJ_29 /* SocketUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketUtils.swift; sourceTree = "<group>"; };
-		OBJ_30 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = /Volumes/Development/Development/chimerasw2/jukebox2/.build/checkouts/BlueSocket/Package.swift; sourceTree = "<group>"; };
-		OBJ_34 /* BashCompletionsGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BashCompletionsGenerator.swift; sourceTree = "<group>"; };
-		OBJ_35 /* CompletionsGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletionsGenerator.swift; sourceTree = "<group>"; };
-		OBJ_36 /* ZshCompletionsGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZshCompletionsGenerator.swift; sourceTree = "<group>"; };
-		OBJ_38 /* Argument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Argument.swift; sourceTree = "<group>"; };
-		OBJ_39 /* ArgumentHelp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArgumentHelp.swift; sourceTree = "<group>"; };
-		OBJ_40 /* CompletionKind.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletionKind.swift; sourceTree = "<group>"; };
-		OBJ_41 /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
-		OBJ_42 /* Flag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flag.swift; sourceTree = "<group>"; };
-		OBJ_43 /* NameSpecification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameSpecification.swift; sourceTree = "<group>"; };
-		OBJ_44 /* Option.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Option.swift; sourceTree = "<group>"; };
-		OBJ_45 /* OptionGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionGroup.swift; sourceTree = "<group>"; };
-		OBJ_47 /* CommandConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandConfiguration.swift; sourceTree = "<group>"; };
-		OBJ_48 /* EnumerableFlag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumerableFlag.swift; sourceTree = "<group>"; };
-		OBJ_49 /* ExpressibleByArgument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpressibleByArgument.swift; sourceTree = "<group>"; };
-		OBJ_50 /* ParsableArguments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParsableArguments.swift; sourceTree = "<group>"; };
-		OBJ_51 /* ParsableArgumentsValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParsableArgumentsValidation.swift; sourceTree = "<group>"; };
-		OBJ_52 /* ParsableCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParsableCommand.swift; sourceTree = "<group>"; };
-		OBJ_54 /* ArgumentDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArgumentDecoder.swift; sourceTree = "<group>"; };
-		OBJ_55 /* ArgumentDefinition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArgumentDefinition.swift; sourceTree = "<group>"; };
-		OBJ_56 /* ArgumentSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArgumentSet.swift; sourceTree = "<group>"; };
-		OBJ_57 /* ArgumentSetSequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArgumentSetSequence.swift; sourceTree = "<group>"; };
-		OBJ_58 /* CommandParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandParser.swift; sourceTree = "<group>"; };
-		OBJ_59 /* InputOrigin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputOrigin.swift; sourceTree = "<group>"; };
-		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
-		OBJ_60 /* Name.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Name.swift; sourceTree = "<group>"; };
-		OBJ_61 /* Parsed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parsed.swift; sourceTree = "<group>"; };
-		OBJ_62 /* ParsedValues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParsedValues.swift; sourceTree = "<group>"; };
-		OBJ_63 /* ParserError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParserError.swift; sourceTree = "<group>"; };
-		OBJ_64 /* SplitArguments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitArguments.swift; sourceTree = "<group>"; };
-		OBJ_66 /* HelpCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpCommand.swift; sourceTree = "<group>"; };
-		OBJ_67 /* HelpGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpGenerator.swift; sourceTree = "<group>"; };
-		OBJ_68 /* MessageInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageInfo.swift; sourceTree = "<group>"; };
-		OBJ_69 /* UsageGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsageGenerator.swift; sourceTree = "<group>"; };
-		OBJ_71 /* SequenceExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SequenceExtensions.swift; sourceTree = "<group>"; };
-		OBJ_72 /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
-		OBJ_73 /* Tree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tree.swift; sourceTree = "<group>"; };
-		OBJ_74 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Volumes/Development/Development/chimerasw2/jukebox2/.build/checkouts/swift-argument-parser/Package.swift"; sourceTree = "<group>"; };
-		OBJ_79 /* pa_linux_alsa.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = pa_linux_alsa.c; sourceTree = "<group>"; };
-		OBJ_81 /* pa_mac_core.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = pa_mac_core.c; sourceTree = "<group>"; };
-		OBJ_82 /* pa_mac_core_blocking.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = pa_mac_core_blocking.c; sourceTree = "<group>"; };
-		OBJ_83 /* pa_mac_core_utilities.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = pa_mac_core_utilities.c; sourceTree = "<group>"; };
-		OBJ_85 /* pa_allocation.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = pa_allocation.c; sourceTree = "<group>"; };
-		OBJ_86 /* pa_converters.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = pa_converters.c; sourceTree = "<group>"; };
-		OBJ_87 /* pa_cpuload.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = pa_cpuload.c; sourceTree = "<group>"; };
-		OBJ_88 /* pa_debugprint.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = pa_debugprint.c; sourceTree = "<group>"; };
-		OBJ_89 /* pa_dither.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = pa_dither.c; sourceTree = "<group>"; };
-		OBJ_9 /* Audio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Audio.swift; sourceTree = "<group>"; };
-		OBJ_90 /* pa_front.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = pa_front.c; sourceTree = "<group>"; };
-		OBJ_91 /* pa_process.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = pa_process.c; sourceTree = "<group>"; };
-		OBJ_92 /* pa_ringbuffer.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = pa_ringbuffer.c; sourceTree = "<group>"; };
-		OBJ_93 /* pa_stream.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = pa_stream.c; sourceTree = "<group>"; };
-		OBJ_94 /* pa_trace.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = pa_trace.c; sourceTree = "<group>"; };
-		OBJ_95 /* pa_allocation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pa_allocation.h; sourceTree = "<group>"; };
-		OBJ_96 /* pa_converters.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pa_converters.h; sourceTree = "<group>"; };
-		OBJ_97 /* pa_cpuload.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pa_cpuload.h; sourceTree = "<group>"; };
-		OBJ_98 /* pa_debugprint.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pa_debugprint.h; sourceTree = "<group>"; };
-		OBJ_99 /* pa_dither.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pa_dither.h; sourceTree = "<group>"; };
-		"Socket::Socket::Product" /* Socket.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Socket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		"jukebox2::jukebox2::Product" /* jukebox2 */ = {isa = PBXFileReference; lastKnownFileType = text; path = jukebox2; sourceTree = BUILT_PRODUCTS_DIR; };
-		"jukebox2::jukebox2Tests::Product" /* jukebox2Tests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = jukebox2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		"portaudio::libportaudio::Product" /* libportaudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libportaudio.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		"portaudio::portaudio::Product" /* portaudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = portaudio.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		"swift-argument-parser::ArgumentParser::Product" /* ArgumentParser.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ArgumentParser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		OBJ_190 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 0;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		OBJ_208 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 0;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		OBJ_223 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 0;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		OBJ_245 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 0;
-			files = (
-				OBJ_246 /* ArgumentParser.framework in Frameworks */,
-				OBJ_247 /* Socket.framework in Frameworks */,
-				OBJ_248 /* portaudio.framework in Frameworks */,
-				OBJ_249 /* libportaudio.framework in Frameworks */,
-				OBJ_250 /* Flynn.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		OBJ_276 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 0;
-			files = (
-				OBJ_277 /* ArgumentParser.framework in Frameworks */,
-				OBJ_278 /* Socket.framework in Frameworks */,
-				OBJ_279 /* portaudio.framework in Frameworks */,
-				OBJ_280 /* libportaudio.framework in Frameworks */,
-				OBJ_281 /* Flynn.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		OBJ_308 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 0;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		OBJ_316 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 0;
-			files = (
-				OBJ_317 /* libportaudio.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		OBJ_11 /* Lights */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_12 /* Channel.swift */,
-				OBJ_13 /* LightPalms.swift */,
-				OBJ_14 /* LightStars.swift */,
-				OBJ_15 /* LightTest.swift */,
-				OBJ_16 /* LightTheater.swift */,
-				OBJ_17 /* ParticleEngine.swift */,
-			);
-			path = Lights;
-			sourceTree = "<group>";
-		};
-		OBJ_115 /* os */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_116 /* unix */,
-			);
-			path = os;
-			sourceTree = "<group>";
-		};
-		OBJ_116 /* unix */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_117 /* pa_unix_hostapis.c */,
-				OBJ_118 /* pa_unix_util.c */,
-			);
-			path = unix;
-			sourceTree = "<group>";
-		};
-		OBJ_119 /* portaudio */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_120 /* portaudio+print.swift */,
-				OBJ_121 /* portaudio+stream.swift */,
-				OBJ_122 /* portaudio.swift */,
-			);
-			name = portaudio;
-			path = ".build/checkouts/portaudio-swift/Sources/portaudio";
-			sourceTree = SOURCE_ROOT;
-		};
-		OBJ_124 /* Flynn */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_125 /* Flynn */,
-				OBJ_138 /* Package.swift */,
-			);
-			name = Flynn;
-			sourceTree = SOURCE_ROOT;
-		};
-		OBJ_125 /* Flynn */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_126 /* Actor.swift */,
-				OBJ_127 /* Atomics.swift */,
-				OBJ_128 /* Behavior.swift */,
-				OBJ_129 /* Device.swift */,
-				OBJ_130 /* Extensions.swift */,
-				OBJ_131 /* Flowable.swift */,
-				OBJ_132 /* Flynn+RegisteredActors.swift */,
-				OBJ_133 /* Flynn+Timer.swift */,
-				OBJ_134 /* Flynn.swift */,
-				OBJ_135 /* Profile.swift */,
-				OBJ_136 /* Queue.swift */,
-				OBJ_137 /* Scheduler.swift */,
-			);
-			name = Flynn;
-			path = .build/checkouts/Flynn/Sources/Flynn;
-			sourceTree = SOURCE_ROOT;
-		};
-		OBJ_139 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				"Flynn::Flynn::Product" /* Flynn.framework */,
-				"jukebox2::jukebox2::Product" /* jukebox2 */,
-				"swift-argument-parser::ArgumentParser::Product" /* ArgumentParser.framework */,
-				"portaudio::libportaudio::Product" /* libportaudio.framework */,
-				"Socket::Socket::Product" /* Socket.framework */,
-				"jukebox2::jukebox2Tests::Product" /* jukebox2Tests.xctest */,
-				"portaudio::portaudio::Product" /* portaudio.framework */,
-			);
-			name = Products;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		OBJ_20 /* Tests */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_21 /* jukebox2Tests */,
-			);
-			name = Tests;
-			sourceTree = SOURCE_ROOT;
-		};
-		OBJ_21 /* jukebox2Tests */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_22 /* XCTestManifests.swift */,
-				OBJ_23 /* jukebox2Tests.swift */,
-			);
-			name = jukebox2Tests;
-			path = Tests/jukebox2Tests;
-			sourceTree = SOURCE_ROOT;
-		};
-		OBJ_24 /* Dependencies */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_25 /* Socket 1.0.52 */,
-				OBJ_31 /* swift-argument-parser 0.2.1 */,
-				OBJ_75 /* portaudio */,
-				OBJ_124 /* Flynn */,
-			);
-			name = Dependencies;
-			sourceTree = "<group>";
-		};
-		OBJ_25 /* Socket 1.0.52 */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_26 /* Socket */,
-				OBJ_30 /* Package.swift */,
-			);
-			name = "Socket 1.0.52";
-			sourceTree = SOURCE_ROOT;
-		};
-		OBJ_26 /* Socket */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_27 /* Socket.swift */,
-				OBJ_28 /* SocketProtocols.swift */,
-				OBJ_29 /* SocketUtils.swift */,
-			);
-			name = Socket;
-			path = .build/checkouts/BlueSocket/Sources/Socket;
-			sourceTree = SOURCE_ROOT;
-		};
-		OBJ_31 /* swift-argument-parser 0.2.1 */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_32 /* ArgumentParser */,
-				OBJ_74 /* Package.swift */,
-			);
-			name = "swift-argument-parser 0.2.1";
-			sourceTree = SOURCE_ROOT;
-		};
-		OBJ_32 /* ArgumentParser */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_33 /* Completions */,
-				OBJ_37 /* Parsable Properties */,
-				OBJ_46 /* Parsable Types */,
-				OBJ_53 /* Parsing */,
-				OBJ_65 /* Usage */,
-				OBJ_70 /* Utilities */,
-			);
-			name = ArgumentParser;
-			path = ".build/checkouts/swift-argument-parser/Sources/ArgumentParser";
-			sourceTree = SOURCE_ROOT;
-		};
-		OBJ_33 /* Completions */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_34 /* BashCompletionsGenerator.swift */,
-				OBJ_35 /* CompletionsGenerator.swift */,
-				OBJ_36 /* ZshCompletionsGenerator.swift */,
-			);
-			path = Completions;
-			sourceTree = "<group>";
-		};
-		OBJ_37 /* Parsable Properties */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_38 /* Argument.swift */,
-				OBJ_39 /* ArgumentHelp.swift */,
-				OBJ_40 /* CompletionKind.swift */,
-				OBJ_41 /* Errors.swift */,
-				OBJ_42 /* Flag.swift */,
-				OBJ_43 /* NameSpecification.swift */,
-				OBJ_44 /* Option.swift */,
-				OBJ_45 /* OptionGroup.swift */,
-			);
-			path = "Parsable Properties";
-			sourceTree = "<group>";
-		};
-		OBJ_46 /* Parsable Types */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_47 /* CommandConfiguration.swift */,
-				OBJ_48 /* EnumerableFlag.swift */,
-				OBJ_49 /* ExpressibleByArgument.swift */,
-				OBJ_50 /* ParsableArguments.swift */,
-				OBJ_51 /* ParsableArgumentsValidation.swift */,
-				OBJ_52 /* ParsableCommand.swift */,
-			);
-			path = "Parsable Types";
-			sourceTree = "<group>";
-		};
-		OBJ_5 /*  */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_6 /* Package.swift */,
-				OBJ_7 /* Sources */,
-				OBJ_20 /* Tests */,
-				OBJ_24 /* Dependencies */,
-				OBJ_139 /* Products */,
-				OBJ_147 /* meta */,
-				OBJ_148 /* Makefile */,
-				OBJ_149 /* README.md */,
-			);
-			name = "";
-			sourceTree = "<group>";
-		};
-		OBJ_53 /* Parsing */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_54 /* ArgumentDecoder.swift */,
-				OBJ_55 /* ArgumentDefinition.swift */,
-				OBJ_56 /* ArgumentSet.swift */,
-				OBJ_57 /* ArgumentSetSequence.swift */,
-				OBJ_58 /* CommandParser.swift */,
-				OBJ_59 /* InputOrigin.swift */,
-				OBJ_60 /* Name.swift */,
-				OBJ_61 /* Parsed.swift */,
-				OBJ_62 /* ParsedValues.swift */,
-				OBJ_63 /* ParserError.swift */,
-				OBJ_64 /* SplitArguments.swift */,
-			);
-			path = Parsing;
-			sourceTree = "<group>";
-		};
-		OBJ_65 /* Usage */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_66 /* HelpCommand.swift */,
-				OBJ_67 /* HelpGenerator.swift */,
-				OBJ_68 /* MessageInfo.swift */,
-				OBJ_69 /* UsageGenerator.swift */,
-			);
-			path = Usage;
-			sourceTree = "<group>";
-		};
-		OBJ_7 /* Sources */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_8 /* jukebox2 */,
-			);
-			name = Sources;
-			sourceTree = SOURCE_ROOT;
-		};
-		OBJ_70 /* Utilities */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_71 /* SequenceExtensions.swift */,
-				OBJ_72 /* StringExtensions.swift */,
-				OBJ_73 /* Tree.swift */,
-			);
-			path = Utilities;
-			sourceTree = "<group>";
-		};
-		OBJ_75 /* portaudio */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_76 /* libportaudio */,
-				OBJ_119 /* portaudio */,
-				OBJ_123 /* Package.swift */,
-			);
-			name = portaudio;
-			sourceTree = SOURCE_ROOT;
-		};
-		OBJ_76 /* libportaudio */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_77 /* hostapi */,
-				OBJ_84 /* include */,
-				OBJ_115 /* os */,
-			);
-			name = libportaudio;
-			path = ".build/checkouts/portaudio-swift/Sources/libportaudio";
-			sourceTree = SOURCE_ROOT;
-		};
-		OBJ_77 /* hostapi */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_78 /* alsa */,
-				OBJ_80 /* coreaudio */,
-			);
-			path = hostapi;
-			sourceTree = "<group>";
-		};
-		OBJ_78 /* alsa */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_79 /* pa_linux_alsa.c */,
-			);
-			path = alsa;
-			sourceTree = "<group>";
-		};
-		OBJ_8 /* jukebox2 */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_9 /* Audio.swift */,
-				OBJ_10 /* Lights.swift */,
-				OBJ_11 /* Lights */,
-				OBJ_18 /* State.swift */,
-				OBJ_19 /* main.swift */,
-			);
-			name = jukebox2;
-			path = Sources/jukebox2;
-			sourceTree = SOURCE_ROOT;
-		};
-		OBJ_80 /* coreaudio */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_81 /* pa_mac_core.c */,
-				OBJ_82 /* pa_mac_core_blocking.c */,
-				OBJ_83 /* pa_mac_core_utilities.c */,
-			);
-			path = coreaudio;
-			sourceTree = "<group>";
-		};
-		OBJ_84 /* include */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_85 /* pa_allocation.c */,
-				OBJ_86 /* pa_converters.c */,
-				OBJ_87 /* pa_cpuload.c */,
-				OBJ_88 /* pa_debugprint.c */,
-				OBJ_89 /* pa_dither.c */,
-				OBJ_90 /* pa_front.c */,
-				OBJ_91 /* pa_process.c */,
-				OBJ_92 /* pa_ringbuffer.c */,
-				OBJ_93 /* pa_stream.c */,
-				OBJ_94 /* pa_trace.c */,
-				OBJ_95 /* pa_allocation.h */,
-				OBJ_96 /* pa_converters.h */,
-				OBJ_97 /* pa_cpuload.h */,
-				OBJ_98 /* pa_debugprint.h */,
-				OBJ_99 /* pa_dither.h */,
-				OBJ_100 /* pa_endianness.h */,
-				OBJ_101 /* pa_gitrevision.h */,
-				OBJ_102 /* pa_hostapi.h */,
-				OBJ_103 /* pa_linux_alsa.h */,
-				OBJ_104 /* pa_mac_core.h */,
-				OBJ_105 /* pa_memorybarrier.h */,
-				OBJ_106 /* pa_process.h */,
-				OBJ_107 /* pa_ringbuffer.h */,
-				OBJ_108 /* pa_stream.h */,
-				OBJ_109 /* pa_trace.h */,
-				OBJ_110 /* pa_types.h */,
-				OBJ_111 /* pa_unix_util.h */,
-				OBJ_112 /* pa_util.h */,
-				OBJ_113 /* portaudio.h */,
-				OBJ_114 /* module.modulemap */,
-			);
-			path = include;
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXNativeTarget section */
-		"Flynn::Flynn" /* Flynn */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_192 /* Build configuration list for PBXNativeTarget "Flynn" */;
-			buildPhases = (
-				OBJ_195 /* Sources */,
-				OBJ_208 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = Flynn;
-			productName = Flynn;
-			productReference = "Flynn::Flynn::Product" /* Flynn.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		"Flynn::SwiftPMPackageDescription" /* FlynnPackageDescription */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_210 /* Build configuration list for PBXNativeTarget "FlynnPackageDescription" */;
-			buildPhases = (
-				OBJ_213 /* Sources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = FlynnPackageDescription;
-			productName = FlynnPackageDescription;
-			productType = "com.apple.product-type.framework";
-		};
-		"Socket::Socket" /* Socket */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_216 /* Build configuration list for PBXNativeTarget "Socket" */;
-			buildPhases = (
-				OBJ_219 /* Sources */,
-				OBJ_223 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = Socket;
-			productName = Socket;
-			productReference = "Socket::Socket::Product" /* Socket.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		"Socket::SwiftPMPackageDescription" /* SocketPackageDescription */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_225 /* Build configuration list for PBXNativeTarget "SocketPackageDescription" */;
-			buildPhases = (
-				OBJ_228 /* Sources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = SocketPackageDescription;
-			productName = SocketPackageDescription;
-			productType = "com.apple.product-type.framework";
-		};
-		"jukebox2::SwiftPMPackageDescription" /* jukebox2PackageDescription */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_259 /* Build configuration list for PBXNativeTarget "jukebox2PackageDescription" */;
-			buildPhases = (
-				OBJ_262 /* Sources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = jukebox2PackageDescription;
-			productName = jukebox2PackageDescription;
-			productType = "com.apple.product-type.framework";
-		};
-		"jukebox2::jukebox2" /* jukebox2 */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_231 /* Build configuration list for PBXNativeTarget "jukebox2" */;
-			buildPhases = (
-				463AFABF24D3D768004B9F6B /* FlynnLint */,
-				463AFAC124D3D76A004B9F6B /* SwiftLint */,
-				OBJ_234 /* Sources */,
-				OBJ_245 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				OBJ_251 /* PBXTargetDependency */,
-				OBJ_252 /* PBXTargetDependency */,
-				OBJ_253 /* PBXTargetDependency */,
-				OBJ_255 /* PBXTargetDependency */,
-				OBJ_257 /* PBXTargetDependency */,
-			);
-			name = jukebox2;
-			productName = jukebox2;
-			productReference = "jukebox2::jukebox2::Product" /* jukebox2 */;
-			productType = "com.apple.product-type.tool";
-		};
-		"jukebox2::jukebox2Tests" /* jukebox2Tests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_270 /* Build configuration list for PBXNativeTarget "jukebox2Tests" */;
-			buildPhases = (
-				OBJ_273 /* Sources */,
-				OBJ_276 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				OBJ_282 /* PBXTargetDependency */,
-				OBJ_283 /* PBXTargetDependency */,
-				OBJ_284 /* PBXTargetDependency */,
-				OBJ_285 /* PBXTargetDependency */,
-				OBJ_286 /* PBXTargetDependency */,
-				OBJ_287 /* PBXTargetDependency */,
-			);
-			name = jukebox2Tests;
-			productName = jukebox2Tests;
-			productReference = "jukebox2::jukebox2Tests::Product" /* jukebox2Tests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		"portaudio::SwiftPMPackageDescription" /* portaudioPackageDescription */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_320 /* Build configuration list for PBXNativeTarget "portaudioPackageDescription" */;
-			buildPhases = (
-				OBJ_323 /* Sources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = portaudioPackageDescription;
-			productName = portaudioPackageDescription;
-			productType = "com.apple.product-type.framework";
-		};
-		"portaudio::libportaudio" /* libportaudio */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_288 /* Build configuration list for PBXNativeTarget "libportaudio" */;
-			buildPhases = (
-				OBJ_291 /* Sources */,
-				OBJ_308 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = libportaudio;
-			productName = libportaudio;
-			productReference = "portaudio::libportaudio::Product" /* libportaudio.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		"portaudio::portaudio" /* portaudio */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_309 /* Build configuration list for PBXNativeTarget "portaudio" */;
-			buildPhases = (
-				OBJ_312 /* Sources */,
-				OBJ_316 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				OBJ_318 /* PBXTargetDependency */,
-			);
-			name = portaudio;
-			productName = portaudio;
-			productReference = "portaudio::portaudio::Product" /* portaudio.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		"swift-argument-parser::ArgumentParser" /* ArgumentParser */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_151 /* Build configuration list for PBXNativeTarget "ArgumentParser" */;
-			buildPhases = (
-				OBJ_154 /* Sources */,
-				OBJ_190 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = ArgumentParser;
-			productName = ArgumentParser;
-			productReference = "swift-argument-parser::ArgumentParser::Product" /* ArgumentParser.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		"swift-argument-parser::SwiftPMPackageDescription" /* swift-argument-parserPackageDescription */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_326 /* Build configuration list for PBXNativeTarget "swift-argument-parserPackageDescription" */;
-			buildPhases = (
-				OBJ_329 /* Sources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "swift-argument-parserPackageDescription";
-			productName = "swift-argument-parserPackageDescription";
-			productType = "com.apple.product-type.framework";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		OBJ_1 /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				LastSwiftMigration = 9999;
-				LastUpgradeCheck = 9999;
-			};
-			buildConfigurationList = OBJ_2 /* Build configuration list for PBXProject "jukebox2" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = en;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-			);
-			mainGroup = OBJ_5 /*  */;
-			productRefGroup = OBJ_139 /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				"swift-argument-parser::ArgumentParser" /* ArgumentParser */,
-				"Flynn::Flynn" /* Flynn */,
-				"Flynn::SwiftPMPackageDescription" /* FlynnPackageDescription */,
-				"Socket::Socket" /* Socket */,
-				"Socket::SwiftPMPackageDescription" /* SocketPackageDescription */,
-				"jukebox2::jukebox2" /* jukebox2 */,
-				"jukebox2::SwiftPMPackageDescription" /* jukebox2PackageDescription */,
-				"jukebox2::jukebox2PackageTests::ProductTarget" /* jukebox2PackageTests */,
-				"jukebox2::jukebox2Tests" /* jukebox2Tests */,
-				"portaudio::libportaudio" /* libportaudio */,
-				"portaudio::portaudio" /* portaudio */,
-				"portaudio::SwiftPMPackageDescription" /* portaudioPackageDescription */,
-				"swift-argument-parser::SwiftPMPackageDescription" /* swift-argument-parserPackageDescription */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		463AFABF24D3D768004B9F6B /* FlynnLint */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = FlynnLint;
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "FLYNNLINTSWIFTPM=${SRCROOT}/.build/checkouts/flynn/meta/FlynnLint\nFLYNNLINTXCODE=${BUILD_ROOT}/../../SourcePackages/checkouts/flynn/meta/FlynnLint\n\nif [ -f \"${FLYNNLINTSWIFTPM}\" ]; then\n    ${FLYNNLINTSWIFTPM} ${SRCROOT}\nelif [ -f \"${FLYNNLINTXCODE}\" ]; then\n    ${FLYNNLINTXCODE} ${SRCROOT}\nelse\n    echo \"warning: Unable to find FlynnLint, aborting...\"\nfi\n";
-		};
-		463AFAC124D3D76A004B9F6B /* SwiftLint */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = SwiftLint;
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint autocorrect --path ${SRCROOT}/Sources/\n  swiftlint --path ${SRCROOT}/Sources/\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
-		};
-/* End PBXShellScriptBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		OBJ_154 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 0;
-			files = (
-				OBJ_155 /* BashCompletionsGenerator.swift in Sources */,
-				OBJ_156 /* CompletionsGenerator.swift in Sources */,
-				OBJ_157 /* ZshCompletionsGenerator.swift in Sources */,
-				OBJ_158 /* Argument.swift in Sources */,
-				OBJ_159 /* ArgumentHelp.swift in Sources */,
-				OBJ_160 /* CompletionKind.swift in Sources */,
-				OBJ_161 /* Errors.swift in Sources */,
-				OBJ_162 /* Flag.swift in Sources */,
-				OBJ_163 /* NameSpecification.swift in Sources */,
-				OBJ_164 /* Option.swift in Sources */,
-				OBJ_165 /* OptionGroup.swift in Sources */,
-				OBJ_166 /* CommandConfiguration.swift in Sources */,
-				OBJ_167 /* EnumerableFlag.swift in Sources */,
-				OBJ_168 /* ExpressibleByArgument.swift in Sources */,
-				OBJ_169 /* ParsableArguments.swift in Sources */,
-				OBJ_170 /* ParsableArgumentsValidation.swift in Sources */,
-				OBJ_171 /* ParsableCommand.swift in Sources */,
-				OBJ_172 /* ArgumentDecoder.swift in Sources */,
-				OBJ_173 /* ArgumentDefinition.swift in Sources */,
-				OBJ_174 /* ArgumentSet.swift in Sources */,
-				OBJ_175 /* ArgumentSetSequence.swift in Sources */,
-				OBJ_176 /* CommandParser.swift in Sources */,
-				OBJ_177 /* InputOrigin.swift in Sources */,
-				OBJ_178 /* Name.swift in Sources */,
-				OBJ_179 /* Parsed.swift in Sources */,
-				OBJ_180 /* ParsedValues.swift in Sources */,
-				OBJ_181 /* ParserError.swift in Sources */,
-				OBJ_182 /* SplitArguments.swift in Sources */,
-				OBJ_183 /* HelpCommand.swift in Sources */,
-				OBJ_184 /* HelpGenerator.swift in Sources */,
-				OBJ_185 /* MessageInfo.swift in Sources */,
-				OBJ_186 /* UsageGenerator.swift in Sources */,
-				OBJ_187 /* SequenceExtensions.swift in Sources */,
-				OBJ_188 /* StringExtensions.swift in Sources */,
-				OBJ_189 /* Tree.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		OBJ_195 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 0;
-			files = (
-				OBJ_196 /* Actor.swift in Sources */,
-				OBJ_197 /* Atomics.swift in Sources */,
-				OBJ_198 /* Behavior.swift in Sources */,
-				OBJ_199 /* Device.swift in Sources */,
-				OBJ_200 /* Extensions.swift in Sources */,
-				OBJ_201 /* Flowable.swift in Sources */,
-				OBJ_202 /* Flynn+RegisteredActors.swift in Sources */,
-				OBJ_203 /* Flynn+Timer.swift in Sources */,
-				OBJ_204 /* Flynn.swift in Sources */,
-				OBJ_205 /* Profile.swift in Sources */,
-				OBJ_206 /* Queue.swift in Sources */,
-				OBJ_207 /* Scheduler.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		OBJ_213 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 0;
-			files = (
-				OBJ_214 /* Package.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		OBJ_219 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 0;
-			files = (
-				OBJ_220 /* Socket.swift in Sources */,
-				OBJ_221 /* SocketProtocols.swift in Sources */,
-				OBJ_222 /* SocketUtils.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		OBJ_228 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 0;
-			files = (
-				OBJ_229 /* Package.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		OBJ_234 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 0;
-			files = (
-				OBJ_235 /* Audio.swift in Sources */,
-				OBJ_236 /* Lights.swift in Sources */,
-				OBJ_237 /* Channel.swift in Sources */,
-				OBJ_238 /* LightPalms.swift in Sources */,
-				OBJ_239 /* LightStars.swift in Sources */,
-				OBJ_240 /* LightTest.swift in Sources */,
-				OBJ_241 /* LightTheater.swift in Sources */,
-				OBJ_242 /* ParticleEngine.swift in Sources */,
-				OBJ_243 /* State.swift in Sources */,
-				OBJ_244 /* main.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		OBJ_262 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 0;
-			files = (
-				OBJ_263 /* Package.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		OBJ_273 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 0;
-			files = (
-				OBJ_274 /* XCTestManifests.swift in Sources */,
-				OBJ_275 /* jukebox2Tests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		OBJ_291 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 0;
-			files = (
-				OBJ_292 /* pa_linux_alsa.c in Sources */,
-				OBJ_293 /* pa_mac_core.c in Sources */,
-				OBJ_294 /* pa_mac_core_blocking.c in Sources */,
-				OBJ_295 /* pa_mac_core_utilities.c in Sources */,
-				OBJ_296 /* pa_allocation.c in Sources */,
-				OBJ_297 /* pa_converters.c in Sources */,
-				OBJ_298 /* pa_cpuload.c in Sources */,
-				OBJ_299 /* pa_debugprint.c in Sources */,
-				OBJ_300 /* pa_dither.c in Sources */,
-				OBJ_301 /* pa_front.c in Sources */,
-				OBJ_302 /* pa_process.c in Sources */,
-				OBJ_303 /* pa_ringbuffer.c in Sources */,
-				OBJ_304 /* pa_stream.c in Sources */,
-				OBJ_305 /* pa_trace.c in Sources */,
-				OBJ_306 /* pa_unix_hostapis.c in Sources */,
-				OBJ_307 /* pa_unix_util.c in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		OBJ_312 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 0;
-			files = (
-				OBJ_313 /* portaudio+print.swift in Sources */,
-				OBJ_314 /* portaudio+stream.swift in Sources */,
-				OBJ_315 /* portaudio.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		OBJ_323 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 0;
-			files = (
-				OBJ_324 /* Package.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		OBJ_329 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 0;
-			files = (
-				OBJ_330 /* Package.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		OBJ_251 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = "swift-argument-parser::ArgumentParser" /* ArgumentParser */;
-			targetProxy = 463AFAB324D3D764004B9F6B /* PBXContainerItemProxy */;
-		};
-		OBJ_252 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = "Socket::Socket" /* Socket */;
-			targetProxy = 463AFAB424D3D764004B9F6B /* PBXContainerItemProxy */;
-		};
-		OBJ_253 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = "portaudio::portaudio" /* portaudio */;
-			targetProxy = 463AFAB524D3D764004B9F6B /* PBXContainerItemProxy */;
-		};
-		OBJ_255 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = "portaudio::libportaudio" /* libportaudio */;
-			targetProxy = 463AFAB724D3D764004B9F6B /* PBXContainerItemProxy */;
-		};
-		OBJ_257 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = "Flynn::Flynn" /* Flynn */;
-			targetProxy = 463AFAB824D3D764004B9F6B /* PBXContainerItemProxy */;
-		};
-		OBJ_268 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = "jukebox2::jukebox2Tests" /* jukebox2Tests */;
-			targetProxy = 463AFAC024D3D769004B9F6B /* PBXContainerItemProxy */;
-		};
-		OBJ_282 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = "jukebox2::jukebox2" /* jukebox2 */;
-			targetProxy = 463AFAB924D3D764004B9F6B /* PBXContainerItemProxy */;
-		};
-		OBJ_283 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = "swift-argument-parser::ArgumentParser" /* ArgumentParser */;
-			targetProxy = 463AFABA24D3D764004B9F6B /* PBXContainerItemProxy */;
-		};
-		OBJ_284 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = "Socket::Socket" /* Socket */;
-			targetProxy = 463AFABB24D3D764004B9F6B /* PBXContainerItemProxy */;
-		};
-		OBJ_285 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = "portaudio::portaudio" /* portaudio */;
-			targetProxy = 463AFABC24D3D764004B9F6B /* PBXContainerItemProxy */;
-		};
-		OBJ_286 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = "portaudio::libportaudio" /* libportaudio */;
-			targetProxy = 463AFABD24D3D764004B9F6B /* PBXContainerItemProxy */;
-		};
-		OBJ_287 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = "Flynn::Flynn" /* Flynn */;
-			targetProxy = 463AFABE24D3D764004B9F6B /* PBXContainerItemProxy */;
-		};
-		OBJ_318 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = "portaudio::libportaudio" /* libportaudio */;
-			targetProxy = 463AFAB624D3D764004B9F6B /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin XCBuildConfiguration section */
-		OBJ_152 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = jukebox2.xcodeproj/ArgumentParser_Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				OTHER_CFLAGS = "$(inherited)";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = ArgumentParser;
-				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
-				SWIFT_VERSION = 5.0;
-				TARGET_NAME = ArgumentParser;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
-			};
-			name = Debug;
-		};
-		OBJ_153 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = jukebox2.xcodeproj/ArgumentParser_Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				OTHER_CFLAGS = "$(inherited)";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = ArgumentParser;
-				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
-				SWIFT_VERSION = 5.0;
-				TARGET_NAME = ArgumentParser;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
-			};
-			name = Release;
-		};
-		OBJ_193 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = jukebox2.xcodeproj/Flynn_Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				OTHER_CFLAGS = "$(inherited)";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = Flynn;
-				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
-				SWIFT_VERSION = 5.0;
-				TARGET_NAME = Flynn;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
-			};
-			name = Debug;
-		};
-		OBJ_194 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = jukebox2.xcodeproj/Flynn_Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				OTHER_CFLAGS = "$(inherited)";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = Flynn;
-				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
-				SWIFT_VERSION = 5.0;
-				TARGET_NAME = Flynn;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
-			};
-			name = Release;
-		};
-		OBJ_211 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -package-description-version 5.0.0";
-				SWIFT_VERSION = 5.0;
-			};
-			name = Debug;
-		};
-		OBJ_212 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -package-description-version 5.0.0";
-				SWIFT_VERSION = 5.0;
-			};
-			name = Release;
-		};
-		OBJ_217 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = jukebox2.xcodeproj/Socket_Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				OTHER_CFLAGS = "$(inherited)";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = Socket;
-				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
-				SWIFT_VERSION = 5.0;
-				TARGET_NAME = Socket;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
-			};
-			name = Debug;
-		};
-		OBJ_218 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = jukebox2.xcodeproj/Socket_Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				OTHER_CFLAGS = "$(inherited)";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = Socket;
-				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
-				SWIFT_VERSION = 5.0;
-				TARGET_NAME = Socket;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
-			};
-			name = Release;
-		};
-		OBJ_226 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -package-description-version 5.0.0";
-				SWIFT_VERSION = 5.0;
-			};
-			name = Debug;
-		};
-		OBJ_227 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -package-description-version 5.0.0";
-				SWIFT_VERSION = 5.0;
-			};
-			name = Release;
-		};
-		OBJ_232 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/.build/checkouts/portaudio-swift/Sources/libportaudio/include",
-					"$(SRCROOT)/jukebox2.xcodeproj/GeneratedModuleMap/libportaudio",
-				);
-				INFOPLIST_FILE = jukebox2.xcodeproj/jukebox2_Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx @executable_path";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				OTHER_CFLAGS = "$(inherited)";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/jukebox2.xcodeproj/GeneratedModuleMap/libportaudio/module.modulemap";
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
-				SWIFT_FORCE_DYNAMIC_LINK_STDLIB = YES;
-				SWIFT_FORCE_STATIC_LINK_STDLIB = NO;
-				SWIFT_VERSION = 5.0;
-				TARGET_NAME = jukebox2;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
-			};
-			name = Debug;
-		};
-		OBJ_233 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/.build/checkouts/portaudio-swift/Sources/libportaudio/include",
-					"$(SRCROOT)/jukebox2.xcodeproj/GeneratedModuleMap/libportaudio",
-				);
-				INFOPLIST_FILE = jukebox2.xcodeproj/jukebox2_Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx @executable_path";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				OTHER_CFLAGS = "$(inherited)";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/jukebox2.xcodeproj/GeneratedModuleMap/libportaudio/module.modulemap";
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
-				SWIFT_FORCE_DYNAMIC_LINK_STDLIB = YES;
-				SWIFT_FORCE_STATIC_LINK_STDLIB = NO;
-				SWIFT_VERSION = 5.0;
-				TARGET_NAME = jukebox2;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
-			};
-			name = Release;
-		};
-		OBJ_260 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -package-description-version 5.2.0";
-				SWIFT_VERSION = 5.0;
-			};
-			name = Debug;
-		};
-		OBJ_261 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -package-description-version 5.2.0";
-				SWIFT_VERSION = 5.0;
-			};
-			name = Release;
-		};
-		OBJ_266 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-			};
-			name = Debug;
-		};
-		OBJ_267 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-			};
-			name = Release;
-		};
-		OBJ_271 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/.build/checkouts/portaudio-swift/Sources/libportaudio/include",
-					"$(SRCROOT)/jukebox2.xcodeproj/GeneratedModuleMap/libportaudio",
-				);
-				INFOPLIST_FILE = jukebox2.xcodeproj/jukebox2Tests_Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				OTHER_CFLAGS = "$(inherited)";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/jukebox2.xcodeproj/GeneratedModuleMap/libportaudio/module.modulemap";
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
-				SWIFT_VERSION = 5.0;
-				TARGET_NAME = jukebox2Tests;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
-			};
-			name = Debug;
-		};
-		OBJ_272 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/.build/checkouts/portaudio-swift/Sources/libportaudio/include",
-					"$(SRCROOT)/jukebox2.xcodeproj/GeneratedModuleMap/libportaudio",
-				);
-				INFOPLIST_FILE = jukebox2.xcodeproj/jukebox2Tests_Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				OTHER_CFLAGS = "$(inherited)";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/jukebox2.xcodeproj/GeneratedModuleMap/libportaudio/module.modulemap";
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
-				SWIFT_VERSION = 5.0;
-				TARGET_NAME = jukebox2Tests;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
-			};
-			name = Release;
-		};
-		OBJ_289 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				DEFINES_MODULE = NO;
-				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = PA_USE_COREAUDIO;
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/.build/checkouts/portaudio-swift/Sources/libportaudio/include",
-				);
-				INFOPLIST_FILE = jukebox2.xcodeproj/libportaudio_Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				OTHER_CFLAGS = "$(inherited)";
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					"-framework",
-					CoreAudio,
-					"-framework",
-					CoreServices,
-					"-framework",
-					CoreFoundation,
-					"-framework",
-					AudioUnit,
-					"-framework",
-					AudioToolbox,
-				);
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = libportaudio;
-				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
-				TARGET_NAME = libportaudio;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
-			};
-			name = Debug;
-		};
-		OBJ_290 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				DEFINES_MODULE = NO;
-				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = PA_USE_COREAUDIO;
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/.build/checkouts/portaudio-swift/Sources/libportaudio/include",
-				);
-				INFOPLIST_FILE = jukebox2.xcodeproj/libportaudio_Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				OTHER_CFLAGS = "$(inherited)";
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					"-framework",
-					CoreAudio,
-					"-framework",
-					CoreServices,
-					"-framework",
-					CoreFoundation,
-					"-framework",
-					AudioUnit,
-					"-framework",
-					AudioToolbox,
-				);
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = libportaudio;
-				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
-				TARGET_NAME = libportaudio;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
-			};
-			name = Release;
-		};
-		OBJ_3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_ARC = YES;
-				COMBINE_HIDPI_IMAGES = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_NS_ASSERTIONS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"$(inherited)",
-					"SWIFT_PACKAGE=1",
-					"DEBUG=1",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				ONLY_ACTIVE_ARCH = YES;
-				OTHER_SWIFT_FLAGS = "$(inherited) -DXcode";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) SWIFT_PACKAGE DEBUG";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				USE_HEADERMAP = NO;
-			};
-			name = Debug;
-		};
-		OBJ_310 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/.build/checkouts/portaudio-swift/Sources/libportaudio/include",
-					"$(SRCROOT)/jukebox2.xcodeproj/GeneratedModuleMap/libportaudio",
-				);
-				INFOPLIST_FILE = jukebox2.xcodeproj/portaudio_Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				OTHER_CFLAGS = "$(inherited)";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/jukebox2.xcodeproj/GeneratedModuleMap/libportaudio/module.modulemap";
-				PRODUCT_BUNDLE_IDENTIFIER = portaudio;
-				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
-				SWIFT_VERSION = 5.0;
-				TARGET_NAME = portaudio;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
-			};
-			name = Debug;
-		};
-		OBJ_311 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/.build/checkouts/portaudio-swift/Sources/libportaudio/include",
-					"$(SRCROOT)/jukebox2.xcodeproj/GeneratedModuleMap/libportaudio",
-				);
-				INFOPLIST_FILE = jukebox2.xcodeproj/portaudio_Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				OTHER_CFLAGS = "$(inherited)";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/jukebox2.xcodeproj/GeneratedModuleMap/libportaudio/module.modulemap";
-				PRODUCT_BUNDLE_IDENTIFIER = portaudio;
-				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
-				SWIFT_VERSION = 5.0;
-				TARGET_NAME = portaudio;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
-			};
-			name = Release;
-		};
-		OBJ_321 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -package-description-version 5.2.0";
-				SWIFT_VERSION = 5.0;
-			};
-			name = Debug;
-		};
-		OBJ_322 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -package-description-version 5.2.0";
-				SWIFT_VERSION = 5.0;
-			};
-			name = Release;
-		};
-		OBJ_327 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -package-description-version 5.2.0";
-				SWIFT_VERSION = 5.0;
-			};
-			name = Debug;
-		};
-		OBJ_328 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -package-description-version 5.2.0";
-				SWIFT_VERSION = 5.0;
-			};
-			name = Release;
-		};
-		OBJ_4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_ARC = YES;
-				COMBINE_HIDPI_IMAGES = YES;
-				COPY_PHASE_STRIP = YES;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_OPTIMIZATION_LEVEL = s;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"$(inherited)",
-					"SWIFT_PACKAGE=1",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				OTHER_SWIFT_FLAGS = "$(inherited) -DXcode";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) SWIFT_PACKAGE";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				USE_HEADERMAP = NO;
-			};
-			name = Release;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		OBJ_151 /* Build configuration list for PBXNativeTarget "ArgumentParser" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				OBJ_152 /* Debug */,
-				OBJ_153 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		OBJ_192 /* Build configuration list for PBXNativeTarget "Flynn" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				OBJ_193 /* Debug */,
-				OBJ_194 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		OBJ_2 /* Build configuration list for PBXProject "jukebox2" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				OBJ_3 /* Debug */,
-				OBJ_4 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		OBJ_210 /* Build configuration list for PBXNativeTarget "FlynnPackageDescription" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				OBJ_211 /* Debug */,
-				OBJ_212 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		OBJ_216 /* Build configuration list for PBXNativeTarget "Socket" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				OBJ_217 /* Debug */,
-				OBJ_218 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		OBJ_225 /* Build configuration list for PBXNativeTarget "SocketPackageDescription" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				OBJ_226 /* Debug */,
-				OBJ_227 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		OBJ_231 /* Build configuration list for PBXNativeTarget "jukebox2" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				OBJ_232 /* Debug */,
-				OBJ_233 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		OBJ_259 /* Build configuration list for PBXNativeTarget "jukebox2PackageDescription" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				OBJ_260 /* Debug */,
-				OBJ_261 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		OBJ_265 /* Build configuration list for PBXAggregateTarget "jukebox2PackageTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				OBJ_266 /* Debug */,
-				OBJ_267 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		OBJ_270 /* Build configuration list for PBXNativeTarget "jukebox2Tests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				OBJ_271 /* Debug */,
-				OBJ_272 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		OBJ_288 /* Build configuration list for PBXNativeTarget "libportaudio" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				OBJ_289 /* Debug */,
-				OBJ_290 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		OBJ_309 /* Build configuration list for PBXNativeTarget "portaudio" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				OBJ_310 /* Debug */,
-				OBJ_311 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		OBJ_320 /* Build configuration list for PBXNativeTarget "portaudioPackageDescription" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				OBJ_321 /* Debug */,
-				OBJ_322 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		OBJ_326 /* Build configuration list for PBXNativeTarget "swift-argument-parserPackageDescription" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				OBJ_327 /* Debug */,
-				OBJ_328 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-/* End XCConfigurationList section */
-	};
-	rootObject = OBJ_1 /* Project object */;
+   archiveVersion = "1";
+   objectVersion = "46";
+   objects = {
+      "Flynn::Flynn" = {
+         isa = "PBXNativeTarget";
+         buildConfigurationList = "OBJ_204";
+         buildPhases = (
+            "OBJ_207",
+            "OBJ_216"
+         );
+         dependencies = (
+            "OBJ_218"
+         );
+         name = "Flynn";
+         productName = "Flynn";
+         productReference = "Flynn::Flynn::Product";
+         productType = "com.apple.product-type.framework";
+      };
+      "Flynn::Flynn::Product" = {
+         isa = "PBXFileReference";
+         path = "Flynn.framework";
+         sourceTree = "BUILT_PRODUCTS_DIR";
+      };
+      "Flynn::Pony" = {
+         isa = "PBXNativeTarget";
+         buildConfigurationList = "OBJ_226";
+         buildPhases = (
+            "OBJ_229",
+            "OBJ_240"
+         );
+         dependencies = (
+         );
+         name = "Pony";
+         productName = "Pony";
+         productReference = "Flynn::Pony::Product";
+         productType = "com.apple.product-type.framework";
+      };
+      "Flynn::Pony::Product" = {
+         isa = "PBXFileReference";
+         path = "Pony.framework";
+         sourceTree = "BUILT_PRODUCTS_DIR";
+      };
+      "Flynn::SwiftPMPackageDescription" = {
+         isa = "PBXNativeTarget";
+         buildConfigurationList = "OBJ_221";
+         buildPhases = (
+            "OBJ_224"
+         );
+         dependencies = (
+         );
+         name = "FlynnPackageDescription";
+         productName = "FlynnPackageDescription";
+         productType = "com.apple.product-type.framework";
+      };
+      "OBJ_1" = {
+         isa = "PBXProject";
+         attributes = {
+            LastSwiftMigration = "9999";
+            LastUpgradeCheck = "9999";
+         };
+         buildConfigurationList = "OBJ_2";
+         compatibilityVersion = "Xcode 3.2";
+         developmentRegion = "en";
+         hasScannedForEncodings = "0";
+         knownRegions = (
+            "en"
+         );
+         mainGroup = "OBJ_5";
+         productRefGroup = "OBJ_150";
+         projectDirPath = ".";
+         targets = (
+            "swift-argument-parser::ArgumentParser",
+            "Flynn::Flynn",
+            "Flynn::SwiftPMPackageDescription",
+            "Flynn::Pony",
+            "Socket::Socket",
+            "Socket::SwiftPMPackageDescription",
+            "jukebox2::jukebox2",
+            "jukebox2::SwiftPMPackageDescription",
+            "jukebox2::jukebox2PackageTests::ProductTarget",
+            "jukebox2::jukebox2Tests",
+            "portaudio::libportaudio",
+            "portaudio::portaudio",
+            "portaudio::SwiftPMPackageDescription",
+            "swift-argument-parser::SwiftPMPackageDescription"
+         );
+      };
+      "OBJ_10" = {
+         isa = "PBXFileReference";
+         path = "Lights.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_100" = {
+         isa = "PBXFileReference";
+         path = "pa_endianness.h";
+         sourceTree = "<group>";
+      };
+      "OBJ_101" = {
+         isa = "PBXFileReference";
+         path = "pa_gitrevision.h";
+         sourceTree = "<group>";
+      };
+      "OBJ_102" = {
+         isa = "PBXFileReference";
+         path = "pa_hostapi.h";
+         sourceTree = "<group>";
+      };
+      "OBJ_103" = {
+         isa = "PBXFileReference";
+         path = "pa_linux_alsa.h";
+         sourceTree = "<group>";
+      };
+      "OBJ_104" = {
+         isa = "PBXFileReference";
+         path = "pa_mac_core.h";
+         sourceTree = "<group>";
+      };
+      "OBJ_105" = {
+         isa = "PBXFileReference";
+         path = "pa_memorybarrier.h";
+         sourceTree = "<group>";
+      };
+      "OBJ_106" = {
+         isa = "PBXFileReference";
+         path = "pa_process.h";
+         sourceTree = "<group>";
+      };
+      "OBJ_107" = {
+         isa = "PBXFileReference";
+         path = "pa_ringbuffer.h";
+         sourceTree = "<group>";
+      };
+      "OBJ_108" = {
+         isa = "PBXFileReference";
+         path = "pa_stream.h";
+         sourceTree = "<group>";
+      };
+      "OBJ_109" = {
+         isa = "PBXFileReference";
+         path = "pa_trace.h";
+         sourceTree = "<group>";
+      };
+      "OBJ_11" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_12",
+            "OBJ_13",
+            "OBJ_14",
+            "OBJ_15",
+            "OBJ_16",
+            "OBJ_17"
+         );
+         name = "Lights";
+         path = "Lights";
+         sourceTree = "<group>";
+      };
+      "OBJ_110" = {
+         isa = "PBXFileReference";
+         path = "pa_types.h";
+         sourceTree = "<group>";
+      };
+      "OBJ_111" = {
+         isa = "PBXFileReference";
+         path = "pa_unix_util.h";
+         sourceTree = "<group>";
+      };
+      "OBJ_112" = {
+         isa = "PBXFileReference";
+         path = "pa_util.h";
+         sourceTree = "<group>";
+      };
+      "OBJ_113" = {
+         isa = "PBXFileReference";
+         path = "portaudio.h";
+         sourceTree = "<group>";
+      };
+      "OBJ_114" = {
+         isa = "PBXFileReference";
+         name = "module.modulemap";
+         path = "/Volumes/Development/Development/chimerasw2/jukebox2/jukebox2.xcodeproj/GeneratedModuleMap/libportaudio/module.modulemap";
+         sourceTree = "<group>";
+      };
+      "OBJ_115" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_116"
+         );
+         name = "os";
+         path = "os";
+         sourceTree = "<group>";
+      };
+      "OBJ_116" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_117",
+            "OBJ_118"
+         );
+         name = "unix";
+         path = "unix";
+         sourceTree = "<group>";
+      };
+      "OBJ_117" = {
+         isa = "PBXFileReference";
+         path = "pa_unix_hostapis.c";
+         sourceTree = "<group>";
+      };
+      "OBJ_118" = {
+         isa = "PBXFileReference";
+         path = "pa_unix_util.c";
+         sourceTree = "<group>";
+      };
+      "OBJ_119" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_120",
+            "OBJ_121",
+            "OBJ_122"
+         );
+         name = "portaudio";
+         path = ".build/checkouts/portaudio-swift/Sources/portaudio";
+         sourceTree = "SOURCE_ROOT";
+      };
+      "OBJ_12" = {
+         isa = "PBXFileReference";
+         path = "Channel.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_120" = {
+         isa = "PBXFileReference";
+         path = "portaudio+print.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_121" = {
+         isa = "PBXFileReference";
+         path = "portaudio+stream.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_122" = {
+         isa = "PBXFileReference";
+         path = "portaudio.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_123" = {
+         isa = "PBXFileReference";
+         explicitFileType = "sourcecode.swift";
+         name = "Package.swift";
+         path = "/Volumes/Development/Development/chimerasw2/jukebox2/.build/checkouts/portaudio-swift/Package.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_124" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_125",
+            "OBJ_134",
+            "OBJ_149"
+         );
+         name = "Flynn";
+         path = "";
+         sourceTree = "SOURCE_ROOT";
+      };
+      "OBJ_125" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_126",
+            "OBJ_127",
+            "OBJ_128",
+            "OBJ_129",
+            "OBJ_130",
+            "OBJ_131",
+            "OBJ_132",
+            "OBJ_133"
+         );
+         name = "Flynn";
+         path = ".build/checkouts/Flynn/Sources/Flynn";
+         sourceTree = "SOURCE_ROOT";
+      };
+      "OBJ_126" = {
+         isa = "PBXFileReference";
+         path = "Actor.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_127" = {
+         isa = "PBXFileReference";
+         path = "Atomics.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_128" = {
+         isa = "PBXFileReference";
+         path = "Device.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_129" = {
+         isa = "PBXFileReference";
+         path = "Extensions.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_13" = {
+         isa = "PBXFileReference";
+         path = "LightPalms.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_130" = {
+         isa = "PBXFileReference";
+         path = "Flowable.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_131" = {
+         isa = "PBXFileReference";
+         path = "Flynn+Timer.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_132" = {
+         isa = "PBXFileReference";
+         path = "Flynn.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_133" = {
+         isa = "PBXFileReference";
+         path = "Queue.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_134" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_135",
+            "OBJ_136",
+            "OBJ_137",
+            "OBJ_138",
+            "OBJ_139",
+            "OBJ_140",
+            "OBJ_141",
+            "OBJ_142",
+            "OBJ_143",
+            "OBJ_144",
+            "OBJ_145"
+         );
+         name = "Pony";
+         path = ".build/checkouts/Flynn/Sources/Pony";
+         sourceTree = "SOURCE_ROOT";
+      };
+      "OBJ_135" = {
+         isa = "PBXFileReference";
+         path = "actor.c";
+         sourceTree = "<group>";
+      };
+      "OBJ_136" = {
+         isa = "PBXFileReference";
+         path = "alloc.c";
+         sourceTree = "<group>";
+      };
+      "OBJ_137" = {
+         isa = "PBXFileReference";
+         path = "cpu_apple.c";
+         sourceTree = "<group>";
+      };
+      "OBJ_138" = {
+         isa = "PBXFileReference";
+         path = "cpu_linux.c";
+         sourceTree = "<group>";
+      };
+      "OBJ_139" = {
+         isa = "PBXFileReference";
+         path = "messageq.c";
+         sourceTree = "<group>";
+      };
+      "OBJ_14" = {
+         isa = "PBXFileReference";
+         path = "LightStars.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_140" = {
+         isa = "PBXFileReference";
+         path = "mpmcq.c";
+         sourceTree = "<group>";
+      };
+      "OBJ_141" = {
+         isa = "PBXFileReference";
+         path = "ponyrt.c";
+         sourceTree = "<group>";
+      };
+      "OBJ_142" = {
+         isa = "PBXFileReference";
+         path = "pool.c";
+         sourceTree = "<group>";
+      };
+      "OBJ_143" = {
+         isa = "PBXFileReference";
+         path = "scheduler.c";
+         sourceTree = "<group>";
+      };
+      "OBJ_144" = {
+         isa = "PBXFileReference";
+         path = "threads.m";
+         sourceTree = "<group>";
+      };
+      "OBJ_145" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_146",
+            "OBJ_147",
+            "OBJ_148"
+         );
+         name = "include";
+         path = "include";
+         sourceTree = "<group>";
+      };
+      "OBJ_146" = {
+         isa = "PBXFileReference";
+         path = "platform.h";
+         sourceTree = "<group>";
+      };
+      "OBJ_147" = {
+         isa = "PBXFileReference";
+         path = "pony.h";
+         sourceTree = "<group>";
+      };
+      "OBJ_148" = {
+         isa = "PBXFileReference";
+         name = "module.modulemap";
+         path = "/Volumes/Development/Development/chimerasw2/jukebox2/jukebox2.xcodeproj/GeneratedModuleMap/Pony/module.modulemap";
+         sourceTree = "<group>";
+      };
+      "OBJ_149" = {
+         isa = "PBXFileReference";
+         explicitFileType = "sourcecode.swift";
+         name = "Package.swift";
+         path = "/Volumes/Development/Development/chimerasw2/jukebox2/.build/checkouts/Flynn/Package.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_15" = {
+         isa = "PBXFileReference";
+         path = "LightTest.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_150" = {
+         isa = "PBXGroup";
+         children = (
+            "portaudio::libportaudio::Product",
+            "swift-argument-parser::ArgumentParser::Product",
+            "Socket::Socket::Product",
+            "Flynn::Flynn::Product",
+            "Flynn::Pony::Product",
+            "jukebox2::jukebox2::Product",
+            "jukebox2::jukebox2Tests::Product",
+            "portaudio::portaudio::Product"
+         );
+         name = "Products";
+         path = "";
+         sourceTree = "BUILT_PRODUCTS_DIR";
+      };
+      "OBJ_159" = {
+         isa = "PBXFileReference";
+         path = "meta";
+         sourceTree = "SOURCE_ROOT";
+      };
+      "OBJ_16" = {
+         isa = "PBXFileReference";
+         path = "LightTheater.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_160" = {
+         isa = "PBXFileReference";
+         path = "Makefile";
+         sourceTree = "<group>";
+      };
+      "OBJ_161" = {
+         isa = "PBXFileReference";
+         path = "README.md";
+         sourceTree = "<group>";
+      };
+      "OBJ_163" = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            "OBJ_164",
+            "OBJ_165"
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Release";
+      };
+      "OBJ_164" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            ENABLE_TESTABILITY = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)"
+            );
+            INFOPLIST_FILE = "jukebox2.xcodeproj/ArgumentParser_Info.plist";
+            IPHONEOS_DEPLOYMENT_TARGET = "8.0";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx"
+            );
+            MACOSX_DEPLOYMENT_TARGET = "10.10";
+            OTHER_CFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)"
+            );
+            PRODUCT_BUNDLE_IDENTIFIER = "ArgumentParser";
+            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+            SKIP_INSTALL = "YES";
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+               "$(inherited)"
+            );
+            SWIFT_VERSION = "5.0";
+            TARGET_NAME = "ArgumentParser";
+            TVOS_DEPLOYMENT_TARGET = "9.0";
+            WATCHOS_DEPLOYMENT_TARGET = "2.0";
+         };
+         name = "Debug";
+      };
+      "OBJ_165" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            ENABLE_TESTABILITY = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)"
+            );
+            INFOPLIST_FILE = "jukebox2.xcodeproj/ArgumentParser_Info.plist";
+            IPHONEOS_DEPLOYMENT_TARGET = "8.0";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx"
+            );
+            MACOSX_DEPLOYMENT_TARGET = "10.10";
+            OTHER_CFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)"
+            );
+            PRODUCT_BUNDLE_IDENTIFIER = "ArgumentParser";
+            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+            SKIP_INSTALL = "YES";
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+               "$(inherited)"
+            );
+            SWIFT_VERSION = "5.0";
+            TARGET_NAME = "ArgumentParser";
+            TVOS_DEPLOYMENT_TARGET = "9.0";
+            WATCHOS_DEPLOYMENT_TARGET = "2.0";
+         };
+         name = "Release";
+      };
+      "OBJ_166" = {
+         isa = "PBXSourcesBuildPhase";
+         files = (
+            "OBJ_167",
+            "OBJ_168",
+            "OBJ_169",
+            "OBJ_170",
+            "OBJ_171",
+            "OBJ_172",
+            "OBJ_173",
+            "OBJ_174",
+            "OBJ_175",
+            "OBJ_176",
+            "OBJ_177",
+            "OBJ_178",
+            "OBJ_179",
+            "OBJ_180",
+            "OBJ_181",
+            "OBJ_182",
+            "OBJ_183",
+            "OBJ_184",
+            "OBJ_185",
+            "OBJ_186",
+            "OBJ_187",
+            "OBJ_188",
+            "OBJ_189",
+            "OBJ_190",
+            "OBJ_191",
+            "OBJ_192",
+            "OBJ_193",
+            "OBJ_194",
+            "OBJ_195",
+            "OBJ_196",
+            "OBJ_197",
+            "OBJ_198",
+            "OBJ_199",
+            "OBJ_200",
+            "OBJ_201"
+         );
+      };
+      "OBJ_167" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_34";
+      };
+      "OBJ_168" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_35";
+      };
+      "OBJ_169" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_36";
+      };
+      "OBJ_17" = {
+         isa = "PBXFileReference";
+         path = "ParticleEngine.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_170" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_38";
+      };
+      "OBJ_171" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_39";
+      };
+      "OBJ_172" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_40";
+      };
+      "OBJ_173" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_41";
+      };
+      "OBJ_174" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_42";
+      };
+      "OBJ_175" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_43";
+      };
+      "OBJ_176" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_44";
+      };
+      "OBJ_177" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_45";
+      };
+      "OBJ_178" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_47";
+      };
+      "OBJ_179" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_48";
+      };
+      "OBJ_18" = {
+         isa = "PBXFileReference";
+         path = "State.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_180" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_49";
+      };
+      "OBJ_181" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_50";
+      };
+      "OBJ_182" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_51";
+      };
+      "OBJ_183" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_52";
+      };
+      "OBJ_184" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_54";
+      };
+      "OBJ_185" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_55";
+      };
+      "OBJ_186" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_56";
+      };
+      "OBJ_187" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_57";
+      };
+      "OBJ_188" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_58";
+      };
+      "OBJ_189" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_59";
+      };
+      "OBJ_19" = {
+         isa = "PBXFileReference";
+         path = "main.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_190" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_60";
+      };
+      "OBJ_191" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_61";
+      };
+      "OBJ_192" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_62";
+      };
+      "OBJ_193" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_63";
+      };
+      "OBJ_194" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_64";
+      };
+      "OBJ_195" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_66";
+      };
+      "OBJ_196" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_67";
+      };
+      "OBJ_197" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_68";
+      };
+      "OBJ_198" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_69";
+      };
+      "OBJ_199" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_71";
+      };
+      "OBJ_2" = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            "OBJ_3",
+            "OBJ_4"
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Release";
+      };
+      "OBJ_20" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_21"
+         );
+         name = "Tests";
+         path = "";
+         sourceTree = "SOURCE_ROOT";
+      };
+      "OBJ_200" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_72";
+      };
+      "OBJ_201" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_73";
+      };
+      "OBJ_202" = {
+         isa = "PBXFrameworksBuildPhase";
+         files = (
+         );
+      };
+      "OBJ_204" = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            "OBJ_205",
+            "OBJ_206"
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Release";
+      };
+      "OBJ_205" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            ENABLE_TESTABILITY = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(SRCROOT)/.build/checkouts/Flynn/Sources/Pony/include",
+               "$(SRCROOT)/jukebox2.xcodeproj/GeneratedModuleMap/Pony"
+            );
+            INFOPLIST_FILE = "jukebox2.xcodeproj/Flynn_Info.plist";
+            IPHONEOS_DEPLOYMENT_TARGET = "8.0";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx"
+            );
+            MACOSX_DEPLOYMENT_TARGET = "10.10";
+            OTHER_CFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)",
+               "-Xcc",
+               "-fmodule-map-file=$(SRCROOT)/jukebox2.xcodeproj/GeneratedModuleMap/Pony/module.modulemap"
+            );
+            PRODUCT_BUNDLE_IDENTIFIER = "Flynn";
+            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+            SKIP_INSTALL = "YES";
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+               "$(inherited)"
+            );
+            SWIFT_VERSION = "5.0";
+            TARGET_NAME = "Flynn";
+            TVOS_DEPLOYMENT_TARGET = "9.0";
+            WATCHOS_DEPLOYMENT_TARGET = "2.0";
+         };
+         name = "Debug";
+      };
+      "OBJ_206" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            ENABLE_TESTABILITY = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(SRCROOT)/.build/checkouts/Flynn/Sources/Pony/include",
+               "$(SRCROOT)/jukebox2.xcodeproj/GeneratedModuleMap/Pony"
+            );
+            INFOPLIST_FILE = "jukebox2.xcodeproj/Flynn_Info.plist";
+            IPHONEOS_DEPLOYMENT_TARGET = "8.0";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx"
+            );
+            MACOSX_DEPLOYMENT_TARGET = "10.10";
+            OTHER_CFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)",
+               "-Xcc",
+               "-fmodule-map-file=$(SRCROOT)/jukebox2.xcodeproj/GeneratedModuleMap/Pony/module.modulemap"
+            );
+            PRODUCT_BUNDLE_IDENTIFIER = "Flynn";
+            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+            SKIP_INSTALL = "YES";
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+               "$(inherited)"
+            );
+            SWIFT_VERSION = "5.0";
+            TARGET_NAME = "Flynn";
+            TVOS_DEPLOYMENT_TARGET = "9.0";
+            WATCHOS_DEPLOYMENT_TARGET = "2.0";
+         };
+         name = "Release";
+      };
+      "OBJ_207" = {
+         isa = "PBXSourcesBuildPhase";
+         files = (
+            "OBJ_208",
+            "OBJ_209",
+            "OBJ_210",
+            "OBJ_211",
+            "OBJ_212",
+            "OBJ_213",
+            "OBJ_214",
+            "OBJ_215"
+         );
+      };
+      "OBJ_208" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_126";
+      };
+      "OBJ_209" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_127";
+      };
+      "OBJ_21" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_22",
+            "OBJ_23"
+         );
+         name = "jukebox2Tests";
+         path = "Tests/jukebox2Tests";
+         sourceTree = "SOURCE_ROOT";
+      };
+      "OBJ_210" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_128";
+      };
+      "OBJ_211" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_129";
+      };
+      "OBJ_212" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_130";
+      };
+      "OBJ_213" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_131";
+      };
+      "OBJ_214" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_132";
+      };
+      "OBJ_215" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_133";
+      };
+      "OBJ_216" = {
+         isa = "PBXFrameworksBuildPhase";
+         files = (
+            "OBJ_217"
+         );
+      };
+      "OBJ_217" = {
+         isa = "PBXBuildFile";
+         fileRef = "Flynn::Pony::Product";
+      };
+      "OBJ_218" = {
+         isa = "PBXTargetDependency";
+         target = "Flynn::Pony";
+      };
+      "OBJ_22" = {
+         isa = "PBXFileReference";
+         path = "XCTestManifests.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_221" = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            "OBJ_222",
+            "OBJ_223"
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Release";
+      };
+      "OBJ_222" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            LD = "/usr/bin/true";
+            OTHER_SWIFT_FLAGS = (
+               "-swift-version",
+               "5",
+               "-I",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2",
+               "-target",
+               "x86_64-apple-macosx10.10",
+               "-sdk",
+               "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk",
+               "-package-description-version",
+               "5.0.0"
+            );
+            SWIFT_VERSION = "5.0";
+         };
+         name = "Debug";
+      };
+      "OBJ_223" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            LD = "/usr/bin/true";
+            OTHER_SWIFT_FLAGS = (
+               "-swift-version",
+               "5",
+               "-I",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2",
+               "-target",
+               "x86_64-apple-macosx10.10",
+               "-sdk",
+               "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk",
+               "-package-description-version",
+               "5.0.0"
+            );
+            SWIFT_VERSION = "5.0";
+         };
+         name = "Release";
+      };
+      "OBJ_224" = {
+         isa = "PBXSourcesBuildPhase";
+         files = (
+            "OBJ_225"
+         );
+      };
+      "OBJ_225" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_149";
+      };
+      "OBJ_226" = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            "OBJ_227",
+            "OBJ_228"
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Release";
+      };
+      "OBJ_227" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            DEFINES_MODULE = "NO";
+            ENABLE_TESTABILITY = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(SRCROOT)/.build/checkouts/Flynn/Sources/Pony/include"
+            );
+            INFOPLIST_FILE = "jukebox2.xcodeproj/Pony_Info.plist";
+            IPHONEOS_DEPLOYMENT_TARGET = "8.0";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx"
+            );
+            MACOSX_DEPLOYMENT_TARGET = "10.10";
+            OTHER_CFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)"
+            );
+            PRODUCT_BUNDLE_IDENTIFIER = "Pony";
+            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+            SKIP_INSTALL = "YES";
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+               "$(inherited)"
+            );
+            TARGET_NAME = "Pony";
+            TVOS_DEPLOYMENT_TARGET = "9.0";
+            WATCHOS_DEPLOYMENT_TARGET = "2.0";
+         };
+         name = "Debug";
+      };
+      "OBJ_228" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            DEFINES_MODULE = "NO";
+            ENABLE_TESTABILITY = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(SRCROOT)/.build/checkouts/Flynn/Sources/Pony/include"
+            );
+            INFOPLIST_FILE = "jukebox2.xcodeproj/Pony_Info.plist";
+            IPHONEOS_DEPLOYMENT_TARGET = "8.0";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx"
+            );
+            MACOSX_DEPLOYMENT_TARGET = "10.10";
+            OTHER_CFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)"
+            );
+            PRODUCT_BUNDLE_IDENTIFIER = "Pony";
+            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+            SKIP_INSTALL = "YES";
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+               "$(inherited)"
+            );
+            TARGET_NAME = "Pony";
+            TVOS_DEPLOYMENT_TARGET = "9.0";
+            WATCHOS_DEPLOYMENT_TARGET = "2.0";
+         };
+         name = "Release";
+      };
+      "OBJ_229" = {
+         isa = "PBXSourcesBuildPhase";
+         files = (
+            "OBJ_230",
+            "OBJ_231",
+            "OBJ_232",
+            "OBJ_233",
+            "OBJ_234",
+            "OBJ_235",
+            "OBJ_236",
+            "OBJ_237",
+            "OBJ_238",
+            "OBJ_239"
+         );
+      };
+      "OBJ_23" = {
+         isa = "PBXFileReference";
+         path = "jukebox2Tests.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_230" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_135";
+      };
+      "OBJ_231" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_136";
+      };
+      "OBJ_232" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_137";
+      };
+      "OBJ_233" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_138";
+      };
+      "OBJ_234" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_139";
+      };
+      "OBJ_235" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_140";
+      };
+      "OBJ_236" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_141";
+      };
+      "OBJ_237" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_142";
+      };
+      "OBJ_238" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_143";
+      };
+      "OBJ_239" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_144";
+      };
+      "OBJ_24" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_25",
+            "OBJ_31",
+            "OBJ_75",
+            "OBJ_124"
+         );
+         name = "Dependencies";
+         path = "";
+         sourceTree = "<group>";
+      };
+      "OBJ_240" = {
+         isa = "PBXFrameworksBuildPhase";
+         files = (
+         );
+      };
+      "OBJ_242" = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            "OBJ_243",
+            "OBJ_244"
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Release";
+      };
+      "OBJ_243" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            ENABLE_TESTABILITY = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)"
+            );
+            INFOPLIST_FILE = "jukebox2.xcodeproj/Socket_Info.plist";
+            IPHONEOS_DEPLOYMENT_TARGET = "8.0";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx"
+            );
+            MACOSX_DEPLOYMENT_TARGET = "10.10";
+            OTHER_CFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)"
+            );
+            PRODUCT_BUNDLE_IDENTIFIER = "Socket";
+            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+            SKIP_INSTALL = "YES";
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+               "$(inherited)"
+            );
+            SWIFT_VERSION = "5.0";
+            TARGET_NAME = "Socket";
+            TVOS_DEPLOYMENT_TARGET = "9.0";
+            WATCHOS_DEPLOYMENT_TARGET = "2.0";
+         };
+         name = "Debug";
+      };
+      "OBJ_244" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            ENABLE_TESTABILITY = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)"
+            );
+            INFOPLIST_FILE = "jukebox2.xcodeproj/Socket_Info.plist";
+            IPHONEOS_DEPLOYMENT_TARGET = "8.0";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx"
+            );
+            MACOSX_DEPLOYMENT_TARGET = "10.10";
+            OTHER_CFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)"
+            );
+            PRODUCT_BUNDLE_IDENTIFIER = "Socket";
+            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+            SKIP_INSTALL = "YES";
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+               "$(inherited)"
+            );
+            SWIFT_VERSION = "5.0";
+            TARGET_NAME = "Socket";
+            TVOS_DEPLOYMENT_TARGET = "9.0";
+            WATCHOS_DEPLOYMENT_TARGET = "2.0";
+         };
+         name = "Release";
+      };
+      "OBJ_245" = {
+         isa = "PBXSourcesBuildPhase";
+         files = (
+            "OBJ_246",
+            "OBJ_247",
+            "OBJ_248"
+         );
+      };
+      "OBJ_246" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_27";
+      };
+      "OBJ_247" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_28";
+      };
+      "OBJ_248" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_29";
+      };
+      "OBJ_249" = {
+         isa = "PBXFrameworksBuildPhase";
+         files = (
+         );
+      };
+      "OBJ_25" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_26",
+            "OBJ_30"
+         );
+         name = "Socket 1.0.52";
+         path = "";
+         sourceTree = "SOURCE_ROOT";
+      };
+      "OBJ_251" = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            "OBJ_252",
+            "OBJ_253"
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Release";
+      };
+      "OBJ_252" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            LD = "/usr/bin/true";
+            OTHER_SWIFT_FLAGS = (
+               "-swift-version",
+               "5",
+               "-I",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2",
+               "-target",
+               "x86_64-apple-macosx10.10",
+               "-sdk",
+               "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk",
+               "-package-description-version",
+               "5.0.0"
+            );
+            SWIFT_VERSION = "5.0";
+         };
+         name = "Debug";
+      };
+      "OBJ_253" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            LD = "/usr/bin/true";
+            OTHER_SWIFT_FLAGS = (
+               "-swift-version",
+               "5",
+               "-I",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2",
+               "-target",
+               "x86_64-apple-macosx10.10",
+               "-sdk",
+               "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk",
+               "-package-description-version",
+               "5.0.0"
+            );
+            SWIFT_VERSION = "5.0";
+         };
+         name = "Release";
+      };
+      "OBJ_254" = {
+         isa = "PBXSourcesBuildPhase";
+         files = (
+            "OBJ_255"
+         );
+      };
+      "OBJ_255" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_30";
+      };
+      "OBJ_257" = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            "OBJ_258",
+            "OBJ_259"
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Release";
+      };
+      "OBJ_258" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(SRCROOT)/.build/checkouts/portaudio-swift/Sources/libportaudio/include",
+               "$(SRCROOT)/.build/checkouts/Flynn/Sources/Pony/include",
+               "$(SRCROOT)/jukebox2.xcodeproj/GeneratedModuleMap/libportaudio",
+               "$(SRCROOT)/jukebox2.xcodeproj/GeneratedModuleMap/Pony"
+            );
+            INFOPLIST_FILE = "jukebox2.xcodeproj/jukebox2_Info.plist";
+            IPHONEOS_DEPLOYMENT_TARGET = "8.0";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
+               "@executable_path"
+            );
+            MACOSX_DEPLOYMENT_TARGET = "10.10";
+            OTHER_CFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)",
+               "-Xcc",
+               "-fmodule-map-file=$(SRCROOT)/jukebox2.xcodeproj/GeneratedModuleMap/libportaudio/module.modulemap",
+               "-Xcc",
+               "-fmodule-map-file=$(SRCROOT)/jukebox2.xcodeproj/GeneratedModuleMap/Pony/module.modulemap"
+            );
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+               "$(inherited)"
+            );
+            SWIFT_FORCE_DYNAMIC_LINK_STDLIB = "YES";
+            SWIFT_FORCE_STATIC_LINK_STDLIB = "NO";
+            SWIFT_VERSION = "5.0";
+            TARGET_NAME = "jukebox2";
+            TVOS_DEPLOYMENT_TARGET = "9.0";
+            WATCHOS_DEPLOYMENT_TARGET = "2.0";
+         };
+         name = "Debug";
+      };
+      "OBJ_259" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(SRCROOT)/.build/checkouts/portaudio-swift/Sources/libportaudio/include",
+               "$(SRCROOT)/.build/checkouts/Flynn/Sources/Pony/include",
+               "$(SRCROOT)/jukebox2.xcodeproj/GeneratedModuleMap/libportaudio",
+               "$(SRCROOT)/jukebox2.xcodeproj/GeneratedModuleMap/Pony"
+            );
+            INFOPLIST_FILE = "jukebox2.xcodeproj/jukebox2_Info.plist";
+            IPHONEOS_DEPLOYMENT_TARGET = "8.0";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
+               "@executable_path"
+            );
+            MACOSX_DEPLOYMENT_TARGET = "10.10";
+            OTHER_CFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)",
+               "-Xcc",
+               "-fmodule-map-file=$(SRCROOT)/jukebox2.xcodeproj/GeneratedModuleMap/libportaudio/module.modulemap",
+               "-Xcc",
+               "-fmodule-map-file=$(SRCROOT)/jukebox2.xcodeproj/GeneratedModuleMap/Pony/module.modulemap"
+            );
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+               "$(inherited)"
+            );
+            SWIFT_FORCE_DYNAMIC_LINK_STDLIB = "YES";
+            SWIFT_FORCE_STATIC_LINK_STDLIB = "NO";
+            SWIFT_VERSION = "5.0";
+            TARGET_NAME = "jukebox2";
+            TVOS_DEPLOYMENT_TARGET = "9.0";
+            WATCHOS_DEPLOYMENT_TARGET = "2.0";
+         };
+         name = "Release";
+      };
+      "OBJ_26" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_27",
+            "OBJ_28",
+            "OBJ_29"
+         );
+         name = "Socket";
+         path = ".build/checkouts/BlueSocket/Sources/Socket";
+         sourceTree = "SOURCE_ROOT";
+      };
+      "OBJ_260" = {
+         isa = "PBXSourcesBuildPhase";
+         files = (
+            "OBJ_261",
+            "OBJ_262",
+            "OBJ_263",
+            "OBJ_264",
+            "OBJ_265",
+            "OBJ_266",
+            "OBJ_267",
+            "OBJ_268",
+            "OBJ_269",
+            "OBJ_270"
+         );
+      };
+      "OBJ_261" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_9";
+      };
+      "OBJ_262" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_10";
+      };
+      "OBJ_263" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_12";
+      };
+      "OBJ_264" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_13";
+      };
+      "OBJ_265" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_14";
+      };
+      "OBJ_266" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_15";
+      };
+      "OBJ_267" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_16";
+      };
+      "OBJ_268" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_17";
+      };
+      "OBJ_269" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_18";
+      };
+      "OBJ_27" = {
+         isa = "PBXFileReference";
+         path = "Socket.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_270" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_19";
+      };
+      "OBJ_271" = {
+         isa = "PBXFrameworksBuildPhase";
+         files = (
+            "OBJ_272",
+            "OBJ_273",
+            "OBJ_274",
+            "OBJ_275",
+            "OBJ_276",
+            "OBJ_277"
+         );
+      };
+      "OBJ_272" = {
+         isa = "PBXBuildFile";
+         fileRef = "swift-argument-parser::ArgumentParser::Product";
+      };
+      "OBJ_273" = {
+         isa = "PBXBuildFile";
+         fileRef = "Socket::Socket::Product";
+      };
+      "OBJ_274" = {
+         isa = "PBXBuildFile";
+         fileRef = "portaudio::portaudio::Product";
+      };
+      "OBJ_275" = {
+         isa = "PBXBuildFile";
+         fileRef = "portaudio::libportaudio::Product";
+      };
+      "OBJ_276" = {
+         isa = "PBXBuildFile";
+         fileRef = "Flynn::Flynn::Product";
+      };
+      "OBJ_277" = {
+         isa = "PBXBuildFile";
+         fileRef = "Flynn::Pony::Product";
+      };
+      "OBJ_278" = {
+         isa = "PBXTargetDependency";
+         target = "swift-argument-parser::ArgumentParser";
+      };
+      "OBJ_279" = {
+         isa = "PBXTargetDependency";
+         target = "Socket::Socket";
+      };
+      "OBJ_28" = {
+         isa = "PBXFileReference";
+         path = "SocketProtocols.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_280" = {
+         isa = "PBXTargetDependency";
+         target = "portaudio::portaudio";
+      };
+      "OBJ_282" = {
+         isa = "PBXTargetDependency";
+         target = "portaudio::libportaudio";
+      };
+      "OBJ_284" = {
+         isa = "PBXTargetDependency";
+         target = "Flynn::Flynn";
+      };
+      "OBJ_285" = {
+         isa = "PBXTargetDependency";
+         target = "Flynn::Pony";
+      };
+      "OBJ_287" = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            "OBJ_288",
+            "OBJ_289"
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Release";
+      };
+      "OBJ_288" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            LD = "/usr/bin/true";
+            OTHER_SWIFT_FLAGS = (
+               "-swift-version",
+               "5",
+               "-I",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2",
+               "-target",
+               "x86_64-apple-macosx10.10",
+               "-sdk",
+               "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk",
+               "-package-description-version",
+               "5.2.0"
+            );
+            SWIFT_VERSION = "5.0";
+         };
+         name = "Debug";
+      };
+      "OBJ_289" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            LD = "/usr/bin/true";
+            OTHER_SWIFT_FLAGS = (
+               "-swift-version",
+               "5",
+               "-I",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2",
+               "-target",
+               "x86_64-apple-macosx10.10",
+               "-sdk",
+               "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk",
+               "-package-description-version",
+               "5.2.0"
+            );
+            SWIFT_VERSION = "5.0";
+         };
+         name = "Release";
+      };
+      "OBJ_29" = {
+         isa = "PBXFileReference";
+         path = "SocketUtils.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_290" = {
+         isa = "PBXSourcesBuildPhase";
+         files = (
+            "OBJ_291"
+         );
+      };
+      "OBJ_291" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_6";
+      };
+      "OBJ_293" = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            "OBJ_294",
+            "OBJ_295"
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Release";
+      };
+      "OBJ_294" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+         };
+         name = "Debug";
+      };
+      "OBJ_295" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+         };
+         name = "Release";
+      };
+      "OBJ_296" = {
+         isa = "PBXTargetDependency";
+         target = "jukebox2::jukebox2Tests";
+      };
+      "OBJ_298" = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            "OBJ_299",
+            "OBJ_300"
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Release";
+      };
+      "OBJ_299" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            CLANG_ENABLE_MODULES = "YES";
+            EMBEDDED_CONTENT_CONTAINS_SWIFT = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(SRCROOT)/.build/checkouts/portaudio-swift/Sources/libportaudio/include",
+               "$(SRCROOT)/.build/checkouts/Flynn/Sources/Pony/include",
+               "$(SRCROOT)/jukebox2.xcodeproj/GeneratedModuleMap/libportaudio",
+               "$(SRCROOT)/jukebox2.xcodeproj/GeneratedModuleMap/Pony"
+            );
+            INFOPLIST_FILE = "jukebox2.xcodeproj/jukebox2Tests_Info.plist";
+            IPHONEOS_DEPLOYMENT_TARGET = "8.0";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(inherited)",
+               "@loader_path/../Frameworks",
+               "@loader_path/Frameworks"
+            );
+            MACOSX_DEPLOYMENT_TARGET = "10.10";
+            OTHER_CFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)",
+               "-Xcc",
+               "-fmodule-map-file=$(SRCROOT)/jukebox2.xcodeproj/GeneratedModuleMap/libportaudio/module.modulemap",
+               "-Xcc",
+               "-fmodule-map-file=$(SRCROOT)/jukebox2.xcodeproj/GeneratedModuleMap/Pony/module.modulemap"
+            );
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+               "$(inherited)"
+            );
+            SWIFT_VERSION = "5.0";
+            TARGET_NAME = "jukebox2Tests";
+            TVOS_DEPLOYMENT_TARGET = "9.0";
+            WATCHOS_DEPLOYMENT_TARGET = "2.0";
+         };
+         name = "Debug";
+      };
+      "OBJ_3" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            CLANG_ENABLE_OBJC_ARC = "YES";
+            COMBINE_HIDPI_IMAGES = "YES";
+            COPY_PHASE_STRIP = "NO";
+            DEBUG_INFORMATION_FORMAT = "dwarf";
+            DYLIB_INSTALL_NAME_BASE = "@rpath";
+            ENABLE_NS_ASSERTIONS = "YES";
+            GCC_OPTIMIZATION_LEVEL = "0";
+            GCC_PREPROCESSOR_DEFINITIONS = (
+               "$(inherited)",
+               "SWIFT_PACKAGE=1",
+               "DEBUG=1"
+            );
+            MACOSX_DEPLOYMENT_TARGET = "10.10";
+            ONLY_ACTIVE_ARCH = "YES";
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)",
+               "-DXcode"
+            );
+            PRODUCT_NAME = "$(TARGET_NAME)";
+            SDKROOT = "macosx";
+            SUPPORTED_PLATFORMS = (
+               "macosx",
+               "iphoneos",
+               "iphonesimulator",
+               "appletvos",
+               "appletvsimulator",
+               "watchos",
+               "watchsimulator"
+            );
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+               "$(inherited)",
+               "SWIFT_PACKAGE",
+               "DEBUG"
+            );
+            SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+            USE_HEADERMAP = "NO";
+         };
+         name = "Debug";
+      };
+      "OBJ_30" = {
+         isa = "PBXFileReference";
+         explicitFileType = "sourcecode.swift";
+         name = "Package.swift";
+         path = "/Volumes/Development/Development/chimerasw2/jukebox2/.build/checkouts/BlueSocket/Package.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_300" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            CLANG_ENABLE_MODULES = "YES";
+            EMBEDDED_CONTENT_CONTAINS_SWIFT = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(SRCROOT)/.build/checkouts/portaudio-swift/Sources/libportaudio/include",
+               "$(SRCROOT)/.build/checkouts/Flynn/Sources/Pony/include",
+               "$(SRCROOT)/jukebox2.xcodeproj/GeneratedModuleMap/libportaudio",
+               "$(SRCROOT)/jukebox2.xcodeproj/GeneratedModuleMap/Pony"
+            );
+            INFOPLIST_FILE = "jukebox2.xcodeproj/jukebox2Tests_Info.plist";
+            IPHONEOS_DEPLOYMENT_TARGET = "8.0";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(inherited)",
+               "@loader_path/../Frameworks",
+               "@loader_path/Frameworks"
+            );
+            MACOSX_DEPLOYMENT_TARGET = "10.10";
+            OTHER_CFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)",
+               "-Xcc",
+               "-fmodule-map-file=$(SRCROOT)/jukebox2.xcodeproj/GeneratedModuleMap/libportaudio/module.modulemap",
+               "-Xcc",
+               "-fmodule-map-file=$(SRCROOT)/jukebox2.xcodeproj/GeneratedModuleMap/Pony/module.modulemap"
+            );
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+               "$(inherited)"
+            );
+            SWIFT_VERSION = "5.0";
+            TARGET_NAME = "jukebox2Tests";
+            TVOS_DEPLOYMENT_TARGET = "9.0";
+            WATCHOS_DEPLOYMENT_TARGET = "2.0";
+         };
+         name = "Release";
+      };
+      "OBJ_301" = {
+         isa = "PBXSourcesBuildPhase";
+         files = (
+            "OBJ_302",
+            "OBJ_303"
+         );
+      };
+      "OBJ_302" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_22";
+      };
+      "OBJ_303" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_23";
+      };
+      "OBJ_304" = {
+         isa = "PBXFrameworksBuildPhase";
+         files = (
+            "OBJ_305",
+            "OBJ_306",
+            "OBJ_307",
+            "OBJ_308",
+            "OBJ_309",
+            "OBJ_310"
+         );
+      };
+      "OBJ_305" = {
+         isa = "PBXBuildFile";
+         fileRef = "swift-argument-parser::ArgumentParser::Product";
+      };
+      "OBJ_306" = {
+         isa = "PBXBuildFile";
+         fileRef = "Socket::Socket::Product";
+      };
+      "OBJ_307" = {
+         isa = "PBXBuildFile";
+         fileRef = "portaudio::portaudio::Product";
+      };
+      "OBJ_308" = {
+         isa = "PBXBuildFile";
+         fileRef = "portaudio::libportaudio::Product";
+      };
+      "OBJ_309" = {
+         isa = "PBXBuildFile";
+         fileRef = "Flynn::Flynn::Product";
+      };
+      "OBJ_31" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_32",
+            "OBJ_74"
+         );
+         name = "swift-argument-parser 0.2.2";
+         path = "";
+         sourceTree = "SOURCE_ROOT";
+      };
+      "OBJ_310" = {
+         isa = "PBXBuildFile";
+         fileRef = "Flynn::Pony::Product";
+      };
+      "OBJ_311" = {
+         isa = "PBXTargetDependency";
+         target = "jukebox2::jukebox2";
+      };
+      "OBJ_312" = {
+         isa = "PBXTargetDependency";
+         target = "swift-argument-parser::ArgumentParser";
+      };
+      "OBJ_313" = {
+         isa = "PBXTargetDependency";
+         target = "Socket::Socket";
+      };
+      "OBJ_314" = {
+         isa = "PBXTargetDependency";
+         target = "portaudio::portaudio";
+      };
+      "OBJ_315" = {
+         isa = "PBXTargetDependency";
+         target = "portaudio::libportaudio";
+      };
+      "OBJ_316" = {
+         isa = "PBXTargetDependency";
+         target = "Flynn::Flynn";
+      };
+      "OBJ_317" = {
+         isa = "PBXTargetDependency";
+         target = "Flynn::Pony";
+      };
+      "OBJ_318" = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            "OBJ_319",
+            "OBJ_320"
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Release";
+      };
+      "OBJ_319" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            DEFINES_MODULE = "NO";
+            ENABLE_TESTABILITY = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
+            );
+            GCC_PREPROCESSOR_DEFINITIONS = (
+               "PA_USE_COREAUDIO"
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(SRCROOT)/.build/checkouts/portaudio-swift/Sources/libportaudio/include"
+            );
+            INFOPLIST_FILE = "jukebox2.xcodeproj/libportaudio_Info.plist";
+            IPHONEOS_DEPLOYMENT_TARGET = "8.0";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx"
+            );
+            MACOSX_DEPLOYMENT_TARGET = "10.10";
+            OTHER_CFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)",
+               "-framework",
+               "CoreAudio",
+               "-framework",
+               "CoreServices",
+               "-framework",
+               "CoreFoundation",
+               "-framework",
+               "AudioUnit",
+               "-framework",
+               "AudioToolbox"
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)"
+            );
+            PRODUCT_BUNDLE_IDENTIFIER = "libportaudio";
+            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+            SKIP_INSTALL = "YES";
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+               "$(inherited)"
+            );
+            TARGET_NAME = "libportaudio";
+            TVOS_DEPLOYMENT_TARGET = "9.0";
+            WATCHOS_DEPLOYMENT_TARGET = "2.0";
+         };
+         name = "Debug";
+      };
+      "OBJ_32" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_33",
+            "OBJ_37",
+            "OBJ_46",
+            "OBJ_53",
+            "OBJ_65",
+            "OBJ_70"
+         );
+         name = "ArgumentParser";
+         path = ".build/checkouts/swift-argument-parser/Sources/ArgumentParser";
+         sourceTree = "SOURCE_ROOT";
+      };
+      "OBJ_320" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            DEFINES_MODULE = "NO";
+            ENABLE_TESTABILITY = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
+            );
+            GCC_PREPROCESSOR_DEFINITIONS = (
+               "PA_USE_COREAUDIO"
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(SRCROOT)/.build/checkouts/portaudio-swift/Sources/libportaudio/include"
+            );
+            INFOPLIST_FILE = "jukebox2.xcodeproj/libportaudio_Info.plist";
+            IPHONEOS_DEPLOYMENT_TARGET = "8.0";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx"
+            );
+            MACOSX_DEPLOYMENT_TARGET = "10.10";
+            OTHER_CFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)",
+               "-framework",
+               "CoreAudio",
+               "-framework",
+               "CoreServices",
+               "-framework",
+               "CoreFoundation",
+               "-framework",
+               "AudioUnit",
+               "-framework",
+               "AudioToolbox"
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)"
+            );
+            PRODUCT_BUNDLE_IDENTIFIER = "libportaudio";
+            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+            SKIP_INSTALL = "YES";
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+               "$(inherited)"
+            );
+            TARGET_NAME = "libportaudio";
+            TVOS_DEPLOYMENT_TARGET = "9.0";
+            WATCHOS_DEPLOYMENT_TARGET = "2.0";
+         };
+         name = "Release";
+      };
+      "OBJ_321" = {
+         isa = "PBXSourcesBuildPhase";
+         files = (
+            "OBJ_322",
+            "OBJ_323",
+            "OBJ_324",
+            "OBJ_325",
+            "OBJ_326",
+            "OBJ_327",
+            "OBJ_328",
+            "OBJ_329",
+            "OBJ_330",
+            "OBJ_331",
+            "OBJ_332",
+            "OBJ_333",
+            "OBJ_334",
+            "OBJ_335",
+            "OBJ_336",
+            "OBJ_337"
+         );
+      };
+      "OBJ_322" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_79";
+      };
+      "OBJ_323" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_81";
+      };
+      "OBJ_324" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_82";
+      };
+      "OBJ_325" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_83";
+      };
+      "OBJ_326" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_85";
+      };
+      "OBJ_327" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_86";
+      };
+      "OBJ_328" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_87";
+      };
+      "OBJ_329" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_88";
+      };
+      "OBJ_33" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_34",
+            "OBJ_35",
+            "OBJ_36"
+         );
+         name = "Completions";
+         path = "Completions";
+         sourceTree = "<group>";
+      };
+      "OBJ_330" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_89";
+      };
+      "OBJ_331" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_90";
+      };
+      "OBJ_332" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_91";
+      };
+      "OBJ_333" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_92";
+      };
+      "OBJ_334" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_93";
+      };
+      "OBJ_335" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_94";
+      };
+      "OBJ_336" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_117";
+      };
+      "OBJ_337" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_118";
+      };
+      "OBJ_338" = {
+         isa = "PBXFrameworksBuildPhase";
+         files = (
+         );
+      };
+      "OBJ_339" = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            "OBJ_340",
+            "OBJ_341"
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Release";
+      };
+      "OBJ_34" = {
+         isa = "PBXFileReference";
+         path = "BashCompletionsGenerator.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_340" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            ENABLE_TESTABILITY = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(SRCROOT)/.build/checkouts/portaudio-swift/Sources/libportaudio/include",
+               "$(SRCROOT)/jukebox2.xcodeproj/GeneratedModuleMap/libportaudio"
+            );
+            INFOPLIST_FILE = "jukebox2.xcodeproj/portaudio_Info.plist";
+            IPHONEOS_DEPLOYMENT_TARGET = "8.0";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx"
+            );
+            MACOSX_DEPLOYMENT_TARGET = "10.10";
+            OTHER_CFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)",
+               "-Xcc",
+               "-fmodule-map-file=$(SRCROOT)/jukebox2.xcodeproj/GeneratedModuleMap/libportaudio/module.modulemap"
+            );
+            PRODUCT_BUNDLE_IDENTIFIER = "portaudio";
+            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+            SKIP_INSTALL = "YES";
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+               "$(inherited)"
+            );
+            SWIFT_VERSION = "5.0";
+            TARGET_NAME = "portaudio";
+            TVOS_DEPLOYMENT_TARGET = "9.0";
+            WATCHOS_DEPLOYMENT_TARGET = "2.0";
+         };
+         name = "Debug";
+      };
+      "OBJ_341" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            ENABLE_TESTABILITY = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(SRCROOT)/.build/checkouts/portaudio-swift/Sources/libportaudio/include",
+               "$(SRCROOT)/jukebox2.xcodeproj/GeneratedModuleMap/libportaudio"
+            );
+            INFOPLIST_FILE = "jukebox2.xcodeproj/portaudio_Info.plist";
+            IPHONEOS_DEPLOYMENT_TARGET = "8.0";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx"
+            );
+            MACOSX_DEPLOYMENT_TARGET = "10.10";
+            OTHER_CFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)",
+               "-Xcc",
+               "-fmodule-map-file=$(SRCROOT)/jukebox2.xcodeproj/GeneratedModuleMap/libportaudio/module.modulemap"
+            );
+            PRODUCT_BUNDLE_IDENTIFIER = "portaudio";
+            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+            SKIP_INSTALL = "YES";
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+               "$(inherited)"
+            );
+            SWIFT_VERSION = "5.0";
+            TARGET_NAME = "portaudio";
+            TVOS_DEPLOYMENT_TARGET = "9.0";
+            WATCHOS_DEPLOYMENT_TARGET = "2.0";
+         };
+         name = "Release";
+      };
+      "OBJ_342" = {
+         isa = "PBXSourcesBuildPhase";
+         files = (
+            "OBJ_343",
+            "OBJ_344",
+            "OBJ_345"
+         );
+      };
+      "OBJ_343" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_120";
+      };
+      "OBJ_344" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_121";
+      };
+      "OBJ_345" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_122";
+      };
+      "OBJ_346" = {
+         isa = "PBXFrameworksBuildPhase";
+         files = (
+            "OBJ_347"
+         );
+      };
+      "OBJ_347" = {
+         isa = "PBXBuildFile";
+         fileRef = "portaudio::libportaudio::Product";
+      };
+      "OBJ_348" = {
+         isa = "PBXTargetDependency";
+         target = "portaudio::libportaudio";
+      };
+      "OBJ_35" = {
+         isa = "PBXFileReference";
+         path = "CompletionsGenerator.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_350" = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            "OBJ_351",
+            "OBJ_352"
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Release";
+      };
+      "OBJ_351" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            LD = "/usr/bin/true";
+            OTHER_SWIFT_FLAGS = (
+               "-swift-version",
+               "5",
+               "-I",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2",
+               "-target",
+               "x86_64-apple-macosx10.10",
+               "-sdk",
+               "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk",
+               "-package-description-version",
+               "5.2.0"
+            );
+            SWIFT_VERSION = "5.0";
+         };
+         name = "Debug";
+      };
+      "OBJ_352" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            LD = "/usr/bin/true";
+            OTHER_SWIFT_FLAGS = (
+               "-swift-version",
+               "5",
+               "-I",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2",
+               "-target",
+               "x86_64-apple-macosx10.10",
+               "-sdk",
+               "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk",
+               "-package-description-version",
+               "5.2.0"
+            );
+            SWIFT_VERSION = "5.0";
+         };
+         name = "Release";
+      };
+      "OBJ_353" = {
+         isa = "PBXSourcesBuildPhase";
+         files = (
+            "OBJ_354"
+         );
+      };
+      "OBJ_354" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_123";
+      };
+      "OBJ_356" = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            "OBJ_357",
+            "OBJ_358"
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Release";
+      };
+      "OBJ_357" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            LD = "/usr/bin/true";
+            OTHER_SWIFT_FLAGS = (
+               "-swift-version",
+               "5",
+               "-I",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2",
+               "-target",
+               "x86_64-apple-macosx10.10",
+               "-sdk",
+               "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk",
+               "-package-description-version",
+               "5.2.0"
+            );
+            SWIFT_VERSION = "5.0";
+         };
+         name = "Debug";
+      };
+      "OBJ_358" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            LD = "/usr/bin/true";
+            OTHER_SWIFT_FLAGS = (
+               "-swift-version",
+               "5",
+               "-I",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2",
+               "-target",
+               "x86_64-apple-macosx10.10",
+               "-sdk",
+               "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk",
+               "-package-description-version",
+               "5.2.0"
+            );
+            SWIFT_VERSION = "5.0";
+         };
+         name = "Release";
+      };
+      "OBJ_359" = {
+         isa = "PBXSourcesBuildPhase";
+         files = (
+            "OBJ_360"
+         );
+      };
+      "OBJ_36" = {
+         isa = "PBXFileReference";
+         path = "ZshCompletionsGenerator.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_360" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_74";
+      };
+      "OBJ_37" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_38",
+            "OBJ_39",
+            "OBJ_40",
+            "OBJ_41",
+            "OBJ_42",
+            "OBJ_43",
+            "OBJ_44",
+            "OBJ_45"
+         );
+         name = "Parsable Properties";
+         path = "Parsable Properties";
+         sourceTree = "<group>";
+      };
+      "OBJ_38" = {
+         isa = "PBXFileReference";
+         path = "Argument.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_39" = {
+         isa = "PBXFileReference";
+         path = "ArgumentHelp.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_4" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            CLANG_ENABLE_OBJC_ARC = "YES";
+            COMBINE_HIDPI_IMAGES = "YES";
+            COPY_PHASE_STRIP = "YES";
+            DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+            DYLIB_INSTALL_NAME_BASE = "@rpath";
+            GCC_OPTIMIZATION_LEVEL = "s";
+            GCC_PREPROCESSOR_DEFINITIONS = (
+               "$(inherited)",
+               "SWIFT_PACKAGE=1"
+            );
+            MACOSX_DEPLOYMENT_TARGET = "10.10";
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)",
+               "-DXcode"
+            );
+            PRODUCT_NAME = "$(TARGET_NAME)";
+            SDKROOT = "macosx";
+            SUPPORTED_PLATFORMS = (
+               "macosx",
+               "iphoneos",
+               "iphonesimulator",
+               "appletvos",
+               "appletvsimulator",
+               "watchos",
+               "watchsimulator"
+            );
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+               "$(inherited)",
+               "SWIFT_PACKAGE"
+            );
+            SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+            USE_HEADERMAP = "NO";
+         };
+         name = "Release";
+      };
+      "OBJ_40" = {
+         isa = "PBXFileReference";
+         path = "CompletionKind.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_41" = {
+         isa = "PBXFileReference";
+         path = "Errors.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_42" = {
+         isa = "PBXFileReference";
+         path = "Flag.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_43" = {
+         isa = "PBXFileReference";
+         path = "NameSpecification.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_44" = {
+         isa = "PBXFileReference";
+         path = "Option.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_45" = {
+         isa = "PBXFileReference";
+         path = "OptionGroup.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_46" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_47",
+            "OBJ_48",
+            "OBJ_49",
+            "OBJ_50",
+            "OBJ_51",
+            "OBJ_52"
+         );
+         name = "Parsable Types";
+         path = "Parsable Types";
+         sourceTree = "<group>";
+      };
+      "OBJ_47" = {
+         isa = "PBXFileReference";
+         path = "CommandConfiguration.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_48" = {
+         isa = "PBXFileReference";
+         path = "EnumerableFlag.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_49" = {
+         isa = "PBXFileReference";
+         path = "ExpressibleByArgument.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_5" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_6",
+            "OBJ_7",
+            "OBJ_20",
+            "OBJ_24",
+            "OBJ_150",
+            "OBJ_159",
+            "OBJ_160",
+            "OBJ_161"
+         );
+         path = "";
+         sourceTree = "<group>";
+      };
+      "OBJ_50" = {
+         isa = "PBXFileReference";
+         path = "ParsableArguments.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_51" = {
+         isa = "PBXFileReference";
+         path = "ParsableArgumentsValidation.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_52" = {
+         isa = "PBXFileReference";
+         path = "ParsableCommand.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_53" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_54",
+            "OBJ_55",
+            "OBJ_56",
+            "OBJ_57",
+            "OBJ_58",
+            "OBJ_59",
+            "OBJ_60",
+            "OBJ_61",
+            "OBJ_62",
+            "OBJ_63",
+            "OBJ_64"
+         );
+         name = "Parsing";
+         path = "Parsing";
+         sourceTree = "<group>";
+      };
+      "OBJ_54" = {
+         isa = "PBXFileReference";
+         path = "ArgumentDecoder.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_55" = {
+         isa = "PBXFileReference";
+         path = "ArgumentDefinition.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_56" = {
+         isa = "PBXFileReference";
+         path = "ArgumentSet.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_57" = {
+         isa = "PBXFileReference";
+         path = "ArgumentSetSequence.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_58" = {
+         isa = "PBXFileReference";
+         path = "CommandParser.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_59" = {
+         isa = "PBXFileReference";
+         path = "InputOrigin.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_6" = {
+         isa = "PBXFileReference";
+         explicitFileType = "sourcecode.swift";
+         path = "Package.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_60" = {
+         isa = "PBXFileReference";
+         path = "Name.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_61" = {
+         isa = "PBXFileReference";
+         path = "Parsed.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_62" = {
+         isa = "PBXFileReference";
+         path = "ParsedValues.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_63" = {
+         isa = "PBXFileReference";
+         path = "ParserError.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_64" = {
+         isa = "PBXFileReference";
+         path = "SplitArguments.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_65" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_66",
+            "OBJ_67",
+            "OBJ_68",
+            "OBJ_69"
+         );
+         name = "Usage";
+         path = "Usage";
+         sourceTree = "<group>";
+      };
+      "OBJ_66" = {
+         isa = "PBXFileReference";
+         path = "HelpCommand.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_67" = {
+         isa = "PBXFileReference";
+         path = "HelpGenerator.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_68" = {
+         isa = "PBXFileReference";
+         path = "MessageInfo.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_69" = {
+         isa = "PBXFileReference";
+         path = "UsageGenerator.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_7" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_8"
+         );
+         name = "Sources";
+         path = "";
+         sourceTree = "SOURCE_ROOT";
+      };
+      "OBJ_70" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_71",
+            "OBJ_72",
+            "OBJ_73"
+         );
+         name = "Utilities";
+         path = "Utilities";
+         sourceTree = "<group>";
+      };
+      "OBJ_71" = {
+         isa = "PBXFileReference";
+         path = "SequenceExtensions.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_72" = {
+         isa = "PBXFileReference";
+         path = "StringExtensions.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_73" = {
+         isa = "PBXFileReference";
+         path = "Tree.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_74" = {
+         isa = "PBXFileReference";
+         explicitFileType = "sourcecode.swift";
+         name = "Package.swift";
+         path = "/Volumes/Development/Development/chimerasw2/jukebox2/.build/checkouts/swift-argument-parser/Package.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_75" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_76",
+            "OBJ_119",
+            "OBJ_123"
+         );
+         name = "portaudio";
+         path = "";
+         sourceTree = "SOURCE_ROOT";
+      };
+      "OBJ_76" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_77",
+            "OBJ_84",
+            "OBJ_115"
+         );
+         name = "libportaudio";
+         path = ".build/checkouts/portaudio-swift/Sources/libportaudio";
+         sourceTree = "SOURCE_ROOT";
+      };
+      "OBJ_77" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_78",
+            "OBJ_80"
+         );
+         name = "hostapi";
+         path = "hostapi";
+         sourceTree = "<group>";
+      };
+      "OBJ_78" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_79"
+         );
+         name = "alsa";
+         path = "alsa";
+         sourceTree = "<group>";
+      };
+      "OBJ_79" = {
+         isa = "PBXFileReference";
+         path = "pa_linux_alsa.c";
+         sourceTree = "<group>";
+      };
+      "OBJ_8" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_9",
+            "OBJ_10",
+            "OBJ_11",
+            "OBJ_18",
+            "OBJ_19"
+         );
+         name = "jukebox2";
+         path = "Sources/jukebox2";
+         sourceTree = "SOURCE_ROOT";
+      };
+      "OBJ_80" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_81",
+            "OBJ_82",
+            "OBJ_83"
+         );
+         name = "coreaudio";
+         path = "coreaudio";
+         sourceTree = "<group>";
+      };
+      "OBJ_81" = {
+         isa = "PBXFileReference";
+         path = "pa_mac_core.c";
+         sourceTree = "<group>";
+      };
+      "OBJ_82" = {
+         isa = "PBXFileReference";
+         path = "pa_mac_core_blocking.c";
+         sourceTree = "<group>";
+      };
+      "OBJ_83" = {
+         isa = "PBXFileReference";
+         path = "pa_mac_core_utilities.c";
+         sourceTree = "<group>";
+      };
+      "OBJ_84" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_85",
+            "OBJ_86",
+            "OBJ_87",
+            "OBJ_88",
+            "OBJ_89",
+            "OBJ_90",
+            "OBJ_91",
+            "OBJ_92",
+            "OBJ_93",
+            "OBJ_94",
+            "OBJ_95",
+            "OBJ_96",
+            "OBJ_97",
+            "OBJ_98",
+            "OBJ_99",
+            "OBJ_100",
+            "OBJ_101",
+            "OBJ_102",
+            "OBJ_103",
+            "OBJ_104",
+            "OBJ_105",
+            "OBJ_106",
+            "OBJ_107",
+            "OBJ_108",
+            "OBJ_109",
+            "OBJ_110",
+            "OBJ_111",
+            "OBJ_112",
+            "OBJ_113",
+            "OBJ_114"
+         );
+         name = "include";
+         path = "include";
+         sourceTree = "<group>";
+      };
+      "OBJ_85" = {
+         isa = "PBXFileReference";
+         path = "pa_allocation.c";
+         sourceTree = "<group>";
+      };
+      "OBJ_86" = {
+         isa = "PBXFileReference";
+         path = "pa_converters.c";
+         sourceTree = "<group>";
+      };
+      "OBJ_87" = {
+         isa = "PBXFileReference";
+         path = "pa_cpuload.c";
+         sourceTree = "<group>";
+      };
+      "OBJ_88" = {
+         isa = "PBXFileReference";
+         path = "pa_debugprint.c";
+         sourceTree = "<group>";
+      };
+      "OBJ_89" = {
+         isa = "PBXFileReference";
+         path = "pa_dither.c";
+         sourceTree = "<group>";
+      };
+      "OBJ_9" = {
+         isa = "PBXFileReference";
+         path = "Audio.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_90" = {
+         isa = "PBXFileReference";
+         path = "pa_front.c";
+         sourceTree = "<group>";
+      };
+      "OBJ_91" = {
+         isa = "PBXFileReference";
+         path = "pa_process.c";
+         sourceTree = "<group>";
+      };
+      "OBJ_92" = {
+         isa = "PBXFileReference";
+         path = "pa_ringbuffer.c";
+         sourceTree = "<group>";
+      };
+      "OBJ_93" = {
+         isa = "PBXFileReference";
+         path = "pa_stream.c";
+         sourceTree = "<group>";
+      };
+      "OBJ_94" = {
+         isa = "PBXFileReference";
+         path = "pa_trace.c";
+         sourceTree = "<group>";
+      };
+      "OBJ_95" = {
+         isa = "PBXFileReference";
+         path = "pa_allocation.h";
+         sourceTree = "<group>";
+      };
+      "OBJ_96" = {
+         isa = "PBXFileReference";
+         path = "pa_converters.h";
+         sourceTree = "<group>";
+      };
+      "OBJ_97" = {
+         isa = "PBXFileReference";
+         path = "pa_cpuload.h";
+         sourceTree = "<group>";
+      };
+      "OBJ_98" = {
+         isa = "PBXFileReference";
+         path = "pa_debugprint.h";
+         sourceTree = "<group>";
+      };
+      "OBJ_99" = {
+         isa = "PBXFileReference";
+         path = "pa_dither.h";
+         sourceTree = "<group>";
+      };
+      "Socket::Socket" = {
+         isa = "PBXNativeTarget";
+         buildConfigurationList = "OBJ_242";
+         buildPhases = (
+            "OBJ_245",
+            "OBJ_249"
+         );
+         dependencies = (
+         );
+         name = "Socket";
+         productName = "Socket";
+         productReference = "Socket::Socket::Product";
+         productType = "com.apple.product-type.framework";
+      };
+      "Socket::Socket::Product" = {
+         isa = "PBXFileReference";
+         path = "Socket.framework";
+         sourceTree = "BUILT_PRODUCTS_DIR";
+      };
+      "Socket::SwiftPMPackageDescription" = {
+         isa = "PBXNativeTarget";
+         buildConfigurationList = "OBJ_251";
+         buildPhases = (
+            "OBJ_254"
+         );
+         dependencies = (
+         );
+         name = "SocketPackageDescription";
+         productName = "SocketPackageDescription";
+         productType = "com.apple.product-type.framework";
+      };
+      "jukebox2::SwiftPMPackageDescription" = {
+         isa = "PBXNativeTarget";
+         buildConfigurationList = "OBJ_287";
+         buildPhases = (
+            "OBJ_290"
+         );
+         dependencies = (
+         );
+         name = "jukebox2PackageDescription";
+         productName = "jukebox2PackageDescription";
+         productType = "com.apple.product-type.framework";
+      };
+      "jukebox2::jukebox2" = {
+         isa = "PBXNativeTarget";
+         buildConfigurationList = "OBJ_257";
+         buildPhases = (
+            "OBJ_260",
+            "OBJ_271"
+         );
+         dependencies = (
+            "OBJ_278",
+            "OBJ_279",
+            "OBJ_280",
+            "OBJ_282",
+            "OBJ_284",
+            "OBJ_285"
+         );
+         name = "jukebox2";
+         productName = "jukebox2";
+         productReference = "jukebox2::jukebox2::Product";
+         productType = "com.apple.product-type.tool";
+      };
+      "jukebox2::jukebox2::Product" = {
+         isa = "PBXFileReference";
+         path = "jukebox2";
+         sourceTree = "BUILT_PRODUCTS_DIR";
+      };
+      "jukebox2::jukebox2PackageTests::ProductTarget" = {
+         isa = "PBXAggregateTarget";
+         buildConfigurationList = "OBJ_293";
+         buildPhases = (
+         );
+         dependencies = (
+            "OBJ_296"
+         );
+         name = "jukebox2PackageTests";
+         productName = "jukebox2PackageTests";
+      };
+      "jukebox2::jukebox2Tests" = {
+         isa = "PBXNativeTarget";
+         buildConfigurationList = "OBJ_298";
+         buildPhases = (
+            "OBJ_301",
+            "OBJ_304"
+         );
+         dependencies = (
+            "OBJ_311",
+            "OBJ_312",
+            "OBJ_313",
+            "OBJ_314",
+            "OBJ_315",
+            "OBJ_316",
+            "OBJ_317"
+         );
+         name = "jukebox2Tests";
+         productName = "jukebox2Tests";
+         productReference = "jukebox2::jukebox2Tests::Product";
+         productType = "com.apple.product-type.bundle.unit-test";
+      };
+      "jukebox2::jukebox2Tests::Product" = {
+         isa = "PBXFileReference";
+         path = "jukebox2Tests.xctest";
+         sourceTree = "BUILT_PRODUCTS_DIR";
+      };
+      "portaudio::SwiftPMPackageDescription" = {
+         isa = "PBXNativeTarget";
+         buildConfigurationList = "OBJ_350";
+         buildPhases = (
+            "OBJ_353"
+         );
+         dependencies = (
+         );
+         name = "portaudioPackageDescription";
+         productName = "portaudioPackageDescription";
+         productType = "com.apple.product-type.framework";
+      };
+      "portaudio::libportaudio" = {
+         isa = "PBXNativeTarget";
+         buildConfigurationList = "OBJ_318";
+         buildPhases = (
+            "OBJ_321",
+            "OBJ_338"
+         );
+         dependencies = (
+         );
+         name = "libportaudio";
+         productName = "libportaudio";
+         productReference = "portaudio::libportaudio::Product";
+         productType = "com.apple.product-type.framework";
+      };
+      "portaudio::libportaudio::Product" = {
+         isa = "PBXFileReference";
+         path = "libportaudio.framework";
+         sourceTree = "BUILT_PRODUCTS_DIR";
+      };
+      "portaudio::portaudio" = {
+         isa = "PBXNativeTarget";
+         buildConfigurationList = "OBJ_339";
+         buildPhases = (
+            "OBJ_342",
+            "OBJ_346"
+         );
+         dependencies = (
+            "OBJ_348"
+         );
+         name = "portaudio";
+         productName = "portaudio";
+         productReference = "portaudio::portaudio::Product";
+         productType = "com.apple.product-type.framework";
+      };
+      "portaudio::portaudio::Product" = {
+         isa = "PBXFileReference";
+         path = "portaudio.framework";
+         sourceTree = "BUILT_PRODUCTS_DIR";
+      };
+      "swift-argument-parser::ArgumentParser" = {
+         isa = "PBXNativeTarget";
+         buildConfigurationList = "OBJ_163";
+         buildPhases = (
+            "OBJ_166",
+            "OBJ_202"
+         );
+         dependencies = (
+         );
+         name = "ArgumentParser";
+         productName = "ArgumentParser";
+         productReference = "swift-argument-parser::ArgumentParser::Product";
+         productType = "com.apple.product-type.framework";
+      };
+      "swift-argument-parser::ArgumentParser::Product" = {
+         isa = "PBXFileReference";
+         path = "ArgumentParser.framework";
+         sourceTree = "BUILT_PRODUCTS_DIR";
+      };
+      "swift-argument-parser::SwiftPMPackageDescription" = {
+         isa = "PBXNativeTarget";
+         buildConfigurationList = "OBJ_356";
+         buildPhases = (
+            "OBJ_359"
+         );
+         dependencies = (
+         );
+         name = "swift-argument-parserPackageDescription";
+         productName = "swift-argument-parserPackageDescription";
+         productType = "com.apple.product-type.framework";
+      };
+   };
+   rootObject = "OBJ_1";
 }

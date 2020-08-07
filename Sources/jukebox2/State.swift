@@ -59,9 +59,9 @@ class State: Actor {
 
     private var startQuietTime: TimeInterval = ProcessInfo.processInfo.systemUptime
     private var lastSwitchSongTime: TimeInterval = ProcessInfo.processInfo.systemUptime
-    private func _beSetAudioStats(_ args: BehaviorArgs) {
-        let stats: AudioStats = args[x:0]
-
+    
+    
+    private func _beSetAudioStats(_ stats: AudioStats) {
         let currentTime = ProcessInfo.processInfo.systemUptime
 
         // We will assume there is a 2 seconds downtime between songs. This is obviously
@@ -90,9 +90,9 @@ class State: Actor {
             }
         }
     }
-
-    lazy var beSetAudioStats = Behavior(self) { [unowned self] (args: BehaviorArgs) in
-        // flynnlint:parameter AudioStats - stats related to the audio buffer
-        self._beSetAudioStats(args)
+    public func beSetAudioStats(_ stats: AudioStats) {
+        unsafeSend { [unowned self] in
+            self._beSetAudioStats(stats)
+        }
     }
 }
