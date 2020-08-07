@@ -48,7 +48,7 @@ class Channel {
         locationsClosure(&locations)
     }
 
-    func send(_ socket: Socket) {
+    func send(_ socket: Socket) throws {
         for idx in 0..<numPixels {
             let color = particles.lookup(locations[idx])
             pixels[4 + idx * 3 + 0] = UInt8(color.r * currentBrightness * 255)
@@ -56,7 +56,7 @@ class Channel {
             pixels[4 + idx * 3 + 2] = UInt8(color.b * currentBrightness * 255)
         }
 
-        _ = try? socket.write(from: pixels, bufSize: pixels.count)
+        try socket.write(from: pixels, bufSize: pixels.count)
     }
 
     func update(_ stats: AudioStats) {

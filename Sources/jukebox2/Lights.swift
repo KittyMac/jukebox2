@@ -54,6 +54,7 @@ class Lights: Actor {
     }
 
     private func connectToServer() {
+        socket?.close()
         if socket == nil || socket?.isConnected == false {
             do {
                 let signature = try Socket.Signature(protocolFamily: .inet,
@@ -102,8 +103,13 @@ class Lights: Actor {
 
         if didUpdate {
             if let socket = socket {
-                channel0.send(socket)
-                channel1.send(socket)
+                do {
+                    try channel0.send(socket)
+                    try channel1.send(socket)
+                } catch {
+                    print("connection to fadecandy server lost, reconnecting...")
+                    connectToServer()
+                }
             }
         }
     }
