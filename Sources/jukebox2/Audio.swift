@@ -85,7 +85,6 @@ class Audio: Actor {
     private let portaudio: PortAudio
     private var stream: PortAudioStream?
 
-    private var audioStats = AudioStats()
     private var runningPeakAmplitude: Float = 0.0
 
     private var lastAudioStatsTime: TimeInterval
@@ -203,9 +202,8 @@ class Audio: Actor {
         modStats.normalizedPeakAmplitude = modStats.peakAmplitude * normalize
         modStats.normalizedPeakToPeakAmplitude = modStats.peakToPeakAmplitude * normalize
 
-        audioStats = modStats
-        lights.beSetAudioStats(stats)
-        state.beSetAudioStats(stats)
+        lights.beSetAudioStats(modStats)
+        state.beSetAudioStats(modStats)
 
         lastAudioStatsTime = ProcessInfo.processInfo.systemUptime
     }
