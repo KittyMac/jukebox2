@@ -75,10 +75,7 @@ class Lights: Actor {
     }
 
     private func _beClose() {
-        self.socket?.close()
-    }
-    public func beClose() {
-        unsafeSend(_beClose)
+        socket?.close()
     }
 
     // MARK: - Visuals
@@ -118,17 +115,17 @@ class Lights: Actor {
     private func _beSetVisual(_ channelIdx: Int, _ visual: LightVisual.Type) {
         switch channelIdx {
         case 0:
-            self.channel0.visual = visual.init()
+            channel0.visual = visual.init()
         case 1:
-            self.channel1.visual = visual.init()
+            channel1.visual = visual.init()
         default:
             break
         }
     }
 
     private func _beSetBrightness(_ brightness: Float) {
-        self.channel0.targetBrightness = brightness
-        self.channel1.targetBrightness = brightness
+        channel0.targetBrightness = brightness
+        channel1.targetBrightness = brightness
     }
 
 }
