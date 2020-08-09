@@ -24,5 +24,3 @@ let audio = Audio(lights, state)
 while true {
     sleep(1)
 }
-
-Flynn.shutdown()
