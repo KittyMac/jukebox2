@@ -22,6 +22,9 @@ class State: Actor {
 
     init(_ lights: Lights) {
         self.lights = lights
+
+        print("Jukebox - State init")
+
         super.init()
     }
 
@@ -70,13 +73,13 @@ class State: Actor {
 
             if sleeping {
                 // we were sleeping, we should wake up immediately
-                print("waking")
+                print("waking: \(stats.peakToPeakAmplitude) >= 0.025")
                 sleeping = false
                 switchVisuals()
             }
         } else {
             if sleeping == false && currentTime - startQuietTime > sleepTime {
-                print("sleeping")
+                print("sleeping: \(currentTime - startQuietTime) > \(sleepTime)")
                 sleeping = true
                 switchVisuals()
             }

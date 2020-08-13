@@ -17,6 +17,8 @@ import Foundation
 //        stream (such as when songs change or Alexa speaks)
 // Lights: does pretty things with the RGB lighting on the jukebox
 
+print("Jukebox - main")
+
 let lights = Lights("jukebox.local", 7890)
 let state = State(lights)
 let audio = Audio(lights, state)

@@ -93,6 +93,8 @@ class Audio: Actor {
         self.state = state
         self.lights = lights
 
+        print("Jukebox - Audio init")
+
         portaudio = PortAudio()
 
         lastAudioStatsTime = ProcessInfo.processInfo.systemUptime

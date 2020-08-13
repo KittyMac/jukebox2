@@ -49,6 +49,8 @@ class Lights: Actor {
         self.host = host
         self.port = port
 
+        print("Jukebox - Lights init")
+
         super.init()
         connectToServer()
     }
