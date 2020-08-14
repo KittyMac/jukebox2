@@ -240,7 +240,7 @@ extension Audio {
 
     @discardableResult
     public func beSetAudioStats(_ stats: AudioStats) -> Self {
-        unsafeSend { [unowned self] in self._beSetAudioStats(stats) }
+        unsafeSend { self._beSetAudioStats(stats) }
         return self
     }
     @discardableResult

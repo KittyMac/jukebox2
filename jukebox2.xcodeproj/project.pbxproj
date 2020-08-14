@@ -665,7 +665,7 @@
 			path = "Parsable Types";
 			sourceTree = "<group>";
 		};
-		OBJ_5 /*  */ = {
+		OBJ_5 = {
 			isa = PBXGroup;
 			children = (
 				OBJ_6 /* Package.swift */,
@@ -677,7 +677,6 @@
 				OBJ_159 /* Makefile */,
 				OBJ_160 /* README.md */,
 			);
-			name = "";
 			sourceTree = "<group>";
 		};
 		OBJ_53 /* Parsing */ = {
@@ -1059,7 +1058,7 @@
 			knownRegions = (
 				en,
 			);
-			mainGroup = OBJ_5 /*  */;
+			mainGroup = OBJ_5;
 			productRefGroup = OBJ_149 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -1099,7 +1098,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "#FLYNNLINTSWIFTPM=${SRCROOT}/.build/checkouts/flynn/meta/FlynnLint\n#FLYNNLINTXCODE=${BUILD_ROOT}/../../SourcePackages/checkouts/flynn/meta/FlynnLint\n#\n#if [ -f \"${FLYNNLINTSWIFTPM}\" ]; then\n#    ${FLYNNLINTSWIFTPM} ${SRCROOT}\n#elif [ -f \"${FLYNNLINTXCODE}\" ]; then\n#    ${FLYNNLINTXCODE} ${SRCROOT}\n#else\n#    echo \"warning: Unable to find FlynnLint, aborting...\"\n#fi\n";
+			shellScript = "FLYNNLINTSWIFTPM=${SRCROOT}/.build/checkouts/flynn/meta/FlynnLint\nFLYNNLINTXCODE=${BUILD_ROOT}/../../SourcePackages/checkouts/flynn/meta/FlynnLint\n\nif [ -f \"${FLYNNLINTSWIFTPM}\" ]; then\n    ${FLYNNLINTSWIFTPM} ${SRCROOT}\nelif [ -f \"${FLYNNLINTXCODE}\" ]; then\n    ${FLYNNLINTXCODE} ${SRCROOT}\nelse\n    echo \"warning: Unable to find FlynnLint, aborting...\"\nfi\n";
 		};
 		46BF35A024E65A8C00E5DCE5 /* SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
