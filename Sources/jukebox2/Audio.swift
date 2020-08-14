@@ -45,16 +45,20 @@ private func passthroughAudio(_ inputBuffer: UnsafeRawPointer?,
                 outPtr[idx] = value
             }
 
-            let peakAmplitude = max(maxAmplitude, abs(minAmplitude))
-            let peakToPeakAmplitude = maxAmplitude - minAmplitude
+            if audioActor.unsafeMessagesCount < 3 {
+                let peakAmplitude = max(maxAmplitude, abs(minAmplitude))
+                let peakToPeakAmplitude = maxAmplitude - minAmplitude
 
-            average /= Float(framesPerBuffer)
+                average /= Float(framesPerBuffer)
 
-            let stats = AudioStats(average: average,
-                                   peakAmplitude: peakAmplitude,
-                                   peakToPeakAmplitude: peakToPeakAmplitude)
+                let stats = AudioStats(average: average,
+                                       peakAmplitude: peakAmplitude,
+                                       peakToPeakAmplitude: peakToPeakAmplitude)
 
-            audioActor.beSetAudioStats(stats)
+                audioActor.beSetAudioStats(stats)
+            } else {
+                //print("Audio actor overloaded, waiting with \(audioActor.unsafeMessagesCount) messages")
+            }
         }
     }
     return Int32(paContinue.rawValue)
@@ -180,7 +184,7 @@ class Audio: Actor {
                 //print("delta: \(currentTime - self.lastAudioStatsTime), \(self.unsafeMessagesCount)")
                 if currentTime - self.lastAudioStatsTime > 5.0 {
                     print("Have not received any audio signals for 5 seconds, exiting...")
-                    exit(1)
+                    //exit(1)
                 }
             }
 
@@ -211,8 +215,12 @@ class Audio: Actor {
         modStats.normalizedPeakAmplitude = modStats.peakAmplitude * normalize
         modStats.normalizedPeakToPeakAmplitude = modStats.peakToPeakAmplitude * normalize
 
-        lights.beSetAudioStats(modStats)
-        state.beSetAudioStats(modStats)
+        if lights.unsafeMessagesCount < 3 {
+            lights.beSetAudioStats(modStats)
+        }
+        if state.unsafeMessagesCount < 3 {
+            state.beSetAudioStats(modStats)
+        }
 
         lastAudioStatsTime = ProcessInfo.processInfo.systemUptime
     }
@@ -232,7 +240,7 @@ extension Audio {
 
     @discardableResult
     public func beSetAudioStats(_ stats: AudioStats) -> Self {
-        unsafeSend { self._beSetAudioStats(stats) }
+        unsafeSend { [unowned self] in self._beSetAudioStats(stats) }
         return self
     }
     @discardableResult

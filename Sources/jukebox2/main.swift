@@ -1,6 +1,7 @@
 import Flynn
 import ArgumentParser
 import Foundation
+import Pony
 
 // The actors work like this:
 //
@@ -24,5 +25,13 @@ let state = State(lights)
 let audio = Audio(lights, state)
 
 while true {
-    sleep(1)
+
+    print("======================================")
+    print("Total Memory: \(pony_max_memory() / (1024 * 1024)) MB")
+    print(audio.unsafeStatus)
+    print(lights.unsafeStatus)
+    print(state.unsafeStatus)
+    print("======================================")
+
+    sleep(60 * 30)
 }

@@ -88,6 +88,7 @@ class Lights: Actor {
 
     private var anim: Float = 0.0
     private func _beSetAudioStats(_ stats: AudioStats) {
+
         let currentTime = ProcessInfo.processInfo.systemUptime
         let deltaTime = (currentTime - previousTime)
         updateTime += deltaTime
