@@ -27,6 +27,7 @@ let audio = Audio(lights, state)
 while true {
 
     print("======================================")
+    print("\(Date())")
     print("Total Memory: \(pony_max_memory() / (1024 * 1024)) MB")
     print(audio.unsafeStatus)
     print(lights.unsafeStatus)
