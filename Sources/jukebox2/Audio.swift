@@ -184,7 +184,7 @@ class Audio: Actor {
                 //print("delta: \(currentTime - self.lastAudioStatsTime), \(self.unsafeMessagesCount)")
                 if currentTime - self.lastAudioStatsTime > 5.0 {
                     print("Have not received any audio signals for 5 seconds, exiting...")
-                    //exit(1)
+                    exit(1)
                 }
             }
 

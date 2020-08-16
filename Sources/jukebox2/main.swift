@@ -34,5 +34,5 @@ while true {
     print(state.unsafeStatus)
     print("======================================")
 
-    sleep(60 * 30)
+    sleep(60 * 60 * 4)
 }
