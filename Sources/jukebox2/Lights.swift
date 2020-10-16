@@ -149,7 +149,8 @@ extension Lights {
         return self
     }
     @discardableResult
-    public func beSetVisual(_ channelIdx: Int, _ visual: LightVisual.Type) -> Self {
+    public func beSetVisual(_ channelIdx: Int,
+                            _ visual: LightVisual.Type) -> Self {
         unsafeSend { self._beSetVisual(channelIdx, visual) }
         return self
     }

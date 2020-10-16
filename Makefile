@@ -21,6 +21,8 @@ test:
 
 xcode:
 	swift package generate-xcodeproj
+	meta/addBuildPhase jukebox2.xcodeproj/project.pbxproj "jukebox2::jukebox2" 'cd $${SRCROOT}; ./meta/CombinedBuildPhases.sh'
+	
 
 install: build
 	
