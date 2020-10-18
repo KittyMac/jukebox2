@@ -53,11 +53,11 @@ class State: Actor {
 
         if let morning = morning, let night = night {
             if nowDateValue >= morning && nowDateValue <= night {
-                return 1.0
+                return 0.75
             }
         }
 
-        return 0.75
+        return 0.5
     }
 
     private var startQuietTime: TimeInterval = ProcessInfo.processInfo.systemUptime
