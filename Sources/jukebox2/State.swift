@@ -26,16 +26,17 @@ class State: Actor {
         print("Jukebox - State init")
 
         super.init()
+
+        switchVisuals()
     }
 
     private func switchVisuals() {
         let visual0 = (allVisuals.randomElement()!)
         let visual1 = (allVisuals.randomElement()!)
-        let brightness = checkBrightness()
 
         self.lights.beSetVisual(0, visual0)
         self.lights.beSetVisual(1, visual1)
-        self.lights.beSetBrightness(brightness)
+        self.lights.beSetBrightness(checkBrightness())
     }
 
     private func checkBrightness() -> Float {
